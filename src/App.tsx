@@ -60,7 +60,7 @@ function App() {
                   </div>
                   <div className="stat-item">
                     <div className="stat-number">100%</div>
-                    <div className="stat-label">No BS Approachs</div>
+                    <div className="stat-label">No BS Approach</div>
                   </div>
                 </div>
                 <div className="dashboard">
@@ -275,7 +275,7 @@ function App() {
             <div className="deal-badge">🎉 New Customer Deal</div>
             <h3>$100 off your first project</h3>
           </div>
-        </div>
+      </div>
       </section>
 
       {/* About Section */}
@@ -310,7 +310,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+      </div>
       </section>
 
       {/* Contact Section */}

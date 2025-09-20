@@ -124,6 +124,7 @@ body {
 .hero-left {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
 }
 
@@ -262,6 +263,18 @@ body {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+  animation: dashboardSlideIn 0.8s ease-out;
+}
+
+@keyframes dashboardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dashboard::before {
@@ -322,6 +335,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
+  animation: chartTitleFadeIn 1s ease-out 0.3s forwards;
+  opacity: 0;
 }
 
 .speed-chart {
@@ -406,6 +421,17 @@ body {
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+  animation: metricCardSlideIn 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.metric-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.metric-card:nth-child(2) {
+  animation-delay: 0.4s;
 }
 
 .metric-card:hover {
@@ -443,6 +469,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  animation: progressSectionSlideIn 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .progress-item {
@@ -490,6 +519,31 @@ body {
 @keyframes fillProgress {
   0% { width: 0%; }
   100% { width: var(--width, 0%); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes metricCardSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes progressSectionSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes chartTitleFadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .gradient-text {
