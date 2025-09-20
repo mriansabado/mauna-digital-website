@@ -60,7 +60,7 @@ function App() {
                   </div>
                   <div className="stat-item">
                     <div className="stat-number">100%</div>
-                    <div className="stat-label">No BS Approach</div>
+                    <div className="stat-label">No BS Approachs</div>
                   </div>
                 </div>
                 <div className="dashboard">
