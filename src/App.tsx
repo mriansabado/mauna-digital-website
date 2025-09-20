@@ -1,7 +1,7 @@
 import './App.css'
 import logo from './assets/mauna-digital-final.png'
 import logoText from './assets/Mauna Digital Text.png'
-import profilePhoto from './assets/profile-photo.png'
+import profilePhoto from './assets/profile-photo2.png'
 
 function App() {
   return (
@@ -169,7 +169,6 @@ function App() {
               </div>
             </div>
             <div className="service-card featured">
-              <div className="featured-badge">Most Popular</div>
               <div className="service-card-header">
                 <div className="service-icon">🏗️</div>
                 <div className="service-number">02</div>
