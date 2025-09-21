@@ -150,7 +150,7 @@ function App() {
               <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
               <div className="intro-content">
                 <h2 className="section-title">What I Do</h2>
-                <p className="services-subtitle">Hi, I'm Ian - your friendly web developer. Here's how I can help you succeed online.</p>
+                <p className="services-subtitle">Hi, I'm Ian - founder and operator of Mauna Digital LLC. Here's how I can help you succeed online.</p>
               </div>
             </div>
           </div>
@@ -268,11 +268,6 @@ function App() {
             <h3>Custom Work</h3>
             <p>Special projects, Shopify, WordPress, Wix, cloud solutions, and full-stack development</p>
             <div className="custom-price">$75/hour</div>
-          </div>
-          
-          <div className="new-customer-deal">
-            <div className="deal-badge">🎉 New Customer Deal</div>
-            <h3>$100 off your first project</h3>
           </div>
       </div>
       </section>
