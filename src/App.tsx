@@ -315,41 +315,75 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="contact">
         <div className="container">
-          <h2 className="section-title">Ready to Get Started?</h2>
-          <p className="contact-description">
-            Have a website that needs fixing? Want something brand new? Just need some help? 
-            Let's chat! I promise to keep it simple and honest.
-          </p>
+          <div className="contact-header">
+            <div className="contact-badge">Let's Work Together</div>
+            <h2 className="section-title">Ready to Get Started?</h2>
+            <p className="contact-description">
+              Have a website that needs fixing? Want something brand new? Just need some help? 
+              Let's chat! I promise to keep it simple and honest.
+            </p>
+          </div>
+          
           <div className="contact-content">
             <div className="contact-info">
-              <div className="contact-item">
-                <h4>📧 Email</h4>
-                <p>hello@maunadigital.com</p>
-              </div>
-              <div className="contact-item">
-                <h4>🌍 Location</h4>
-                <p>Available Worldwide</p>
-              </div>
-              <div className="contact-item">
-                <h4>⚡ Response Time</h4>
-                <p>Within 24 hours</p>
-              </div>
-              <div className="contact-item">
-                <h4>💰 Payment</h4>
-                <p>Half now, half when done</p>
+              <div className="contact-card">
+                <div className="contact-card-header">
+                  <div className="contact-icon">💬</div>
+                  <h3>Get in Touch</h3>
+                </div>
+                <div className="contact-details">
+                  <div className="contact-item">
+                    <div className="contact-item-icon">📧</div>
+                    <div className="contact-item-content">
+                      <h4>Email</h4>
+                      <p>maunadigitalcontact@gmail.com</p>
+                    </div>
+                  </div>
+                  <div className="contact-item">
+                    <div className="contact-item-icon">🌍</div>
+                    <div className="contact-item-content">
+                      <h4>Location</h4>
+                      <p>Available Worldwide</p>
+                    </div>
+                  </div>
+                  <div className="contact-item">
+                    <div className="contact-item-icon">⚡</div>
+                    <div className="contact-item-content">
+                      <h4>Response Time</h4>
+                      <p>Within 24 hours</p>
+                    </div>
+                  </div>
+                  <div className="contact-item">
+                    <div className="contact-item-icon">💰</div>
+                    <div className="contact-item-content">
+                      <h4>Payment</h4>
+                      <p>Half now, half when done</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="contact-form">
-              <form>
-                <div className="form-group">
-                  <input type="text" placeholder="Your Name" required />
+            
+            <div className="contact-form-container">
+              <div className="form-header">
+                <h3>Send me a message</h3>
+                <p>Tell me about your project and I'll get back to you within 24 hours</p>
+              </div>
+              <form className="contact-form">
+                <div className="form-row">
+                  <div className="form-group">
+                    <label htmlFor="name">Your Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="email">Your Email</label>
+                    <input type="email" id="email" placeholder="john@example.com" required />
+                  </div>
                 </div>
                 <div className="form-group">
-                  <input type="email" placeholder="Your Email" required />
-                </div>
-                <div className="form-group">
-                  <select required>
-                    <option value="">What do you need help with?</option>
+                  <label htmlFor="service">What do you need help with?</label>
+                  <select id="service" required>
+                    <option value="">Choose a service...</option>
                     <option value="fix">Fix my current website ($500)</option>
                     <option value="build">Build a new website ($1,000)</option>
                     <option value="monthly">Monthly website care ($400/month)</option>
@@ -358,9 +392,17 @@ function App() {
                   </select>
                 </div>
                 <div className="form-group">
-                  <textarea placeholder="Tell me about your project (optional but helpful!)" rows={4}></textarea>
+                  <label htmlFor="message">Project Details</label>
+                  <textarea 
+                    id="message" 
+                    placeholder="Tell me about your project, goals, timeline, or any specific requirements..." 
+                    rows={4}
+                  ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary">Send Message</button>
+                <button type="submit" className="btn btn-primary btn-large">
+                  <span>Send Message</span>
+                  <span className="btn-icon">→</span>
+                </button>
               </form>
             </div>
           </div>
