@@ -1,6 +1,7 @@
 import './App.css'
-import logo from './assets/mauna-digital-final.png'
-import logoText from './assets/Mauna Digital Text.png'
+import logo from './assets/mauna-logo-transparent.png'
+import mountains from './assets/mauna-only2.png'
+import logoText from './assets/mauna-digital-text.png'
 import profilePhoto from './assets/profile-photo2.png'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <nav className="nav">
         <div className="nav-container">
           <div className="nav-logo">
-            <img src={logo} alt="Mauna Digital" className="nav-logo-image" />
+            <img src={mountains} alt="Mauna Digital" className="nav-logo-image" />
             <img src={logoText} alt="Mauna Digital" className="nav-logo-text" />
           </div>
           <div className="nav-links">
@@ -38,7 +39,7 @@ function App() {
               <p className="hero-description">
                 Whether your site needs fixing, updating, or you're ready for something new - 
                 I've got you covered. Web development, cloud solutions, front-end and full-stack services. 
-                Fair prices, honest work, and no BS.
+                Fair prices, honest work, and clear communication.
               </p>
               <div className="hero-cta">
                 <a href="#contact" className="btn btn-primary">Get Started</a>
@@ -60,7 +61,7 @@ function App() {
                   </div>
                   <div className="stat-item">
                     <div className="stat-number">100%</div>
-                    <div className="stat-label">No BS Approach</div>
+                    <div className="stat-label">Honest Approach</div>
                   </div>
                 </div>
                 <div className="dashboard">
