@@ -38,14 +38,11 @@ function App() {
               </h1>
               <p className="hero-description">
                 Whether your site needs fixing, updating, or you're ready for something new - 
-                I've got you covered. Web development, cloud solutions, front-end and full-stack services. 
-                Fair prices, honest work, and clear communication.
+                I've got you covered. <span className="service-pill">Web development</span> <span className="service-pill">Cloud solutions</span> <span className="service-pill">Mobile & desktop design</span> <span className="service-pill">Performance optimization</span>. 
+                Let's scale the mountain of digital success together. Fair prices, honest work, and friendly service.
               </p>
               <div className="hero-cta">
                 <a href="#contact" className="btn btn-primary">Get Started</a>
-                <div className="hero-guarantee">
-                  <span className="guarantee-text">✓ Half now, half when done</span>
-                </div>
               </div>
             </div>
             <div className="hero-right">
@@ -162,11 +159,12 @@ function App() {
                 <div className="service-number">01</div>
               </div>
               <h3>Fix Your Website</h3>
-              <p>Problems with your current site? I'll make it faster, mobile-friendly, and working perfectly.</p>
+              <p>One-time fixes for your current site. I'll make it faster, mobile-friendly, and working perfectly on all devices.</p>
               <div className="service-features">
-                <span className="feature-tag">Speed Optimization</span>
-                <span className="feature-tag">Mobile Fixes</span>
+                <span className="feature-tag">Performance Optimization</span>
+                <span className="feature-tag">Mobile & Desktop Fixes</span>
                 <span className="feature-tag">Bug Fixes</span>
+                <span className="feature-tag">Security Updates</span>
               </div>
             </div>
             <div className="service-card featured">
@@ -175,11 +173,11 @@ function App() {
                 <div className="service-number">02</div>
               </div>
               <h3>Build New Website</h3>
-              <p>Brand new professional website that works beautifully on phones and computers.</p>
+              <p>Brand new professional website with cloud hosting, mobile & desktop optimization, and performance monitoring.</p>
               <div className="service-features">
-                <span className="feature-tag">Custom Design</span>
-                <span className="feature-tag">Responsive</span>
-                <span className="feature-tag">SEO Ready</span>
+                <span className="feature-tag">Cloud Solutions</span>
+                <span className="feature-tag">Mobile & Desktop Design</span>
+                <span className="feature-tag">Performance Optimization</span>
               </div>
             </div>
             <div className="service-card">
@@ -188,11 +186,12 @@ function App() {
                 <div className="service-number">03</div>
               </div>
               <h3>Monthly Website Care</h3>
-              <p>Keep your site updated, secure, and running smoothly with ongoing support.</p>
+              <p>Ongoing maintenance to keep your site updated, secure, and running smoothly. Perfect for established websites.</p>
               <div className="service-features">
-                <span className="feature-tag">Security Updates</span>
+                <span className="feature-tag">Regular Security Updates</span>
                 <span className="feature-tag">Performance Monitoring</span>
-                <span className="feature-tag">24/7 Support</span>
+                <span className="feature-tag">Content Updates</span>
+                <span className="feature-tag">Email Support</span>
               </div>
             </div>
             <div className="service-card">
@@ -201,11 +200,12 @@ function App() {
                 <div className="service-number">04</div>
               </div>
               <h3>Custom Work</h3>
-              <p>Special projects, Shopify, WordPress, Wix, cloud solutions, and full-stack development.</p>
+              <p>Advanced projects: Shopify stores, WordPress customization, complex cloud solutions, and full-stack applications</p>
               <div className="service-features">
                 <span className="feature-tag">Shopify</span>
                 <span className="feature-tag">WordPress</span>
                 <span className="feature-tag">Cloud Solutions</span>
+                <span className="feature-tag">Hourly Rate</span>
               </div>
             </div>
           </div>
@@ -222,12 +222,14 @@ function App() {
               <div className="pricing-header">
                 <h3>Fix Your Website</h3>
                 <div className="price">$500</div>
-                <p className="price-detail">6-8 hours of work</p>
+                <p className="price-detail">One-time fixes (6-8 hours)</p>
               </div>
               <ul className="pricing-features">
                 <li>✅ Fix problems with your current website</li>
                 <li>✅ Make it faster and mobile-friendly</li>
+                <li>✅ Security updates and bug fixes</li>
                 <li>✅ Done in 3-5 days</li>
+                <li>❌ No ongoing maintenance included</li>
               </ul>
               <a href="#contact" className="btn btn-primary">Get Started</a>
             </div>
@@ -243,6 +245,9 @@ function App() {
                 <li>✅ Brand new professional website</li>
                 <li>✅ Works on phones and computers</li>
                 <li>✅ Ready in 1-2 weeks</li>
+                <li>✅ Cloud hosting setup and configuration</li>
+                <li>✅ Mobile and desktop responsive design</li>
+                <li>✅ Performance optimization and speed testing</li>
               </ul>
               <a href="#contact" className="btn btn-primary">Get Started</a>
             </div>
@@ -251,7 +256,7 @@ function App() {
               <div className="pricing-header">
                 <h3>Monthly Website Care</h3>
                 <div className="price">$400<span>/month</span></div>
-                <p className="price-detail">5 hours total per month</p>
+                <p className="price-detail">Ongoing maintenance (5 hours/month)</p>
               </div>
               <ul className="pricing-features">
                 <li>✅ Keep your website updated and secure (1 hour)</li>
@@ -259,18 +264,30 @@ function App() {
                 <li>✅ Monthly website performance report (1 hour)</li>
                 <li>✅ Add new content and photos as needed (up to 1 hour)</li>
                 <li>✅ Monitor your Google search rankings</li>
-                <li>✅ Email and phone support</li>
+                <li>✅ Email support and monthly check-ins</li>
+                <li>❌ Major redesigns not included</li>
+              </ul>
+              <a href="#contact" className="btn btn-primary">Get Started</a>
+            </div>
+            
+            <div className="pricing-card">
+              <div className="pricing-header">
+                <h3>Custom Work</h3>
+                <div className="price">$65<span>/hour</span></div>
+                <p className="price-detail">Advanced projects</p>
+              </div>
+              <ul className="pricing-features">
+                <li>✅ Shopify stores and e-commerce</li>
+                <li>✅ WordPress customization</li>
+                <li>✅ Complex cloud solutions</li>
+                <li>✅ Full-stack applications</li>
+                <li>✅ Custom integrations</li>
+                <li>✅ Project estimates provided upfront</li>
               </ul>
               <a href="#contact" className="btn btn-primary">Get Started</a>
             </div>
           </div>
-          
-          <div className="custom-work">
-            <h3>Custom Work</h3>
-            <p>Special projects, Shopify, WordPress, Wix, cloud solutions, and full-stack development</p>
-            <div className="custom-price">$75/hour</div>
-          </div>
-      </div>
+        </div>
       </section>
 
       {/* About Section */}
@@ -383,7 +400,7 @@ function App() {
                     <option value="fix">Fix my current website ($500)</option>
                     <option value="build">Build a new website ($1,000)</option>
                     <option value="monthly">Monthly website care ($400/month)</option>
-                    <option value="custom">Custom work ($75/hour)</option>
+                    <option value="custom">Custom work ($65/hour)</option>
                     <option value="other">Something else</option>
                   </select>
                 </div>

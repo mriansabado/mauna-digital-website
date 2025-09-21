@@ -200,6 +200,45 @@ body {
   margin: 0;
 }
 
+.service-pill {
+  display: inline;
+  background: linear-gradient(135deg, #f39c12, #e67e22, #f39c12);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0.3rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  vertical-align: baseline;
+  position: relative;
+  animation: gradientShift 4s ease-in-out infinite;
+  text-shadow: 0 0 15px rgba(243, 156, 18, 0.3);
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.service-pill:hover {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateY(-2px) scale(1.03);
+  text-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+  animation: none;
+}
+
 .hero-cta {
   display: flex;
   flex-direction: column;
