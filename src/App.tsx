@@ -70,28 +70,50 @@ function App() {
                     </div>
                   </div>
                   
-                  <div className="main-chart">
-                    <div className="chart-title">Website Speed Improvement</div>
-                    <div className="speed-chart">
-                      <div className="chart-line">
-                        <div className="line-point" style={{left: '10%', bottom: '20%'}}></div>
-                        <div className="line-point" style={{left: '30%', bottom: '35%'}}></div>
-                        <div className="line-point" style={{left: '50%', bottom: '60%'}}></div>
-                        <div className="line-point" style={{left: '70%', bottom: '80%'}}></div>
-                        <div className="line-point active" style={{left: '90%', bottom: '95%'}}></div>
-                        <svg className="chart-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <path d="M10,80 Q30,65 50,40 T90,5" stroke="url(#gradient)" strokeWidth="2" fill="none" className="chart-path"/>
-                          <defs>
-                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                              <stop offset="0%" stopColor="#e53e3e"/>
-                              <stop offset="100%" stopColor="#38b2ac"/>
-                            </linearGradient>
-                          </defs>
-                        </svg>
+                  <div className="performance-visualization">
+                    <div className="chart-title">Website Performance Optimization</div>
+                    <div className="chart-title">Page Loading Speeds</div>
+                    <div className="animated-metrics">
+                      <div className="metric-comparison">
+                        <div className="metric-before">
+                          <div className="metric-label">Before</div>
+                          <div className="metric-value slow">8.2s</div>
+                          <div className="progress-ring slow">
+                            <svg viewBox="0 0 36 36" className="circular-chart">
+                              <path className="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path className="circle slow" strokeDasharray="20, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="optimization-arrow">
+                          <div className="arrow-line"></div>
+                          <div className="arrow-head">→</div>
+                          <div className="optimization-text">Optimized</div>
+                        </div>
+                        <div className="metric-after">
+                          <div className="metric-label">After</div>
+                          <div className="metric-value fast">2.1s</div>
+                          <div className="progress-ring fast">
+                            <svg viewBox="0 0 36 36" className="circular-chart">
+                              <path className="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path className="circle fast" strokeDasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
-                      <div className="chart-labels">
-                        <span>Before</span>
-                        <span>After</span>
+                      <div className="improvement-stats">
+                        <div className="stat-item">
+                          <div className="stat-number">74%</div>
+                          <div className="stat-label">Faster</div>
+                        </div>
+                        <div className="stat-item">
+                          <div className="stat-number">6.1s</div>
+                          <div className="stat-label">Saved</div>
+                        </div>
+                        <div className="stat-item">
+                          <div className="stat-number">A+</div>
+                          <div className="stat-label">Grade</div>
+                        </div>
                       </div>
                     </div>
                   </div>
