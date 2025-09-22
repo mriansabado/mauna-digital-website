@@ -404,20 +404,24 @@ function App() {
                 <h3>Send me a message</h3>
                 <p>Tell me about your project and I'll get back to you within 24 hours</p>
               </div>
-              <form className="contact-form">
+              <form className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact" />
+                <div style={{ display: 'none' }}>
+                  <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </div>
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="name">Your Name</label>
-                    <input type="text" id="name" placeholder="John Doe" required />
+                    <input type="text" id="name" name="name" placeholder="John Doe" required />
                   </div>
                   <div className="form-group">
                     <label htmlFor="email">Your Email</label>
-                    <input type="email" id="email" placeholder="john@example.com" required />
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required />
                   </div>
                 </div>
                 <div className="form-group">
                   <label htmlFor="service">What do you need help with?</label>
-                  <select id="service" required>
+                  <select id="service" name="service" required>
                     <option value="">Choose a service...</option>
                     <option value="fix">Fix my current website ($500)</option>
                     <option value="build">Build a new website ($1,000)</option>
@@ -430,6 +434,7 @@ function App() {
                   <label htmlFor="message">Project Details</label>
                   <textarea 
                     id="message" 
+                    name="message"
                     placeholder="Tell me about your project, goals, timeline, or any specific requirements..." 
                     rows={4}
                   ></textarea>
