@@ -1,10 +1,58 @@
 import './App.css'
+import { useState } from 'react'
 import logo from './assets/mauna-logo-transparent.png'
 import mountains from './assets/mauna-only2.png'
 import logoText from './assets/mauna-digital-text.png'
 import profilePhoto from './assets/profile-photo2.png'
 
 function App() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    service: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', service: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="app">
       {/* Navigation */}
@@ -404,24 +452,52 @@ function App() {
                 <h3>Send me a message</h3>
                 <p>Tell me about your project and I'll get back to you within 24 hours</p>
               </div>
-              <form className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="contact" />
-                <div style={{ display: 'none' }}>
-                  <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                </div>
+              <form className="contact-form" onSubmit={handleSubmit}>
+                {submitStatus === 'success' && (
+                  <div className="form-message success">
+                    ✅ Thank you for your message! I'll get back to you within 24 hours.
+                  </div>
+                )}
+                {submitStatus === 'error' && (
+                  <div className="form-message error">
+                    ❌ Something went wrong. Please try again or email me directly at maunadigitalcontact@gmail.com
+                  </div>
+                )}
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required />
+                    <input 
+                      type="text" 
+                      id="name" 
+                      name="name" 
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      placeholder="John Doe" 
+                      required 
+                    />
                   </div>
                   <div className="form-group">
                     <label htmlFor="email">Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                    <input 
+                      type="email" 
+                      id="email" 
+                      name="email" 
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder="john@example.com" 
+                      required 
+                    />
                   </div>
                 </div>
                 <div className="form-group">
                   <label htmlFor="service">What do you need help with?</label>
-                  <select id="service" name="service" required>
+                  <select 
+                    id="service" 
+                    name="service" 
+                    value={formData.service}
+                    onChange={handleInputChange}
+                    required
+                  >
                     <option value="">Choose a service...</option>
                     <option value="fix">Fix my current website ($500)</option>
                     <option value="build">Build a new website ($1,000)</option>
@@ -435,13 +511,19 @@ function App() {
                   <textarea 
                     id="message" 
                     name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     placeholder="Tell me about your project, goals, timeline, or any specific requirements..." 
                     rows={4}
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary btn-large">
-                  <span>Send Message</span>
-                  <span className="btn-icon">→</span>
+                <button 
+                  type="submit" 
+                  className="btn btn-primary btn-large"
+                  disabled={isSubmitting}
+                >
+                  <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                  <span className="btn-icon">{isSubmitting ? '⏳' : '→'}</span>
                 </button>
               </form>
             </div>
