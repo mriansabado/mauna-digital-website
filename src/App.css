@@ -62,7 +62,7 @@ body {
 }
 
 .nav-logo-image {
-  height: 40px;
+  height: 50px;
   width: auto;
 }
 
@@ -139,8 +139,8 @@ body {
 }
 
 .logo-image {
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border: 4px solid rgba(255, 255, 255, 0.2);
@@ -1617,8 +1617,8 @@ section {
   }
   
   .logo-image {
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 130px;
   }
   
   .contact-content {

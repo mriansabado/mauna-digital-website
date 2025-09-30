@@ -13,9 +13,9 @@ function App() {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -23,7 +23,7 @@ function App() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -37,7 +37,7 @@ function App() {
         body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
+      await response.json();
 
       if (response.ok) {
         setSubmitStatus('success');
@@ -286,38 +286,47 @@ function App() {
       <section id="pricing" className="pricing">
         <div className="container">
           <h2 className="section-title">Simple Pricing</h2>
-          <p className="pricing-subtitle">Three services. Fair prices. No confusion.</p>
+          <p className="pricing-subtitle">Four services. Fair prices. Clear time commitments.</p>
           <div className="pricing-grid">
             <div className="pricing-card">
               <div className="pricing-header">
-                <h3>Fix Your Website</h3>
-                <div className="price">$500</div>
-                <p className="price-detail">One-time fixes (6-8 hours)</p>
+                <h3>Website Quick Fix</h3>
+                <div className="price">$250</div>
+                <p className="price-detail">Fix common problems (2-3 business days) • Includes ~3 hours</p>
               </div>
               <ul className="pricing-features">
-                <li>✅ Fix problems with your current website</li>
-                <li>✅ Make it faster and mobile-friendly</li>
-                <li>✅ Security updates and bug fixes</li>
-                <li>✅ Done in 3-5 days</li>
-                <li>❌ No ongoing maintenance included</li>
+                <li>✅ Fix broken contact forms</li>
+                <li>✅ Minor mobile view issues (layout tweaks, spacing, alignment)</li>
+                <li>✅ Fix broken buttons and links</li>
+                <li>✅ Fix broken images</li>
+                <li>✅ Fix broken pages and 404 errors</li>
+                <li>✅ Basic security updates</li>
+                <li>✅ Simple content updates (text, images)</li>
+                <li>🕒 Hours included: ~3 hours (one-time)</li>
+                <li>❌ Major redesigns or new layouts not included</li>
               </ul>
               <a href="#contact" className="btn btn-primary">Get Started</a>
             </div>
             
-            <div className="pricing-card featured">
-              <div className="featured-badge">Most Popular</div>
+            <div className="pricing-card">
               <div className="pricing-header">
                 <h3>Build New Website</h3>
-                <div className="price">$1,000</div>
-                <p className="price-detail">12-15 hours of work</p>
+                <div className="price">$1,500</div>
+                <p className="price-detail">Professional website (2-3 weeks) • Includes ~18 hours</p>
               </div>
               <ul className="pricing-features">
-                <li>✅ Brand new professional website</li>
-                <li>✅ Works on phones and computers</li>
-                <li>✅ Ready in 1-2 weeks</li>
+                <li>✅ Brand new responsive website</li>
+                <li>✅ Up to 5 pages (Home, About, Services, etc.)</li>
+                <li>✅ Mobile & desktop optimized design</li>
                 <li>✅ Cloud hosting setup and configuration</li>
-                <li>✅ Mobile and desktop responsive design</li>
-                <li>✅ Performance optimization and speed testing</li>
+                <li>✅ Performance optimization</li>
+                <li>✅ Basic SEO setup</li>
+                <li>✅ Contact form integration</li>
+                <li>✅ Google Analytics setup</li>
+                <li>✅ 1 round of revisions</li>
+                <li>✅ Training on content updates</li>
+                <li>🕒 Hours included: ~18 hours (spread over 2-3 weeks)</li>
+                <li>❌ Logo design not included</li>
               </ul>
               <a href="#contact" className="btn btn-primary">Get Started</a>
             </div>
@@ -326,32 +335,39 @@ function App() {
               <div className="pricing-header">
                 <h3>Monthly Website Care</h3>
                 <div className="price">$400<span>/month</span></div>
-                <p className="price-detail">Ongoing maintenance (5 hours/month)</p>
+                <p className="price-detail">Includes 5 hours/month • Keep your site secure and updated</p>
               </div>
               <ul className="pricing-features">
-                <li>✅ Keep your website updated and secure (1 hour)</li>
-                <li>✅ Fix small problems when they happen (up to 2 hours)</li>
-                <li>✅ Monthly website performance report (1 hour)</li>
-                <li>✅ Add new content and photos as needed (up to 1 hour)</li>
-                <li>✅ Monitor your Google search rankings</li>
-                <li>✅ Email support and monthly check-ins</li>
-                <li>❌ Major redesigns not included</li>
+                <li>✅ Monthly security updates (1 hour)</li>
+                <li>✅ Performance monitoring & optimization</li>
+                <li>✅ Bug fixes and troubleshooting (up to 2 hours)</li>
+                <li>✅ Content updates - text, images, pages (up to 1 hour)</li>
+                <li>✅ Monthly performance report</li>
+                <li>✅ Priority email support</li>
+                <li>✅ Monthly check-in call</li>
+                <li>✅ Backup monitoring</li>
+                <li>🕒 Monthly hours commitment: 5 hours</li>
+                <li>❌ Major redesigns billed at $85/hour</li>
               </ul>
               <a href="#contact" className="btn btn-primary">Get Started</a>
             </div>
             
             <div className="pricing-card">
               <div className="pricing-header">
-                <h3>Custom Work</h3>
-                <div className="price">$65<span>/hour</span></div>
-                <p className="price-detail">Advanced projects</p>
+                <h3>Custom Projects</h3>
+                <div className="price">$85<span>/hour</span></div>
+                <p className="price-detail">Advanced web development • Flexible monthly commitment</p>
               </div>
               <ul className="pricing-features">
-                <li>✅ Shopify stores and e-commerce</li>
-                <li>✅ WordPress customization</li>
-                <li>✅ Complex cloud solutions</li>
-                <li>✅ Full-stack applications</li>
-                <li>✅ Custom integrations</li>
+                <li>✅ Shopify store setup and customization</li>
+                <li>✅ WordPress advanced customization</li>
+                <li>✅ E-commerce development</li>
+                <li>✅ Custom web applications</li>
+                <li>✅ AWS cloud solutions</li>
+                <li>✅ Full-stack development</li>
+                <li>✅ Third-party integrations</li>
+                <li>✅ API development</li>
+                <li>🕒 Monthly hours commitment: Flexible (retainers available: 5/10/20 hours)</li>
                 <li>✅ Project estimates provided upfront</li>
               </ul>
               <a href="#contact" className="btn btn-primary">Get Started</a>
@@ -499,10 +515,10 @@ function App() {
                     required
                   >
                     <option value="">Choose a service...</option>
-                    <option value="fix">Fix my current website ($500)</option>
-                    <option value="build">Build a new website ($1,000)</option>
-                    <option value="monthly">Monthly website care ($400/month)</option>
-                    <option value="custom">Custom work ($65/hour)</option>
+                    <option value="quick-fix">Website Quick Fix ($250)</option>
+                    <option value="build">Build New Website ($1,500)</option>
+                    <option value="monthly">Monthly Website Care ($400/month)</option>
+                    <option value="custom">Custom Projects ($85/hour)</option>
                     <option value="other">Something else</option>
                   </select>
                 </div>
