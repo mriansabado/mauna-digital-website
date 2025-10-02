@@ -6,52 +6,6 @@ import logoText from './assets/mauna-digital-text.png'
 import profilePhoto from './assets/profile-photo2.png'
 
 function App() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    service: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      await response.json();
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', service: '', message: '' });
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="app">
@@ -420,18 +374,22 @@ function App() {
           </div>
           
           <div className="contact-content">
-            <div className="contact-info">
-              <div className="contact-card">
-                <div className="contact-card-header">
+            <div className="contact-card contact-card-gradient">
+              <div className="contact-card-header">
+                <div className="contact-icon-wrapper">
                   <div className="contact-icon">💬</div>
-                  <h3>Get in Touch</h3>
                 </div>
+                <div className="contact-badge">Let's Connect</div>
+              </div>
+              <div className="contact-content-main">
+                <h3>Get in Touch</h3>
+                <p className="contact-subtitle">Ready to work together? I'm here to help with your website needs.</p>
                 <div className="contact-details">
                   <div className="contact-item">
                     <div className="contact-item-icon">📧</div>
                     <div className="contact-item-content">
                       <h4>Email</h4>
-                      <p>maunadigitalcontact@gmail.com</p>
+                      <p><a href="mailto:maunadigitalcontact@gmail.com">maunadigitalcontact@gmail.com</a></p>
                     </div>
                   </div>
                   <div className="contact-item">
@@ -456,88 +414,12 @@ function App() {
                     </div>
                   </div>
                 </div>
+                <div className="contact-cta">
+                  <a href="mailto:maunadigitalcontact@gmail.com" className="btn btn-primary contact-btn">
+                    Send Me an Email
+                  </a>
+                </div>
               </div>
-            </div>
-            
-            <div className="contact-form-container">
-              <div className="form-header">
-                <h3>Send me a message</h3>
-                <p>Tell me about your project and I'll get back to you within 24 hours</p>
-              </div>
-              <form className="contact-form" onSubmit={handleSubmit}>
-                {submitStatus === 'success' && (
-                  <div className="form-message success">
-                    ✅ Thank you for your message! I'll get back to you within 24 hours.
-                  </div>
-                )}
-                {submitStatus === 'error' && (
-                  <div className="form-message error">
-                    ❌ Something went wrong. Please try again or email me directly at maunadigitalcontact@gmail.com
-                  </div>
-                )}
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="name">Your Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      name="name" 
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      placeholder="John Doe" 
-                      required 
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="email">Your Email</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      name="email" 
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="john@example.com" 
-                      required 
-                    />
-                  </div>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="service">What do you need help with?</label>
-                  <select 
-                    id="service" 
-                    name="service" 
-                    value={formData.service}
-                    onChange={handleInputChange}
-                    required
-                  >
-                    <option value="">Choose a service...</option>
-                    <option value="quick-fix">Website Quick Fix ($250)</option>
-                    <option value="build">Build New Website ($1,500)</option>
-                    <option value="monthly">Monthly Website Care ($400/month)</option>
-                    <option value="custom">Custom Projects ($85/hour)</option>
-                    <option value="other">Something else</option>
-                  </select>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message">Project Details</label>
-                  <textarea 
-                    id="message" 
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Tell me about your project, goals, timeline, or any specific requirements..." 
-                    rows={4}
-                  ></textarea>
-                </div>
-                <button 
-                  type="submit" 
-                  className="btn btn-primary btn-large"
-                  disabled={isSubmitting}
-                >
-                  <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
-                  <span className="btn-icon">{isSubmitting ? '⏳' : '→'}</span>
-                </button>
-              </form>
             </div>
           </div>
         </div>
