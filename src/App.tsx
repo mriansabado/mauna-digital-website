@@ -217,11 +217,17 @@ function App() {
             <div className="services-intro">
               <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
               <div className="intro-content">
-                <h2 className="section-title">What I Do</h2>
-                <p className="services-subtitle">Hi, I'm Ian - founder and operator of Mauna Digital LLC. Here's how I can help you succeed online.</p>
+                <h2 className="section-title">My Approach</h2>
+                <p className="services-subtitle">Hi, I'm Ian - founder and operator of Mauna Digital LLC. Here's how I work and why it matters for your project.</p>
               </div>
             </div>
           </div>
+          
+          <div className="services-section-header">
+            <h3 className="services-title">Services I Offer</h3>
+            <p className="services-description">Four clear ways I can help you succeed online</p>
+          </div>
+          
           <div className="services-grid">
             <div className="service-card">
               <div className="service-card-header">
@@ -388,9 +394,14 @@ function App() {
                 30+ websites with hundreds of pages, so I know how to handle projects of any size.
               </p>
               <p>
-                I love solving problems and creating solutions. Whether you need a quick fix, a brand 
-                new site, or ongoing support, I bring that same problem-solving passion to every project. 
-                No hidden fees, no confusing contracts - just honest work at fair prices.
+                I start every project by listening to your goals and challenges. Complex problems don't 
+                always need complex solutions - I focus on what actually works and what you can maintain 
+                long-term. You're not just getting a website, you're getting a partner who will teach 
+                you how to manage your site and be here when you need help.
+              </p>
+              <p>
+                No hidden fees, no confusing contracts, no endless revisions. Just honest work at fair 
+                prices with clear timelines and regular updates every step of the way.
               </p>
               <div className="about-stats">
                 <div className="stat">
@@ -558,3 +569,4 @@ function App() {
 }
 
 export default App
+
