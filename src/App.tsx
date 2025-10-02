@@ -380,6 +380,27 @@ function App() {
             
             <div className="pricing-card">
               <div className="pricing-header">
+                <h3>Monthly Website Care</h3>
+                <div className="price">$400<span>/month</span></div>
+                <p className="price-detail">Includes 5 hours/month • Keep your site secure and updated</p>
+              </div>
+              <ul className="pricing-features">
+                <li>✅ Monthly security updates (1 hour)</li>
+                <li>✅ Performance monitoring & optimization</li>
+                <li>✅ Bug fixes and troubleshooting (up to 2 hours)</li>
+                <li>✅ Content updates - text, images, pages (up to 1 hour)</li>
+                <li>✅ Monthly performance report</li>
+                <li>✅ Priority email support</li>
+                <li>✅ Monthly check-in call</li>
+                <li>✅ Backup monitoring</li>
+                <li>🕒 Monthly hours commitment: 5 hours</li>
+                <li>❌ Major redesigns billed at $85/hour</li>
+              </ul>
+              <a href="#contact" className="btn btn-primary">Get Started</a>
+            </div>
+            
+            <div className="pricing-card">
+              <div className="pricing-header">
                 <h3>Build New Website</h3>
                 <div className="price">$1,500</div>
                 <p className="price-detail">Professional website (2-3 weeks) • Includes ~18 hours</p>
@@ -397,27 +418,6 @@ function App() {
                 <li>✅ Training on content updates</li>
                 <li>🕒 Hours included: ~18 hours (spread over 2-3 weeks)</li>
                 <li>❌ Logo design not included</li>
-              </ul>
-              <a href="#contact" className="btn btn-primary">Get Started</a>
-            </div>
-            
-            <div className="pricing-card">
-              <div className="pricing-header">
-                <h3>Monthly Website Care</h3>
-                <div className="price">$400<span>/month</span></div>
-                <p className="price-detail">Includes 5 hours/month • Keep your site secure and updated</p>
-              </div>
-              <ul className="pricing-features">
-                <li>✅ Monthly security updates (1 hour)</li>
-                <li>✅ Performance monitoring & optimization</li>
-                <li>✅ Bug fixes and troubleshooting (up to 2 hours)</li>
-                <li>✅ Content updates - text, images, pages (up to 1 hour)</li>
-                <li>✅ Monthly performance report</li>
-                <li>✅ Priority email support</li>
-                <li>✅ Monthly check-in call</li>
-                <li>✅ Backup monitoring</li>
-                <li>🕒 Monthly hours commitment: 5 hours</li>
-                <li>❌ Major redesigns billed at $85/hour</li>
               </ul>
               <a href="#contact" className="btn btn-primary">Get Started</a>
             </div>
