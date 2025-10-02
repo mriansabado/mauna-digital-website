@@ -1,5 +1,4 @@
 import './App.css'
-import { useState } from 'react'
 import logo from './assets/mauna-logo-transparent.png'
 import mountains from './assets/mauna-only2.png'
 import logoText from './assets/mauna-digital-text.png'
@@ -254,7 +253,7 @@ function App() {
                 <div className="service-icon-wrapper">
                   <div className="service-icon">🏗️</div>
                 </div>
-                <div className="service-badge">Most Popular</div>
+                <div className="service-badge">Full Service</div>
               </div>
               <div className="service-content">
                 <h3>Build New Website</h3>
