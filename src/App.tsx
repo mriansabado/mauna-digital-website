@@ -229,59 +229,123 @@ function App() {
           </div>
           
           <div className="services-grid">
-            <div className="service-card">
+            <div className="service-card service-card-electric-blue">
               <div className="service-card-header">
-                <div className="service-icon">🛠️</div>
-                <div className="service-number">01</div>
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">🛠️</div>
+                </div>
+                <div className="service-badge">Quick Fix</div>
               </div>
-              <h3>Fix Your Website</h3>
-              <p>One-time fixes for your current site. I'll make it faster, mobile-friendly, and working perfectly on all devices.</p>
-              <div className="service-features">
-                <span className="feature-tag">Performance Optimization</span>
-                <span className="feature-tag">Mobile & Desktop Fixes</span>
-                <span className="feature-tag">Bug Fixes</span>
-                <span className="feature-tag">Security Updates</span>
+              <div className="service-content">
+                <h3>Fix Your Website</h3>
+                <p>One-time fixes for your current site. I'll make it faster, mobile-friendly, and working perfectly on all devices.</p>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Performance Optimization</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Mobile & Desktop Fixes</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Bug Fixes</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Security Updates</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="service-card featured">
+            
+            <div className="service-card service-card-hot-pink featured">
               <div className="service-card-header">
-                <div className="service-icon">🏗️</div>
-                <div className="service-number">02</div>
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">🏗️</div>
+                </div>
+                <div className="service-badge">Most Popular</div>
               </div>
-              <h3>Build New Website</h3>
-              <p>Brand new professional website with cloud hosting, mobile & desktop optimization, and performance monitoring.</p>
-              <div className="service-features">
-                <span className="feature-tag">Cloud Solutions</span>
-                <span className="feature-tag">Mobile & Desktop Design</span>
-                <span className="feature-tag">Performance Optimization</span>
+              <div className="service-content">
+                <h3>Build New Website</h3>
+                <p>Brand new professional website with cloud hosting, mobile & desktop optimization, and performance monitoring.</p>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Cloud Solutions</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Mobile & Desktop Design</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Performance Optimization</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="service-card">
+            
+            <div className="service-card service-card-neon-green">
               <div className="service-card-header">
-                <div className="service-icon">🔧</div>
-                <div className="service-number">03</div>
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">🔧</div>
+                </div>
+                <div className="service-badge">Ongoing</div>
               </div>
-              <h3>Monthly Website Care</h3>
-              <p>Ongoing maintenance to keep your site updated, secure, and running smoothly. Perfect for established websites.</p>
-              <div className="service-features">
-                <span className="feature-tag">Regular Security Updates</span>
-                <span className="feature-tag">Performance Monitoring</span>
-                <span className="feature-tag">Content Updates</span>
-                <span className="feature-tag">Email Support</span>
+              <div className="service-content">
+                <h3>Monthly Website Care</h3>
+                <p>Ongoing maintenance to keep your site updated, secure, and running smoothly. Perfect for established websites.</p>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Regular Security Updates</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Performance Monitoring</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Content Updates</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Email Support</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="service-card">
+            
+            <div className="service-card service-card-electric-yellow">
               <div className="service-card-header">
-                <div className="service-icon">⚡</div>
-                <div className="service-number">04</div>
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">⚡</div>
+                </div>
+                <div className="service-badge">Custom</div>
               </div>
-              <h3>Custom Work</h3>
-              <p>Advanced projects: Shopify stores, WordPress customization, complex cloud solutions, and full-stack applications</p>
-              <div className="service-features">
-                <span className="feature-tag">Shopify</span>
-                <span className="feature-tag">WordPress</span>
-                <span className="feature-tag">Cloud Solutions</span>
-                <span className="feature-tag">Hourly Rate</span>
+              <div className="service-content">
+                <h3>Custom Work</h3>
+                <p>Advanced projects: Shopify stores, WordPress customization, complex cloud solutions, and full-stack applications</p>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Shopify</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>WordPress</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Cloud Solutions</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Hourly Rate</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
