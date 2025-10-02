@@ -918,8 +918,8 @@ section {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   position: relative;
   z-index: 1;
   padding-top: 2rem;
@@ -1241,6 +1241,37 @@ section {
 
 .service-card-electric-yellow .feature-item span {
   color: rgba(255, 255, 255, 0.9);
+}
+
+/* Service Card Pricing Styles */
+.service-price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+  line-height: 1;
+}
+
+.service-price span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.service-price-detail {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.service-btn {
+  margin-top: 1.5rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 /* Pricing Section */
@@ -1784,7 +1815,7 @@ section {
 @media (max-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
 }
 

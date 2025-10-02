@@ -64,7 +64,6 @@ function App() {
           </div>
           <div className="nav-links">
             <a href="#services">Services</a>
-            <a href="#pricing">Pricing</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </div>
@@ -237,53 +236,29 @@ function App() {
                 <div className="service-badge">Quick Fix</div>
               </div>
               <div className="service-content">
-                <h3>Fix Your Website</h3>
+                <h3>Website Quick Fix</h3>
+                <div className="service-price">$250</div>
+                <p className="service-price-detail">Fix common problems (2-3 business days) • Includes ~3 hours</p>
                 <p>One-time fixes for your current site. I'll make it faster, mobile-friendly, and working perfectly on all devices.</p>
                 <div className="service-features">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Performance Optimization</span>
+                    <span>Fix broken contact forms</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Mobile & Desktop Fixes</span>
+                    <span>Mobile & desktop fixes</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Bug Fixes</span>
+                    <span>Bug fixes & security updates</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Security Updates</span>
+                    <span>Simple content updates</span>
                   </div>
                 </div>
-              </div>
-            </div>
-            
-            <div className="service-card service-card-hot-pink featured">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-                  <div className="service-icon">🏗️</div>
-                </div>
-                <div className="service-badge">Most Popular</div>
-              </div>
-              <div className="service-content">
-                <h3>Build New Website</h3>
-                <p>Brand new professional website with cloud hosting, mobile & desktop optimization, and performance monitoring.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Cloud Solutions</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Mobile & Desktop Design</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Performance Optimization</span>
-                  </div>
-                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
               </div>
             </div>
             
@@ -296,25 +271,62 @@ function App() {
               </div>
               <div className="service-content">
                 <h3>Monthly Website Care</h3>
+                <div className="service-price">$400<span>/month</span></div>
+                <p className="service-price-detail">Includes 5 hours/month • Keep your site secure and updated</p>
                 <p>Ongoing maintenance to keep your site updated, secure, and running smoothly. Perfect for established websites.</p>
                 <div className="service-features">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Regular Security Updates</span>
+                    <span>Monthly security updates</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Performance Monitoring</span>
+                    <span>Performance monitoring</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Content Updates</span>
+                    <span>Content updates & support</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Email Support</span>
+                    <span>Monthly check-in calls</span>
                   </div>
                 </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+              </div>
+            </div>
+            
+            <div className="service-card service-card-hot-pink featured">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">🏗️</div>
+                </div>
+                <div className="service-badge">Most Popular</div>
+              </div>
+              <div className="service-content">
+                <h3>Build New Website</h3>
+                <div className="service-price">$1,500</div>
+                <p className="service-price-detail">Professional website (2-3 weeks) • Includes ~18 hours</p>
+                <p>Brand new professional website with cloud hosting, mobile & desktop optimization, and performance monitoring.</p>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Up to 5 pages included</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Cloud hosting setup</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>SEO & Analytics setup</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>1 round of revisions</span>
+                  </div>
+                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
               </div>
             </div>
             
@@ -326,125 +338,35 @@ function App() {
                 <div className="service-badge">Custom</div>
               </div>
               <div className="service-content">
-                <h3>Custom Work</h3>
+                <h3>Custom Projects</h3>
+                <div className="service-price">$85<span>/hour</span></div>
+                <p className="service-price-detail">Advanced web development • Flexible monthly commitment</p>
                 <p>Advanced projects: Shopify stores, WordPress customization, complex cloud solutions, and full-stack applications</p>
                 <div className="service-features">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Shopify</span>
+                    <span>Shopify & WordPress</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>WordPress</span>
+                    <span>E-commerce development</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Cloud Solutions</span>
+                    <span>AWS cloud solutions</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Hourly Rate</span>
+                    <span>API development</span>
                   </div>
                 </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="pricing">
-        <div className="container">
-          <h2 className="section-title">Simple Pricing</h2>
-          <p className="pricing-subtitle">Four services. Fair prices. Clear time commitments.</p>
-          <div className="pricing-grid">
-            <div className="pricing-card">
-              <div className="pricing-header">
-                <h3>Website Quick Fix</h3>
-                <div className="price">$250</div>
-                <p className="price-detail">Fix common problems (2-3 business days) • Includes ~3 hours</p>
-              </div>
-              <ul className="pricing-features">
-                <li>✅ Fix broken contact forms</li>
-                <li>✅ Minor mobile view issues (layout tweaks, spacing, alignment)</li>
-                <li>✅ Fix broken buttons and links</li>
-                <li>✅ Fix broken images</li>
-                <li>✅ Fix broken pages and 404 errors</li>
-                <li>✅ Basic security updates</li>
-                <li>✅ Simple content updates (text, images)</li>
-                <li>🕒 Hours included: ~3 hours (one-time)</li>
-                <li>❌ Major redesigns or new layouts not included</li>
-              </ul>
-              <a href="#contact" className="btn btn-primary">Get Started</a>
-            </div>
-            
-            <div className="pricing-card">
-              <div className="pricing-header">
-                <h3>Monthly Website Care</h3>
-                <div className="price">$400<span>/month</span></div>
-                <p className="price-detail">Includes 5 hours/month • Keep your site secure and updated</p>
-              </div>
-              <ul className="pricing-features">
-                <li>✅ Monthly security updates (1 hour)</li>
-                <li>✅ Performance monitoring & optimization</li>
-                <li>✅ Bug fixes and troubleshooting (up to 2 hours)</li>
-                <li>✅ Content updates - text, images, pages (up to 1 hour)</li>
-                <li>✅ Monthly performance report</li>
-                <li>✅ Priority email support</li>
-                <li>✅ Monthly check-in call</li>
-                <li>✅ Backup monitoring</li>
-                <li>🕒 Monthly hours commitment: 5 hours</li>
-                <li>❌ Major redesigns billed at $85/hour</li>
-              </ul>
-              <a href="#contact" className="btn btn-primary">Get Started</a>
-            </div>
-            
-            <div className="pricing-card">
-              <div className="pricing-header">
-                <h3>Build New Website</h3>
-                <div className="price">$1,500</div>
-                <p className="price-detail">Professional website (2-3 weeks) • Includes ~18 hours</p>
-              </div>
-              <ul className="pricing-features">
-                <li>✅ Brand new responsive website</li>
-                <li>✅ Up to 5 pages (Home, About, Services, etc.)</li>
-                <li>✅ Mobile & desktop optimized design</li>
-                <li>✅ Cloud hosting setup and configuration</li>
-                <li>✅ Performance optimization</li>
-                <li>✅ Basic SEO setup</li>
-                <li>✅ Contact form integration</li>
-                <li>✅ Google Analytics setup</li>
-                <li>✅ 1 round of revisions</li>
-                <li>✅ Training on content updates</li>
-                <li>🕒 Hours included: ~18 hours (spread over 2-3 weeks)</li>
-                <li>❌ Logo design not included</li>
-              </ul>
-              <a href="#contact" className="btn btn-primary">Get Started</a>
-            </div>
-            
-            <div className="pricing-card">
-              <div className="pricing-header">
-                <h3>Custom Projects</h3>
-                <div className="price">$85<span>/hour</span></div>
-                <p className="price-detail">Advanced web development • Flexible monthly commitment</p>
-              </div>
-              <ul className="pricing-features">
-                <li>✅ Shopify store setup and customization</li>
-                <li>✅ WordPress advanced customization</li>
-                <li>✅ E-commerce development</li>
-                <li>✅ Custom web applications</li>
-                <li>✅ AWS cloud solutions</li>
-                <li>✅ Full-stack development</li>
-                <li>✅ Third-party integrations</li>
-                <li>✅ API development</li>
-                <li>🕒 Monthly hours commitment: Flexible (retainers available: 5/10/20 hours)</li>
-                <li>✅ Project estimates provided upfront</li>
-              </ul>
-              <a href="#contact" className="btn btn-primary">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* About Section */}
       <section id="about" className="about">
