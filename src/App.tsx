@@ -216,14 +216,13 @@ function App() {
             <div className="services-intro">
               <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
               <div className="intro-content">
-                <h2 className="section-title">My Approach</h2>
-                <p className="services-subtitle">Hi, I'm Ian - founder and operator of Mauna Digital LLC. Here's how I work and why it matters for your project.</p>
+                <p className="services-subtitle">Hi, I'm Ian - founder and operator of Mauna Digital LLC. Here's how I can help you succeed online.</p>
               </div>
             </div>
           </div>
           
           <div className="services-section-header">
-            <h3 className="services-title">Services I Offer</h3>
+            <h2 className="services-title">Services I Offer</h2>
             <p className="services-description">Four clear ways I can help you succeed online</p>
           </div>
           

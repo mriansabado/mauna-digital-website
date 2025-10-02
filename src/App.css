@@ -910,10 +910,11 @@ section {
 }
 
 .services-subtitle {
-  font-size: 1.2rem;
-  color: #4a5568;
+  font-size: 1.3rem;
+  color: #2d3748;
   margin-top: 1rem;
   line-height: 1.6;
+  font-weight: 600;
 }
 
 .services-grid {
@@ -1272,6 +1273,27 @@ section {
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+/* Services Section Header */
+.services-section-header {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.services-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.services-description {
+  font-size: 1.2rem;
+  color: #4a5568;
+  font-weight: 500;
+  margin: 0;
 }
 
 /* Pricing Section */
