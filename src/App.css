@@ -919,12 +919,14 @@ section {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   position: relative;
   z-index: 1;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .service-card {
@@ -1273,6 +1275,84 @@ section {
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+/* What's NOT Included Styles */
+.service-not-included {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  border-left: 4px solid #e53e3e;
+}
+
+.service-not-included h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #2d3748;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.not-included-item {
+  font-size: 0.85rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.service-card-electric-blue .service-not-included {
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: #ff6b6b;
+}
+
+.service-card-electric-blue .service-not-included h4 {
+  color: white;
+}
+
+.service-card-electric-blue .not-included-item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.service-card-hot-pink .service-not-included {
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: #ff6b6b;
+}
+
+.service-card-hot-pink .service-not-included h4 {
+  color: white;
+}
+
+.service-card-hot-pink .not-included-item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.service-card-neon-green .service-not-included {
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: #ff6b6b;
+}
+
+.service-card-neon-green .service-not-included h4 {
+  color: white;
+}
+
+.service-card-neon-green .not-included-item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.service-card-electric-yellow .service-not-included {
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: #ff6b6b;
+}
+
+.service-card-electric-yellow .service-not-included h4 {
+  color: white;
+}
+
+.service-card-electric-yellow .not-included-item {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Services Section Header */
@@ -1956,6 +2036,13 @@ section {
 @media (max-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }
