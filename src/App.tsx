@@ -162,246 +162,162 @@ function App() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="services">
-        <div className="container">
-          <div className="services-header">
-            <div className="services-intro">
-              <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
-              <div className="intro-content">
-                <p className="services-subtitle">Hi, I'm Ian - founder and operator of Mauna Digital LLC. Here's how I can help you succeed online.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="services-section-header">
-            <h2 className="services-title">Five Ways I Can Help Your Website</h2>
-            <p className="services-description">Clear options for every website need - from quick fixes to custom projects</p>
-          </div>
-          
-          <div className="services-grid">
-            <div className="service-card service-card-electric-blue">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-                  <div className="service-icon">🛠️</div>
-                </div>
-                <div className="service-badge">Quick Fix</div>
-              </div>
-              <div className="service-content">
-                <h3>Quick Fix</h3>
-                <div className="service-price">$300</div>
-                <p className="service-price-detail">One-time fixes and updates • 3 hours included • 2-3 business days</p>
-                <p>Something broken? Need a quick update? I'll fix it fast across WordPress, Shopify, and modern web applications. Quick fixes are handled on a first-come, first-served basis with 2-3 business day turnaround.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>WordPress bug fixes & updates</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Shopify store troubleshooting</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Performance optimization</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Mobile responsiveness fixes</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Security patches & updates</span>
-                  </div>
-                </div>
-                <div className="service-not-included">
-                  <h4>What's NOT Included:</h4>
-                  <div className="not-included-item">❌ Major redesigns or new feature development</div>
-                  <div className="not-included-item">❌ Content creation or copywriting</div>
-                  <div className="not-included-item">❌ Logo or graphic design work</div>
-                  <div className="not-included-item">❌ Platform migrations (separate project)</div>
-                </div>
-                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
-              </div>
-            </div>
-            
-            <div className="service-card service-card-neon-green">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-                  <div className="service-icon">🔧</div>
-                </div>
-                <div className="service-badge">Development</div>
-              </div>
-              <div className="service-content">
-                <h3>New Website</h3>
-                <div className="service-price">$2,500</div>
-                <p className="service-price-detail">WordPress & Shopify: $2,500 • React/Next.js: $3,500</p>
-                <p>Complete website from design to launch. Choose your platform and I'll build a professional site that grows with your business. I can take on 1-2 new website projects per month to ensure quality delivery.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Full website projects (design to launch)</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>WordPress: Custom themes, plugins, optimization</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Shopify: Store setup, customization, integrations</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>React/Next.js: Modern web applications</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Platform migrations & API development</span>
-                  </div>
-                </div>
-                <div className="service-not-included">
-                  <h4>What's NOT Included:</h4>
-                  <div className="not-included-item">❌ Content creation or copywriting</div>
-                  <div className="not-included-item">❌ Logo or graphic design work</div>
-                  <div className="not-included-item">❌ Ongoing maintenance (see Monthly Care plans)</div>
-                  <div className="not-included-item">❌ Third-party app subscription fees</div>
-                </div>
-                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
-              </div>
-            </div>
-            
-            <div className="service-card service-card-hot-pink">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-                  <div className="service-icon">🔄</div>
-                </div>
-                <div className="service-badge">Refresh</div>
-              </div>
-              <div className="service-content">
-                <h3>Website Refresh</h3>
-                <div className="service-price">$1,200</div>
-                <p className="service-price-detail">Major updates to existing websites • ~10-12 hours • 1-2 weeks</p>
-                <p>Your website needs significant updates but not a complete rebuild. Perfect for modernizing existing sites with new features and improvements. I can handle 2-3 refresh projects per month alongside other work.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Design updates & modern styling</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>New features & functionality</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Performance optimization</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Mobile responsiveness improvements</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>SEO improvements & updates</span>
-                  </div>
-                </div>
-                <div className="service-not-included">
-                  <h4>What's NOT Included:</h4>
-                  <div className="not-included-item">❌ Complete redesign from scratch</div>
-                  <div className="not-included-item">❌ Content creation or copywriting</div>
-                  <div className="not-included-item">❌ Platform migration (separate project)</div>
-                  <div className="not-included-item">❌ E-commerce functionality (see New Website)</div>
-                </div>
-                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
-              </div>
-            </div>
-            
-            <div className="service-card service-card-neon-green">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-                  <div className="service-icon">🔧</div>
-                </div>
-                <div className="service-badge">Monthly Care</div>
-              </div>
-              <div className="service-content">
-                <h3>Monthly Website Care</h3>
-                <div className="service-price">$375-1,000<span>/month</span></div>
-                <p className="service-price-detail">Basic: $375 • Standard: $625 • Premium: $1,000</p>
-                <p>Ongoing maintenance and support to keep your website secure, updated, and performing optimally across all platforms. I can commit to 2-3 monthly care clients maximum to ensure quality service.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Basic: 3 hours/month - Essential updates</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Standard: 5 hours/month - Includes minor changes</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Premium: 8 hours/month - Priority support</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Security updates & performance monitoring</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Monthly reports & recommendations</span>
-                  </div>
-                </div>
-                <div className="service-not-included">
-                  <h4>What's NOT Included:</h4>
-                  <div className="not-included-item">❌ Major redesigns or new feature development</div>
-                  <div className="not-included-item">❌ Content creation or copywriting</div>
-                  <div className="not-included-item">❌ Unused hours do NOT roll over to next month</div>
-                  <div className="not-included-item">❌ Third-party app subscription fees</div>
-                </div>
-                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
-              </div>
-            </div>
-            
-            <div className="service-card service-card-electric-yellow">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-                  <div className="service-icon">⚡</div>
-                </div>
-                <div className="service-badge">Custom</div>
-              </div>
-              <div className="service-content">
-                <h3>Custom Work & Retainers</h3>
-                <div className="service-price">$125<span>/hour</span></div>
-                <p className="service-price-detail">Complex projects • Retainer packages available</p>
-                <p>Need something custom? Complex integrations, ongoing development, or retainer work for larger projects. I can commit to 1-2 major custom projects at a time to ensure quality delivery.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Complex customizations</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>API development & integrations</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Platform migrations</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Retainer packages: 10h ($1,125), 20h ($2,250), 40h ($4,500) - 10% discount</span>
-                  </div>
-                </div>
-                <div className="service-not-included">
-                  <h4>What's NOT Included:</h4>
-                  <div className="not-included-item">❌ Content creation or copywriting</div>
-                  <div className="not-included-item">❌ Logo or graphic design work</div>
-                  <div className="not-included-item">❌ Ongoing maintenance (see Monthly Care)</div>
-                </div>
-                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
-              </div>
-            </div>
-          </div>
+   {/* Services Section */}
+<section id="services" className="services">
+  <div className="container">
+    <div className="services-header">
+      <div className="services-intro">
+        <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
+        <div className="intro-content">
+          <p className="services-subtitle">Hi, I'm Ian. I help small businesses get online and sell their stuff. No tech jargon, no surprises - just honest work at fair prices.</p>
         </div>
-      </section>
+      </div>
+    </div>
+    
+    <div className="services-section-header">
+      <h2 className="services-title">How I Can Help You</h2>
+      <p className="services-description">Simple options for getting your business online</p>
+    </div>
+    
+    <div className="services-grid">
+      <div className="service-card service-card-electric-blue">
+        <div className="service-card-header">
+          <div className="service-icon-wrapper">
+            <div className="service-icon">🛠️</div>
+          </div>
+          <div className="service-badge">Quick Help</div>
+        </div>
+        <div className="service-content">
+          <h3>Something's Not Working?</h3>
+          <div className="service-price">$300</div>
+          <p className="service-price-detail">I'll fix it in 2-3 days</p>
+          <p>Your website is acting up? I'll figure out what's wrong and fix it. No mystery, no surprises - just a working website again.</p>
+          <div className="service-features">
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>WordPress, Shopify, or Wix issues</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Mobile phone problems</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Slow loading pages</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Broken links, forms, or images</span>
+            </div>
+          </div>
+          <a href="#contact" className="btn btn-primary service-btn">Get Help</a>
+        </div>
+      </div>
+      
+      <div className="service-card service-card-neon-green">
+        <div className="service-card-header">
+          <div className="service-icon-wrapper">
+            <div className="service-icon">🏗️</div>
+          </div>
+          <div className="service-badge">New Website</div>
+        </div>
+        <div className="service-content">
+          <h3>Need a New Website?</h3>
+          <div className="service-price">$1,800</div>
+          <p className="service-price-detail">Complete website in 2-3 weeks</p>
+          <p>Starting from scratch? I'll build you a professional website that works for your business. It'll look trustworthy, work on all devices, and help you get found online. I'll handle all the technical stuff so you can focus on what you do best.</p>
+          <div className="service-features">
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Professional design that works on phones</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Easy to update yourself</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Works with your existing tools</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>I'll teach you how to use it</span>
+            </div>
+          </div>
+          <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+        </div>
+      </div>
+      
+      <div className="service-card service-card-hot-pink">
+        <div className="service-card-header">
+          <div className="service-icon-wrapper">
+            <div className="service-icon">✨</div>
+          </div>
+          <div className="service-badge">Make It Better</div>
+        </div>
+        <div className="service-content">
+          <h3>Update Your Current Site?</h3>
+          <div className="service-price">$900</div>
+          <p className="service-price-detail">Better design in 1-2 weeks</p>
+          <p>Your website works but looks outdated? I'll give it a fresh look and make it work better. Keep what works, improve what doesn't.</p>
+          <div className="service-features">
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Modern, professional look</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Faster loading pages</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Better mobile experience</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Keep your existing content</span>
+            </div>
+          </div>
+          <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+        </div>
+      </div>
+      
+      <div className="service-card service-card-electric-yellow">
+        <div className="service-card-header">
+          <div className="service-icon-wrapper">
+            <div className="service-icon">🤝</div>
+          </div>
+          <div className="service-badge">Ongoing Help</div>
+        </div>
+        <div className="service-content">
+          <h3>Need Ongoing Support?</h3>
+          <div className="service-price">$400<span>/month</span></div>
+          <p className="service-price-detail">5 hours of help each month</p>
+          <p>Want someone to help you manage your website? I'll answer your questions, make updates, and help you add new content. Like having a website assistant.</p>
+          <div className="service-features">
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Help you add products or pages</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Answer your "how do I..." questions</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Make small changes and tweaks</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Monthly check-ins and advice</span>
+            </div>
+          </div>
+          <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
       {/* About Section */}
