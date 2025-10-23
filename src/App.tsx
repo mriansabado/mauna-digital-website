@@ -191,26 +191,26 @@ function App() {
           <div className="service-badge">Quick Help</div>
               </div>
               <div className="service-content">
-          <h3>Something's Not Working?</h3>
+          <h3>Quick Fixes & Website Check</h3>
                 <div className="service-price">$300</div>
-          <p className="service-price-detail">I'll fix it in 2-3 days</p>
-          <p>Your website is acting up? I'll figure out what's wrong and fix it. No mystery, no surprises - just a working website again.</p>
+          <p className="service-price-detail">Quick fixes in 2-3 days + free diagnostic report</p>
+          <p>Need a quick fix? I'll solve your immediate problem AND give you a free diagnostic report showing opportunities to improve your website's performance and visibility.</p>
                 <div className="service-features">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>All major website platforms and custom websites</span>
+              <span>Quick fixes: broken links, forms, images, mobile issues</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Mobile phone problems</span>
+              <span>Speed improvements and basic optimizations</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Slow loading pages</span>
+              <span>Free diagnostic report with improvement opportunities</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Broken links, forms, or images</span>
+              <span>No major redesigns or complex changes</span>
                   </div>
                 </div>
           <a href="#contact" className="btn btn-primary service-btn">Get Help</a>
