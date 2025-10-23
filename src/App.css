@@ -1192,6 +1192,45 @@ section {
   font-size: 1rem;
 }
 
+.service-card-purple {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  border: 3px solid #a855f7;
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.25);
+}
+
+.service-card-purple .service-icon-wrapper {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.service-card-purple .service-badge {
+  background: #a855f7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-card-purple h3 {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.service-card-purple p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
 /* Feature Items with Dots */
 .service-features {
   display: flex;
@@ -1230,6 +1269,10 @@ section {
   background: #fbbf24;
 }
 
+.service-card-purple .feature-dot {
+  background: #a855f7;
+}
+
 .service-card-electric-blue .feature-item span {
   color: rgba(255, 255, 255, 0.9);
 }
@@ -1243,6 +1286,10 @@ section {
 }
 
 .service-card-electric-yellow .feature-item span {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.service-card-purple .feature-item span {
   color: rgba(255, 255, 255, 0.9);
 }
 

@@ -38,7 +38,7 @@ function App() {
               </h1>
               <p className="hero-description">
                 Whether your site needs fixing, updating, or you're ready for something new - 
-                I've got you covered. <span className="service-pill">Web development</span> <span className="service-pill">Cloud solutions</span> <span className="service-pill">Mobile & desktop design</span> <span className="service-pill">Performance optimization</span>. 
+                I've got you covered. <span className="service-pill">Web development</span> <span className="service-pill">SEO optimization</span> <span className="service-pill">Mobile & desktop design</span> <span className="service-pill">Performance optimization</span>. 
                 Let's scale the mountain of digital success together. Fair prices, honest work, and friendly service.
               </p>
               <div className="hero-cta">
@@ -195,7 +195,7 @@ function App() {
           <div className="service-features">
             <div className="feature-item">
               <div className="feature-dot"></div>
-              <span>WordPress, Shopify, or Wix issues</span>
+              <span>All major website platforms and custom websites</span>
             </div>
             <div className="feature-item">
               <div className="feature-dot"></div>
@@ -224,24 +224,36 @@ function App() {
         <div className="service-content">
           <h3>Need a New Website?</h3>
           <div className="service-price">$1,800</div>
-          <p className="service-price-detail">Complete website in 2-3 weeks</p>
-          <p>Starting from scratch? I'll build you a professional website that works for your business. It'll look trustworthy, work on all devices, and help you get found online. I'll handle all the technical stuff so you can focus on what you do best.</p>
+          <p className="service-price-detail">Complete website in 2-3 weeks • Domain not included</p>
+          <p>Starting from scratch? I'll build you a professional website that works for your business. I'll listen to what you need and choose the best way to build it for you. All the technical stuff is handled so you can focus on what you do best.</p>
           <div className="service-features">
             <div className="feature-item">
               <div className="feature-dot"></div>
-              <span>Professional design that works on phones</span>
+              <span>I'll choose the best way to build your site</span>
             </div>
             <div className="feature-item">
               <div className="feature-dot"></div>
-              <span>Easy to update yourself</span>
+              <span>Complete setup from domain to launch</span>
             </div>
             <div className="feature-item">
               <div className="feature-dot"></div>
-              <span>Works with your existing tools</span>
+              <span>Professional design optimized for desktop and mobile</span>
             </div>
             <div className="feature-item">
               <div className="feature-dot"></div>
-              <span>I'll teach you how to use it</span>
+              <span>Online store setup (if you need to sell products)</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Google Analytics and SEO optimization</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Contact forms and email integration</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Self-hosting options available at a reduced price for simple sites</span>
             </div>
           </div>
           <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
@@ -275,6 +287,14 @@ function App() {
             </div>
             <div className="feature-item">
               <div className="feature-dot"></div>
+              <span>SEO improvements to get found on Google</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Google Analytics setup and tracking</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
               <span>Keep your existing content</span>
             </div>
           </div>
@@ -293,8 +313,12 @@ function App() {
           <h3>Need Ongoing Support?</h3>
           <div className="service-price">$400<span>/month</span></div>
           <p className="service-price-detail">5 hours of help each month</p>
-          <p>Want someone to help you manage your website? I'll answer your questions, make updates, and help you add new content. Like having a website assistant.</p>
+          <p>Want someone to help you manage your website and get found on Google? I'll answer your questions, make updates, help you add new content, and work on improving your search rankings. Like having a website assistant who also handles your SEO.</p>
           <div className="service-features">
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Monthly SEO improvements to get found on Google</span>
+            </div>
             <div className="feature-item">
               <div className="feature-dot"></div>
               <span>Help you add products or pages</span>
@@ -313,6 +337,40 @@ function App() {
             </div>
           </div>
           <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+        </div>
+      </div>
+      
+      <div className="service-card service-card-purple">
+        <div className="service-card-header">
+          <div className="service-icon-wrapper">
+            <div className="service-icon">🚀</div>
+          </div>
+          <div className="service-badge">Custom</div>
+        </div>
+        <div className="service-content">
+          <h3>Need Something Custom?</h3>
+          <div className="service-price">Quote Based</div>
+          <p className="service-price-detail">Custom web apps, mobile apps, complex integrations</p>
+          <p>Need something more complex? Custom web applications, mobile apps, or integrations? Let's talk about your specific needs and I'll give you a fair quote.</p>
+          <div className="service-features">
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Custom web applications</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Mobile phone apps</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Complex integrations</span>
+            </div>
+            <div className="feature-item">
+              <div className="feature-dot"></div>
+              <span>Tailored solutions for your business</span>
+            </div>
+          </div>
+          <a href="#contact" className="btn btn-primary service-btn">Get Quote</a>
         </div>
       </div>
     </div>
@@ -334,8 +392,8 @@ function App() {
               <p>
                 I start every project by listening to your goals and challenges. Complex problems don't 
                 always need complex solutions - I focus on what actually works and what you can maintain 
-                long-term. You're not just getting a website, you're getting a partner who will teach 
-                you how to manage your site and be here when you need help.
+                long-term. You're not just getting a website, you're getting a partner who will help you 
+                get found on Google and be here when you need help.
               </p>
               <p>
                 No hidden fees, no confusing contracts, no endless revisions. Just honest work at fair 
@@ -371,7 +429,7 @@ function App() {
             <div className="contact-badge">Let's Work Together</div>
             <h2 className="section-title">Ready to Get Started?</h2>
             <p className="contact-description">
-              Have a website that needs fixing? Want something brand new? Just need some help? 
+              Have a website that needs fixing? Want something brand new? Need help getting found on Google? 
               Let's chat! I promise to keep it simple and honest.
             </p>
           </div>
