@@ -38,7 +38,7 @@ function App() {
               </h1>
               <p className="hero-description">
                 Whether your site needs fixing, updating, or you're ready for something new - 
-                I've got you covered. <span className="service-pill">Web development</span> <span className="service-pill">SEO optimization</span> <span className="service-pill">Mobile & desktop design</span> <span className="service-pill">Performance optimization</span>. 
+                I've got you covered. <span className="service-pill">Web development</span> <span className="service-pill">Get Found on Google</span> <span className="service-pill">Mobile & desktop design</span> <span className="service-pill">Performance optimization</span>. 
                 Let's scale the mountain of digital success together. Fair prices, honest work, and friendly service.
               </p>
               <div className="hero-cta">
@@ -70,91 +70,94 @@ function App() {
                     </div>
                   </div>
                   
-                  <div className="performance-visualization">
-                    <div className="chart-title">Website Performance Optimization</div>
-                    <div className="chart-title">Page Loading Speeds</div>
-                    <div className="animated-metrics">
-                      <div className="metric-comparison">
-                        <div className="metric-before">
-                          <div className="metric-label">Before</div>
-                          <div className="metric-value slow">8.2s</div>
-                          <div className="progress-ring slow">
-                            <svg viewBox="0 0 36 36" className="circular-chart">
-                              <path className="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <path className="circle slow" strokeDasharray="20, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                            </svg>
+                  <div className="comprehensive-visualization">
+                    <div className="chart-title">Complete Digital Excellence</div>
+                    <div className="chart-title">Responsive • Fast • Found on Google</div>
+                    <div className="showcase-container">
+                      <div className="showcase-grid">
+                        <div className="showcase-item responsive-showcase">
+                          <div className="showcase-header">
+                            <div className="showcase-icon">📱</div>
+                            <div className="showcase-title">Responsive Design</div>
+                          </div>
+                          <div className="device-stack">
+                            <div className="device-3d desktop-3d">
+                              <div className="device-screen-3d">
+                                <div className="website-preview-3d">
+                                  <div className="preview-header-3d"></div>
+                                  <div className="preview-content-3d">
+                                    <div className="preview-line-3d"></div>
+                                    <div className="preview-line-3d short"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="device-3d mobile-3d">
+                              <div className="device-screen-3d">
+                                <div className="website-preview-3d">
+                                  <div className="preview-header-3d"></div>
+                                  <div className="preview-content-3d">
+                                    <div className="preview-line-3d"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="showcase-stats">
+                            <div className="stat-3d">100%</div>
+                            <div className="stat-label-3d">Responsive</div>
                           </div>
                         </div>
-                        <div className="optimization-arrow">
-                          <div className="arrow-line"></div>
-                          <div className="arrow-head">→</div>
-                          <div className="optimization-text">Optimized</div>
+
+                        <div className="showcase-item performance-showcase">
+                          <div className="showcase-header">
+                            <div className="showcase-icon">⚡</div>
+                            <div className="showcase-title">Lightning Fast</div>
+                          </div>
+                          <div className="speed-visualization">
+                            <div className="loading-bars">
+                              <div className="loading-bar slow-bar">
+                                <div className="bar-fill slow-fill"></div>
+                                <div className="bar-label">8.2s</div>
+                              </div>
+                              <div className="loading-bar fast-bar">
+                                <div className="bar-fill fast-fill"></div>
+                                <div className="bar-label">2.1s</div>
+                              </div>
+                            </div>
+                            <div className="speed-improvement">
+                              <div className="improvement-arrow">↓</div>
+                              <div className="improvement-text">74% Faster</div>
+                            </div>
                         </div>
-                        <div className="metric-after">
-                          <div className="metric-label">After</div>
-                          <div className="metric-value fast">2.1s</div>
-                          <div className="progress-ring fast">
-                            <svg viewBox="0 0 36 36" className="circular-chart">
-                              <path className="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <path className="circle fast" strokeDasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                            </svg>
+                          <div className="showcase-stats">
+                            <div className="stat-3d">2.1s</div>
+                            <div className="stat-label-3d">Load Time</div>
                           </div>
                         </div>
+
+                        <div className="showcase-item seo-showcase">
+                          <div className="showcase-header">
+                            <div className="showcase-icon">🔍</div>
+                            <div className="showcase-title">SEO Optimized</div>
+                          </div>
+                          <div className="search-visualization">
+                            <div className="search-result-3d position-1">
+                              <div className="result-title-3d">Your Business</div>
+                              <div className="result-url-3d">yourbusiness.com</div>
+                              <div className="result-description-3d">Top Results</div>
                       </div>
-                      <div className="improvement-stats">
-                        <div className="stat-item">
-                          <div className="stat-number">74%</div>
-                          <div className="stat-label">Faster</div>
+                            <div className="google-icon">G</div>
                         </div>
-                        <div className="stat-item">
-                          <div className="stat-number">6.1s</div>
-                          <div className="stat-label">Saved</div>
+                          <div className="showcase-stats">
+                            <div className="stat-3d">Google</div>
+                            <div className="stat-label-3d">Ready</div>
                         </div>
-                        <div className="stat-item">
-                          <div className="stat-number">A+</div>
-                          <div className="stat-label">Grade</div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="metrics-row">
-                    <div className="metric-card">
-                      <div className="metric-icon">⚡</div>
-                      <div className="metric-content">
-                        <div className="metric-value">2.1s</div>
-                        <div className="metric-label">Load Time</div>
-                      </div>
-                    </div>
-                    <div className="metric-card">
-                      <div className="metric-icon">🛡️</div>
-                      <div className="metric-content">
-                        <div className="metric-value">A+</div>
-                        <div className="metric-label">Security</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="progress-section">
-                    <div className="progress-item">
-                      <div className="progress-header">
-                        <span>Uptime</span>
-                        <span>99.9%</span>
-                      </div>
-                      <div className="progress-bar">
-                        <div className="progress-fill" style={{width: '99.9%'}}></div>
-                      </div>
-                    </div>
-                    <div className="progress-item">
-                      <div className="progress-header">
-                        <span>Performance</span>
-                        <span>95%</span>
-                      </div>
-                      <div className="progress-bar">
-                        <div className="progress-fill" style={{width: '95%'}}></div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -162,73 +165,73 @@ function App() {
         </div>
       </section>
 
-   {/* Services Section */}
-<section id="services" className="services">
-  <div className="container">
-    <div className="services-header">
-      <div className="services-intro">
-        <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
-        <div className="intro-content">
+      {/* Services Section */}
+      <section id="services" className="services">
+        <div className="container">
+          <div className="services-header">
+            <div className="services-intro">
+              <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
+              <div className="intro-content">
           <p className="services-subtitle">Hi, I'm Ian. I help small businesses get online and sell their stuff. No tech jargon, no surprises - just honest work at fair prices.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div className="services-section-header">
+              </div>
+            </div>
+          </div>
+          
+          <div className="services-section-header">
       <h2 className="services-title">How I Can Help You</h2>
       <p className="services-description">Simple options for getting your business online</p>
-    </div>
-    
-    <div className="services-grid">
-      <div className="service-card service-card-electric-blue">
-        <div className="service-card-header">
-          <div className="service-icon-wrapper">
-            <div className="service-icon">🛠️</div>
           </div>
+          
+          <div className="services-grid">
+            <div className="service-card service-card-electric-blue">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">🛠️</div>
+                </div>
           <div className="service-badge">Quick Help</div>
-        </div>
-        <div className="service-content">
+              </div>
+              <div className="service-content">
           <h3>Something's Not Working?</h3>
-          <div className="service-price">$300</div>
+                <div className="service-price">$300</div>
           <p className="service-price-detail">I'll fix it in 2-3 days</p>
           <p>Your website is acting up? I'll figure out what's wrong and fix it. No mystery, no surprises - just a working website again.</p>
-          <div className="service-features">
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>All major website platforms and custom websites</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Mobile phone problems</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Slow loading pages</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Broken links, forms, or images</span>
-            </div>
-          </div>
+                  </div>
+                </div>
           <a href="#contact" className="btn btn-primary service-btn">Get Help</a>
-        </div>
-      </div>
-      
-      <div className="service-card service-card-neon-green">
-        <div className="service-card-header">
-          <div className="service-icon-wrapper">
+              </div>
+            </div>
+            
+            <div className="service-card service-card-neon-green">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
             <div className="service-icon">🏗️</div>
-          </div>
+                </div>
           <div className="service-badge">New Website</div>
-        </div>
-        <div className="service-content">
+              </div>
+              <div className="service-content">
           <h3>Need a New Website?</h3>
           <div className="service-price">$1,800</div>
           <p className="service-price-detail">Complete website in 2-3 weeks • Domain not included</p>
           <p>Starting from scratch? I'll build you a professional website that works for your business. I'll listen to what you need and choose the best way to build it for you. All the technical stuff is handled so you can focus on what you do best.</p>
-          <div className="service-features">
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>I'll choose the best way to build your site</span>
             </div>
             <div className="feature-item">
@@ -238,144 +241,144 @@ function App() {
             <div className="feature-item">
               <div className="feature-dot"></div>
               <span>Professional design optimized for desktop and mobile</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+              <span>Get found on Google with SEO optimization</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Online store setup (if you need to sell products)</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
-              <span>Google Analytics and SEO optimization</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Contact forms and email integration</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Self-hosting options available at a reduced price for simple sites</span>
+                  </div>
+                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+              </div>
             </div>
-          </div>
-          <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
-        </div>
-      </div>
-      
-      <div className="service-card service-card-hot-pink">
-        <div className="service-card-header">
-          <div className="service-icon-wrapper">
+            
+            <div className="service-card service-card-hot-pink">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
             <div className="service-icon">✨</div>
-          </div>
+                </div>
           <div className="service-badge">Make It Better</div>
-        </div>
-        <div className="service-content">
+              </div>
+              <div className="service-content">
           <h3>Update Your Current Site?</h3>
           <div className="service-price">$900</div>
           <p className="service-price-detail">Better design in 1-2 weeks</p>
           <p>Your website works but looks outdated? I'll give it a fresh look and make it work better. Keep what works, improve what doesn't.</p>
-          <div className="service-features">
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Modern, professional look</span>
             </div>
             <div className="feature-item">
               <div className="feature-dot"></div>
               <span>Faster loading pages</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Better mobile experience</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>SEO improvements to get found on Google</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Google Analytics setup and tracking</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Keep your existing content</span>
+                  </div>
+                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+              </div>
             </div>
-          </div>
-          <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
-        </div>
-      </div>
-      
+            
       <div className="service-card service-card-electric-yellow">
-        <div className="service-card-header">
-          <div className="service-icon-wrapper">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
             <div className="service-icon">🤝</div>
-          </div>
+                </div>
           <div className="service-badge">Ongoing Help</div>
-        </div>
-        <div className="service-content">
+              </div>
+              <div className="service-content">
           <h3>Need Ongoing Support?</h3>
           <div className="service-price">$400<span>/month</span></div>
           <p className="service-price-detail">5 hours of help each month</p>
           <p>Want someone to help you manage your website and get found on Google? I'll answer your questions, make updates, help you add new content, and work on improving your search rankings. Like having a website assistant who also handles your SEO.</p>
-          <div className="service-features">
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Monthly SEO improvements to get found on Google</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Help you add products or pages</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Answer your "how do I..." questions</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Make small changes and tweaks</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Monthly check-ins and advice</span>
+                  </div>
+                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+              </div>
             </div>
-          </div>
-          <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
-        </div>
-      </div>
-      
+            
       <div className="service-card service-card-purple">
-        <div className="service-card-header">
-          <div className="service-icon-wrapper">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
             <div className="service-icon">🚀</div>
-          </div>
-          <div className="service-badge">Custom</div>
-        </div>
-        <div className="service-content">
+                </div>
+                <div className="service-badge">Custom</div>
+              </div>
+              <div className="service-content">
           <h3>Need Something Custom?</h3>
           <div className="service-price">Quote Based</div>
           <p className="service-price-detail">Custom web apps, mobile apps, complex integrations</p>
           <p>Need something more complex? Custom web applications, mobile apps, or integrations? Let's talk about your specific needs and I'll give you a fair quote.</p>
-          <div className="service-features">
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Custom web applications</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Mobile phone apps</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Complex integrations</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
               <span>Tailored solutions for your business</span>
+                  </div>
+                </div>
+          <a href="#contact" className="btn btn-primary service-btn">Get Quote</a>
+              </div>
             </div>
           </div>
-          <a href="#contact" className="btn btn-primary service-btn">Get Quote</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
       {/* About Section */}
