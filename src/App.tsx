@@ -263,48 +263,6 @@ function App() {
               </div>
             </div>
             
-            <div className="service-card service-card-hot-pink">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-            <div className="service-icon">✨</div>
-                </div>
-          <div className="service-badge">Make It Better</div>
-              </div>
-              <div className="service-content">
-          <h3>Update Your Current Site?</h3>
-          <div className="service-price">$900</div>
-          <p className="service-price-detail">Better design in 1-2 weeks</p>
-          <p>Your website works but looks outdated? I'll give it a fresh look and make it work better. Keep what works, improve what doesn't.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Modern, professional look</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
-              <span>Faster loading pages</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Better mobile experience</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>SEO improvements to get found on Google</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Google Analytics setup and tracking</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Keep your existing content</span>
-                  </div>
-                </div>
-                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
-              </div>
-            </div>
-            
       <div className="service-card service-card-electric-yellow">
               <div className="service-card-header">
                 <div className="service-icon-wrapper">
@@ -343,37 +301,38 @@ function App() {
               </div>
             </div>
             
-      <div className="service-card service-card-purple">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-            <div className="service-icon">🚀</div>
-                </div>
-                <div className="service-badge">Custom</div>
-              </div>
+      <div className="service-card service-card-purple service-card-horizontal">
               <div className="service-content">
-          <h3>Need Something Custom?</h3>
-          <div className="service-price">Quote Based</div>
-          <p className="service-price-detail">Custom web apps, mobile apps, complex integrations</p>
-          <p>Need something more complex? Custom web applications, mobile apps, or integrations? Let's talk about your specific needs and I'll give you a fair quote.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Custom web applications</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Mobile phone apps</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Complex integrations</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Tailored solutions for your business</span>
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+              <div className="service-icon">🚀</div>
                   </div>
                 </div>
-          <a href="#contact" className="btn btn-primary service-btn">Get Quote</a>
+            <h3>Need Something Custom?</h3>
+            <div className="service-price">Quote Based</div>
+            <p className="service-price-detail">Custom web apps, mobile apps, complex integrations</p>
+            <p>Need something more complex? Custom web applications, mobile apps, or integrations? Let's talk about your specific needs and I'll give you a fair quote.</p>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                <span>Custom web applications</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                <span>Mobile phone apps</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                <span>Complex integrations</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                <span>Tailored solutions for your business</span>
+                    </div>
+                  </div>
+              </div>
+              <div className="service-cta">
+            <a href="#contact" className="btn btn-primary service-btn">Get Quote</a>
               </div>
             </div>
           </div>
