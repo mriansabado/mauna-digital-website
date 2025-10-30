@@ -3,6 +3,7 @@ import logo from './assets/mauna-logo-transparent.png'
 import mountains from './assets/mauna-only2.png'
 import logoText from './assets/mauna-digital-text.png'
 import profilePhoto from './assets/profile-photo2.png'
+import postachioImage from './assets/postachio-project.png'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           </div>
           <div className="nav-links">
             <a href="#services">Services</a>
+            <a href="#tools">Tools</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </div>
@@ -164,6 +166,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      
 
       {/* Services Section */}
       <section id="services" className="services">
@@ -340,6 +344,35 @@ function App() {
       </section>
 
 
+      {/* About Section */}
+      {/* Tools Section */}
+      <section id="tools" className="tools">
+        <div className="container">
+          <h2 className="section-title">Tools to Help Your Business</h2>
+          <div className="tools-grid">
+            <div className="tool-card">
+              <div className="tool-media">
+                <img src={postachioImage} alt="Postachio App preview" className="tool-image" />
+              </div>
+              <div className="tool-content">
+                <div className="tool-badge">New</div>
+                <h3 className="tool-title">Postachio</h3>
+                <p className="tool-subtitle">AI-powered, SEO-optimized social posts</p>
+                <p className="tool-description">Create engaging social media content that ranks. Postachio helps you generate posts with strong keywords, clear structure, and consistent tone—saving you time while improving discoverability.</p>
+                <div className="tool-tags">
+                  <span className="tool-tag">AI</span>
+                  <span className="tool-tag">SEO</span>
+                  <span className="tool-tag">Content</span>
+                </div>
+                <div className="tool-cta">
+                  <a href="https://postachio.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Visit Postachio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* About Section */}
       <section id="about" className="about">
         <div className="container">
