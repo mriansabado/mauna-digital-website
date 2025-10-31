@@ -2552,34 +2552,253 @@ section {
 
 /* Tools Section */
 .tools {
-  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #e6fffb 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #1e3a8a 50%, #312e81 75%, #4c1d95 100%);
   position: relative;
   overflow: hidden;
+  padding: 5rem 0;
+  animation: toolsSectionFadeIn 0.8s ease-out, toolsBackgroundShift 15s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+.tools::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><circle cx="45" cy="28" r="0.8" fill="%23ffffff" opacity="0.9"/><circle cx="128" cy="67" r="1.2" fill="%23ffffff" opacity="0.7"/><circle cx="287" cy="42" r="0.5" fill="%23ffffff" opacity="0.8"/><circle cx="356" cy="89" r="1.5" fill="%23e0e7ff" opacity="0.6"/><circle cx="78" cy="134" r="0.6" fill="%23ffffff" opacity="0.85"/><circle cx="234" cy="156" r="1" fill="%23ffffff" opacity="0.75"/><circle cx="312" cy="198" r="0.7" fill="%23ffffff" opacity="0.7"/><circle cx="123" cy="234" r="1.3" fill="%23c7d2fe" opacity="0.65"/><circle cx="267" cy="267" r="0.8" fill="%23ffffff" opacity="0.8"/><circle cx="89" cy="289" r="0.5" fill="%23ffffff" opacity="0.75"/><circle cx="345" cy="312" r="1.1" fill="%23ffffff" opacity="0.7"/><circle cx="156" cy="345" r="0.9" fill="%23a5b4fc" opacity="0.7"/><circle cx="298" cy="378" r="0.6" fill="%23ffffff" opacity="0.8"/><circle cx="23" cy="156" r="1.4" fill="%23ffffff" opacity="0.65"/><circle cx="378" cy="234" r="0.7" fill="%23ffffff" opacity="0.75"/><circle cx="45" cy="201" r="0.5" fill="%23ffffff" opacity="0.85"/><circle cx="201" cy="45" r="1.2" fill="%23818cf8" opacity="0.6"/><circle cx="334" cy="156" r="0.9" fill="%23ffffff" opacity="0.7"/><circle cx="112" cy="378" r="1" fill="%23ffffff" opacity="0.75"/><circle cx="256" cy="312" r="0.6" fill="%23ffffff" opacity="0.8"/><circle cx="67" cy="312" r="1.3" fill="%23667eea" opacity="0.55"/><circle cx="189" cy="178" r="0.8" fill="%23ffffff" opacity="0.7"/><circle cx="145" cy="89" r="0.5" fill="%23ffffff" opacity="0.8"/><circle cx="323" cy="89" r="1.1" fill="%23ffffff" opacity="0.7"/><circle cx="234" cy="223" r="0.7" fill="%23ffffff" opacity="0.75"/><circle cx="56" cy="245" r="1.2" fill="%238185f3" opacity="0.6"/><circle cx="278" cy="134" r="0.6" fill="%23ffffff" opacity="0.85"/><circle cx="167" cy="312" r="0.9" fill="%23ffffff" opacity="0.7"/><circle cx="312" cy="267" r="1" fill="%23ffffff" opacity="0.75"/><circle cx="98" cy="178" r="0.5" fill="%23ffffff" opacity="0.8"/></svg>') repeat;
+  background-size: 400px 400px;
+  animation: toolsFloat 20s ease-in-out infinite, toolsPatternRotate 30s linear infinite, toolsStarsTwinkle 4s ease-in-out infinite;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.tools::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse 800px 400px at 20% 20%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 600px 500px at 80% 80%, rgba(56, 178, 172, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 700px 300px at 50% 0%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 500px 600px at 0% 50%, rgba(102, 126, 234, 0.12) 0%, transparent 50%);
+  pointer-events: none;
+  animation: toolsGradientShift 12s ease-in-out infinite alternate, toolsGradientMove 20s ease-in-out infinite;
+}
+
+@keyframes toolsBackgroundShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes toolsGradientShift {
+  0% {
+    opacity: 0.4;
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(10px);
+  }
+}
+
+@keyframes toolsGradientMove {
+  0%, 100% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  33% {
+    transform: translateX(30px) translateY(-20px) scale(1.1);
+  }
+  66% {
+    transform: translateX(-20px) translateY(30px) scale(0.9);
+  }
+}
+
+@keyframes toolsPatternRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes toolsStarsTwinkle {
+  0%, 100% {
+    opacity: 0.6;
+    filter: brightness(1);
+  }
+  25% {
+    opacity: 0.9;
+    filter: brightness(1.5);
+  }
+  50% {
+    opacity: 0.7;
+    filter: brightness(1.2);
+  }
+  75% {
+    opacity: 0.85;
+    filter: brightness(1.3);
+  }
+}
+
+@keyframes toolsSectionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toolsFloat {
+  0%, 100% { 
+    transform: translateY(0px) translateX(0px) scale(1);
+  }
+  25% { 
+    transform: translateY(-20px) translateX(10px) scale(1.05);
+  }
+  50% { 
+    transform: translateY(10px) translateX(-10px) scale(0.95);
+  }
+  75% { 
+    transform: translateY(-15px) translateX(15px) scale(1.02);
+  }
+}
+
+.tools .container {
+  position: relative;
+  z-index: 1;
+}
+
+.tools .section-title {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem 3rem;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+              0 0 0 1px rgba(255, 255, 255, 0.1),
+              0 10px 30px rgba(102, 126, 234, 0.3),
+              0 0 80px rgba(102, 126, 234, 0.2);
+  backdrop-filter: blur(20px);
+  display: block;
+  width: fit-content;
+  max-width: 1100px;
+  margin: 0 auto 4rem auto;
+  animation: toolsTitleFloat 3s ease-in-out infinite, toolsTitleSlideIn 0.8s ease-out 0.2s both;
+  text-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+
+@keyframes toolsTitleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.1),
+                0 10px 30px rgba(102, 126, 234, 0.3),
+                0 0 80px rgba(102, 126, 234, 0.2);
+  }
+  50% {
+    transform: translateY(-25px);
+    box-shadow: 0 35px 90px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.15),
+                0 20px 50px rgba(102, 126, 234, 0.5),
+                0 0 120px rgba(102, 126, 234, 0.4);
+  }
+}
+
+@keyframes toolsTitleSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .tools-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .tool-card {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 2rem;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.98);
   border-radius: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3),
+              0 0 0 1px rgba(255, 255, 255, 0.1),
+              0 10px 30px rgba(102, 126, 234, 0.25);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  animation: toolCardSlideIn 0.8s ease-out 0.4s both;
+  position: relative;
+}
+
+@keyframes toolCardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.tool-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.15), transparent);
+  transition: left 0.8s ease;
+  z-index: 1;
+}
+
+.tool-card:hover::before {
+  left: 100%;
 }
 
 .tool-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.4),
+              0 0 0 1px rgba(255, 255, 255, 0.2),
+              0 20px 50px rgba(102, 126, 234, 0.4),
+              0 0 100px rgba(102, 126, 234, 0.3);
+  border-color: rgba(102, 126, 234, 0.4);
 }
 
 .tool-media {
@@ -2588,6 +2807,23 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.tool-media::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(56, 178, 172, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.tool-card:hover .tool-media::after {
+  opacity: 1;
 }
 
 .tool-image {
@@ -2595,13 +2831,18 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tool-card:hover .tool-image {
+  transform: scale(1.08);
 }
 
 .tool-content {
-  padding: 2rem;
+  padding: 1.75rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 .tool-badge {
@@ -2614,6 +2855,19 @@ section {
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  animation: toolBadgePulse 2s ease-in-out infinite;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+@keyframes toolBadgePulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    transform: scale(1.08);
+  }
 }
 
 .tool-title {
@@ -2621,6 +2875,11 @@ section {
   font-weight: 800;
   color: #1f2937;
   margin: 0.25rem 0 0 0;
+  transition: color 0.3s ease;
+}
+
+.tool-card:hover .tool-title {
+  color: #667eea;
 }
 
 .tool-subtitle {
@@ -2650,6 +2909,15 @@ section {
   border-radius: 999px;
   font-size: 0.8rem;
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tool-tag:hover {
+  background: linear-gradient(135deg, #667eea 0%, #38b2ac 100%);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
 .tool-cta {
