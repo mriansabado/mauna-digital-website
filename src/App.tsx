@@ -37,11 +37,13 @@ function App() {
               <h1 className="hero-title">
                 Need help with your website?
                 <br />
-                <span className="hero-subtitle">I'm here to help.</span>
+                <span className="hero-subtitle">Or maybe a mobile app?</span>
+                <br />
+                <span className="hero-subtitle-highlight">I'm here to help.</span>
               </h1>
               <p className="hero-description">
                 Whether your site needs fixing, updating, or you're ready for something new - 
-                I've got you covered. <span className="service-pill">Web development</span> <span className="service-pill">Get Found on Google</span> <span className="service-pill">Mobile & desktop design</span> <span className="service-pill">Performance optimization</span>. 
+                I've got you covered. <span className="service-pill">Web development</span> <span className="service-pill">Mobile apps</span> <span className="service-pill">Get Found on Google</span> <span className="service-pill">Performance optimization</span>. 
                 Let's scale the mountain of digital success together. Fair prices, honest work, and friendly service.
               </p>
               <div className="hero-cta">
@@ -50,20 +52,6 @@ function App() {
             </div>
             <div className="hero-right">
               <div className="hero-visual">
-                <div className="stats-card">
-                  <div className="stat-item">
-                    <div className="stat-number">7+</div>
-                    <div className="stat-label">Years Experience</div>
-                  </div>
-                  <div className="stat-item">
-                    <div className="stat-number">30+</div>
-                    <div className="stat-label">Websites Managed</div>
-                  </div>
-                  <div className="stat-item">
-                    <div className="stat-number">100%</div>
-                    <div className="stat-label">Honest Approach</div>
-                  </div>
-                </div>
                 <div className="dashboard">
                   <div className="dashboard-header">
                     <div className="dashboard-title">Performance Dashboard</div>
@@ -162,6 +150,65 @@ function App() {
                   </div>
 
                 </div>
+
+                <div className="dashboard mobile-app-dashboard">
+                  <div className="dashboard-header">
+                    <div className="dashboard-title">Mobile App Development</div>
+                    <div className="status-indicator mobile-platform-indicator">
+                      <div className="status-dot"></div>
+                      <span>iOS & Android</span>
+                    </div>
+                  </div>
+                  
+                  <div className="mobile-app-visualization">
+                    <div className="chart-title">React Native • One Codebase</div>
+                    <div className="chart-title">iOS & Android • App Store Ready</div>
+                    <div className="mobile-device-showcase">
+                      <div className="mobile-device-pair">
+                        <div className="mobile-device-ios">
+                          <div className="mobile-device-screen">
+                            <div className="app-preview">
+                              <div className="app-header"></div>
+                              <div className="app-content">
+                                <div className="app-line"></div>
+                                <div className="app-line short"></div>
+                                <div className="app-line"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="device-label">iOS</div>
+                        </div>
+                        <div className="mobile-device-android">
+                          <div className="mobile-device-screen">
+                            <div className="app-preview">
+                              <div className="app-header"></div>
+                              <div className="app-content">
+                                <div className="app-line"></div>
+                                <div className="app-line short"></div>
+                                <div className="app-line"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="device-label">Android</div>
+                        </div>
+                      </div>
+                      <div className="mobile-app-stats">
+                        <div className="mobile-stat">
+                          <div className="stat-value">2</div>
+                          <div className="stat-text">Platforms</div>
+                        </div>
+                        <div className="mobile-stat">
+                          <div className="stat-value">1</div>
+                          <div className="stat-text">Codebase</div>
+                        </div>
+                        <div className="mobile-stat">
+                          <div className="stat-value">100%</div>
+                          <div className="stat-text">Native</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -177,14 +224,14 @@ function App() {
             <div className="services-intro">
               <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
               <div className="intro-content">
-          <p className="services-subtitle">Hi, I'm Ian. I help small businesses get online and sell their stuff. No tech jargon, no surprises - just honest work at fair prices.</p>
+          <p className="services-subtitle">Hi, I'm Ian. I help small businesses get online, build mobile apps, and sell their stuff. No tech jargon, no surprises - just honest work at fair prices.</p>
               </div>
             </div>
           </div>
           
           <div className="services-section-header">
       <h2 className="services-title">How I Can Help You</h2>
-      <p className="services-description">Simple options for getting your business online</p>
+      <p className="services-description">Simple options for websites and mobile apps</p>
           </div>
           
           <div className="services-grid">
@@ -316,24 +363,36 @@ function App() {
               <div className="service-content">
                 <h3>Need a Mobile App?</h3>
                 <div className="service-price">$5,000</div>
-                <p className="service-price-detail">Simple mobile app for iOS and Android • 4-6 weeks</p>
-                <p>Want an app for your business? I'll build you a simple mobile app that works on both iPhone and Android. One app, two platforms, easy to use.</p>
+                <p className="service-price-detail">Complete mobile app for iOS and Android • 4-6 weeks</p>
+                <p>Have you always wanted a mobile app for you or your business, or had an idea you always thought would be a great app? Mobile apps can be intimidating, but they don't have to be. I'll build you a complete mobile app that works on both iPhone and Android. One codebase, two platforms, ready to launch. I'm willing to go the extra mile to make sure you get a great app.</p>
                 <div className="service-features">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Works on iPhone and Android</span>
+                    <span>Up to 5-7 screens with core features</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Simple, easy-to-use design</span>
+                    <span>Works on iPhone and Android (React Native)</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>App Store and Google Play setup</span>
+                    <span>App Store and Google Play setup included</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Basic features and functionality</span>
+                    <span>Custom design tailored to your brand</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>2 rounds of revisions included</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Basic user authentication (login/signup)</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>30 days of post-launch support for bug fixes</span>
                   </div>
                 </div>
                 <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
@@ -350,7 +409,7 @@ function App() {
             <h3>Need Something Custom?</h3>
             <div className="service-price">Quote Based</div>
             <p className="service-price-detail">Complex mobile apps, custom web apps, complex integrations</p>
-            <p>Need something more complex? Bigger mobile apps with lots of features, custom web applications, or complex integrations? Let's talk about your specific needs and I'll give you a fair quote.</p>
+            <p>Need more than a starter app? Mobile apps with advanced features, custom web applications, or complex integrations? Let's talk about your specific needs and I'll give you a fair quote.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -435,13 +494,14 @@ function App() {
               <h2 className="section-title">Why Choose Mauna Digital?</h2>
               <p>
                 With over 7 years of web development experience, I've built everything from simple 
-                business sites to complex applications. I've worked as a software developer managing 
-                30+ websites with hundreds of pages, so I know how to handle projects of any size.
+                business sites to complex applications and mobile apps. I've worked as a software developer managing 
+                30+ websites with hundreds of pages, and I just published my first React Native mobile app, 
+                so I know how to handle projects of any size.
               </p>
               <p>
                 I start every project by listening to your goals and challenges. Complex problems don't 
                 always need complex solutions - I focus on what actually works and what you can maintain 
-                long-term. You're not just getting a website, you're getting a partner who will help you 
+                long-term. You're not just getting a website or app, you're getting a partner who will help you 
                 get found on Google and be here when you need help.
               </p>
               <p>
@@ -478,7 +538,7 @@ function App() {
             <div className="contact-badge">Let's Work Together</div>
             <h2 className="section-title">Ready to Get Started?</h2>
             <p className="contact-description">
-              Have a website that needs fixing? Want something brand new? Need help getting found on Google? 
+              Have a website that needs fixing? Want a new website or mobile app? Need help getting found on Google? 
               Let's chat! I promise to keep it simple and honest.
             </p>
           </div>
@@ -493,7 +553,7 @@ function App() {
               </div>
               <div className="contact-content-main">
                 <h3>Get in Touch</h3>
-                <p className="contact-subtitle">Ready to work together? I'm here to help with your website needs.</p>
+                <p className="contact-subtitle">Ready to work together? I'm here to help with your website and mobile app needs.</p>
                 <div className="contact-details">
                   <div className="contact-item">
                     <div className="contact-item-icon">📧</div>

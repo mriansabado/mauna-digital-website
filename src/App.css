@@ -108,11 +108,10 @@ body {
   padding: 140px 0 60px;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 20%, #0f3460 40%, #533483 60%, #e94560 80%, #f39c12 100%);
   min-height: 100vh;
-  max-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-container {
@@ -125,7 +124,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero-left {
@@ -194,6 +193,10 @@ body {
   font-weight: 800;
 }
 
+.hero-subtitle-highlight {
+  color: #f39c12;
+}
+
 .hero-description {
   font-size: 1.2rem;
   color: #cbd5e0;
@@ -259,12 +262,15 @@ body {
 .hero-right {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero-visual {
   width: 100%;
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .stats-card {
@@ -310,6 +316,12 @@ body {
   position: relative;
   overflow: hidden;
   animation: dashboardSlideIn 0.8s ease-out;
+  margin-bottom: 2rem;
+}
+
+.mobile-app-dashboard {
+  animation: dashboardSlideIn 0.8s ease-out 0.3s both;
+  opacity: 0;
 }
 
 @keyframes dashboardSlideIn {
@@ -354,6 +366,14 @@ body {
   color: #38b2ac;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+.mobile-platform-indicator {
+  color: #f39c12;
+}
+
+.mobile-platform-indicator .status-dot {
+  background: #f39c12;
 }
 
 .status-dot {
@@ -3651,6 +3671,142 @@ section {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Mobile App Visualization Styles */
+.mobile-app-visualization {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-device-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mobile-device-pair {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.mobile-device-ios,
+.mobile-device-android {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  animation: deviceFloat 3s ease-in-out infinite;
+}
+
+.mobile-device-ios {
+  animation-delay: 0s;
+}
+
+.mobile-device-android {
+  animation-delay: 0.5s;
+}
+
+.mobile-device-screen {
+  width: 50px;
+  height: 85px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.mobile-device-android .mobile-device-screen {
+  background: linear-gradient(135deg, #38b2ac 0%, #2c7a7b 100%);
+  box-shadow: 0 8px 25px rgba(56, 178, 172, 0.4);
+}
+
+.app-preview {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.app-header {
+  width: 100%;
+  height: 15%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+  animation: appPulse 2s ease-in-out infinite;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.app-line {
+  width: 100%;
+  height: 20%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1px;
+  animation: appPulse 2s ease-in-out infinite;
+}
+
+.app-line.short {
+  width: 70%;
+}
+
+@keyframes appPulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.device-label {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-app-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.mobile-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stat-value {
+  color: #f39c12;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+}
+
+.stat-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .showcase-grid {
@@ -3670,5 +3826,18 @@ section {
     padding: 80px 0 40px;
     min-height: auto;
     max-height: none;
+  }
+
+  .mobile-device-pair {
+    gap: 1rem;
+  }
+
+  .mobile-device-screen {
+    width: 40px;
+    height: 68px;
+  }
+
+  .mobile-app-stats {
+    gap: 1.5rem;
   }
 }
