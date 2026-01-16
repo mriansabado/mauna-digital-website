@@ -4,6 +4,7 @@ import mountains from './assets/mauna-only2.png'
 import logoText from './assets/mauna-digital-text.png'
 import profilePhoto from './assets/profile-photo2.png'
 import postachioImage from './assets/postachio-project.png'
+import pocketsayLogo from './assets/pocketsay-logo.png'
 
 function App() {
 
@@ -305,6 +306,40 @@ function App() {
               </div>
             </div>
             
+            <div className="service-card service-card-hot-pink">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">📱</div>
+                </div>
+                <div className="service-badge">Mobile App</div>
+              </div>
+              <div className="service-content">
+                <h3>Need a Mobile App?</h3>
+                <div className="service-price">$5,000</div>
+                <p className="service-price-detail">Simple mobile app for iOS and Android • 4-6 weeks</p>
+                <p>Want an app for your business? I'll build you a simple mobile app that works on both iPhone and Android. One app, two platforms, easy to use.</p>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Works on iPhone and Android</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Simple, easy-to-use design</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>App Store and Google Play setup</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Basic features and functionality</span>
+                  </div>
+                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+              </div>
+            </div>
+            
       <div className="service-card service-card-purple service-card-horizontal">
               <div className="service-content">
                 <div className="service-card-header">
@@ -314,16 +349,16 @@ function App() {
                 </div>
             <h3>Need Something Custom?</h3>
             <div className="service-price">Quote Based</div>
-            <p className="service-price-detail">Custom web apps, mobile apps, complex integrations</p>
-            <p>Need something more complex? Custom web applications, mobile apps, or integrations? Let's talk about your specific needs and I'll give you a fair quote.</p>
+            <p className="service-price-detail">Complex mobile apps, custom web apps, complex integrations</p>
+            <p>Need something more complex? Bigger mobile apps with lots of features, custom web applications, or complex integrations? Let's talk about your specific needs and I'll give you a fair quote.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                <span>Custom web applications</span>
+                <span>Complex mobile apps with advanced features</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                <span>Mobile phone apps</span>
+                <span>Custom web applications</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -366,6 +401,25 @@ function App() {
                 </div>
                 <div className="tool-cta">
                   <a href="https://postachio.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Visit Postachio</a>
+                </div>
+              </div>
+            </div>
+            <div className="tool-card">
+              <div className="tool-media">
+                <img src={pocketsayLogo} alt="PocketSay App logo" className="tool-image" />
+              </div>
+              <div className="tool-content">
+                <div className="tool-badge">Mobile App</div>
+                <h3 className="tool-title">PocketSay</h3>
+                <p className="tool-subtitle">Say it BIG when you can't say it loud</p>
+                <p className="tool-description">Display large, customizable text for visual communication across distances. Perfect for when you need to be seen, not heard. Features animated backgrounds, custom colors, multiple fonts, and day/night modes—all completely private and offline.</p>
+                <div className="tool-tags">
+                  <span className="tool-tag">Mobile</span>
+                  <span className="tool-tag">Communication</span>
+                  <span className="tool-tag">Privacy</span>
+                </div>
+                <div className="tool-cta">
+                  <a href="https://pocketsay.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download PocketSay</a>
                 </div>
               </div>
             </div>
@@ -452,7 +506,7 @@ function App() {
                     <div className="contact-item-icon">🌍</div>
                     <div className="contact-item-content">
                       <h4>Location</h4>
-                      <p>Available Worldwide</p>
+                      <p>United States</p>
                     </div>
                   </div>
                   <div className="contact-item">
