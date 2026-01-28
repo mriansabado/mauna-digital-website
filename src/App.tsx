@@ -6,6 +6,10 @@ import profilePhoto from './assets/profile-photo2.png'
 import postachioImage from './assets/postachio-project.png'
 import pocketsayLogo from './assets/pocketsay-logo.png'
 import sandiegoImage from './assets/sandiego.jpg'
+import sandiegoBay from './assets/sandiego-bay.jpg'
+import sandiegoBeach from './assets/sandiego-beach.jpg'
+import sandiegoNorthpark from './assets/sandiego-northpark.jpg'
+import sandiegoSunset from './assets/sandiego-sunset.jpg'
 
 function App() {
 
@@ -264,7 +268,8 @@ function App() {
       </section>
 
       {/* How This Works Section */}
-      <section className="how-it-works">
+      <section className="how-it-works" style={{ backgroundImage: `url(${sandiegoSunset})` }}>
+        <div className="section-overlay"></div>
         <div className="container">
           <h2 className="section-title">How This Works</h2>
           <p className="section-subtitle">No mystery, no runaround. Just a simple process</p>
@@ -294,7 +299,8 @@ function App() {
       </section>
 
       {/* Why Choose Mauna Digital Section */}
-      <section className="why-choose">
+      <section className="why-choose" style={{ backgroundImage: `url(${sandiegoNorthpark})` }}>
+        <div className="section-overlay section-overlay-light"></div>
         <div className="container">
           <h2 className="section-title">Why Choose Mauna Digital?</h2>
           <div className="why-choose-content">
@@ -321,7 +327,8 @@ function App() {
       </section>
 
       {/* Tools Section */}
-      <section id="tools" className="tools">
+      <section id="tools" className="tools" style={{ backgroundImage: `url(${sandiegoBay})` }}>
+        <div className="section-overlay"></div>
         <div className="container">
           <h2 className="section-title">Tools I've Built</h2>
           <p className="tools-subtitle">Side projects that showcase what I can do</p>
@@ -369,7 +376,8 @@ function App() {
       </section>
       
       {/* About Section */}
-      <section id="about" className="about">
+      <section id="about" className="about" style={{ backgroundImage: `url(${sandiegoBeach})` }}>
+        <div className="section-overlay"></div>
         <div className="container">
           <div className="about-content">
             <div className="about-text">
