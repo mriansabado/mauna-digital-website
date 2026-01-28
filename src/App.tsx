@@ -5,6 +5,7 @@ import logoText from './assets/mauna-digital-text.png'
 import profilePhoto from './assets/profile-photo2.png'
 import postachioImage from './assets/postachio-project.png'
 import pocketsayLogo from './assets/pocketsay-logo.png'
+import sandiegoImage from './assets/sandiego.jpg'
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" style={{ backgroundImage: `url(${sandiegoImage})` }}>
+        <div className="hero-overlay"></div>
         <div className="hero-container">
           <div className="hero-content">
             <div className="hero-left">
@@ -45,7 +47,7 @@ function App() {
                 <span className="service-pill">Website fixes</span> <span className="service-pill">Mobile apps</span> <span className="service-pill">Local SEO</span> <span className="service-pill">Speed optimization</span>
               </p>
               <p className="hero-location">
-                📍 Based in San Diego • Local Meetups or Remote, Whatever Works Best
+                📍 Based in San Diego • Meeting Local Clients In Person (Remote Projects Welcome Too)
               </p>
               <div className="hero-cta">
                 <a href="#contact" className="btn btn-primary">Get Started</a>
@@ -64,7 +66,7 @@ function App() {
             <div className="services-intro">
               <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
               <div className="intro-content">
-          <p className="services-subtitle">Hi, I'm Ian. Whether your website is slow, your forms are broken, or you're scared to touch anything on your site, I can help. No jargon, no disappearing after the invoice. Just honest work at fair prices.</p>
+          <p className="services-subtitle">Hi, I'm Ian. I come from a family of small business owners, so I know how frustrating tech problems can be when you're just trying to run your business. Whether your website is slow, your forms are broken, or you're scared to touch anything on your site, I can help. No confusing jargon, no judgment for asking questions. Just honest work from someone who is happy to help.</p>
               </div>
             </div>
           </div>
@@ -84,13 +86,13 @@ function App() {
               </div>
               <div className="service-content">
           <h3>"My Website is Painfully Slow"</h3>
-                <div className="service-price">$300-$800</div>
+                <div className="service-price">$400-$1,000</div>
           <p className="service-price-detail">2-3 days turnaround</p>
-          <p>Your site takes forever to load. Customers leave. Google penalizes you. I'll diagnose what's slowing you down and fix it: image compression, caching, hosting issues, bloated plugins.</p>
+          <p>Your site takes forever to load. Customers leave. Google penalizes you. I'll figure out what's slowing you down and fix it: image compression, caching, hosting issues, bloated plugins.</p>
                 <div className="service-features">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Speed optimization (get load times under 3 seconds)</span>
+              <span>Make it faster (get load times under 3 seconds)</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
@@ -118,7 +120,7 @@ function App() {
               </div>
               <div className="service-content">
           <h3>"My Nephew Built This in 2018..."</h3>
-          <div className="service-price">$1,500-$2,500</div>
+          <div className="service-price">$2,500-$4,000</div>
           <p className="service-price-detail">2-3 weeks • You'll actually be able to update it yourself</p>
           <p>Custom site you can't update? WordPress with 47 plugins? Scared to touch anything? I'll rebuild it with something you can actually manage, and train you how to update your own hours, add photos, and change text without calling me.</p>
                 <div className="service-features">
@@ -156,8 +158,8 @@ function App() {
               </div>
               <div className="service-content">
           <h3>"Nobody Can Find Me on Google"</h3>
-          <div className="service-price">$400<span>/month</span></div>
-          <p className="service-price-detail">Ongoing SEO + 5 hours of help each month</p>
+          <div className="service-price">$750<span>/month</span></div>
+          <p className="service-price-detail">Starting at $750/month | Ongoing SEO + 5 hours of help each month</p>
           <p>Customers search for what you do and you don't show up. Your Google Business Profile is a mess (or doesn't exist). I'll fix your local SEO, keep your site updated, and be there when you need help.</p>
                 <div className="service-features">
                   <div className="feature-item">
@@ -194,7 +196,7 @@ function App() {
               </div>
               <div className="service-content">
                 <h3>"I Have an App Idea..."</h3>
-                <div className="service-price">Let's Talk</div>
+                <div className="service-price">Starting at $12,000</div>
                 <p className="service-price-detail">4-6 weeks • Works on iPhone and Android</p>
                 <p>Got an idea for a mobile app? I build them using React Native, so one codebase works on both iPhone and Android. Pricing depends on complexity, so let's chat about what you're thinking.</p>
                 <div className="service-features">
@@ -231,7 +233,7 @@ function App() {
                   </div>
                 </div>
             <h3>"I'm Stuck with My Shopify/Wix Site"</h3>
-            <div className="service-price">$400-$800</div>
+            <div className="service-price">$600-$1,200</div>
             <p className="service-price-detail">Fixes + training so you're never stuck again</p>
             <p>Products uploaded wrong? Shipping broken? Can't figure out how to edit sections? I'll clean up your store, fix what's broken, and walk you through how to manage it yourself. Optional monthly support available.</p>
                   <div className="service-features">
@@ -249,7 +251,7 @@ function App() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                <span>Monthly help available ($400/month) if you want ongoing support</span>
+                <span>Monthly help available if you want ongoing support</span>
                     </div>
                   </div>
               </div>
@@ -270,7 +272,7 @@ function App() {
             <div className="process-step">
               <div className="process-number">1</div>
               <h3>Free Website Check</h3>
-              <p>Send me your URL. I'll spend 15 minutes finding what's broken and what could be better.</p>
+              <p>Send me your URL. I'll spend 15 minutes looking at it and tell you what's working, what's broken, and what you should fix first. No charge, no pressure - just honest feedback.</p>
             </div>
             <div className="process-step">
               <div className="process-number">2</div>
@@ -286,6 +288,33 @@ function App() {
               <div className="process-number">4</div>
               <h3>You're Back in Business</h3>
               <p>Your site works. Your forms work. You can update things yourself. Problem solved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Mauna Digital Section */}
+      <section className="why-choose">
+        <div className="container">
+          <h2 className="section-title">Why Choose Mauna Digital?</h2>
+          <div className="why-choose-content">
+            <div className="why-choose-problem">
+              <h3>I'm Not Your Typical Developer</h3>
+              <p>Most tech people talk over your head and make you feel bad for asking questions. I'm not that guy. Here's what I do differently:</p>
+              <ul className="frustration-list">
+                <li>I explain what was wrong and how I fixed it</li>
+                <li>I answer every question without judgment</li>
+                <li>I stick around after the project is done</li>
+                <li>I only recommend what you actually need</li>
+              </ul>
+            </div>
+            <div className="why-choose-solution">
+              <h3>What Working Together Looks Like:</h3>
+              <ul className="solution-list">
+                <li><strong>San Diego clients:</strong> We grab coffee, look at your site together, and I walk you through everything</li>
+                <li><strong>Remote clients:</strong> Video calls with screen sharing - it feels like I'm right there with you</li>
+                <li><strong>Everyone:</strong> You get my cell number, not a support ticket system</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -346,28 +375,16 @@ function App() {
             <div className="about-text">
               <h2 className="section-title">Hey, I'm Ian 👋</h2>
               <p>
-                I'm based in San Diego and I help small businesses fix their tech problems. Your website is slow, 
-                broken, or built by your nephew in 2018? I've seen it all and I can help.
+                I come from a family of small business owners - my parents, aunts, uncles - so I grew up watching how hard it is to find tech help that doesn't make you feel stupid or charge you an arm and a leg. That's why I do things differently.
               </p>
               <p>
-                I come from a family of small business owners, so I know firsthand how hard it is to find reliable 
-                tech help that doesn't cost a fortune or leave you more confused than when you started. I genuinely 
-                want to see your business succeed, not just finish a project and disappear.
+                I spent 7+ years as a software developer managing 30+ high-traffic websites for a company in the Bay Area. I've seen every WordPress disaster, every "why isn't this working?" situation, every frustrated business owner who just wants their site to do what it's supposed to do.
               </p>
               <p>
-                I spent 7+ years as a software developer managing 30+ high-traffic websites. I've seen every 
-                WordPress disaster, every Shopify confusion, every "why isn't my contact form working?" situation. 
-                Now I'm using that experience to help small businesses get their tech working right.
+                I also build mobile apps (PocketSay is live on the App Store with a 4.8★ rating), but here's the truth: most small businesses don't need a fancy app. They just need their website to work and their forms to actually send emails.
               </p>
               <p>
-                I also build mobile apps (PocketSay is live on the App Store), but honestly, most businesses 
-                just need their website to work properly first.
-              </p>
-              <p>
-                No agency overhead. No confusing contracts. Just honest work at fair prices. Let's fix your tech headaches.
-              </p>
-              <p>
-                If you're in San Diego and want to meet in person, I'm happy to grab coffee and talk through your project. If remote works better for you, that's great too. First consultation is free either way.
+                I'm based in San Diego and love meeting clients in person, but I also work with folks across the US. No agency overhead. No confusing contracts. Just honest work from someone who gets it.
               </p>
               <div className="about-stats">
                 <div className="stat">
@@ -410,7 +427,7 @@ function App() {
               </div>
               <div className="contact-content-main">
                 <h3>Get in Touch</h3>
-                <p className="contact-subtitle">Send me your URL. I'll spend 15 minutes finding what's broken and what could be better. Free for San Diego businesses.</p>
+                <p className="contact-subtitle">Send me your website and I'll give you honest feedback on what's working and what needs attention. No charge, no pressure.</p>
                 <div className="contact-details">
                   <div className="contact-item">
                     <div className="contact-item-icon">📧</div>
@@ -423,8 +440,9 @@ function App() {
                     <div className="contact-item-icon">📍</div>
                     <div className="contact-item-content">
                       <h4>Based in San Diego</h4>
-                      <p>Happy to meet locally in Gaslamp, Little Italy, Pacific Beach, North Park, La Jolla & beyond</p>
-                      <p className="contact-item-note">💻 Remote projects welcome too</p>
+                      <p>Meeting local clients in person: Gaslamp, Little Italy, Pacific Beach, North Park, La Jolla & beyond</p>
+                      <p className="contact-item-note">💻 Also working with clients across the US</p>
+                      <p className="contact-item-note">☕ First meeting free (in-person or video call)</p>
                     </div>
                   </div>
                   <div className="contact-item">

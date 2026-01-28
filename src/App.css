@@ -106,7 +106,9 @@ body {
 /* Hero Section */
 .hero {
   padding: 140px 0 60px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 20%, #0f3460 40%, #533483 60%, #e94560 80%, #f39c12 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -114,10 +116,22 @@ body {
   overflow: visible;
 }
 
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.75) 0%, rgba(15, 52, 96, 0.7) 50%, rgba(83, 52, 131, 0.75) 100%);
+  z-index: 0;
+}
+
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -188,12 +202,14 @@ body {
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
-  color: #38b2ac;
+  color: #f39c12;
   font-size: 3.5rem;
   font-weight: 800;
+  text-shadow: 0 2px 10px rgba(243, 156, 18, 0.3);
 }
 
 .hero-subtitle-highlight {
@@ -202,9 +218,10 @@ body {
 
 .hero-description {
   font-size: 1.2rem;
-  color: #cbd5e0;
+  color: #ffffff;
   line-height: 1.6;
   margin: 0;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
 }
 
 .service-pill {
@@ -224,7 +241,8 @@ body {
   vertical-align: baseline;
   position: relative;
   animation: gradientShift 4s ease-in-out infinite;
-  text-shadow: 0 0 15px rgba(243, 156, 18, 0.3);
+  text-shadow: 0 0 15px rgba(243, 156, 18, 0.5);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 @keyframes gradientShift {
@@ -255,9 +273,10 @@ body {
 
 .hero-location {
   font-size: 1rem;
-  color: #a0aec0;
+  color: #ffffff;
   font-weight: 500;
   margin-top: 0.5rem;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 .hero-subtext {
@@ -266,6 +285,15 @@ body {
   font-weight: 400;
   margin-top: 0.5rem;
   font-style: italic;
+}
+
+.hero-family-note {
+  font-size: 1rem;
+  color: #cbd5e0;
+  line-height: 1.7;
+  margin-top: 1rem;
+  max-width: 600px;
+  opacity: 0.9;
 }
 
 .hero-guarantee {
@@ -1145,14 +1173,16 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #38b2ac 100%);
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
   color: white;
-  box-shadow: 0 4px 15px rgba(229, 62, 62, 0.4);
+  box-shadow: 0 4px 20px rgba(243, 156, 18, 0.5), 0 2px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(229, 62, 62, 0.6);
+  box-shadow: 0 8px 30px rgba(243, 156, 18, 0.7), 0 4px 15px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
 }
 
 .btn-secondary {
@@ -1932,6 +1962,115 @@ section {
   margin: 0;
 }
 
+/* Why Choose Mauna Digital Section */
+.why-choose {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e0 100%);
+  padding: 5rem 0;
+  position: relative;
+}
+
+.why-choose .section-title {
+  color: #2d3748;
+  margin-bottom: 3rem;
+}
+
+.why-choose-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.why-choose-problem,
+.why-choose-solution,
+.why-choose-local {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.why-choose-problem h3,
+.why-choose-solution h3,
+.why-choose-local h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.why-choose-problem p,
+.why-choose-local p {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.why-choose-local p:last-child {
+  margin-bottom: 0;
+}
+
+.frustration-list,
+.solution-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.frustration-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.frustration-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #e53e3e;
+  font-weight: bold;
+}
+
+.solution-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.solution-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #38b2ac;
+  font-weight: bold;
+}
+
+.solution-list li strong {
+  color: #2d3748;
+}
+
+@media (max-width: 768px) {
+  .why-choose-problem,
+  .why-choose-solution,
+  .why-choose-local {
+    padding: 1.5rem;
+  }
+  
+  .why-choose-problem h3,
+  .why-choose-solution h3,
+  .why-choose-local h3 {
+    font-size: 1.3rem;
+  }
+}
+
 /* How This Works Section */
 .how-it-works {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
@@ -2179,6 +2318,37 @@ section {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   opacity: 0.9;
+}
+
+.about-why-header {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-why-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-why-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.about-why-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #38b2ac;
+  font-weight: bold;
 }
 
 .about-stats {
