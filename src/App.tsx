@@ -4,7 +4,7 @@ import mountains from './assets/mauna-only2.png'
 import logoText from './assets/mauna-digital-text.png'
 import profilePhoto from './assets/profile-photo2.png'
 import postachioImage from './assets/postachio-project.png'
-import pocketsayLogo from './assets/pocketsay-logo.png'
+import pocketsayApp from './assets/pocketsay-app.png'
 import sandiegoImage from './assets/sandiego.jpg'
 import sandiegoBay from './assets/sandiego-bay.jpg'
 import sandiegoBeach from './assets/sandiego-beach.jpg'
@@ -354,7 +354,7 @@ function App() {
             </div>
             <div className="tool-card">
               <div className="tool-media">
-                <img src={pocketsayLogo} alt="PocketSay App logo" className="tool-image" />
+                <img src={pocketsayApp} alt="PocketSay App screenshot" className="tool-image" />
               </div>
               <div className="tool-content">
                 <div className="tool-badge">Mobile App</div>
