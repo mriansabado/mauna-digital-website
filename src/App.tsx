@@ -4,7 +4,9 @@ import mountains from './assets/mauna-only2.png'
 import logoText from './assets/mauna-digital-text.png'
 import profilePhoto from './assets/profile-photo2.png'
 import postachioImage from './assets/postachio-project.png'
-import pocketsayApp from './assets/pocketsay-app.png'
+import postachioLogo from './assets/postachio-logo1.png'
+import pocketsayScreenshot from './assets/pocketsay-screenshot.png'
+import pocketsayLogo from './assets/pocketsay-logo1.png'
 import sandiegoImage from './assets/sandiego.jpg'
 import sandiegoBay from './assets/sandiego-bay.jpg'
 import sandiegoBeach from './assets/sandiego-beach.jpg'
@@ -339,7 +341,10 @@ function App() {
               </div>
               <div className="tool-content">
                 <div className="tool-badge">New</div>
-                <h3 className="tool-title">Postachio</h3>
+                <h3 className="tool-title">
+                  <img src={postachioLogo} alt="Postachio logo" className="tool-title-logo" />
+                  Postachio
+                </h3>
                 <p className="tool-subtitle">AI-powered, SEO-optimized social posts</p>
                 <p className="tool-description">Create engaging social media content that ranks. Postachio helps you generate posts with strong keywords, clear structure, and consistent tone—saving you time while improving discoverability.</p>
                 <div className="tool-tags">
@@ -354,11 +359,14 @@ function App() {
             </div>
             <div className="tool-card">
               <div className="tool-media">
-                <img src={pocketsayApp} alt="PocketSay App screenshot" className="tool-image" />
+                <img src={pocketsayScreenshot} alt="PocketSay App screenshot" className="tool-image tool-image-pocketsay" />
               </div>
               <div className="tool-content">
                 <div className="tool-badge">Mobile App</div>
-                <h3 className="tool-title">PocketSay</h3>
+                <h3 className="tool-title">
+                  <img src={pocketsayLogo} alt="PocketSay logo" className="tool-title-logo" />
+                  PocketSay
+                </h3>
                 <p className="tool-subtitle">Say it BIG when you can't say it loud</p>
                 <p className="tool-description">Display large, customizable text for visual communication across distances. Perfect for when you need to be seen, not heard. Features animated backgrounds, custom colors, multiple fonts, and day/night modes—all completely private and offline.</p>
                 <div className="tool-tags">
