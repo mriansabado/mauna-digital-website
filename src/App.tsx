@@ -93,7 +93,7 @@ function App() {
           <h3>Get Found & Stay Visible</h3>
           <p className="service-card-tagline">Show up when people search and when they scroll.</p>
           <div className="service-price-block">
-          <div className="service-price">$750<span>/month</span></div>
+          <div className="service-price">$600<span>/month</span></div>
           <p className="service-price-detail">5 hrs included • Month-to-month</p>
           </div>
           <p>I help you get found on Google, Yelp, and Facebook and stay visible on social. I keep your listings and website current with your photos, work on local SEO so you climb in search, create social posts when you send content, and send you a quick monthly report. 5 hrs of help included so you're never on your own.</p>
