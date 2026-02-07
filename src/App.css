@@ -1567,6 +1567,14 @@ section {
   font-weight: 800;
 }
 
+.service-card-tagline {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin: -0.25rem 0 0.5rem 0;
+  line-height: 1.35;
+}
+
 .service-card-electric-yellow p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
@@ -1832,26 +1840,37 @@ section {
   left: 100%;
 }
 
-/* Service Card Pricing Styles */
+/* Service Card Pricing Styles – scannable at a glance */
+.service-price-block {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.service-card-purple .service-price-block {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
 .service-price {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
-  margin: 0.5rem 0;
-  line-height: 1;
+  margin: 0.25rem 0 0.35rem 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .service-price span {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .service-price-detail {
   font-size: 0.9rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  opacity: 0.8;
-  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.95;
+  line-height: 1.4;
 }
 
 .service-btn {

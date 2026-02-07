@@ -48,9 +48,8 @@ function App() {
                 <span className="hero-subtitle">I Fix Them.</span>
               </h1>
               <p className="hero-description">
-                Slow website? Broken contact forms? Can't update your own site? 
-                I help small businesses solve tech headaches without the agency price tag.
-                <span className="service-pill">Website fixes</span> <span className="service-pill">Mobile apps</span> <span className="service-pill">Local SEO</span> <span className="service-pill">Speed optimization</span>
+                Slow website? Can't get found on Google? I help small businesses with their sites and with getting seen online, without the agency price tag.
+                <span className="service-pill">Website fixes</span> <span className="service-pill">SEO & Google</span> <span className="service-pill">Social media</span> <span className="service-pill">Speed optimization</span>
               </p>
               <p className="hero-location">
                 📍 Based in San Diego • Meeting Local Clients In Person (Remote Projects Welcome Too)
@@ -83,37 +82,80 @@ function App() {
           </div>
           
           <div className="services-grid">
-            <div className="service-card service-card-electric-blue">
+      <div className="service-card service-card-electric-yellow">
               <div className="service-card-header">
                 <div className="service-icon-wrapper">
-                  <div className="service-icon">🐌</div>
+            <div className="service-icon">🔍</div>
                 </div>
-          <div className="service-badge">Speed & Fixes</div>
+          <div className="service-badge">SEO + Social Package</div>
               </div>
               <div className="service-content">
-          <h3>"My Website is Painfully Slow"</h3>
-                <div className="service-price">$400-$1,000</div>
-          <p className="service-price-detail">2-3 days turnaround</p>
-          <p>Your site takes forever to load. Customers leave. Google penalizes you. I'll figure out what's slowing you down and fix it: image compression, caching, hosting issues, bloated plugins.</p>
+          <h3>Get Found & Stay Visible</h3>
+          <p className="service-card-tagline">Show up when people search and when they scroll.</p>
+          <div className="service-price-block">
+          <div className="service-price">$750<span>/month</span></div>
+          <p className="service-price-detail">5 hrs included • Month-to-month</p>
+          </div>
+          <p>I help you get found on Google, Yelp, and Facebook and stay visible on social. I keep your listings and website current with your photos, work on local SEO so you climb in search, create social posts when you send content, and send you a quick monthly report. 5 hrs of help included so you're never on your own.</p>
                 <div className="service-features">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Make it faster (get load times under 3 seconds)</span>
+              <span>Google, Yelp & Facebook: optimized with your photos</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Fix broken contact forms, links, and images</span>
+              <span>Website & listings: kept current, SEO-friendly</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Mobile responsiveness fixes</span>
+              <span>Monthly local SEO so you climb in search</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Free diagnostic report included</span>
+              <span>Social posts when you send content; GBP posts for your Google listing</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+              <span>Monthly report on what we did; 5 hrs help for content, updates, questions</span>
                   </div>
                 </div>
-          <a href="#contact" className="btn btn-primary service-btn">Fix My Site</a>
+                <a href="#contact" className="btn btn-primary service-btn">Get Found</a>
+              </div>
+            </div>
+            
+            <div className="service-card service-card-purple">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">🛒</div>
+                </div>
+                <div className="service-badge">Shopify, WordPress & Fixes</div>
+              </div>
+              <div className="service-content">
+                <h3>"I'm Stuck with My Shopify or WordPress Site"</h3>
+                <div className="service-price-block">
+                  <div className="service-price">$500–$1,200</div>
+                  <p className="service-price-detail">One-time • Fixes + training</p>
+                </div>
+                <p>Stuck on Shopify or WordPress? I work with most platforms and raw code. I'll fix what's broken (speed, store, or site) and show you how to run it yourself. Monthly support available if you want it.</p>
+                <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Shopify: store, products, shipping, checkout</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>WordPress: plugins, updates, content</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Speed & fixes: faster load, forms, links</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Training so you can manage it yourself</span>
+                  </div>
+                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Unstuck</a>
               </div>
             </div>
             
@@ -126,17 +168,19 @@ function App() {
               </div>
               <div className="service-content">
           <h3>"My Nephew Built This in 2018..."</h3>
-          <div className="service-price">$2,500-$4,000</div>
-          <p className="service-price-detail">2-3 weeks • You'll actually be able to update it yourself</p>
-          <p>Custom site you can't update? WordPress with 47 plugins? Scared to touch anything? I'll rebuild it with something you can actually manage, and train you how to update your own hours, add photos, and change text without calling me.</p>
+          <div className="service-price-block">
+          <div className="service-price">$2,500–$4,000</div>
+          <p className="service-price-detail">One-time • 2–3 weeks • You can update it yourself</p>
+          </div>
+          <p>Old site you can't update? I'll rebuild it on something you can manage and train you to update it yourself. Modern design, SEO setup, forms and email, the works.</p>
                 <div className="service-features">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Modern, professional design that works on all devices</span>
+              <span>Modern design that works on all devices</span>
             </div>
             <div className="feature-item">
               <div className="feature-dot"></div>
-              <span>Built on a platform you can actually manage (Shopify/Wix/WordPress done right)</span>
+              <span>Shopify or WordPress done right</span>
             </div>
             <div className="feature-item">
               <div className="feature-dot"></div>
@@ -144,52 +188,10 @@ function App() {
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Training session so you're not stuck</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Contact forms, email integration, the works</span>
+              <span>Training so you can run it yourself</span>
                   </div>
                 </div>
                 <a href="#contact" className="btn btn-primary service-btn">Rebuild My Site</a>
-              </div>
-            </div>
-            
-      <div className="service-card service-card-electric-yellow">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-            <div className="service-icon">🔍</div>
-                </div>
-          <div className="service-badge">SEO & Support</div>
-              </div>
-              <div className="service-content">
-          <h3>"Nobody Can Find Me on Google"</h3>
-          <div className="service-price">$750<span>/month</span></div>
-          <p className="service-price-detail">Starting at $750/month | Ongoing SEO + 5 hours of help each month</p>
-          <p>Customers search for what you do and you don't show up. Your Google Business Profile is a mess (or doesn't exist). I'll fix your local SEO, keep your site updated, and be there when you need help.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Google Business Profile setup & optimization</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Monthly SEO improvements to climb rankings</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Help adding products, pages, or content</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Answer your "how do I..." questions</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>You're never stuck. I'm just a message away</span>
-                  </div>
-                </div>
-                <a href="#contact" className="btn btn-primary service-btn">Get Found</a>
               </div>
             </div>
             
@@ -202,10 +204,16 @@ function App() {
               </div>
               <div className="service-content">
                 <h3>"I Have an App Idea..."</h3>
-                <div className="service-price">Starting at $12,000</div>
-                <p className="service-price-detail">4-6 weeks • Works on iPhone and Android</p>
-                <p>Got an idea for a mobile app? I build them using React Native, so one codebase works on both iPhone and Android. Pricing depends on complexity, so let's chat about what you're thinking.</p>
+                <div className="service-price-block">
+                <div className="service-price">Let's talk</div>
+                <p className="service-price-detail">Project-based • iPhone & Android</p>
+                </div>
+                <p>I build focused apps: think events for a conference, a menu or ordering app, or internal tools for your team. One codebase for iPhone and Android. I'm not the right fit for social platforms or apps that need to scale to millions; I'm best for apps that solve a specific problem for your business or audience.</p>
                 <div className="service-features">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Events, menus, internal tools, and focused apps</span>
+                  </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
                     <span>Works on iPhone and Android (React Native)</span>
@@ -220,49 +228,10 @@ function App() {
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>30 days of post-launch support</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
                     <span>Recent work: PocketSay (live on App Store, 4.8★)</span>
                   </div>
                 </div>
-                <a href="#contact" className="btn btn-primary service-btn">Tell Me Your Idea</a>
-              </div>
-            </div>
-            
-      <div className="service-card service-card-purple service-card-horizontal">
-              <div className="service-content">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-              <div className="service-icon">🛒</div>
-                  </div>
-                </div>
-            <h3>"I'm Stuck with My Shopify/Wix Site"</h3>
-            <div className="service-price">$600-$1,200</div>
-            <p className="service-price-detail">Fixes + training so you're never stuck again</p>
-            <p>Products uploaded wrong? Shipping broken? Can't figure out how to edit sections? I'll clean up your store, fix what's broken, and walk you through how to manage it yourself. Optional monthly support available.</p>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                <span>Store cleanup and proper setup</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                <span>Fix products, shipping, and checkout issues</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                <span>Training session so you can manage it yourself</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                <span>Monthly help available if you want ongoing support</span>
-                    </div>
-                  </div>
-              </div>
-              <div className="service-cta">
-            <a href="#contact" className="btn btn-primary service-btn">Get Unstuck</a>
+                <a href="#contact" className="btn btn-primary service-btn">Let's Talk</a>
               </div>
             </div>
           </div>
@@ -274,27 +243,27 @@ function App() {
         <div className="section-overlay"></div>
         <div className="container">
           <h2 className="section-title">How This Works</h2>
-          <p className="section-subtitle">No mystery, no runaround. Just a simple process</p>
+          <p className="section-subtitle">Same simple process whether you need a fix or want to get found</p>
           <div className="process-grid">
             <div className="process-step">
               <div className="process-number">1</div>
-              <h3>Free Website Check</h3>
-              <p>Send me your URL. I'll spend 15 minutes looking at it and tell you what's working, what's broken, and what you should fix first. No charge, no pressure - just honest feedback.</p>
+              <h3>We Talk</h3>
+              <p>Tell me what's broken, what you want to get found for, or both. I'll take a look and give you honest feedback. No charge, no pressure.</p>
             </div>
             <div className="process-step">
               <div className="process-number">2</div>
               <h3>Clear Quote</h3>
-              <p>I tell you exactly what's wrong, what it costs to fix, and how long it takes. No surprises.</p>
+              <p>I tell you what I'll do, what it costs, and how long it takes. No surprises.</p>
             </div>
             <div className="process-step">
               <div className="process-number">3</div>
-              <h3>I Fix It</h3>
-              <p>You approve, I get to work. I send updates as I go. You're never in the dark.</p>
+              <h3>I Get to Work</h3>
+              <p>You approve, I get started. I keep you updated as I go.</p>
             </div>
             <div className="process-step">
               <div className="process-number">4</div>
-              <h3>You're Back in Business</h3>
-              <p>Your site works. Your forms work. You can update things yourself. Problem solved.</p>
+              <h3>You're in Better Shape</h3>
+              <p>Site working when it needed fixing, or you're getting found when you wanted visibility. Either way, you're in good hands.</p>
             </div>
           </div>
         </div>
@@ -313,7 +282,7 @@ function App() {
                 <li>I explain what was wrong and how I fixed it</li>
                 <li>I answer every question without judgment</li>
                 <li>I stick around after the project is done</li>
-                <li>I only recommend what you actually need</li>
+                <li>I only recommend what you need</li>
               </ul>
             </div>
             <div className="why-choose-solution">
@@ -346,7 +315,7 @@ function App() {
                   Postachio
                 </h3>
                 <p className="tool-subtitle">AI-powered, SEO-optimized social posts</p>
-                <p className="tool-description">Create engaging social media content that ranks. Postachio helps you generate posts with strong keywords, clear structure, and consistent tone—saving you time while improving discoverability.</p>
+                <p className="tool-description">Create engaging social media content that ranks. Postachio helps you generate posts with strong keywords, clear structure, and consistent tone, saving you time while improving discoverability.</p>
                 <div className="tool-tags">
                   <span className="tool-tag">AI</span>
                   <span className="tool-tag">SEO</span>
@@ -368,7 +337,7 @@ function App() {
                   PocketSay
                 </h3>
                 <p className="tool-subtitle">Say it BIG when you can't say it loud</p>
-                <p className="tool-description">Display large, customizable text for visual communication across distances. Perfect for when you need to be seen, not heard. Features animated backgrounds, custom colors, multiple fonts, and day/night modes—all completely private and offline.</p>
+                <p className="tool-description">Display large, customizable text for visual communication across distances. Perfect for when you need to be seen, not heard. Features animated backgrounds, custom colors, multiple fonts, and day/night modes. All completely private and offline.</p>
                 <div className="tool-tags">
                   <span className="tool-tag">Mobile</span>
                   <span className="tool-tag">Communication</span>
@@ -397,7 +366,7 @@ function App() {
                 I spent 7+ years as a software developer managing 30+ high-traffic websites for a company in the Bay Area. I've seen every WordPress disaster, every "why isn't this working?" situation, every frustrated business owner who just wants their site to do what it's supposed to do.
               </p>
               <p>
-                I also build mobile apps (PocketSay is live on the App Store with a 4.8★ rating), but here's the truth: most small businesses don't need a fancy app. They just need their website to work and their forms to actually send emails.
+                I also build mobile apps (PocketSay is live on the App Store with a 4.8★ rating), but here's the truth: most small businesses don't need a fancy app. They just need their website to work and their forms to send emails.
               </p>
               <p>
                 I'm based in San Diego and love meeting clients in person, but I also work with folks across the US. No agency overhead. No confusing contracts. Just honest work from someone who gets it.
@@ -443,7 +412,7 @@ function App() {
               </div>
               <div className="contact-content-main">
                 <h3>Get in Touch</h3>
-                <p className="contact-subtitle">Send me your website and I'll give you honest feedback on what's working and what needs attention. No charge, no pressure.</p>
+                <p className="contact-subtitle">Send me your website or tell me what you want to get found for, and I'll give you honest feedback on what's working and what needs attention. No charge, no pressure.</p>
                 <div className="contact-details">
                   <div className="contact-item">
                     <div className="contact-item-icon">📧</div>
