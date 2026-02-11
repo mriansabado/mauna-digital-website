@@ -54,8 +54,9 @@ function App() {
                 <span className="hero-subtitle">I Fix Them.</span>
               </h1>
               <p className="hero-description">
-                Slow website? Can't get found on Google? I help small businesses with their sites and with getting seen online, without the agency price tag.
-                <span className="service-pill">Shopify & WordPress</span> <span className="service-pill">SEO & Google</span> <span className="service-pill">Social media</span> <span className="service-pill">Speed optimization</span>
+                Something broken? Slow website? Can't get found on Google? <br /> I help small businesses with quick fixes, monthly retainers, and getting seen online,  without the agency price tag.
+                <br />
+                <span className="service-pill">Ad Hoc ·</span> <span className="service-pill">Monthly Retainers ·</span> <span className="service-pill">Shopify & WordPress ·</span> <span className="service-pill">SEO & Listings ·</span> <span className="service-pill">Rebuilds</span>
               </p>
               <p className="hero-location">
                 📍 Based in San Diego • Meeting Local Clients In Person (Remote Projects Welcome Too)
