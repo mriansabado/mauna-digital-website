@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import logo from './assets/mauna-logo-transparent.png'
 import mountains from './assets/mauna-only2.png'
@@ -14,6 +15,11 @@ import sandiegoNorthpark from './assets/sandiego-northpark.jpg'
 import sandiegoSunset from './assets/sandiego-sunset.jpg'
 
 function App() {
+  const [expandedCard, setExpandedCard] = useState<string | null>(null)
+
+  const toggleDetails = (id: string) => {
+    setExpandedCard(prev => prev === id ? null : id)
+  }
 
   return (
     <div className="app">
@@ -49,7 +55,7 @@ function App() {
               </h1>
               <p className="hero-description">
                 Slow website? Can't get found on Google? I help small businesses with their sites and with getting seen online, without the agency price tag.
-                <span className="service-pill">Website fixes</span> <span className="service-pill">SEO & Google</span> <span className="service-pill">Social media</span> <span className="service-pill">Speed optimization</span>
+                <span className="service-pill">Shopify & WordPress</span> <span className="service-pill">SEO & Google</span> <span className="service-pill">Social media</span> <span className="service-pill">Speed optimization</span>
               </p>
               <p className="hero-location">
                 📍 Based in San Diego • Meeting Local Clients In Person (Remote Projects Welcome Too)
@@ -71,7 +77,7 @@ function App() {
             <div className="services-intro">
               <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
               <div className="intro-content">
-          <p className="services-subtitle">Hi, I'm Ian. I come from a family of small business owners, so I know how frustrating tech problems can be when you're just trying to run your business. Whether your website is slow, your forms are broken, or you're scared to touch anything on your site, I can help. No confusing jargon, no judgment for asking questions. Just honest work from someone who is happy to help.</p>
+          <p className="services-subtitle">Hi, I'm Ian. I come from a family of small business owners, so I know how frustrating tech problems can be when you're just trying to run your business. Whether you're on Shopify or WordPress, your website is slow, your forms are broken, or you're scared to touch anything on your site, I can help. No confusing jargon, no judgment for asking questions. Just honest work from someone who is happy to help.</p>
               </div>
             </div>
           </div>
@@ -82,53 +88,263 @@ function App() {
           </div>
           
           <div className="services-grid">
-      <div className="service-card service-card-electric-yellow">
+            {/* Ad Hoc - $120/hr */}
+            <div className="service-card service-card-hot-pink">
               <div className="service-card-header">
                 <div className="service-icon-wrapper">
-            <div className="service-icon">🔍</div>
+                  <div className="service-icon">🔧</div>
                 </div>
-          <div className="service-badge">SEO + Social Package</div>
+                <div className="service-badge">Ad Hoc</div>
               </div>
               <div className="service-content">
-          <h3>Get Found & Stay Visible</h3>
-          <p className="service-card-tagline">Show up when people search and when they scroll.</p>
-          <div className="service-price-block">
-          <div className="service-price">$600<span>/month</span></div>
-          <p className="service-price-detail">5 hrs included • Month-to-month</p>
-          </div>
-          <p>I help you get found on Google, Yelp, and Facebook and stay visible on social. I keep your listings and website current with your photos, work on local SEO so you climb in search, create social posts when you send content, and send you a quick monthly report. 5 hrs of help included so you're never on your own.</p>
-                <div className="service-features">
+                <h3>AD HOC</h3>
+                <p className="service-card-tagline">For when you just need something fixed</p>
+                <div className="service-price-block">
+                  <div className="service-price">$120<span>/hr</span></div>
+                  <p className="service-price-detail">No retainer, no minimum</p>
+                </div>
+                <div className="service-features service-features-condensed">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Google, Yelp & Facebook: optimized with your photos</span>
+                    <span>Form broken? Site broken on mobile?</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Website & listings: kept current, SEO-friendly</span>
+                    <span>Quick updates, bug fixes, one-off changes</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-              <span>Monthly local SEO so you climb in search</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Social posts when you send content; GBP posts for your Google listing</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Monthly report on what we did; 5 hrs help for content, updates, questions</span>
+                    <span>I'll estimate before starting — typically 1–3 hrs for most fixes</span>
                   </div>
                 </div>
-                <a href="#contact" className="btn btn-primary service-btn">Get Found</a>
+                <a href="#contact" className="btn btn-primary service-btn">Tell Me What's Broken</a>
+              </div>
+            </div>
+
+            {/* Starter - $400/month */}
+            <div className="service-card service-card-electric-yellow">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">🔍</div>
+                </div>
+                <div className="service-badge">Starter</div>
+              </div>
+              <div className="service-content">
+                <h3>STARTER</h3>
+                <p className="service-card-tagline">For businesses that just need to show up online</p>
+                <div className="service-price-block">
+                  <div className="service-price">$400<span>/month</span></div>
+                  <p className="service-price-detail">4 hrs/month · Overage at $120/hr</p>
+                </div>
+                <div className="service-features service-features-condensed">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Google, Yelp & Apple Maps managed</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Local SEO basics</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Basic site updates</span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  className="btn-see-details"
+                  onClick={() => toggleDetails('starter')}
+                  aria-expanded={expandedCard === 'starter'}
+                >
+                  {expandedCard === 'starter' ? 'Hide Details' : 'See Details'}
+                </button>
+                <div className={`service-details-expand ${expandedCard === 'starter' ? 'service-details-expand-open' : ''}`}>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Google Business Profile setup and ongoing management</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Yelp and Apple Maps listings kept current</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Local SEO basics (meta titles, descriptions, local keywords)</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Site updates (hours, photos, text changes)</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>4 flexible hours for whatever comes up</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>24hr response time</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Monthly summary of what was done</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+                <p className="retainer-footer">Additional hours billed at $120/hr — I'll always ask before going over.</p>
+              </div>
+            </div>
+
+            {/* Essential - $600/month */}
+            <div className="service-card service-card-purple">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">⚙️</div>
+                </div>
+                <div className="service-badge">Essential</div>
+              </div>
+              <div className="service-content">
+                <h3>ESSENTIAL</h3>
+                <p className="service-card-tagline">For businesses that need their site working and current</p>
+                <div className="service-price-block">
+                  <div className="service-price">$600<span>/month</span></div>
+                  <p className="service-price-detail">6 hrs/month · Overage at $120/hr</p>
+                </div>
+                <div className="service-features service-features-condensed">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Everything in Starter</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Ongoing SEO work</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Proactive site updates and new pages</span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  className="btn-see-details"
+                  onClick={() => toggleDetails('essential')}
+                  aria-expanded={expandedCard === 'essential'}
+                >
+                  {expandedCard === 'essential' ? 'Hide Details' : 'See Details'}
+                </button>
+                <div className={`service-details-expand ${expandedCard === 'essential' ? 'service-details-expand-open' : ''}`}>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Everything in Starter</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Ongoing SEO work (content updates, technical fixes, ranking improvements)</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Seasonal updates, promotions, new pages</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Google listing posts and review monitoring</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>More hands-on site work as your business changes</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>6 flexible hours</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+                <p className="retainer-footer">Additional hours billed at $120/hr — I'll always ask before going over.</p>
+              </div>
+            </div>
+
+            {/* Partner - $900/month */}
+            <div className="service-card service-card-neon-green">
+              <div className="service-card-header">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">🤝</div>
+                </div>
+                <div className="service-badge">Partner</div>
+              </div>
+              <div className="service-content">
+                <h3>PARTNER</h3>
+                <p className="service-card-tagline">Your tech person, fully handled</p>
+                <div className="service-price-block">
+                  <div className="service-price">$900<span>/month</span></div>
+                  <p className="service-price-detail">10 hrs/month · Overage at $120/hr</p>
+                </div>
+                <div className="service-features service-features-condensed">
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Everything in Essential</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Monthly SEO report</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Same-day response</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Light design work included</span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  className="btn-see-details"
+                  onClick={() => toggleDetails('partner')}
+                  aria-expanded={expandedCard === 'partner'}
+                >
+                  {expandedCard === 'partner' ? 'Hide Details' : 'See Details'}
+                </button>
+                <div className={`service-details-expand ${expandedCard === 'partner' ? 'service-details-expand-open' : ''}`}>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Everything in Essential</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Priority same-day response</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Light design work (banners, graphics, branding updates)</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Monthly SEO report showing progress</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Quarterly check-in call</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>10 flexible hours</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#contact" className="btn btn-primary service-btn">Let's Talk</a>
+                <p className="retainer-footer">Additional hours billed at $120/hr — I'll always ask before going over.</p>
               </div>
             </div>
             
-            <div className="service-card service-card-purple">
+            <div className="service-card service-card-electric-blue">
               <div className="service-card-header">
                 <div className="service-icon-wrapper">
                   <div className="service-icon">🛒</div>
                 </div>
-                <div className="service-badge">Shopify, WordPress & Fixes</div>
+                <div className="service-badge">Shopify & WordPress</div>
               </div>
               <div className="service-content">
                 <h3>"I'm Stuck with My Shopify or WordPress Site"</h3>
@@ -136,15 +352,19 @@ function App() {
                   <div className="service-price">$500–$1,200</div>
                   <p className="service-price-detail">One-time • Fixes + training</p>
                 </div>
-                <p>Stuck on Shopify or WordPress? I work with most platforms and raw code. I'll fix what's broken (speed, store, or site) and show you how to run it yourself. Monthly support available if you want it.</p>
+                <p>I've done a lot of work in Shopify and WordPress: theme customization, custom sections, plugins, updates, bug fixes, performance. I'm equally comfortable in both, and I work with most major platforms and raw code too. Whatever you're on, I can help. I'll fix what's broken and show you how to run it yourself. Monthly support available as well.</p>
                 <div className="service-features">
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Shopify: store, products, shipping, checkout</span>
+                    <span>Shopify: theme customization, sections, store/checkout fixes</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>WordPress: plugins, updates, content</span>
+                    <span>WordPress: plugins, updates, content, performance</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Most platforms and raw code: not just Shopify & WordPress</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
@@ -167,7 +387,7 @@ function App() {
           <div className="service-badge">Rebuild</div>
               </div>
               <div className="service-content">
-          <h3>"My Nephew Built This in 2018..."</h3>
+          <h3>"My Website is Stuck in the Past. I Need a Fresh Start."</h3>
           <div className="service-price-block">
           <div className="service-price">$2,500–$4,000</div>
           <p className="service-price-detail">One-time • 2–3 weeks • You can update it yourself</p>
@@ -363,7 +583,7 @@ function App() {
                 I come from a family of small business owners - my parents, aunts, uncles - so I grew up watching how hard it is to find tech help that doesn't make you feel stupid or charge you an arm and a leg. That's why I do things differently.
               </p>
               <p>
-                I spent 7+ years as a software developer managing 30+ high-traffic websites for a company in the Bay Area. I've seen every WordPress disaster, every "why isn't this working?" situation, every frustrated business owner who just wants their site to do what it's supposed to do.
+                I spent 7+ years as a software developer managing 30+ high-traffic websites for a company in the Bay Area. I've done a lot of work in Shopify and WordPress, and I work with most major platforms and raw code too: theme customization, custom sections, plugins, updates, bug fixes. I've seen every WordPress disaster, every "why isn't this working?" situation, every frustrated business owner who just wants their site to do what it's supposed to do.
               </p>
               <p>
                 I also build mobile apps (PocketSay is live on the App Store with a 4.8★ rating), but here's the truth: most small businesses don't need a fancy app. They just need their website to work and their forms to send emails.
@@ -412,7 +632,7 @@ function App() {
               </div>
               <div className="contact-content-main">
                 <h3>Get in Touch</h3>
-                <p className="contact-subtitle">Send me your website or tell me what you want to get found for, and I'll give you honest feedback on what's working and what needs attention. No charge, no pressure.</p>
+                <p className="contact-subtitle">Send me your website or tell me what you need — monthly support or a one-off project. I'll give you honest feedback on what's working and what needs attention. No charge, no pressure.</p>
                 <div className="contact-details">
                   <div className="contact-item">
                     <div className="contact-item-icon">📧</div>

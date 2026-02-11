@@ -1882,6 +1882,58 @@ section {
   font-weight: 600;
 }
 
+/* See Details toggle & expandable content */
+.btn-see-details {
+  display: block;
+  width: 100%;
+  margin: 1rem 0 0;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.btn-see-details:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.service-details-expand {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.service-details-expand-open {
+  max-height: 800px;
+  transition: max-height 0.5s ease-in;
+}
+
+.service-details-expand .service-features {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.service-features-condensed .feature-item {
+  margin-bottom: 0.25rem;
+}
+
+.retainer-footer {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
 /* What's NOT Included Styles */
 .service-not-included {
   margin: 1.5rem 0;
@@ -1958,6 +2010,12 @@ section {
 
 .service-card-electric-yellow .not-included-item {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.service-card-electric-yellow .retainer-footer,
+.service-card-purple .retainer-footer,
+.service-card-neon-green .retainer-footer {
+  color: rgba(255, 255, 255, 0.95);
 }
 
 /* Services Section Header */
