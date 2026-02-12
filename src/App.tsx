@@ -54,12 +54,12 @@ function App() {
                 <span className="hero-subtitle">I Fix Them.</span>
               </h1>
               <p className="hero-description">
-                Something broken? Slow website? Can't get found on Google? <br /> I help small businesses with quick fixes, monthly retainers, and getting seen online,  without the agency price tag.
+                Something broken? Slow site? Can't get found on Google? I help small businesses with quick fixes, monthly retainers, site work, SEO, rebuilds, and mobile apps — without the agency price tag.
                 <br />
-                <span className="service-pill">Ad Hoc ·</span> <span className="service-pill">Monthly Retainers ·</span> <span className="service-pill">Shopify & WordPress ·</span> <span className="service-pill">SEO & Listings ·</span> <span className="service-pill">Rebuilds</span>
+                <span className="service-pill">Ad Hoc</span> <span className="service-pill">Retainers</span> <span className="service-pill">Shopify & WordPress</span> <span className="service-pill">SEO & Listings</span> <span className="service-pill">Rebuilds</span> <span className="service-pill">Mobile Apps</span>
               </p>
               <p className="hero-location">
-                📍 Based in San Diego • Meeting Local Clients In Person (Remote Projects Welcome Too)
+                📍 Based in San Diego • Local or Remote, Whatever Works Best for You
               </p>
               <div className="hero-cta">
                 <a href="#contact" className="btn btn-primary">Get Started</a>
@@ -78,7 +78,7 @@ function App() {
             <div className="services-intro">
               <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
               <div className="intro-content">
-          <p className="services-subtitle">Hi, I'm Ian. I come from a family of small business owners, so I know how frustrating tech problems can be when you're just trying to run your business. Whether you're on Shopify or WordPress, your website is slow, your forms are broken, or you're scared to touch anything on your site, I can help. No confusing jargon, no judgment for asking questions. Just honest work from someone who is happy to help.</p>
+          <p className="services-subtitle">Hi, I'm Ian. I come from a family of small business owners, so I know how frustrating tech problems can be when you're just trying to run your business. Whether your website is slow, your forms are broken, or you're scared to touch anything on your site — I can help. No confusing jargon, no judgment for asking questions. Just honest work from someone who is happy to help.</p>
               </div>
             </div>
           </div>
@@ -88,40 +88,53 @@ function App() {
       <p className="services-description">Real solutions for real business headaches</p>
           </div>
           
-          <div className="services-grid">
-            {/* Ad Hoc - $120/hr */}
-            <div className="service-card service-card-hot-pink">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-                  <div className="service-icon">🔧</div>
-                </div>
-                <div className="service-badge">Ad Hoc</div>
-              </div>
-              <div className="service-content">
-                <h3>AD HOC</h3>
-                <p className="service-card-tagline">For when you just need something fixed</p>
-                <div className="service-price-block">
-                  <div className="service-price">$120<span>/hr</span></div>
-                  <p className="service-price-detail">No retainer, no minimum</p>
-                </div>
-                <div className="service-features service-features-condensed">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Form broken? Site broken on mobile?</span>
+          {/* Section 1: A QUICK FIX */}
+          <div className="services-bucket">
+            <h3 className="services-bucket-header">A QUICK FIX</h3>
+            <div className="services-grid services-grid-single">
+              <div className="service-card service-card-hot-pink">
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+                    <div className="service-icon">🔧</div>
                   </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Quick updates, bug fixes, one-off changes</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>I'll estimate before starting — typically 1–3 hrs for most fixes</span>
-                  </div>
+                  <div className="service-badge">A Quick Fix</div>
                 </div>
-                <a href="#contact" className="btn btn-primary service-btn">Tell Me What's Broken</a>
+                <div className="service-content">
+                  <h3>A QUICK FIX</h3>
+                  <p className="service-card-tagline">For when something specific is broken</p>
+                  <div className="service-price-block">
+                    <div className="service-price">$120<span>/hr</span></div>
+                    <p className="service-price-detail">No retainer · Half-hour minimum</p>
+                    <p className="service-payment-note">Full payment upfront</p>
+                  </div>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Form broken? Link not working? Site broken on mobile?</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Quick updates, bug fixes, one-off changes</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>I'll estimate time before starting — most fixes take 1–3 hrs</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>No surprises, you approve before I start</span>
+                    </div>
+                  </div>
+                  <a href="#contact" className="btn btn-primary service-btn">Tell Me What's Broken</a>
+                </div>
               </div>
             </div>
+          </div>
 
+          {/* Section 2: ONGOING HELP */}
+          <div className="services-bucket">
+            <h3 className="services-bucket-header">ONGOING HELP</h3>
+            <div className="services-grid">
             {/* Starter - $400/month */}
             <div className="service-card service-card-electric-yellow">
               <div className="service-card-header">
@@ -136,6 +149,7 @@ function App() {
                 <div className="service-price-block">
                   <div className="service-price">$400<span>/month</span></div>
                   <p className="service-price-detail">4 hrs/month · Overage at $120/hr</p>
+                  <p className="service-payment-note">First month upfront · Auto-billed monthly</p>
                 </div>
                 <div className="service-features service-features-condensed">
                   <div className="feature-item">
@@ -149,6 +163,10 @@ function App() {
                   <div className="feature-item">
                     <div className="feature-dot"></div>
                     <span>Basic site updates</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>24hr response time</span>
                   </div>
                 </div>
                 <button
@@ -210,6 +228,7 @@ function App() {
                 <div className="service-price-block">
                   <div className="service-price">$600<span>/month</span></div>
                   <p className="service-price-detail">6 hrs/month · Overage at $120/hr</p>
+                  <p className="service-payment-note">First month upfront · Auto-billed monthly</p>
                 </div>
                 <div className="service-features service-features-condensed">
                   <div className="feature-item">
@@ -222,7 +241,11 @@ function App() {
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Proactive site updates and new pages</span>
+                    <span>Proactive updates and new pages</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Google listing posts and review monitoring</span>
                   </div>
                 </div>
                 <button
@@ -245,7 +268,7 @@ function App() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Seasonal updates, promotions, new pages</span>
+                      <span>Seasonal updates, promotions, and new pages</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -257,7 +280,7 @@ function App() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>6 flexible hours</span>
+                      <span>6 flexible hours for whatever comes up</span>
                     </div>
                   </div>
                 </div>
@@ -280,6 +303,7 @@ function App() {
                 <div className="service-price-block">
                   <div className="service-price">$900<span>/month</span></div>
                   <p className="service-price-detail">10 hrs/month · Overage at $120/hr</p>
+                  <p className="service-payment-note">First month upfront · Auto-billed monthly</p>
                 </div>
                 <div className="service-features service-features-condensed">
                   <div className="feature-item">
@@ -288,15 +312,15 @@ function App() {
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
-                    <span>Monthly SEO report</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
                     <span>Same-day response</span>
                   </div>
                   <div className="feature-item">
                     <div className="feature-dot"></div>
                     <span>Light design work included</span>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-dot"></div>
+                    <span>Monthly SEO report</span>
                   </div>
                 </div>
                 <button
@@ -331,7 +355,7 @@ function App() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>10 flexible hours</span>
+                      <span>10 flexible hours for whatever comes up</span>
                     </div>
                   </div>
                 </div>
@@ -339,120 +363,150 @@ function App() {
                 <p className="retainer-footer">Additional hours billed at $120/hr — I'll always ask before going over.</p>
               </div>
             </div>
-            
-            <div className="service-card service-card-electric-blue">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-                  <div className="service-icon">🛒</div>
-                </div>
-                <div className="service-badge">Shopify & WordPress</div>
-              </div>
-              <div className="service-content">
-                <h3>"I'm Stuck with My Shopify or WordPress Site"</h3>
-                <div className="service-price-block">
-                  <div className="service-price">$500–$1,200</div>
-                  <p className="service-price-detail">One-time • Fixes + training</p>
-                </div>
-                <p>I've done a lot of work in Shopify and WordPress: theme customization, custom sections, plugins, updates, bug fixes, performance. I'm equally comfortable in both, and I work with most major platforms and raw code too. Whatever you're on, I can help. I'll fix what's broken and show you how to run it yourself. Monthly support available as well.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Shopify: theme customization, sections, store/checkout fixes</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>WordPress: plugins, updates, content, performance</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Most platforms and raw code: not just Shopify & WordPress</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Speed & fixes: faster load, forms, links</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Training so you can manage it yourself</span>
-                  </div>
-                </div>
-                <a href="#contact" className="btn btn-primary service-btn">Get Unstuck</a>
-              </div>
             </div>
-            
-            <div className="service-card service-card-neon-green">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-            <div className="service-icon">🖥️</div>
-                </div>
-          <div className="service-badge">Rebuild</div>
-              </div>
-              <div className="service-content">
-          <h3>"My Website is Stuck in the Past. I Need a Fresh Start."</h3>
-          <div className="service-price-block">
-          <div className="service-price">$2,500–$4,000</div>
-          <p className="service-price-detail">One-time • 2–3 weeks • You can update it yourself</p>
           </div>
-          <p>Old site you can't update? I'll rebuild it on something you can manage and train you to update it yourself. Modern design, SEO setup, forms and email, the works.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Modern design that works on all devices</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
-              <span>Shopify or WordPress done right</span>
-            </div>
-            <div className="feature-item">
-              <div className="feature-dot"></div>
-              <span>SEO setup so Google can find you</span>
+
+          {/* Section 3: A BIGGER PROJECT */}
+          <div className="services-bucket">
+            <h3 className="services-bucket-header">A BIGGER PROJECT</h3>
+            <div className="services-grid">
+              <div className="service-card service-card-electric-blue">
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+                    <div className="service-icon">🛒</div>
                   </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-              <span>Training so you can run it yourself</span>
-                  </div>
+                  <div className="service-badge">Shopify & WordPress</div>
                 </div>
-                <a href="#contact" className="btn btn-primary service-btn">Rebuild My Site</a>
+                <div className="service-content">
+                  <h3>Shopify & WordPress</h3>
+                  <p className="service-card-tagline">Your site needs real work, not just a quick fix</p>
+                  <div className="service-price-block">
+                    <div className="service-price">$500–$1,200</div>
+                    <p className="service-price-detail">One-time · Fixes + training</p>
+                    <p className="service-payment-note">50% upfront · 50% on completion</p>
+                  </div>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Theme customization and layout fixes</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Mobile responsiveness and speed improvements</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Broken forms, links, and checkout issues</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Plugin updates and performance cleanup</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Works on Shopify, WordPress, and most platforms</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Training so you can manage it yourself going forward</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Monthly support available after project is done</span>
+                    </div>
+                  </div>
+                  <a href="#contact" className="btn btn-primary service-btn">Get Unstuck</a>
+                </div>
               </div>
-            </div>
-            
-            <div className="service-card service-card-hot-pink">
-              <div className="service-card-header">
-                <div className="service-icon-wrapper">
-                  <div className="service-icon">📱</div>
+
+              <div className="service-card service-card-neon-green">
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+                    <div className="service-icon">🖥️</div>
+                  </div>
+                  <div className="service-badge">Site Rebuild</div>
                 </div>
-                <div className="service-badge">Mobile App</div>
+                <div className="service-content">
+                  <h3>Site Rebuild</h3>
+                  <p className="service-card-tagline">Your site is stuck in the past and needs a fresh start</p>
+                  <div className="service-price-block">
+                    <div className="service-price">$2,500–$4,000</div>
+                    <p className="service-price-detail">One-time · 2–3 weeks · You can update it yourself</p>
+                    <p className="service-payment-note">50% upfront · 50% on completion</p>
+                  </div>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Modern design that works on all devices</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Built on Shopify or WordPress done right</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>SEO setup so Google can find you</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Contact forms and email set up properly</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Training so you can run it yourself</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>No more calling a developer to change your hours</span>
+                    </div>
+                  </div>
+                  <a href="#contact" className="btn btn-primary service-btn">Rebuild My Site</a>
+                </div>
               </div>
-              <div className="service-content">
-                <h3>"I Have an App Idea..."</h3>
-                <div className="service-price-block">
-                <div className="service-price">Let's talk</div>
-                <p className="service-price-detail">Project-based • iPhone & Android</p>
+
+              <div className="service-card service-card-hot-pink">
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+                    <div className="service-icon">📱</div>
+                  </div>
+                  <div className="service-badge">Mobile App</div>
                 </div>
-                <p>I build focused apps: think events for a conference, a menu or ordering app, or internal tools for your team. One codebase for iPhone and Android. I'm not the right fit for social platforms or apps that need to scale to millions; I'm best for apps that solve a specific problem for your business or audience.</p>
-                <div className="service-features">
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Events, menus, internal tools, and focused apps</span>
+                <div className="service-content">
+                  <h3>Mobile App</h3>
+                  <p className="service-card-tagline">You have a focused app idea for your business</p>
+                  <div className="service-price-block">
+                    <div className="service-price">Starting at $5,000</div>
+                    <p className="service-price-detail">Project-based · iPhone & Android</p>
+                    <p className="service-payment-note">50% upfront · 50% on completion</p>
                   </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Works on iPhone and Android (React Native)</span>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>One codebase, works on iPhone and Android</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Best for focused apps: events, menus, internal tools, ordering</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Not the right fit for social platforms or apps needing millions of users</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>App Store and Google Play setup included</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Custom design tailored to your brand</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Recent work: PocketSay (live on App Store, 4.8★)</span>
+                    </div>
                   </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>App Store and Google Play setup included</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Custom design tailored to your brand</span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-dot"></div>
-                    <span>Recent work: PocketSay (live on App Store, 4.8★)</span>
-                  </div>
+                  <a href="#contact" className="btn btn-primary service-btn">Let's Talk</a>
                 </div>
-                <a href="#contact" className="btn btn-primary service-btn">Let's Talk</a>
               </div>
             </div>
           </div>
@@ -509,7 +563,7 @@ function App() {
             <div className="why-choose-solution">
               <h3>What Working Together Looks Like:</h3>
               <ul className="solution-list">
-                <li><strong>San Diego clients:</strong> We grab coffee, look at your site together, and I walk you through everything</li>
+                <li><strong>San Diego clients:</strong> Happy to meet in person if that works for you — or keep it fully remote, whatever's easier</li>
                 <li><strong>Remote clients:</strong> Video calls with screen sharing - it feels like I'm right there with you</li>
                 <li><strong>Everyone:</strong> You get my cell number, not a support ticket system</li>
               </ul>
@@ -581,7 +635,7 @@ function App() {
             <div className="about-text">
               <h2 className="section-title">Hey, I'm Ian 👋</h2>
               <p>
-                I come from a family of small business owners - my parents, aunts, uncles - so I grew up watching how hard it is to find tech help that doesn't make you feel stupid or charge you an arm and a leg. That's why I do things differently.
+                I come from a family of small business owners - my parents, aunts, uncles - so I grew up watching how hard it is to find tech help that doesn't talk down to you or charge you an arm and a leg. That's why I do things differently.
               </p>
               <p>
                 I spent 7+ years as a software developer managing 30+ high-traffic websites for a company in the Bay Area. I've done a lot of work in Shopify and WordPress, and I work with most major platforms and raw code too: theme customization, custom sections, plugins, updates, bug fixes. I've seen every WordPress disaster, every "why isn't this working?" situation, every frustrated business owner who just wants their site to do what it's supposed to do.
@@ -646,9 +700,9 @@ function App() {
                     <div className="contact-item-icon">📍</div>
                     <div className="contact-item-content">
                       <h4>Based in San Diego</h4>
-                      <p>Meeting local clients in person: Gaslamp, Little Italy, Pacific Beach, North Park, La Jolla & beyond</p>
+                      <p>Local to San Diego — happy to meet in person or work fully remote</p>
                       <p className="contact-item-note">💻 Also working with clients across the US</p>
-                      <p className="contact-item-note">☕ First meeting free (in-person or video call)</p>
+                      <p className="contact-item-note">☕ First consultation free — in person or video call, your choice</p>
                     </div>
                   </div>
                   <div className="contact-item">
@@ -662,7 +716,7 @@ function App() {
                     <div className="contact-item-icon">💰</div>
                     <div className="contact-item-content">
                       <h4>Payment</h4>
-                      <p>Half now, half when done</p>
+                      <p>Upfront for quick fixes · 50/50 for projects · Monthly for retainers</p>
                     </div>
                   </div>
                 </div>
