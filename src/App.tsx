@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import logo from './assets/mauna-logo-transparent.png'
+import heroLogo from './assets/mauna-digital-logo-blue1.png'
 import mountains from './assets/mauna-only2.png'
 import logoText from './assets/mauna-digital-text.png'
 import profilePhoto from './assets/profile-photo2.png'
@@ -46,7 +47,7 @@ function App() {
           <div className="hero-content">
             <div className="hero-left">
               <div className="hero-logo">
-                <img src={logo} alt="Mauna Digital" className="logo-image" />
+                <img src={heroLogo} alt="Mauna Digital" className="logo-image" />
               </div>
               <h1 className="hero-title">
                 Small Business Tech Problems?
@@ -54,7 +55,7 @@ function App() {
                 <span className="hero-subtitle">I Fix Them.</span>
               </h1>
               <p className="hero-description">
-                Something broken? Slow site? Can't get found on Google? I help small businesses with quick fixes, monthly retainers, site work, SEO, rebuilds, and mobile apps — without the agency price tag.
+                Something broken, slow site, or can't get found on Google? I help small businesses with quick fixes, monthly retainers, site work, SEO, rebuilds, and mobile apps — without the agency price tag.
                 <br />
                 <span className="service-pill">Ad Hoc</span> <span className="service-pill">Retainers</span> <span className="service-pill">Shopify & WordPress</span> <span className="service-pill">SEO & Listings</span> <span className="service-pill">Rebuilds</span> <span className="service-pill">Mobile Apps</span>
               </p>
