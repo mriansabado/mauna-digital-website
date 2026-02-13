@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
-import logo from './assets/mauna-logo-transparent.png'
-import heroLogo from './assets/mauna-digital-logo-blue1.png'
-import mountains from './assets/mauna-only2.png'
-import logoText from './assets/mauna-digital-text.png'
+import heroLogo from './assets/new-mauna-logo.png'
+import navLogo from './assets/mauna-only-transparent.png'
+import logoTextLight from './assets/mauna-digital-black.png'
+import logoTextDark from './assets/mauna-digital-white.png'
 import profilePhoto from './assets/profile-photo2.png'
 import postachioImage from './assets/postachio-project.png'
 import postachioLogo from './assets/postachio-logo1.png'
@@ -17,25 +17,43 @@ import sandiegoSunset from './assets/sandiego-sunset.jpg'
 
 function App() {
   const [expandedCard, setExpandedCard] = useState<string | null>(null)
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem('mauna-dark-mode')
+    return saved ? JSON.parse(saved) : false
+  })
+
+  useEffect(() => {
+    localStorage.setItem('mauna-dark-mode', JSON.stringify(isDark))
+    document.documentElement.classList.toggle('dark', isDark)
+  }, [isDark])
 
   const toggleDetails = (id: string) => {
     setExpandedCard(prev => prev === id ? null : id)
   }
 
   return (
-    <div className="app">
+    <div className={`app ${isDark ? 'dark' : ''}`}>
       {/* Navigation */}
       <nav className="nav">
         <div className="nav-container">
           <div className="nav-logo">
-            <img src={mountains} alt="Mauna Digital" className="nav-logo-image" />
-            <img src={logoText} alt="Mauna Digital" className="nav-logo-text" />
+            <img src={navLogo} alt="Mauna Digital" className="nav-logo-image" />
+            <img src={isDark ? logoTextDark : logoTextLight} alt="Mauna Digital" className="nav-logo-text" />
           </div>
           <div className="nav-links">
             <a href="#services">Services</a>
             <a href="#tools">Tools</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+            <button
+              type="button"
+              className="theme-toggle"
+              onClick={() => setIsDark((prev: boolean) => !prev)}
+              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+              title={isDark ? 'Light mode' : 'Dark mode'}
+            >
+              {isDark ? '☀️' : '🌙'}
+            </button>
           </div>
         </div>
       </nav>

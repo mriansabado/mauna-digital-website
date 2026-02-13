@@ -58,7 +58,7 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0;
 }
 
 .nav-logo-image {
@@ -67,12 +67,13 @@ body {
 }
 
 .nav-logo-text {
-  height: 30px;
+  height: 134px;
   width: auto;
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -86,6 +87,24 @@ body {
 
 .nav-links a:hover {
   color: #e53e3e;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
 }
 
 .nav-links a::after {
@@ -3448,7 +3467,7 @@ section {
   }
   
   .nav-logo-text {
-    height: 25px;
+    height: 104px;
   }
   
   .hero-content {
@@ -4297,4 +4316,143 @@ section {
   .mobile-app-stats {
     gap: 1.5rem;
   }
+}
+
+/* ========== Dark Mode Theme ========== */
+html.dark body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+html.dark .nav {
+  background: #1e293b;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .nav-links a {
+  color: #e2e8f0;
+}
+
+html.dark .nav-links a:hover {
+  color: #38b2ac;
+}
+
+html.dark .theme-toggle {
+  color: #e2e8f0;
+}
+
+html.dark .hero-overlay {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.8) 50%, rgba(15, 23, 42, 0.85) 100%);
+}
+
+html.dark .services {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+}
+
+html.dark .services::before {
+  opacity: 0.3;
+}
+
+html.dark .services-subtitle,
+html.dark .services-description,
+html.dark .section-subtitle,
+html.dark .tools-subtitle {
+  color: #94a3b8;
+}
+
+html.dark .services-title,
+html.dark .services-bucket-header,
+html.dark .section-title {
+  color: #f8fafc;
+}
+
+html.dark .why-choose-problem,
+html.dark .why-choose-solution,
+html.dark .why-choose-local {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .why-choose-problem h3,
+html.dark .why-choose-solution h3,
+html.dark .why-choose-problem p,
+html.dark .why-choose-local p,
+html.dark .frustration-list li,
+html.dark .solution-list li {
+  color: #cbd5e1;
+}
+
+html.dark .solution-list li strong {
+  color: #f8fafc;
+}
+
+html.dark .contact {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+html.dark .contact-description {
+  color: #94a3b8;
+}
+
+html.dark .contact-card-gradient,
+html.dark .service-card {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .footer {
+  background: #0f172a;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+html.dark .tool-card {
+  background: rgba(30, 41, 59, 0.95);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .tool-title {
+  color: #f8fafc;
+}
+
+html.dark .tool-subtitle,
+html.dark .tool-description {
+  color: #94a3b8;
+}
+
+html.dark .contact-card {
+  background: #1e293b;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .contact-card-header {
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+html.dark .contact-card-header h3,
+html.dark .form-header h3 {
+  color: #f8fafc;
+}
+
+html.dark .form-header p {
+  color: #94a3b8;
+}
+
+html.dark .form-group label {
+  color: #cbd5e1;
+}
+
+html.dark .form-group input,
+html.dark .form-group select,
+html.dark .form-group textarea {
+  background: #0f172a;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #e2e8f0;
+}
+
+html.dark .form-group input:focus,
+html.dark .form-group select:focus,
+html.dark .form-group textarea:focus {
+  background: #1e293b;
+  border-color: #38b2ac;
 }
