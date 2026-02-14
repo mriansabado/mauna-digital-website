@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      if (localStorage.getItem('mauna-dark-mode') === 'true') {
+      var saved = localStorage.getItem('mauna-dark-mode');
+      if (saved === null || saved === 'true') {
         document.documentElement.classList.add('dark');
       }
     </script>

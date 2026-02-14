@@ -19,7 +19,7 @@ function App() {
   const [expandedCard, setExpandedCard] = useState<string | null>(null)
   const [isDark, setIsDark] = useState(() => {
     const saved = localStorage.getItem('mauna-dark-mode')
-    return saved ? JSON.parse(saved) : false
+    return saved !== null ? JSON.parse(saved) : true
   })
 
   useEffect(() => {
