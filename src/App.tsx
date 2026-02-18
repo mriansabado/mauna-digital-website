@@ -68,9 +68,8 @@ function App() {
                 <img src={heroLogo} alt="Mauna Digital" className="logo-image" />
               </div>
               <h1 className="hero-title">
-                Small Business Tech Problems?
-                <br />
-                <span className="hero-subtitle">I Fix Them.</span>
+                Small business tech,{' '}
+                <span className="hero-subtitle">handled</span>
               </h1>
               <p className="hero-description">
                 Something broken, slow site, or can't get found on Google? I help small businesses with quick fixes, monthly retainers, site work, SEO, rebuilds, and mobile apps — without the agency price tag.
