@@ -684,10 +684,6 @@ function App() {
           <div className="contact-header">
             <div className="contact-badge">Got a Tech Problem?</div>
             <h2 className="section-title">Let's Talk</h2>
-            <p className="contact-description">
-              Tell me what's broken, slow, or frustrating you. I'll take a look and let you know 
-              exactly what it'll take to fix it. No pressure, no confusing quotes.
-            </p>
           </div>
           
           <div className="contact-content">
