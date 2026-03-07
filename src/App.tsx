@@ -594,8 +594,7 @@ function App() {
       <section id="tools" className="tools" style={{ backgroundImage: `url(${sandiegoBay})` }}>
         <div className="section-overlay"></div>
         <div className="container">
-          <h2 className="section-title">Apps I've Built</h2>
-          <p className="tools-subtitle">Apps in the market, live in the app stores</p>
+          <h2 className="section-title">Apps in the market</h2>
           <div className="tools-grid">
             <div className="tool-card">
               <div className="tool-media">
@@ -615,7 +614,7 @@ function App() {
                   <span className="tool-tag">Content</span>
                 </div>
                 <div className="tool-cta">
-                  <a href="https://postachio.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Visit Postachio</a>
+                  <a href="https://postachio.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Try Postachio</a>
                 </div>
               </div>
             </div>
