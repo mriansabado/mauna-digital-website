@@ -42,7 +42,7 @@ function App() {
           </div>
           <div className="nav-links">
             <a href="#services">Services</a>
-            <a href="#tools">Tools</a>
+            <a href="#tools">Apps</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
             <button
@@ -594,8 +594,8 @@ function App() {
       <section id="tools" className="tools" style={{ backgroundImage: `url(${sandiegoBay})` }}>
         <div className="section-overlay"></div>
         <div className="container">
-          <h2 className="section-title">Tools I've Built</h2>
-          <p className="tools-subtitle">Side projects that showcase what I can do</p>
+          <h2 className="section-title">Apps I've Built</h2>
+          <p className="tools-subtitle">Apps in the market, live in the app stores</p>
           <div className="tools-grid">
             <div className="tool-card">
               <div className="tool-media">
