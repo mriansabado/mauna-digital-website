@@ -636,7 +636,7 @@ function App() {
                   <span className="tool-tag">Privacy</span>
                 </div>
                 <div className="tool-cta">
-                  <a href="https://pocketsay.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download PocketSay</a>
+                  <a href="https://apps.apple.com/us/app/pocketsay/id6756633082" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download PocketSay</a>
                 </div>
               </div>
             </div>
