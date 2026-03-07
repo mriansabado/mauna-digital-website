@@ -653,29 +653,25 @@ function App() {
             <div className="about-text">
               <h2 className="section-title">Hey, I'm Ian 👋</h2>
               <p>
-                I come from a family of small business owners - my parents, aunts, uncles - so I grew up watching how hard it is to find tech help that doesn't talk down to you or charge you an arm and a leg. That's why I do things differently.
+                I'm a developer who helps small businesses with their websites and digital presence. I come from a family of small business owners, and I understand how hard it is to find tech help for the many digital demands of today.
               </p>
               <p>
-                I spent 7+ years as a software developer managing 30+ high-traffic websites for a company in the Bay Area. I've done a lot of work in Shopify and WordPress, and I work with most major platforms and raw code too: theme customization, custom sections, plugins, updates, bug fixes. I've seen every WordPress disaster, every "why isn't this working?" situation, every frustrated business owner who just wants their site to do what it's supposed to do.
+                I spent years managing websites in the Bay Area. I've worked with most major web platforms and I can jump into most anything and figure it out. What I care about most is being the tech person you can count on. Clear language, patient answers, someone in your corner.
               </p>
               <p>
-                I also build mobile apps (PocketSay is live on the App Store with a 4.8★ rating), but here's the truth: most small businesses don't need a fancy app. They just need their website to work and their forms to send emails.
+                I build mobile and web apps. If you've got an idea for an internal tool for your team or a customer-facing app, and there's a solution we can find together, we can discuss that plan.
               </p>
               <p>
-                I'm based in San Diego and love meeting clients in person, but I also work with folks across the US. No agency overhead. No confusing contracts. Just honest work from someone who gets it.
+                I'm based in San Diego and love meeting clients in person, but I work with businesses across the US. No agency overhead. No confusing contracts. Just straightforward help from someone who gets it.
               </p>
               <div className="about-stats">
                 <div className="stat">
-                  <h3>7+</h3>
-                  <p>Years Dev Experience</p>
-                </div>
-                <div className="stat">
-                  <h3>30+</h3>
-                  <p>Websites Managed</p>
-                </div>
-                <div className="stat">
                   <h3>📍</h3>
-                  <p>San Diego Based</p>
+                  <p>San Diego based</p>
+                </div>
+                <div className="stat">
+                  <h3>💻</h3>
+                  <p>Remote available</p>
                 </div>
               </div>
             </div>
