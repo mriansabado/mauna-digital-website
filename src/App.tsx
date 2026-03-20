@@ -105,48 +105,66 @@ function App() {
       <h2 className="services-title">Common Problems I Fix</h2>
       <p className="services-description">Real solutions for real business headaches</p>
           </div>
+
+          <div className="free-audit-callout">
+            <h3>Not sure where to start?</h3>
+            <p>
+              Not sure what your site needs? I&apos;ll take a look for free and tell you exactly what I find — no charge, no pressure. Just send me your URL.
+            </p>
+            <a href="#contact" className="btn btn-primary">Get Your Free Site Audit</a>
+          </div>
           
-          {/* Section 1: A QUICK FIX */}
+          {/* Section 1: AD-HOC WORK */}
           <div className="services-bucket">
-            <h3 className="services-bucket-header">A QUICK FIX</h3>
+            <h3 className="services-bucket-header">GET SOMETHING DONE</h3>
             <div className="services-grid services-grid-single">
               <div className="service-card service-card-hot-pink">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
                     <div className="service-icon">🔧</div>
                   </div>
-                  <div className="service-badge">A Quick Fix</div>
+                  <div className="service-badge">Ad-hoc Work</div>
                 </div>
                 <div className="service-content">
-                  <h3>A QUICK FIX</h3>
-                  <p className="service-card-tagline">For when something specific is broken</p>
+                  <h3>Get Something Done</h3>
+                  <p className="service-card-tagline">One thing broken or a whole list — no retainer, no commitment</p>
                   <div className="service-price-block">
-                    <div className="service-price">$120<span>/hr</span></div>
-                    <p className="service-price-detail">No retainer · Half-hour minimum</p>
-                    <p className="service-payment-note">Full payment upfront</p>
+                    <div className="service-price">From $120<span>/hr</span></div>
+                    <p className="service-price-detail">From $120/hr or flat-quoted for bigger jobs</p>
+                    <p className="service-payment-note">Half-hour minimum · Most small fixes run $60–$360</p>
                   </div>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Form broken? Link not working? Site broken on mobile?</span>
+                      <span>Small jobs are billed hourly at $120/hr with a half-hour minimum</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Quick updates, bug fixes, one-off changes</span>
+                      <span>Bigger jobs get scoped upfront with a flat quote before anything starts</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>I'll estimate time before starting — most fixes take 1–3 hrs</span>
+                      <span>Works on Shopify, WordPress, Wix, and most platforms</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
                       <span>No surprises, you approve before I start</span>
                     </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Training included so you can manage things yourself going forward</span>
+                    </div>
                   </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Tell Me What's Broken</a>
+                  <a href="#contact" className="btn btn-primary service-btn">Tell Me What You Need Done</a>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="services-bridge-callout">
+            <p>
+              If you&apos;re finding yourself calling me every month anyway, a retainer usually works out cheaper — and you get SEO, Google listing management, and proactive updates included on top of the hours. Four hours of ad-hoc work at my hourly rate already runs $480. The Starter retainer is $400/month and comes with more.
+            </p>
           </div>
 
           {/* Section 2: ONGOING HELP */}
@@ -163,7 +181,7 @@ function App() {
               </div>
               <div className="service-content">
                 <h3>STARTER</h3>
-                <p className="service-card-tagline">For businesses that just need to show up online</p>
+                <p className="service-card-tagline">Covers your listings, local SEO basics, and site updates — plus 4 hrs of whatever you need.</p>
                 <div className="service-price-block">
                   <div className="service-price">$400<span>/month</span></div>
                   <p className="service-price-detail">4 hrs/month · Overage at $120/hr</p>
@@ -242,7 +260,7 @@ function App() {
               </div>
               <div className="service-content">
                 <h3>ESSENTIAL</h3>
-                <p className="service-card-tagline">For businesses that need their site working and current</p>
+                <p className="service-card-tagline">Everything in Starter, plus ongoing SEO work and proactive site improvements — this is the tier where your site starts working for you.</p>
                 <div className="service-price-block">
                   <div className="service-price">$600<span>/month</span></div>
                   <p className="service-price-detail">6 hrs/month · Overage at $120/hr</p>
@@ -317,7 +335,7 @@ function App() {
               </div>
               <div className="service-content">
                 <h3>PARTNER</h3>
-                <p className="service-card-tagline">Your tech person, fully handled</p>
+                <p className="service-card-tagline">Fully handled. Same-day response, light design work, monthly SEO reports, and 10 hrs of direct access. The closest thing to having a tech person on your team.</p>
                 <div className="service-price-block">
                   <div className="service-price">$900<span>/month</span></div>
                   <p className="service-price-detail">10 hrs/month · Overage at $120/hr</p>
@@ -384,59 +402,10 @@ function App() {
             </div>
           </div>
 
-          {/* Section 3: A BIGGER PROJECT */}
+          {/* Section 3: BIGGER PROJECTS */}
           <div className="services-bucket">
-            <h3 className="services-bucket-header">A BIGGER PROJECT</h3>
-            <div className="services-grid">
-              <div className="service-card service-card-electric-blue">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-                    <div className="service-icon">🛒</div>
-                  </div>
-                  <div className="service-badge">Shopify & WordPress</div>
-                </div>
-                <div className="service-content">
-                  <h3>Shopify & WordPress</h3>
-                  <p className="service-card-tagline">Your site needs real work, not just a quick fix</p>
-                  <div className="service-price-block">
-                    <div className="service-price">$500–$1,200</div>
-                    <p className="service-price-detail">One-time · Fixes + training</p>
-                    <p className="service-payment-note">50% upfront · 50% on completion</p>
-                  </div>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Theme customization and layout fixes</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Mobile responsiveness and speed improvements</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Broken forms, links, and checkout issues</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Plugin updates and performance cleanup</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Works on Shopify, WordPress, and most platforms</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Training so you can manage it yourself going forward</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Monthly support available after project is done</span>
-                    </div>
-                  </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Get Unstuck</a>
-                </div>
-              </div>
-
+            <h3 className="services-bucket-header">Bigger Projects</h3>
+            <div className="services-grid services-grid-two-up">
               <div className="service-card service-card-neon-green">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
@@ -450,6 +419,7 @@ function App() {
                   <div className="service-price-block">
                     <div className="service-price">$2,500–$4,000</div>
                     <p className="service-price-detail">One-time · 2–3 weeks · You can update it yourself</p>
+                    <p className="service-agency-anchor">Agencies charge $8,000–20,000+ for a comparable build</p>
                     <p className="service-payment-note">50% upfront · 50% on completion</p>
                   </div>
                   <div className="service-features">
@@ -495,6 +465,7 @@ function App() {
                   <div className="service-price-block">
                     <div className="service-price">Starting at $5,000</div>
                     <p className="service-price-detail">Project-based · iPhone & Android</p>
+                    <p className="service-agency-anchor">Agencies quote $25,000–100,000+ for custom apps</p>
                     <p className="service-payment-note">50% upfront · 50% on completion</p>
                   </div>
                   <div className="service-features">
@@ -571,6 +542,7 @@ function App() {
             <div className="why-choose-problem">
               <h3>I'm Not Your Typical Developer</h3>
               <p>Most tech people talk over your head and make you feel bad for asking questions. I'm not that guy. Here's what I do differently:</p>
+              <p>No agency overhead means no inflated quotes. You&apos;re working directly with one developer who does the work and stands behind it — which is why my prices are a fraction of what an agency would charge.</p>
               <ul className="frustration-list">
                 <li>I explain what was wrong and how I fixed it</li>
                 <li>I answer every question without judgment</li>
