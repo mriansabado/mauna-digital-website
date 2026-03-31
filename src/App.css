@@ -1336,7 +1336,87 @@ section {
 
 .services-grid-two-up {
   grid-template-columns: repeat(2, 1fr);
-  max-width: 860px;
+  max-width: 1120px;
+  align-items: start;
+}
+
+.services-grid-two-up .service-card {
+  padding: 2rem 1.6rem;
+  height: auto;
+}
+
+.services-grid-two-up .service-btn {
+  margin-top: 1rem;
+}
+
+.services-grid-rebuild-three {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin-bottom: 0;
+}
+
+.services-grid-mobile-app-below {
+  margin-top: 2rem;
+  padding-top: 0;
+}
+
+.rebuild-tiers-intro {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: #4a5568;
+  position: relative;
+  z-index: 1;
+}
+
+.service-adhoc-examples {
+  margin-bottom: 1rem;
+  padding: 0.85rem 0 0.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.service-adhoc-examples-lead {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.service-adhoc-examples-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+}
+
+.service-adhoc-examples-list li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.service-adhoc-examples-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.service-adhoc-examples-reassurance {
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -2058,6 +2138,24 @@ section {
   line-height: 1.65;
   color: #334155;
   text-align: center;
+}
+
+.ongoing-help-blurb {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(45, 55, 72, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.ongoing-help-blurb p {
+  margin: 0 0 1rem;
+  color: #475569;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 /* What's NOT Included Styles */
@@ -3545,6 +3643,13 @@ section {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
+
+  .services-grid.services-grid-rebuild-three {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4503,12 +4608,25 @@ html.dark .retainer-trust-bridge {
   color: #cbd5e1;
 }
 
+html.dark .rebuild-tiers-intro {
+  color: #94a3b8;
+}
+
 html.dark .services-bridge-callout {
   background: rgba(15, 23, 42, 0.62);
   border-color: rgba(148, 163, 184, 0.28);
 }
 
 html.dark .services-bridge-callout p {
+  color: #cbd5e1;
+}
+
+html.dark .ongoing-help-blurb {
+  background: rgba(15, 23, 42, 0.62);
+  border-color: rgba(148, 163, 184, 0.28);
+}
+
+html.dark .ongoing-help-blurb p {
   color: #cbd5e1;
 }
 
