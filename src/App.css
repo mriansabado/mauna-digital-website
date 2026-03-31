@@ -1350,8 +1350,9 @@ section {
 }
 
 .services-grid-rebuild-three {
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 1200px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1120px;
+  align-items: start;
   margin-bottom: 0;
 }
 

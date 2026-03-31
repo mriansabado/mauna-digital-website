@@ -69,7 +69,7 @@ function App() {
               <p className="hero-description">
                 If something&apos;s broken, your site feels stuck, or Google isn&apos;t sending people your way, I can help. I&apos;ll tell you what&apos;s going on in plain English, fix what needs fixing, and keep it straightforward from start to finish.
                 <br />
-                <span className="service-pill">Ad Hoc</span> <span className="service-pill">Retainers</span> <span className="service-pill">Shopify & WordPress</span> <span className="service-pill">SEO & Listings</span> <span className="service-pill">Rebuilds</span> <span className="service-pill">Mobile Apps</span>
+                <span className="service-pill">Ad Hoc</span> <span className="service-pill">Ongoing Help</span> <span className="service-pill">Shopify & WordPress</span> <span className="service-pill">SEO & Listings</span> <span className="service-pill">Rebuilds</span> <span className="service-pill">Mobile Apps</span>
               </p>
               <p className="hero-location">
                 📍 Based in San Diego • Local or Remote, Whatever Works Best for You
@@ -91,7 +91,7 @@ function App() {
             <div className="services-intro">
               <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
               <div className="intro-content">
-          <p className="services-subtitle">Hey, I&apos;m Ian. I grew up around small business owners, so I know tech stuff usually lands on your plate at the worst possible time. If your site is acting weird, your forms are broken, or you&apos;re nervous to touch anything, you&apos;re in the right place. I&apos;ll walk you through it and keep it simple.</p>
+          <p className="services-subtitle">Hey, I&apos;m Ian. I grew up around small business owners, so I know tech stuff usually lands on your plate at the worst possible time. If your site is acting weird, your forms are broken, or you&apos;re nervous to touch anything, you&apos;re in the right place. I&apos;ll handle it and keep it simple.</p>
               </div>
             </div>
           </div>
@@ -111,7 +111,6 @@ function App() {
           
           {/* Section 1: AD-HOC WORK */}
           <div className="services-bucket">
-            <h3 className="services-bucket-header">GET SOMETHING DONE + SEO</h3>
             <div className="services-grid services-grid-two-up">
               <div className="service-card service-card-hot-pink">
                 <div className="service-card-header">
@@ -122,47 +121,34 @@ function App() {
                 </div>
                 <div className="service-content">
                   <h3>Get Something Done</h3>
-                  <p className="service-card-tagline">One thing broken or a whole list — no commitment, just get it handled</p>
+                  <p className="service-card-tagline">Got a weird website problem or a short list of fixes? Send it over. I&apos;ll handle it.</p>
                   <div className="service-price-block">
-                    <div className="service-price">From $120<span>/hr</span></div>
-                    <p className="service-price-detail">Hourly for smaller fixes, flat quote for bigger jobs</p>
-                    <p className="service-payment-note">Half-hour minimum · Most small fixes run $120–$240</p>
+                    <p className="service-price-detail">Most fixes are quoted same-day — just tell me what&apos;s going on.</p>
+                    <p className="service-payment-note">Small jobs quoted on the spot. Bigger jobs get a flat quote before anything starts.</p>
                   </div>
                   <div className="service-adhoc-examples">
-                    <p className="service-adhoc-examples-lead">
-                      Most small fixes take 1–2 hours — usually done the same day:
-                    </p>
                     <ul className="service-adhoc-examples-list">
-                      <li>Broken contact form → ~1 hr</li>
-                      <li>Site not loading right on mobile → ~1–2 hrs</li>
-                      <li>Slow loading pages → ~1–2 hrs</li>
-                      <li>Broken checkout or payment issue → ~1–2 hrs</li>
-                      <li>Broken links or images → ~1 hr</li>
+                      <li>Contact form not working</li>
+                      <li>Mobile layout looking wild</li>
+                      <li>Slow loading pages</li>
+                      <li>Checkout or payment acting up</li>
+                      <li>Broken links or missing images</li>
                     </ul>
                     <p className="service-adhoc-examples-reassurance">
-                      Before I start anything, I&apos;ll tell you exactly what I think it&apos;ll take. If it looks like it&apos;s going to run over, I ask first — no surprises.
+                      I&apos;ll tell you what I think it&apos;ll take before I start. Clear and simple.
                     </p>
                   </div>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Small jobs are billed hourly at $120/hr with a half-hour minimum</span>
+                      <span>Works on Shopify, WordPress, Wix, custom code, and most platforms</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Bigger jobs get scoped upfront with a flat quote before anything starts</span>
+                      <span>I&apos;ll tell you what I think it&apos;ll take before I start</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Works on Shopify, WordPress, Wix, and most platforms</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>No surprises, you approve before I start</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Training included so you can manage things yourself going forward</span>
                     </div>
                   </div>
                   <a href="#contact" className="btn btn-primary service-btn">Tell Me What You Need Done</a>
@@ -177,34 +163,39 @@ function App() {
                 </div>
                 <div className="service-content">
                   <h3>SEO for Local Business</h3>
-                  <p className="service-card-tagline">If people can&apos;t find you on Google, they can&apos;t hire you. That&apos;s really what this is about.</p>
+                  <p className="service-card-tagline">This is the standard SEO foundation most local businesses need. I handle it for you so you don&apos;t have to.</p>
                   <div className="service-price-block">
-                    <div className="service-price">One-off SEO Checklist: $500</div>
-                    <p className="service-price-detail">One-time cleanup using my full local SEO checklist</p>
+                    <div className="service-price">One-off SEO Checklist: $399</div>
+                    <p className="service-price-detail">One-time setup and cleanup of the core local SEO basics</p>
                     <p className="service-payment-note">One-time · Full payment upfront</p>
                   </div>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>I focus on the local SEO basics that actually move the needle: Google Business Profile, listings, speed, and on-page cleanup</span>
+                      <span>Google Business Profile fully cleaned up and optimized</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Local SEO matters right now — nearby searches are high-intent and often turn into real calls within a day</span>
+                      <span>Business listings cleaned up so your info matches across Yelp, Apple Maps, and Bing Places</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>You&apos;ll get my comprehensive local SEO checklist so you know exactly what&apos;s done and what&apos;s next</span>
+                      <span>Website SEO basics fixed on key pages (titles, descriptions, and headings)</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>No mystery work: I explain what I&apos;m fixing in plain English and why it matters for your business</span>
+                      <span>Behind-the-scenes business info code added so Google clearly understands your services and location</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>If you want ongoing help after the one-off cleanup, I can keep it moving month to month</span>
+                      <span>Google tracking tools set up so you can see what&apos;s working</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>You get a clear checklist of everything I handled, in plain English</span>
                     </div>
                   </div>
+                  <p className="service-agency-anchor">This is standard SEO work every local business should have in place. Agencies charge $800–2,000+ for it.</p>
                   <a href="#contact" className="btn btn-primary service-btn">Get My Local SEO Game Plan</a>
                 </div>
               </div>
@@ -223,24 +214,24 @@ function App() {
                   <div className="service-icon-wrapper">
                     <div className="service-icon">🖥️</div>
                   </div>
-                  <div className="service-badge">Starter Site</div>
+                  <div className="service-badge">Simple Site</div>
                 </div>
                 <div className="service-content">
-                  <h3>Starter Site</h3>
-                  <p className="service-card-tagline">You need a clean, professional site. Nothing wild, just solid and done right.</p>
+                  <h3>Simple Site</h3>
+                  <p className="service-card-tagline">A clean, professional site that works on every device and makes a good first impression. Nothing overcomplicated — just solid work, done right.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$1,200–$1,500</div>
+                    <div className="service-price">$1,200</div>
                     <p className="service-price-detail">One-time · You can update it yourself</p>
-                    <p className="service-payment-note">50% upfront · 50% on completion</p>
+                    <p className="service-payment-note">Full payment upfront · Work starts once payment clears</p>
                   </div>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>4–5 pages (Home, About, Services, Contact)</span>
+                      <span>5 pages (Home, About, Services, Contact, plus one more of your choice)</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Clean modern design that works on all devices</span>
+                      <span>Mobile-friendly design that doesn&apos;t look like a template</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -252,10 +243,15 @@ function App() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Training so you can update it yourself</span>
+                      <span>Training so you can update it yourself without calling me every time</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>30 days of post-launch support included — questions welcome</span>
                     </div>
                   </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Talk About a Starter Site</a>
+                  <p className="service-payment-note">Need more pages or something special? I&apos;ll quote that separately before anything starts — no surprises.</p>
+                  <a href="#contact" className="btn btn-primary service-btn">Talk About a Simple Site</a>
                 </div>
               </div>
 
@@ -264,62 +260,20 @@ function App() {
                   <div className="service-icon-wrapper">
                     <div className="service-icon">🖥️</div>
                   </div>
-                  <div className="service-badge">Business Site</div>
+                  <div className="service-badge">Custom Build</div>
                 </div>
                 <div className="service-content">
-                  <h3>Business Site</h3>
-                  <p className="service-card-tagline">A stronger site with room to grow as your business grows.</p>
+                  <h3>Custom Build</h3>
+                  <p className="service-card-tagline">More pages, more functionality, or something that needs a custom touch. Shopify stores, complex WordPress builds, e-commerce — if it&apos;s more involved, we scope it together before anything starts.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$2,000–$2,500</div>
-                    <p className="service-price-detail">One-time · You can update it yourself</p>
-                    <p className="service-payment-note">50% upfront · 50% on completion</p>
-                  </div>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Everything in Starter Site</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Blog or news section</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Google Analytics and Search Console setup</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Third-party integrations (booking, menus, reviews)</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Full SEO setup and page optimization</span>
-                    </div>
-                  </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Talk About a Business Site</a>
-                </div>
-              </div>
-
-              <div className="service-card service-card-neon-green">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-                    <div className="service-icon">🖥️</div>
-                  </div>
-                  <div className="service-badge">Full Build</div>
-                </div>
-                <div className="service-content">
-                  <h3>Full Build</h3>
-                  <p className="service-card-tagline">Custom design and more complex builds, handled the right way.</p>
-                  <div className="service-price-block">
-                    <div className="service-price">$2,500–$4,000</div>
+                    <div className="service-price">Starting at $2,500</div>
                     <p className="service-price-detail">One-time · You can run it yourself</p>
-                    <p className="service-agency-anchor">Agencies charge $8,000–20,000+ for a comparable build</p>
-                    <p className="service-payment-note">50% upfront · 50% on completion</p>
+                    <p className="service-payment-note">Full payment upfront · Work starts once payment clears</p>
                   </div>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Everything in Business Site</span>
+                      <span>Everything in the Simple Site</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -337,12 +291,9 @@ function App() {
                       <div className="feature-dot"></div>
                       <span>Full training so you can run it yourself</span>
                     </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>No more calling a developer to change your hours</span>
-                    </div>
                   </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Talk About a Full Build</a>
+                  <p className="service-agency-anchor">Agencies charge $8,000–20,000+ for comparable work</p>
+                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk About Your Build</a>
                 </div>
               </div>
             </div>
@@ -357,12 +308,12 @@ function App() {
                 </div>
                 <div className="service-content">
                   <h3>Mobile App</h3>
-                  <p className="service-card-tagline">You&apos;ve got a focused app idea and want to build it without overcomplicating it.</p>
+                  <p className="service-card-tagline">Got a focused app idea? I build for iPhone and Android without the agency price tag. Best for businesses that need something specific — ordering, menus, internal tools, events. Not the right fit for the next Instagram.</p>
                   <div className="service-price-block">
                     <div className="service-price">Starting at $5,000</div>
                     <p className="service-price-detail">Project-based · iPhone & Android</p>
                     <p className="service-agency-anchor">Agencies quote $25,000–100,000+ for custom apps</p>
-                    <p className="service-payment-note">50% upfront · 50% on completion</p>
+                    <p className="service-payment-note">Full payment upfront · Work starts once payment clears</p>
                   </div>
                   <div className="service-features">
                     <div className="feature-item">
@@ -394,13 +345,24 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className="ongoing-help-blurb">
+              <h3>A heads up on platform costs</h3>
+              <p>My fee covers the design, build, and launch. But there are a few ongoing costs you&apos;ll pay directly to the platforms — not to me. Totally normal, just want you to know upfront:</p>
+              <ul className="service-adhoc-examples-list">
+                <li>Domain name — around $15–20/year. You own it, not me.</li>
+                <li>Hosting or platform subscription — depends on what we build on. Squarespace and Wix run $16–45/month. WordPress hosting is usually $10–20/month. Shopify starts at $39/month.</li>
+                <li>Shopify POS — if you&apos;re selling in person, Shopify charges extra for point-of-sale features depending on your plan.</li>
+                <li>Third-party apps or plugins — sometimes the right tool for your business costs a few bucks a month. I&apos;ll always tell you upfront if I&apos;m recommending something paid.</li>
+              </ul>
+              <p className="service-payment-note">I&apos;ll walk you through all of this before we start so nothing catches you off guard.</p>
+            </div>
           </div>
 
           <div className="services-bucket">
             <h3 className="services-bucket-header">Need Ongoing Help?</h3>
             <div className="ongoing-help-blurb">
               <p>
-                Some people need help every month. Some just need a fix and they&apos;re set for a while. If you keep needing updates, social posting help, or just want someone to keep the digital side from becoming a headache, reach out. We&apos;ll set up something that fits your situation. Nothing rigid.
+                Some people need help every month. Some just need a fix and they&apos;re set for a while. If you keep needing updates, social posting help, or just want someone to keep the digital side from becoming a headache, reach out. I&apos;ll set up something that fits your situation. Nothing rigid.
               </p>
               <a href="#contact" className="btn btn-primary">Let&apos;s Figure Out What Fits</a>
             </div>
@@ -580,7 +542,7 @@ function App() {
                     <div className="contact-item-icon">📧</div>
                     <div className="contact-item-content">
                       <h4>Email</h4>
-                      <p><a href="mailto:maunadigitalcontact@gmail.com">maunadigitalcontact@gmail.com</a></p>
+                      <p><a href="mailto:ian@maunadigital.com">ian@maunadigital.com</a></p>
                     </div>
                   </div>
                   <div className="contact-item contact-item-wide">
@@ -603,12 +565,12 @@ function App() {
                     <div className="contact-item-icon">💰</div>
                     <div className="contact-item-content">
                       <h4>Payment</h4>
-                      <p>Upfront for quick fixes · 50/50 for projects · Ongoing help can be arranged as needed</p>
+                      <p>Upfront for quick fixes and projects · Ongoing help can be arranged as needed</p>
                     </div>
                   </div>
                 </div>
                 <div className="contact-cta">
-                  <a href="mailto:maunadigitalcontact@gmail.com" className="btn btn-primary contact-btn">
+                  <a href="mailto:ian@maunadigital.com" className="btn btn-primary contact-btn">
                     Send Me a Quick Email
                   </a>
                 </div>
