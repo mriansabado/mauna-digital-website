@@ -10,6 +10,7 @@ import postachioLogo from './assets/postachio-logo1.png'
 import pocketsayScreenshot from './assets/pocketsay-screenshot.png'
 import pocketsayLogo from './assets/pocketsay-logo1.png'
 import tasqlyScreenshot from './assets/tasqly-sc.png'
+import tasqlyLogo from './assets/Tasqly-Logo.png'
 import sandiegoImage from './assets/sandiego.jpg'
 import sandiegoBay from './assets/sandiego-bay.jpg'
 import sandiegoBeach from './assets/sandiego-beach.jpg'
@@ -443,7 +444,10 @@ function App() {
               </div>
               <div className="tool-content">
                 <div className="tool-badge">iOS App</div>
-                <h3 className="tool-title">Tasqly</h3>
+                <h3 className="tool-title">
+                  <img src={tasqlyLogo} alt="Tasqly logo" className="tool-title-logo" />
+                  Tasqly
+                </h3>
                 <p className="tool-subtitle">Planner-first workflow for freelancers &amp; service pros</p>
                 <p className="tool-description">
                   I built Tasqly, a React Native / Expo iOS app that helps independent professionals manage clients, schedule sessions, and stay on top of weekly work. It combines calendar-based planning, client context, quick notes, recurring sessions, and business-oriented tracking—all with responsive layouts for iPhone and iPad, light/dark mode, and a fast, low-friction mobile UX.

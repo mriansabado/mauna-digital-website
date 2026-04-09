@@ -3582,6 +3582,7 @@ section {
   width: auto;
   display: inline-block;
   vertical-align: middle;
+  border-radius: 12px;
 }
 
 .tool-card:hover .tool-title {
