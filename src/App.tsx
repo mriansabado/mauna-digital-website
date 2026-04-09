@@ -9,6 +9,7 @@ import postachioImage from './assets/postachio-project.png'
 import postachioLogo from './assets/postachio-logo1.png'
 import pocketsayScreenshot from './assets/pocketsay-screenshot.png'
 import pocketsayLogo from './assets/pocketsay-logo1.png'
+import tasqlyScreenshot from './assets/tasqly-sc.png'
 import sandiegoImage from './assets/sandiego.jpg'
 import sandiegoBay from './assets/sandiego-bay.jpg'
 import sandiegoBeach from './assets/sandiego-beach.jpg'
@@ -438,6 +439,50 @@ function App() {
           <div className="tools-grid">
             <div className="tool-card">
               <div className="tool-media">
+                <img src={tasqlyScreenshot} alt="Tasqly app screenshot" className="tool-image tool-image-tasqly" />
+              </div>
+              <div className="tool-content">
+                <div className="tool-badge">iOS App</div>
+                <h3 className="tool-title">Tasqly</h3>
+                <p className="tool-subtitle">Planner-first workflow for freelancers &amp; service pros</p>
+                <p className="tool-description">
+                  I built Tasqly, a React Native / Expo iOS app that helps independent professionals manage clients, schedule sessions, and stay on top of weekly work. It combines calendar-based planning, client context, quick notes, recurring sessions, and business-oriented tracking—all with responsive layouts for iPhone and iPad, light/dark mode, and a fast, low-friction mobile UX.
+                </p>
+                <div className="tool-tags">
+                  <span className="tool-tag">Expo</span>
+                  <span className="tool-tag">React Native</span>
+                  <span className="tool-tag">Productivity</span>
+                  <span className="tool-tag">iOS</span>
+                </div>
+                <div className="tool-cta">
+                  <a href="#contact" className="btn btn-primary">Get in touch</a>
+                </div>
+              </div>
+            </div>
+            <div className="tool-card">
+              <div className="tool-media">
+                <img src={pocketsayScreenshot} alt="PocketSay App screenshot" className="tool-image tool-image-pocketsay" />
+              </div>
+              <div className="tool-content">
+                <div className="tool-badge">iOS App</div>
+                <h3 className="tool-title">
+                  <img src={pocketsayLogo} alt="PocketSay logo" className="tool-title-logo" />
+                  PocketSay
+                </h3>
+                <p className="tool-subtitle">Say it BIG when you can't say it loud</p>
+                <p className="tool-description">PocketSay lets you show large, customizable text when you need to be seen instead of heard. Great for noisy places, distance, or quick non-verbal communication. Private and works offline.</p>
+                <div className="tool-tags">
+                  <span className="tool-tag">iOS</span>
+                  <span className="tool-tag">Communication</span>
+                  <span className="tool-tag">Privacy</span>
+                </div>
+                <div className="tool-cta">
+                  <a href="https://apps.apple.com/us/app/pocketsay/id6756633082" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download PocketSay</a>
+                </div>
+              </div>
+            </div>
+            <div className="tool-card">
+              <div className="tool-media">
                 <img src={postachioImage} alt="Postachio App preview" className="tool-image" />
               </div>
               <div className="tool-content">
@@ -455,28 +500,6 @@ function App() {
                 </div>
                 <div className="tool-cta">
                   <a href="https://postachio.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Try Postachio</a>
-                </div>
-              </div>
-            </div>
-            <div className="tool-card">
-              <div className="tool-media">
-                <img src={pocketsayScreenshot} alt="PocketSay App screenshot" className="tool-image tool-image-pocketsay" />
-              </div>
-              <div className="tool-content">
-                <div className="tool-badge">Mobile App</div>
-                <h3 className="tool-title">
-                  <img src={pocketsayLogo} alt="PocketSay logo" className="tool-title-logo" />
-                  PocketSay
-                </h3>
-                <p className="tool-subtitle">Say it BIG when you can't say it loud</p>
-                <p className="tool-description">PocketSay lets you show large, customizable text when you need to be seen instead of heard. Great for noisy places, distance, or quick non-verbal communication. Private and works offline.</p>
-                <div className="tool-tags">
-                  <span className="tool-tag">Mobile</span>
-                  <span className="tool-tag">Communication</span>
-                  <span className="tool-tag">Privacy</span>
-                </div>
-                <div className="tool-cta">
-                  <a href="https://apps.apple.com/us/app/pocketsay/id6756633082" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download PocketSay</a>
                 </div>
               </div>
             </div>

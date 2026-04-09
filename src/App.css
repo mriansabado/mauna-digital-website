@@ -3530,6 +3530,10 @@ section {
   object-position: left center;
 }
 
+.tool-image-tasqly {
+  object-position: top center;
+}
+
 .tool-content {
   padding: 1.75rem;
   display: flex;
