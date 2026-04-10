@@ -490,7 +490,7 @@ function App() {
                 <img src={postachioImage} alt="Postachio App preview" className="tool-image" />
               </div>
               <div className="tool-content">
-                <div className="tool-badge">New</div>
+                <div className="tool-badge">Web App</div>
                 <h3 className="tool-title">
                   <img src={postachioLogo} alt="Postachio logo" className="tool-title-logo" />
                   Postachio
