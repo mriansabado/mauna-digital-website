@@ -167,7 +167,7 @@ function App() {
                   <h3>SEO for Local Business</h3>
                   <p className="service-card-tagline">This is the standard SEO foundation most local businesses need. I handle it for you so you don&apos;t have to.</p>
                   <div className="service-price-block">
-                    <div className="service-price">One-off SEO Checklist: $399</div>
+                    <div className="service-price">One-off SEO Checklist: $400</div>
                     <p className="service-price-detail">One-time setup and cleanup of the core local SEO basics</p>
                     <p className="service-payment-note">One-time · Full payment upfront</p>
                   </div>
