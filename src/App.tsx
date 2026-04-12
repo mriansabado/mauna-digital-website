@@ -15,7 +15,6 @@ import sandiegoImage from './assets/sandiego.jpg'
 import sandiegoBay from './assets/sandiego-bay.jpg'
 import sandiegoBeach from './assets/sandiego-beach.jpg'
 import sandiegoNorthpark from './assets/sandiego-northpark.jpg'
-import sandiegoSunset from './assets/sandiego-sunset.jpg'
 
 function App() {
   const [isDark, setIsDark] = useState(() => {
@@ -367,37 +366,6 @@ function App() {
                 Some people need help every month. Some just need a fix and they&apos;re set for a while. If you keep needing updates, social posting help, or just want someone to keep the digital side from becoming a headache, reach out. I&apos;ll set up something that fits your situation. Nothing rigid.
               </p>
               <a href="#contact" className="btn btn-primary">Let&apos;s Figure Out What Fits</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How This Works Section */}
-      <section className="how-it-works" style={{ backgroundImage: `url(${sandiegoSunset})` }}>
-        <div className="section-overlay"></div>
-        <div className="container">
-          <h2 className="section-title">How This Works</h2>
-          <p className="section-subtitle">Simple process. No runaround.</p>
-          <div className="process-grid">
-            <div className="process-step">
-              <div className="process-number">1</div>
-              <h3>We Talk</h3>
-              <p>You tell me what&apos;s going on. I&apos;ll take a look and give you a straight answer. No pressure.</p>
-            </div>
-            <div className="process-step">
-              <div className="process-number">2</div>
-              <h3>Clear Plan</h3>
-              <p>I&apos;ll tell you what I recommend, what it costs, and how long it should take.</p>
-            </div>
-            <div className="process-step">
-              <div className="process-number">3</div>
-              <h3>I Get to Work</h3>
-              <p>Once you approve it, I get started and keep you posted as things move.</p>
-            </div>
-            <div className="process-step">
-              <div className="process-number">4</div>
-              <h3>You Can Breathe Again</h3>
-              <p>Things work. You know what changed. And you&apos;re not stuck guessing anymore.</p>
             </div>
           </div>
         </div>
