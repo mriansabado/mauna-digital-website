@@ -2189,11 +2189,33 @@ section {
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
 }
 
+.ongoing-help-blurb h3 {
+  margin: 0 0 0.75rem;
+  color: #111;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
 .ongoing-help-blurb p {
   margin: 0 0 1rem;
-  color: #475569;
+  color: #111;
   font-weight: 600;
   line-height: 1.6;
+}
+
+/* List reuses service-card list styles (light text); force dark copy on day mode */
+.ongoing-help-blurb .service-adhoc-examples-list li {
+  color: #111;
+}
+
+.ongoing-help-blurb .service-adhoc-examples-list li::before {
+  color: rgba(17, 17, 17, 0.55);
+}
+
+.ongoing-help-blurb .service-payment-note {
+  color: #111;
+  opacity: 1;
 }
 
 /* What's NOT Included Styles */
@@ -4580,8 +4602,25 @@ html.dark .ongoing-help-blurb {
   border-color: rgba(148, 163, 184, 0.28);
 }
 
+html.dark .ongoing-help-blurb h3 {
+  color: #f8fafc;
+}
+
 html.dark .ongoing-help-blurb p {
   color: #cbd5e1;
+}
+
+html.dark .ongoing-help-blurb .service-adhoc-examples-list li {
+  color: #e2e8f0;
+}
+
+html.dark .ongoing-help-blurb .service-adhoc-examples-list li::before {
+  color: rgba(226, 232, 240, 0.65);
+}
+
+html.dark .ongoing-help-blurb .service-payment-note {
+  color: #cbd5e1;
+  opacity: 1;
 }
 
 html.dark .services-title,
