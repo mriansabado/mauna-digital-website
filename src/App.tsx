@@ -79,7 +79,7 @@ function App() {
                 {' · '}
                 <span className="service-pill">No Time for Tech</span>
                 {' · '}
-                <span className="service-pill">SEO</span>
+                <span className="service-pill">Online Presence</span>
                 {' · '}
                 <span className="service-pill">Mobile Apps</span>
               </p>
@@ -108,11 +108,6 @@ function App() {
             </div>
           </div>
           
-          <div className="services-section-header">
-      <h2 className="services-title">Common Problems I Fix</h2>
-      <p className="services-description">Straightforward help for the stuff slowing you down</p>
-          </div>
-
           <div className="free-audit-callout">
             <h3>Not sure where to start?</h3>
             <p>
@@ -137,12 +132,10 @@ function App() {
                 <div className="service-content">
                   <h3>Just Getting Started</h3>
                   <p className="service-card-tagline">Never had a website? I&apos;ll get you online fast.</p>
-                  <p className="service-price-detail">Send me your photos and tell me what you&apos;re selling or offering. I&apos;ll handle the setup, load your products, get your basic SEO in place, and connect your domain. You focus on your thing, and I&apos;ll handle the tech.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$400 flat</div>
-                    <p className="service-payment-note">You bring the photos, descriptions, and content. I handle everything else.</p>
+                    <div className="service-price">$600 flat</div>
+                    <p className="service-payment-note">You bring the photos, descriptions, and content. I handle the setup, load your products, get basic SEO in place, and connect your domain. Need something more custom? I&apos;ll scope it and give you a flat quote before anything starts.</p>
                   </div>
-                  <p className="service-price-detail">Need something more custom? I&apos;ll scope it and give you a flat quote before anything starts.</p>
                   <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Get You Online</a>
                 </div>
               </div>
@@ -188,44 +181,17 @@ function App() {
                   <div className="service-icon-wrapper">
                     <div className="service-icon">📍</div>
                   </div>
-                  <div className="service-badge">SEO for Local Business</div>
+                  <div className="service-badge">Online Presence Tune-Up</div>
                 </div>
                 <div className="service-content">
-                  <h3>SEO for Local Business</h3>
-                  <p className="service-card-tagline">This is the standard SEO foundation most local businesses need. I handle it for you so you don&apos;t have to.</p>
+                  <h3>Online Presence Tune-Up</h3>
+                  <p className="service-card-tagline">When&apos;s the last time someone updated your Google listing? Your website photos?</p>
+                  <p className="service-price-detail">Most small businesses are invisible online and don&apos;t even know it. I&apos;ll clean up your Google listing, make sure your info matches across Yelp, Apple Maps, and Bing, update your website photos and contact info, connect your social links, and get the basics in place so people can actually find you. Done in about a week.</p>
                   <div className="service-price-block">
-                    <div className="service-price">One-off SEO Checklist: $400</div>
-                    <p className="service-price-detail">One-time setup and cleanup of the core local SEO basics</p>
-                    <p className="service-payment-note">One-time · Full payment upfront</p>
+                    <div className="service-price">$500 flat</div>
+                    <p className="service-payment-note">One-time · No ongoing commitment</p>
                   </div>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Google Business Profile fully cleaned up and optimized</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Business listings cleaned up so your info matches across Yelp, Apple Maps, and Bing Places</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Website SEO basics fixed on key pages (titles, descriptions, and headings)</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Behind-the-scenes business info code added so Google clearly understands your services and location</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Google tracking tools set up so you can see what&apos;s working</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>You get a clear checklist of everything I handled, in plain English</span>
-                    </div>
-                  </div>
-                  <p className="service-agency-anchor">This is standard SEO work every local business should have in place. Agencies often charge $800 to $2,000+ for it.</p>
-                  <a href="#contact" className="btn btn-primary service-btn">Get My Local SEO Game Plan</a>
+                  <a href="#contact" className="btn btn-primary service-btn">Get My Presence Cleaned Up</a>
                 </div>
               </div>
             </div>
