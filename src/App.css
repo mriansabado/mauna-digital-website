@@ -305,7 +305,14 @@ body {
   color: #cbd5e0;
   font-weight: 400;
   margin-top: 0.5rem;
-  font-style: italic;
+}
+
+.hero .hero-subtext {
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 .hero-family-note {
@@ -1368,6 +1375,30 @@ section {
   max-width: 820px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Presence + social: two-up on desktop, equal card height, CTA aligned */
+@media (min-width: 1025px) {
+  .services-grid.services-grid-offer-pair {
+    align-items: stretch;
+  }
+
+  .services-grid.services-grid-offer-pair .service-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .services-grid.services-grid-offer-pair .service-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .services-grid.services-grid-offer-pair .service-btn {
+    margin-top: auto;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -3214,6 +3245,20 @@ section {
 
 .footer p {
   opacity: 0.8;
+}
+
+.footer-nap {
+  margin-top: 0.5rem;
+}
+
+.footer-nap a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-nap a:hover {
+  opacity: 1;
 }
 
 /* Tools Section */
