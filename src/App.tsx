@@ -78,7 +78,7 @@ function App() {
                 I work with small businesses that don&apos;t have time for their tech. Web development and tech support.
                 <br />
                 <br />
-                Most days it&apos;s Squarespace, Shopify, or Wix. Something&apos;s broken, the site feels stuck, or search isn&apos;t sending people your way. I&apos;ll tell you what&apos;s going on in plain English and fix what needs fixing. One real person, no agency runaround.
+                Something&apos;s broken, the site feels stuck, or search isn&apos;t sending people your way. I&apos;ll tell you what&apos;s going on in plain English and fix what needs fixing. One real person, no agency runaround.
                 <br />
                 <span className="service-pill">Something&apos;s Not Right</span>
                 {' · '}
@@ -259,7 +259,7 @@ function App() {
                   <h3>Mobile App</h3>
                   <p className="service-card-tagline">Got a focused app idea? I build for iPhone and Android without the agency price tag. Best for businesses that need something specific, like ordering, menus, internal tools, or events. Not the right fit for the next Instagram.</p>
                   <div className="service-price-block">
-                    <div className="service-price">Starting at $5,000</div>
+                    <div className="service-price">Let&apos;s Talk</div>
                     <p className="service-price-detail">Project-based · iPhone & Android</p>
                     <p className="service-agency-anchor">Agencies often quote $25,000 to $100,000+ for custom apps</p>
                     <p className="service-payment-note">Project-based · We&apos;ll agree on payment terms before anything starts</p>
@@ -375,7 +375,7 @@ function App() {
                   <span className="tool-tag">iOS</span>
                 </div>
                 <div className="tool-cta">
-                  <a href="#contact" className="btn btn-primary">Get in touch</a>
+                  <a href="https://apps.apple.com/us/app/tasqly/id6761040872" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download Tasqly</a>
                 </div>
               </div>
             </div>
