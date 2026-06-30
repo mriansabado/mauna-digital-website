@@ -72,13 +72,10 @@ function App() {
                 <span className="hero-subtitle">handled</span>
               </h1>
               <p className="hero-subtext">
-                San Diego web developer for small businesses — Squarespace, Shopify, Wix, and local SEO.
+                San Diego web developer for small businesses.
               </p>
               <p className="hero-description">
-                I work with small businesses that don&apos;t have time for their tech. Web development and tech support.
-                <br />
-                <br />
-                Something&apos;s broken, the site feels stuck, or search isn&apos;t sending people your way. I&apos;ll tell you what&apos;s going on in plain English and fix what needs fixing. One real person, no agency runaround.
+                Website acting up? Search not sending people your way? I&apos;ll figure out what&apos;s wrong and get it fixed — or build you something new if that&apos;s what you need. Honest work, done right, at a fair price.
                 <br />
                 <span className="service-pill">Something&apos;s Not Right</span>
                 {' · '}
