@@ -291,26 +291,23 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="ongoing-help-blurb">
-              <h3>A heads up on platform costs</h3>
-              <p>My fee covers the design, build, and launch. But there are a few ongoing costs you&apos;ll pay directly to the platforms, not to me. Totally normal, just want you to know upfront:</p>
-              <ul className="service-adhoc-examples-list">
-                <li>Domain name: around $15 to $20/year. You own it, not me.</li>
-                <li>Hosting or platform subscription depends on what we build on. Squarespace and Wix often run $16 to $45/month. Shopify starts at $39/month.</li>
-                <li>Shopify POS: if you&apos;re selling in person, Shopify charges extra for point-of-sale features depending on your plan.</li>
-                <li>Third-party apps or plugins: sometimes the right tool for your business costs a few bucks a month. I&apos;ll always tell you upfront if I&apos;m recommending something paid.</li>
-              </ul>
-              <p className="service-payment-note">I&apos;ll walk you through all of this before we start so nothing catches you off guard.</p>
-            </div>
-          </div>
-
-          <div className="services-bucket">
-            <h3 className="services-bucket-header">Need Ongoing Help?</h3>
-            <div className="ongoing-help-blurb">
-              <p>
-                Some people need help every month. Some just need a fix and they&apos;re set for a while. If you keep needing updates, social posting help, or just want someone to keep the digital side from becoming a headache, reach out. I&apos;ll set up something that fits your situation. Nothing rigid.
+            <div className="platform-costs-callout">
+              <div className="platform-costs-callout-header">
+                <span className="platform-costs-callout-badge">Good to know upfront</span>
+                <h3>A heads up on platform costs</h3>
+              </div>
+              <p className="platform-costs-callout-intro">
+                My fee covers the design, build, and launch. But there are a few ongoing costs you&apos;ll pay directly to the platforms, not to me. Totally normal — just want you to know upfront:
               </p>
-              <a href="#contact" className="btn btn-primary">Let&apos;s Figure Out What Fits</a>
+              <ul className="platform-costs-list">
+                <li><strong>Domain name:</strong> around $15 to $20/year. You own it, not me.</li>
+                <li><strong>Hosting or platform subscription</strong> depends on what we build on. Squarespace and Wix often run $16 to $45/month. Shopify starts at $39/month.</li>
+                <li><strong>Shopify POS:</strong> if you&apos;re selling in person, Shopify charges extra for point-of-sale features depending on your plan.</li>
+                <li><strong>Third-party apps or plugins:</strong> sometimes the right tool for your business costs a few bucks a month. I&apos;ll always tell you upfront if I&apos;m recommending something paid.</li>
+              </ul>
+              <p className="platform-costs-callout-footer">
+                I&apos;ll walk you through all of this before we start so nothing catches you off guard.
+              </p>
             </div>
           </div>
         </div>
