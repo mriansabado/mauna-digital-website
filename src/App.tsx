@@ -71,29 +71,28 @@ function App() {
                 Small business tech,{' '}
                 <span className="hero-subtitle">handled</span>
               </h1>
-              <p className="hero-subtext">
-                San Diego web developer for small businesses.
-              </p>
-              <p className="hero-description">
-                Website acting up? Search not sending people your way? I&apos;ll figure out what&apos;s wrong and get it fixed — or build you something new if that&apos;s what you need. Honest work, done right, at a fair price.
-                <br />
-                <span className="service-pill">Something&apos;s Not Right</span>
-                {' · '}
-                <span className="service-pill">Just Getting Started</span>
-                {' · '}
-                <span className="service-pill">No Time for Tech</span>
-                {' · '}
-                <span className="service-pill">Local SEO</span>
-                {' · '}
-                <span className="service-pill">Social Media</span>
-                {' · '}
-                <span className="service-pill">Mobile Apps</span>
-              </p>
+              <div className="hero-copy">
+                <p className="hero-subtext">
+                  For makers, shop owners, and small businesses who don&apos;t have time to mess with their website.
+                </p>
+                <p className="hero-tagline">Need one built, or need yours fixed?</p>
+                <div className="hero-pills">
+                  <span className="service-pill">Site Fixes</span>
+                  <span className="hero-pill-sep" aria-hidden="true">·</span>
+                  <span className="service-pill">Just Getting Started</span>
+                  <span className="hero-pill-sep" aria-hidden="true">·</span>
+                  <span className="service-pill">No Time for Tech</span>
+                  <span className="hero-pill-sep" aria-hidden="true">·</span>
+                  <span className="service-pill">Local SEO</span>
+                  <span className="hero-pill-sep" aria-hidden="true">·</span>
+                  <span className="service-pill">Mobile Apps</span>
+                </div>
+              </div>
               <p className="hero-location">
                 📍 Based in San Diego • Local or Remote, Whatever Works Best for You
               </p>
               <div className="hero-cta">
-                <a href="#contact" className="btn btn-primary">Get Started</a>
+                <a href="#contact" className="btn btn-primary">Let&apos;s Talk</a>
               </div>
             </div>
           </div>
