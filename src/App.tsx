@@ -137,11 +137,11 @@ function App() {
                 <div className="service-content">
                   <h3>Something&apos;s Not Right</h3>
                   <p className="service-card-tagline">Broken, outdated, or just not working the way it should?</p>
-                  <p className="service-price-detail">Something&apos;s off? I&apos;ll figure out what&apos;s wrong and fix it. Billed at $60/hr with a one-hour minimum — and if I finish early, I keep going. Updates, cleanups, broken links, whatever else is on your list. You&apos;d be surprised how much can get done in an hour.</p>
+                  <p className="service-price-detail">Something&apos;s off? I&apos;ll figure out what&apos;s wrong and fix it. Billed at $85/hr with a one-hour minimum — and if I finish early, I keep going. Updates, cleanups, broken links, whatever else is on your list. You&apos;d be surprised how much can get done in an hour.</p>
                   <p className="service-price-detail">Quoted same-day. You&apos;ll know the plan before I start anything.</p>
                   <p className="service-price-detail">Works on Squarespace, Shopify, Wix, WordPress, and most other platforms.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$60/hr · 1 hour minimum</div>
+                    <div className="service-price">$85/hr · 1 hour minimum</div>
                   </div>
                   <a href="#contact" className="btn btn-primary service-btn">Tell Me What&apos;s Going On</a>
                 </div>
