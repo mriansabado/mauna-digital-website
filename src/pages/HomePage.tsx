@@ -19,7 +19,7 @@ import sandiegoNorthpark from './assets/sandiego-northpark.jpg'
 function App() {
   const [isDark, setIsDark] = useState(() => {
     const saved = localStorage.getItem('mauna-dark-mode')
-    return saved !== null ? JSON.parse(saved) : false
+    return saved !== null ? JSON.parse(saved) : true
   })
 
   useEffect(() => {
@@ -146,6 +146,77 @@ function App() {
                   <a href="#contact" className="btn btn-primary service-btn">Tell Me What&apos;s Going On</a>
                 </div>
               </div>
+              <div className="service-card service-card-purple">
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+                    <div className="service-icon">📄</div>
+                  </div>
+                  <div className="service-badge">Single Page Site</div>
+                </div>
+                <div className="service-content">
+                  <h3>Single Page Site</h3>
+                  <p className="service-card-tagline">One page, done right. When you don&apos;t need a full website, just a great one.</p>
+                  <p className="service-price-detail">Not every project needs a full website. Sometimes one clean, well-designed page is exactly right. I&apos;ll design it, build it, connect your domain, and get it live. One page, one focused purpose, no bloat.</p>
+                  <div className="service-price-block">
+                    <div className="service-price">$450 flat</div>
+                  </div>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>One custom-designed page</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Domain setup and connection</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Mobile-friendly out of the box</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Contact form or RSVP if you need one</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Photos, text, and links laid out cleanly</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>One round of revisions included</span>
+                    </div>
+                  </div>
+                  <p className="service-price-detail"><strong>Perfect for:</strong></p>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Weddings, showers, and milestone celebrations</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Bands, DJs, and performers who need a booking page</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Pop-ups, fundraisers, tournaments, and one-time events</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>&quot;Coming soon&quot; pages for new businesses or launches</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Solo pros with one clear offer (trainers, tutors, coaches, notaries)</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Food trucks, home bakers, and other local micro-businesses</span>
+                    </div>
+                  </div>
+                  <p className="service-payment-note">Not sure if a single page is enough? Send me your idea and I&apos;ll tell you honestly.</p>
+                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Build It</a>
+                </div>
+              </div>
               <div className="service-card service-card-neon-green">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
@@ -155,11 +226,38 @@ function App() {
                 </div>
                 <div className="service-content">
                   <h3>Just Getting Started</h3>
-                  <p className="service-card-tagline">Never had a website? I&apos;ll get you online fast.</p>
+                  <p className="service-card-tagline">New business, no site yet? I&apos;ll build the whole thing.</p>
+                  <p className="service-price-detail">You&apos;ve got the idea, the products, the plan. You just don&apos;t have the website and you don&apos;t want to spend three weekends trying to figure one out. I&apos;ll build you a real multi-page site, connect your domain, get the basics of SEO in place, and set you up so you can update the simple stuff yourself. You bring the photos and the words. I handle everything else.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$600 flat</div>
-                    <p className="service-payment-note">You bring the photos, descriptions, and content. I handle the setup, load your products, get basic SEO in place, and connect your domain. Need something more custom? I&apos;ll scope it and give you a flat quote before anything starts.</p>
+                    <div className="service-price">$900 flat</div>
                   </div>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Multi-page site (home, about, shop or services, contact)</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Domain setup and connection</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Mobile-friendly out of the box</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Basic SEO so Google knows you exist</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Contact form that actually reaches you</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>A quick walkthrough so you&apos;re not lost after launch</span>
+                    </div>
+                  </div>
+                  <p className="service-payment-note">Built on Squarespace, Shopify, or Wix, whichever fits your business best.</p>
                   <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Get You Online</a>
                 </div>
               </div>
@@ -194,7 +292,7 @@ function App() {
                   <p className="service-card-tagline">SEO means showing up in Google when people search for what you offer, especially on Maps and in local results.</p>
                   <p className="service-price-detail">SEO stands for search engine optimization. If that still sounds abstract, here&apos;s the practical version: I clean up your Google Business Profile, align your name, address, and phone across Yelp, Apple Maps, and Bing, tighten up the basics on your site (titles, photos, contact info, social links), and fix the inconsistencies that confuse search engines. Most small businesses are invisible online and don&apos;t even know it. Done in about a week.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$500 flat</div>
+                    <div className="service-price">$650 flat</div>
                     <p className="service-payment-note">One-time · No ongoing commitment</p>
                   </div>
                   <a href="#contact" className="btn btn-primary service-btn">Get My SEO Sorted</a>
