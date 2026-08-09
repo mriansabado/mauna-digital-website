@@ -15,6 +15,8 @@ import sandiegoImage from './assets/sandiego.jpg'
 import sandiegoBay from './assets/sandiego-bay.jpg'
 import sandiegoBeach from './assets/sandiego-beach.jpg'
 import sandiegoNorthpark from './assets/sandiego-northpark.jpg'
+import { demoSites } from '../data/demoSites'
+import { DemoPreview } from '../components/DemoPreview'
 
 function App() {
   const [isDark, setIsDark] = useState(() => {
@@ -38,6 +40,7 @@ function App() {
           </div>
           <div className="nav-links">
             <a href="#services">Services</a>
+            <a href="#demos">Demos</a>
             <a href="#tools">Apps</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
@@ -435,6 +438,46 @@ function App() {
                 <li><strong>Everyone:</strong> You can text me directly. No ticket maze.</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Demo Websites Section */}
+      <section id="demos" className="demos">
+        <div className="container">
+          <h2 className="section-title">Demo Websites</h2>
+          <p className="demos-subtitle">
+            Sample sites I built to show what&apos;s possible — click through and poke around. These are demos, not live client sites, but the quality is real.
+          </p>
+          <div className="demos-grid">
+            {demoSites.map((site) => (
+              <article key={site.url} className="demo-card">
+                <DemoPreview url={site.url} title={`${site.name} demo preview`} icon={site.icon} />
+                <div className="demo-card-body">
+                  <div className="demo-card-header">
+                    <span className="demo-card-icon" aria-hidden="true">{site.icon}</span>
+                    <div>
+                      <h3 className="demo-card-title">{site.name}</h3>
+                      <p className="demo-card-tagline">{site.tagline}</p>
+                    </div>
+                  </div>
+                  <p className="demo-card-description">{site.description}</p>
+                  <div className="demo-tags">
+                    {site.tags.map((tag) => (
+                      <span key={tag} className="demo-tag">{tag}</span>
+                    ))}
+                  </div>
+                  <a
+                    href={site.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary demo-card-btn"
+                  >
+                    View Demo
+                  </a>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
