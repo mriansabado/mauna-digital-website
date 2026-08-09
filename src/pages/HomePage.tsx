@@ -452,7 +452,7 @@ function App() {
           <div className="demos-grid">
             {demoSites.map((site) => (
               <article key={site.url} className="demo-card">
-                <DemoPreview url={site.url} title={`${site.name} demo preview`} icon={site.icon} />
+                <DemoPreview url={site.url} title={site.name} screenshot={site.screenshot} />
                 <div className="demo-card-body">
                   <div className="demo-card-header">
                     <span className="demo-card-icon" aria-hidden="true">{site.icon}</span>
