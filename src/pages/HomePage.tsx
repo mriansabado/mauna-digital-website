@@ -447,7 +447,7 @@ function App() {
         <div className="container">
           <h2 className="section-title">Demo Websites</h2>
           <p className="demos-subtitle">
-            Sample sites I built to show what&apos;s possible — click through and poke around. These are demos, not live client sites, but the quality is real.
+            Sample sites I built to show what&apos;s possible — click through and poke around.
           </p>
           <div className="demos-grid">
             {demoSites.map((site) => (
