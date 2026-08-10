@@ -473,7 +473,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="btn btn-primary demo-card-btn"
                   >
-                    View Demo
+                    Open Live Site
                   </a>
                 </div>
               </article>
