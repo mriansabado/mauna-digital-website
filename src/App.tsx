@@ -232,7 +232,8 @@ function App() {
                   <p className="service-card-tagline">New business, no site yet? I&apos;ll build the whole thing.</p>
                   <p className="service-price-detail">You&apos;ve got the idea, the products, the plan. You just don&apos;t have the website and you don&apos;t want to spend three weekends trying to figure one out. I&apos;ll build you a real multi-page site, connect your domain, get the basics of SEO in place, and set you up so you can update the simple stuff yourself. You bring the photos and the words. I handle everything else.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$900 flat</div>
+                    <div className="service-price">$1200 flat</div>
+                    <p className="service-payment-note">An investment in doing it right. I&apos;ll be here after launch, not gone the second you pay.</p>
                   </div>
                   <div className="service-features">
                     <div className="feature-item">
@@ -260,7 +261,7 @@ function App() {
                       <span>A quick walkthrough so you&apos;re not lost after launch</span>
                     </div>
                   </div>
-                  <p className="service-payment-note">Built on Squarespace, Shopify, or Wix, whichever fits your business best.</p>
+                  <p className="service-payment-note">Built on Squarespace, Shopify, or Wix, whichever fits your business best. I can also self-host if that&apos;s a better fit.</p>
                   <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Get You Online</a>
                 </div>
               </div>
@@ -310,15 +311,15 @@ function App() {
                 </div>
                 <div className="service-content">
                   <h3>Social Media Management</h3>
-                  <p className="service-card-tagline">3 posts per week · Instagram + Facebook</p>
-                  <p className="service-price-detail">Posting consistently is one of the best things you can do for your business, but it&apos;s also one of the first things that falls off when you&apos;re busy. You send me your photos, I handle the rest: captions, design, scheduling, posting. Done. Three times a week, every week, on both platforms.</p>
+                  <p className="service-card-tagline">2 posts per week · Instagram + Facebook</p>
+                  <p className="service-price-detail">Posting consistently is one of the best things you can do for your business, but it&apos;s also one of the first things that falls off when you&apos;re busy. You send me your photos, I handle the rest: captions, design, scheduling, posting. Done. Twice a week, every week, on both platforms.</p>
                   <div className="service-price-block">
                     <div className="service-price">$300/month</div>
                   </div>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>3 posts per week on Instagram and Facebook</span>
+                      <span>2 posts per week on Instagram and Facebook</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
