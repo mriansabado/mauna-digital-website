@@ -23,6 +23,7 @@ function App() {
     const saved = localStorage.getItem('mauna-dark-mode')
     return saved !== null ? JSON.parse(saved) : true
   })
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     localStorage.setItem('mauna-dark-mode', JSON.stringify(isDark))
@@ -38,21 +39,34 @@ function App() {
             <img src={navLogo} alt="Mauna Digital" className="nav-logo-image" />
             <img src={isDark ? logoTextDark : logoTextLight} alt="Mauna Digital" className="nav-logo-text" />
           </div>
-          <div className="nav-links">
-            <a href="#services">Services</a>
-            <a href="#demos">Demos</a>
-            <a href="#tools">Apps</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <button
-              type="button"
-              className="theme-toggle"
-              onClick={() => setIsDark((prev: boolean) => !prev)}
-              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-              title={isDark ? 'Light mode' : 'Dark mode'}
-            >
-              {isDark ? '☀️' : '🌙'}
-            </button>
+          <div className="nav-right">
+            <div className={`nav-links ${isMenuOpen ? 'nav-links-open' : ''}`}>
+              <a href="#services" onClick={() => setIsMenuOpen(false)}>Services</a>
+              <a href="#demos" onClick={() => setIsMenuOpen(false)}>Demos</a>
+              <a href="#tools" onClick={() => setIsMenuOpen(false)}>Apps</a>
+              <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+              <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+            </div>
+            <div className="nav-actions">
+              <button
+                type="button"
+                className="theme-toggle"
+                onClick={() => setIsDark((prev: boolean) => !prev)}
+                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+                title={isDark ? 'Light mode' : 'Dark mode'}
+              >
+                {isDark ? '☀️' : '🌙'}
+              </button>
+              <button
+                type="button"
+                className="nav-menu-toggle"
+                onClick={() => setIsMenuOpen((prev) => !prev)}
+                aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+                aria-expanded={isMenuOpen}
+              >
+                <span className="nav-menu-icon">{isMenuOpen ? '✕' : '☰'}</span>
+              </button>
+            </div>
           </div>
         </div>
       </nav>

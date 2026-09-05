@@ -71,6 +71,12 @@ body {
   width: auto;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -87,6 +93,13 @@ body {
 
 .nav-links a:hover {
   color: #e53e3e;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 .theme-toggle {
@@ -107,6 +120,30 @@ body {
 
 .theme-toggle:hover {
   opacity: 0.8;
+}
+
+.nav-menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  flex-shrink: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.nav-menu-toggle:hover {
+  opacity: 0.8;
+}
+
+.nav-menu-icon {
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 .nav-links a::after {
@@ -4051,40 +4088,65 @@ section {
 }
 
 @media (max-width: 768px) {
-  .nav {
-    padding-right: 56px;
-  }
-  
   .nav-container {
     padding: 0 0.75rem;
     min-height: 70px;
     height: auto;
   }
-  
+
   .nav-logo {
     flex-shrink: 0;
   }
-  
+
   .nav-logo-image {
     height: 44px;
   }
-  
+
   .nav-logo-text {
     height: 72px;
   }
-  
+
+  .nav-right {
+    gap: 0;
+  }
+
+  .nav-menu-toggle {
+    display: flex;
+  }
+
   .nav-links {
-    gap: 0.75rem;
-    flex-shrink: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
   }
-  
-  .nav-links .theme-toggle {
-    position: fixed;
-    top: 15px;
-    right: 0.75rem;
-    z-index: 1001;
+
+  .nav-links.nav-links-open {
+    max-height: 400px;
+    opacity: 1;
+    visibility: visible;
   }
-  
+
+  .nav-links a {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -4990,6 +5052,21 @@ html.dark .nav-links a:hover {
 
 html.dark .theme-toggle {
   color: #e2e8f0;
+}
+
+html.dark .nav-menu-toggle {
+  color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  html.dark .nav-links {
+    background: #1e293b;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  html.dark .nav-links a {
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+  }
 }
 
 html.dark .hero-overlay {
