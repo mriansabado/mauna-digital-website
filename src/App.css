@@ -1389,6 +1389,10 @@ section {
   margin-bottom: 0;
 }
 
+.services-category-section {
+  scroll-margin-top: 6rem;
+}
+
 .services-bucket-header {
   font-size: 1.5rem;
   font-weight: 800;
@@ -1396,6 +1400,30 @@ section {
   margin-bottom: 1.5rem;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+.services-category-header {
+  margin: 0 auto 1.5rem;
+  max-width: 720px;
+  padding: 1.5rem 1.75rem;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid rgba(45, 55, 72, 0.08);
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.services-category-header .services-bucket-header {
+  margin-bottom: 0.5rem;
+}
+
+.services-category-tagline {
+  margin-bottom: 0;
+}
+
+.service-card[id] {
+  scroll-margin-top: 7rem;
 }
 
 .services-grid {
@@ -1663,6 +1691,19 @@ section {
   transition: transform 0.3s ease;
 }
 
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 220%;
+  height: 220%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  transform: translateX(-120%) translateY(-120%) rotate(45deg);
+  animation: serviceCardShimmer 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
 .service-card:hover::before {
   transform: scaleX(1);
 }
@@ -1913,92 +1954,33 @@ section {
 .service-card-purple {
   background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
   border: 3px solid #3b82f6;
-  box-shadow: 0 20px 40px rgba(30, 58, 138, 0.4), 0 0 0 1px rgba(59, 130, 246, 0.1);
-  position: relative;
-  overflow: hidden;
-  animation: subtleGlow 3s ease-in-out infinite alternate;
-}
-
-.service-card-purple::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-  transform: rotate(45deg);
-  animation: shimmer 4s ease-in-out infinite;
-  pointer-events: none;
-}
-
-@keyframes subtleGlow {
-  0% {
-    box-shadow: 0 20px 40px rgba(30, 58, 138, 0.4), 0 0 0 1px rgba(59, 130, 246, 0.1);
-  }
-  100% {
-    box-shadow: 0 25px 50px rgba(30, 58, 138, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.2);
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%) translateY(-100%) rotate(45deg);
-  }
-  100% {
-    transform: translateX(100%) translateY(100%) rotate(45deg);
-  }
+  box-shadow: 0 15px 35px rgba(30, 58, 138, 0.25);
 }
 
 .service-card-purple .service-icon-wrapper {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
-  padding: 1.2rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  animation: rocketFloat 2s ease-in-out infinite alternate;
-  position: relative;
+  width: 60px;
+  height: 60px;
 }
 
 .service-card-purple .service-icon {
-  font-size: 2rem;
-  animation: rocketPulse 1.5s ease-in-out infinite;
-}
-
-@keyframes rocketFloat {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes rocketPulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
+  font-size: 2.5rem;
 }
 
 .service-card-purple .service-badge {
-  background: rgba(255, 255, 255, 0.2);
+  background: #60a5fa;
   color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
+  letter-spacing: 0.5px;
 }
 
 .service-card-purple h3 {
@@ -2051,46 +2033,7 @@ section {
 }
 
 .service-card-purple .feature-dot {
-  background: linear-gradient(135deg, #3b82f6, #60a5fa);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5), 0 0 20px rgba(59, 130, 246, 0.3);
-  animation: dotPulse 2s ease-in-out infinite;
-  position: relative;
-}
-
-.service-card-purple .feature-dot::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(135deg, #3b82f6, #60a5fa);
-  border-radius: 50%;
-  opacity: 0.3;
-  animation: dotGlow 2s ease-in-out infinite alternate;
-}
-
-@keyframes dotPulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
-
-@keyframes dotGlow {
-  0% {
-    transform: scale(1);
-    opacity: 0.3;
-  }
-  100% {
-    transform: scale(1.4);
-    opacity: 0.1;
-  }
+  background: #60a5fa;
 }
 
 .service-card-electric-blue .feature-item span {
@@ -2110,64 +2053,24 @@ section {
 }
 
 .service-card-purple .feature-item span {
-  color: white;
-  font-weight: 600;
-  font-size: 1rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .service-card-purple .feature-item {
-  padding: 0.5rem 0;
-  transition: all 0.3s ease;
-}
-
-.service-card-purple .feature-item:hover {
-  transform: translateX(5px);
-}
-
-.service-card-purple .feature-item:hover span {
-  color: #fbbf24;
-  text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+  padding: 0;
 }
 
 .service-card-purple .service-price {
   color: white;
 }
 
-.service-card-purple .service-btn {
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  padding: 0.8rem 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  position: relative;
-  overflow: hidden;
-}
-
-.service-card-purple .service-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.service-card-purple .service-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.5);
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-}
-
-.service-card-purple .service-btn:hover::before {
-  left: 100%;
+@keyframes serviceCardShimmer {
+  0%, 15% {
+    transform: translateX(-120%) translateY(-120%) rotate(45deg);
+  }
+  45%, 100% {
+    transform: translateX(120%) translateY(120%) rotate(45deg);
+  }
 }
 
 /* Service Card Pricing Styles – scannable at a glance */
@@ -2242,6 +2145,22 @@ section {
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+.service-card-business-app .service-features:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.service-card-business-app .service-price-detail {
+  margin: 0.5rem 0 0.85rem;
+}
+
+.service-card-business-app .service-features:last-of-type {
+  margin-bottom: 0.75rem;
+}
+
+.service-card-business-app .service-btn {
+  margin-top: 1.25rem;
 }
 
 /* See Details toggle & expandable content */
@@ -2409,6 +2328,16 @@ section {
   font-weight: 700;
 }
 
+.platform-costs-list li a {
+  color: #2c7a7b;
+  text-decoration: underline;
+}
+
+.platform-costs-callout-footer a {
+  color: #2c7a7b;
+  font-weight: 700;
+}
+
 .platform-costs-callout-footer {
   margin: 0;
   padding-top: 1.15rem;
@@ -2418,6 +2347,53 @@ section {
   font-size: 0.95rem;
   line-height: 1.6;
   text-align: center;
+}
+
+.how-it-works-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.how-it-works-step {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.how-it-works-step-number {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 auto 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(56, 178, 172, 0.15);
+  border: 1px solid rgba(56, 178, 172, 0.35);
+  border-radius: 50%;
+  color: #2c7a7b;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.how-it-works-step h4 {
+  margin: 0 0 0.35rem;
+  color: #1a202c;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.how-it-works-step p {
+  margin: 0;
+  color: #334155;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .how-it-works-steps {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
 }
 
 /* What's NOT Included Styles */
@@ -5147,8 +5123,27 @@ html.dark .platform-costs-list li strong {
   color: #f1f5f9;
 }
 
+html.dark .platform-costs-list li a,
+html.dark .platform-costs-callout-footer a {
+  color: #81e6d9;
+}
+
 html.dark .platform-costs-callout-footer {
   border-top-color: rgba(56, 178, 172, 0.25);
+}
+
+html.dark .how-it-works-step-number {
+  background: rgba(56, 178, 172, 0.2);
+  border-color: rgba(56, 178, 172, 0.45);
+  color: #81e6d9;
+}
+
+html.dark .how-it-works-step h4 {
+  color: #f8fafc;
+}
+
+html.dark .how-it-works-step p {
+  color: #cbd5e1;
 }
 
 html.dark .services-title,

@@ -144,7 +144,7 @@ function App() {
               Seems like everyone&apos;s starting something these days, whether it&apos;s a side hustle, a craft, or a small business they actually care about. And for some reason that means you&apos;re also supposed to know how to build a website? That&apos;s where I come in.
             </p>
             <div className="services-grid services-grid-client-types">
-              <div className="service-card service-card-hot-pink">
+              <div className="service-card service-card-hot-pink service-card-business-app">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
                     <div className="service-icon">🔧</div>
@@ -231,7 +231,7 @@ function App() {
                     </div>
                   </div>
                   <p className="service-payment-note">Not sure if a single page is enough? Send me your idea and I&apos;ll tell you honestly.</p>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Build It</a>
+                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
                 </div>
               </div>
               <div className="service-card service-card-neon-green">
@@ -276,7 +276,7 @@ function App() {
                     </div>
                   </div>
                   <p className="service-payment-note">Built on Squarespace, Shopify, or Wix, whichever fits your business best. I can also self-host if that&apos;s a better fit.</p>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Get You Online</a>
+                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
                 </div>
               </div>
               <div className="service-card service-card-electric-blue">
@@ -313,7 +313,7 @@ function App() {
                     <div className="service-price">$650 flat</div>
                     <p className="service-payment-note">One-time · No ongoing commitment</p>
                   </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Get My SEO Sorted</a>
+                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
                 </div>
               </div>
               <div className="service-card service-card-electric-yellow">
@@ -352,42 +352,36 @@ function App() {
                       <span>Month to month, no contracts</span>
                     </div>
                   </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Get Started</a>
+                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="services-bucket">
-            <div className="services-grid services-grid-single services-grid-mobile-app-below">
-              <div className="service-card service-card-hot-pink">
+            <div className="services-grid services-grid-two-up services-grid-offer-pair services-grid-mobile-app-below">
+              <div className="service-card service-card-purple">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
-                    <div className="service-icon">🚀</div>
+                    <div className="service-icon">📱</div>
                   </div>
-                  <div className="service-badge">Mobile App</div>
+                  <div className="service-badge">Simple App</div>
                 </div>
                 <div className="service-content">
-                  <h3>Mobile App</h3>
-                  <p className="service-card-tagline">Got a focused app idea? I build for iPhone and Android without the agency price tag. Best for businesses that need something specific, like ordering, menus, internal tools, or events. Not the right fit for the next Instagram.</p>
+                  <h3>Simple App</h3>
+                  <p className="service-card-tagline">One focused feature, done clean.</p>
                   <div className="service-price-block">
-                    <div className="service-price">Let&apos;s Talk</div>
-                    <p className="service-price-detail">Project-based · iPhone & Android</p>
-                    <p className="service-agency-anchor">Agencies often quote $25,000 to $100,000+ for custom apps</p>
+                    <div className="service-price">Starting at $3,500</div>
                     <p className="service-payment-note">Project-based · We&apos;ll agree on payment terms before anything starts</p>
                   </div>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>One codebase, works on iPhone and Android</span>
+                      <span>One core feature built right</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Best for focused apps: events, menus, internal tools, ordering</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Not the right fit for social platforms or apps needing millions of users</span>
+                      <span>iPhone and Android from one codebase</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -399,13 +393,142 @@ function App() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Recent work: PocketSay (live on App Store, 4.8★)</span>
+                      <span>Launch support until it&apos;s live</span>
+                    </div>
+                  </div>
+                  <p className="service-price-detail"><strong>Perfect for:</strong></p>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Event or festival schedules with maps and updates</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Digital menus or lookbooks that update without reprinting</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Simple booking or reservation apps</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Internal tools for one specific workflow</span>
+                    </div>
+                  </div>
+                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
+                </div>
+              </div>
+              <div className="service-card service-card-hot-pink">
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+                    <div className="service-icon">🚀</div>
+                  </div>
+                  <div className="service-badge">Business App</div>
+                </div>
+                <div className="service-content">
+                  <h3>Business App</h3>
+                  <p className="service-card-tagline">A focused business app with a few connected features, built to grow with you.</p>
+                  <div className="service-price-block">
+                    <div className="service-price">Starting at $8,000</div>
+                    <p className="service-agency-anchor">Most projects land between $8K and $20K depending on scope, confirmed before anything starts.</p>
+                    <p className="service-payment-note">Best for focused business tools, not giant startup-style platforms.</p>
+                  </div>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>A few connected features working together: accounts, ordering, scheduling, notifications</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>iPhone and Android from one codebase</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Backend and database setup when the app actually needs it</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>App Store and Google Play setup included</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Custom design tailored to your brand</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Post-launch support window included</span>
+                    </div>
+                  </div>
+                  <p className="service-price-detail"><strong>Perfect for:</strong></p>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Boutique gym or studio with class booking and member accounts</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Restaurant or shop with online ordering and order tracking</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Membership or loyalty app</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Internal tools connecting several parts of the business</span>
                     </div>
                   </div>
                   <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
                 </div>
               </div>
             </div>
+
+            <div className="platform-costs-callout">
+              <div className="platform-costs-callout-header">
+                <span className="platform-costs-callout-badge">Recent app work</span>
+                <h3>A couple apps I&apos;ve built</h3>
+              </div>
+              <p className="platform-costs-callout-intro">
+                If you want a feel for the kind of app work I do, take a look at these:
+              </p>
+              <ul className="platform-costs-list">
+                <li><a href="#tool-tasqly"><strong>Tasqly</strong></a> — a React Native / Expo iOS app I built for client management, calendar scheduling, and recurring sessions.</li>
+                <li><a href="#tool-pocketsay"><strong>PocketSay</strong></a> — live on the App Store right now, rated 4.8★.</li>
+              </ul>
+              <p className="platform-costs-callout-footer">
+                Both are in the <a href="#tools">Apps I&apos;ve Built</a> section below.
+              </p>
+            </div>
+
+            <div className="platform-costs-callout">
+              <div className="platform-costs-callout-header">
+                <span className="platform-costs-callout-badge">How It Works</span>
+                <h3>From idea to launch, four steps</h3>
+              </div>
+              <div className="how-it-works-steps">
+                <div className="how-it-works-step">
+                  <div className="how-it-works-step-number">1</div>
+                  <h4>Idea Call</h4>
+                  <p>Free call. You tell me what you need, and I tell you if it makes sense.</p>
+                </div>
+                <div className="how-it-works-step">
+                  <div className="how-it-works-step-number">2</div>
+                  <h4>Scope &amp; Quote</h4>
+                  <p>I map out what we&apos;re building and give you a real price before I start.</p>
+                </div>
+                <div className="how-it-works-step">
+                  <div className="how-it-works-step-number">3</div>
+                  <h4>Build</h4>
+                  <p>I design and build it, keeping you in the loop as it comes together.</p>
+                </div>
+                <div className="how-it-works-step">
+                  <div className="how-it-works-step-number">4</div>
+                  <h4>Launch &amp; Support</h4>
+                  <p>I get it live, then stick around to make sure launch week goes smoothly.</p>
+                </div>
+              </div>
+            </div>
+
             <div className="platform-costs-callout">
               <div className="platform-costs-callout-header">
                 <span className="platform-costs-callout-badge">Good to know upfront</span>
@@ -419,9 +542,12 @@ function App() {
                 <li><strong>Hosting or platform subscription</strong> depends on what we build on. Squarespace and Wix often run $16 to $45/month. Shopify starts at $39/month.</li>
                 <li><strong>Shopify POS:</strong> if you&apos;re selling in person, Shopify charges extra for point-of-sale features depending on your plan.</li>
                 <li><strong>Third-party apps or plugins:</strong> sometimes the right tool for your business costs a few bucks a month. I&apos;ll always tell you upfront if I&apos;m recommending something paid.</li>
+                <li><strong>Apple Developer account:</strong> $99/year, required to publish on iPhone. You own the account, not me.</li>
+                <li><strong>Google Play Developer account:</strong> $25 one-time to publish on Android.</li>
+                <li><strong>Push notifications, backend hosting, or other services</strong> only if the app actually needs them, and I&apos;ll flag it before we start.</li>
               </ul>
               <p className="platform-costs-callout-footer">
-                I&apos;ll walk you through all of this before we start so nothing catches you off guard.
+                I don&apos;t mark these up. What the platforms charge is what you pay. I&apos;ll walk you through all of this before we start so nothing catches you off guard.
               </p>
             </div>
           </div>
@@ -503,7 +629,7 @@ function App() {
         <div className="container">
           <h2 className="section-title">Apps I&apos;ve Built</h2>
           <div className="tools-grid">
-            <div className="tool-card">
+            <div className="tool-card" id="tool-tasqly">
               <div className="tool-media">
                 <img src={tasqlyScreenshot} alt="Tasqly app screenshot" className="tool-image tool-image-tasqly" />
               </div>
@@ -528,7 +654,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="tool-card">
+            <div className="tool-card" id="tool-pocketsay">
               <div className="tool-media">
                 <img src={pocketsayScreenshot} alt="PocketSay App screenshot" className="tool-image tool-image-pocketsay" />
               </div>
