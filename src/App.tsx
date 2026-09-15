@@ -5,6 +5,8 @@ import navLogo from './assets/mauna-only-transparent.png'
 import logoTextLight from './assets/mauna-digital-black.png'
 import logoTextDark from './assets/mauna-digital-white.png'
 import profilePhoto from './assets/profile-photo2.png'
+import devportfolioScreenshot from './assets/devportfolio-sc.png'
+import barblendGuruScreenshot from './assets/barblend-guru-sc.png'
 import postachioImage from './assets/postachio-project.png'
 import postachioLogo from './assets/postachio-logo1.png'
 import pocketsayScreenshot from './assets/pocketsay-screenshot.png'
@@ -627,8 +629,30 @@ function App() {
       <section id="tools" className="tools" style={{ backgroundImage: `url(${sandiegoBay})` }}>
         <div className="section-overlay"></div>
         <div className="container">
-          <h2 className="section-title">Apps I&apos;ve Built</h2>
+          <h2 className="section-title">Apps &amp; Interactive Projects I&apos;ve Built</h2>
           <div className="tools-grid">
+            <div className="tool-card" id="tool-pocketsay">
+              <div className="tool-media">
+                <img src={pocketsayScreenshot} alt="PocketSay App screenshot" className="tool-image tool-image-pocketsay" />
+              </div>
+              <div className="tool-content">
+                <div className="tool-badge">iOS App</div>
+                <h3 className="tool-title">
+                  <img src={pocketsayLogo} alt="PocketSay logo" className="tool-title-logo" />
+                  PocketSay
+                </h3>
+                <p className="tool-subtitle">Say it BIG when you can't say it loud</p>
+                <p className="tool-description">PocketSay lets you show large, customizable text when you need to be seen instead of heard. Great for noisy places, distance, or quick non-verbal communication. Private and works offline.</p>
+                <div className="tool-tags">
+                  <span className="tool-tag">iOS</span>
+                  <span className="tool-tag">Communication</span>
+                  <span className="tool-tag">Privacy</span>
+                </div>
+                <div className="tool-cta">
+                  <a href="https://apps.apple.com/us/app/pocketsay/id6756633082" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download PocketSay</a>
+                </div>
+              </div>
+            </div>
             <div className="tool-card" id="tool-tasqly">
               <div className="tool-media">
                 <img src={tasqlyScreenshot} alt="Tasqly app screenshot" className="tool-image tool-image-tasqly" />
@@ -654,29 +678,28 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="tool-card" id="tool-pocketsay">
+            <div className="tool-card" id="tool-barblend-guru">
               <div className="tool-media">
-                <img src={pocketsayScreenshot} alt="PocketSay App screenshot" className="tool-image tool-image-pocketsay" />
+                <img src={barblendGuruScreenshot} alt="BarBlend Guru app screenshot" className="tool-image" />
               </div>
               <div className="tool-content">
-                <div className="tool-badge">iOS App</div>
-                <h3 className="tool-title">
-                  <img src={pocketsayLogo} alt="PocketSay logo" className="tool-title-logo" />
-                  PocketSay
-                </h3>
-                <p className="tool-subtitle">Say it BIG when you can't say it loud</p>
-                <p className="tool-description">PocketSay lets you show large, customizable text when you need to be seen instead of heard. Great for noisy places, distance, or quick non-verbal communication. Private and works offline.</p>
+                <div className="tool-badge">Free Web App</div>
+                <h3 className="tool-title">BarBlend Guru</h3>
+                <p className="tool-subtitle">Find your next favorite pour from what&apos;s already in the cabinet</p>
+                <p className="tool-description">
+                  A free web app with a playful interface for exploring a large cocktail and drinks recipe library. Search by name, dig through what you have on hand, or hit the randomizer and let fate pick the next round — a fun way to discover new drinks without overthinking it.
+                </p>
                 <div className="tool-tags">
-                  <span className="tool-tag">iOS</span>
-                  <span className="tool-tag">Communication</span>
-                  <span className="tool-tag">Privacy</span>
+                  <span className="tool-tag">Web App</span>
+                  <span className="tool-tag">Recipes</span>
+                  <span className="tool-tag">Randomizer</span>
                 </div>
                 <div className="tool-cta">
-                  <a href="https://apps.apple.com/us/app/pocketsay/id6756633082" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download PocketSay</a>
+                  <a href="https://barblend-guru-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Open BarBlend Guru</a>
                 </div>
               </div>
             </div>
-            <div className="tool-card">
+            <div className="tool-card" id="tool-postachio">
               <div className="tool-media">
                 <img src={postachioImage} alt="Postachio App preview" className="tool-image" />
               </div>
@@ -695,6 +718,27 @@ function App() {
                 </div>
                 <div className="tool-cta">
                   <a href="https://postachio.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Try Postachio</a>
+                </div>
+              </div>
+            </div>
+            <div className="tool-card" id="tool-dev-portfolio">
+              <div className="tool-media">
+                <img src={devportfolioScreenshot} alt="Ian Sabado portfolio screenshot" className="tool-image" />
+              </div>
+              <div className="tool-content">
+                <div className="tool-badge">Interactive Website</div>
+                <h3 className="tool-title">Ian Sabado Dev Portfolio</h3>
+                <p className="tool-subtitle">A gamified portfolio you explore like a tiny space adventure</p>
+                <p className="tool-description">
+                  This one&apos;s my own developer portfolio. Instead of a standard scroll-and-skim site, I built it as a playful interactive experience where visitors fly around and explore different sections. It&apos;s a good example of the kind of custom front-end work I like doing when a project calls for something more memorable.
+                </p>
+                <div className="tool-tags">
+                  <span className="tool-tag">Portfolio</span>
+                  <span className="tool-tag">Interactive</span>
+                  <span className="tool-tag">Front End</span>
+                </div>
+                <div className="tool-cta">
+                  <a href="https://www.iansabado.dev/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Explore Portfolio</a>
                 </div>
               </div>
             </div>
