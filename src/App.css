@@ -377,9 +377,21 @@ body {
 
 .hero-cta {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
+  justify-content: center;
+}
+
+.hero-cta .btn-secondary {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-cta .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
 }
 
 .hero-location {
@@ -1389,7 +1401,8 @@ section {
   margin-bottom: 0;
 }
 
-.services-category-section {
+.services-category-section,
+#work {
   scroll-margin-top: 6rem;
 }
 
