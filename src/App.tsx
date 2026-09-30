@@ -607,7 +607,7 @@ function App() {
             <div className="about-text">
               <h2 className="section-title">Hey, I&apos;m Ian 👋</h2>
               <p>
-                I spent years managing websites in the Bay Area and I have worked across most major platforms. I come from a family of small business owners, so I get that budgets are real.                 You shouldn&apos;t need a translator to understand your own site.
+                I&apos;ve spent years in tech and worked across most major platforms. I come from a family of small business owners, so I get that budgets are real. You shouldn&apos;t need a translator to understand your own site.
               </p>
               <p>
                 I&apos;m still here after launch when you need a hand. Questions are welcome. I only recommend what you need, and I&apos;d rather do great work at a fair rate than oversell you.
@@ -618,10 +618,6 @@ function App() {
                 . I also build web and mobile apps when a project calls for it.
               </p>
               <div className="about-stats">
-                <div className="stat">
-                  <h3>🌉</h3>
-                  <p>Bay Area years</p>
-                </div>
                 <div className="stat">
                   <h3>🤝</h3>
                   <p>You talk to me</p>
