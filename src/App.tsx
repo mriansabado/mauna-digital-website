@@ -22,6 +22,7 @@ import { DemoPreview } from './components/DemoPreview'
 
 function App() {
   const [isDark, setIsDark] = useState(() => {
+    if (typeof localStorage === 'undefined') return true
     const saved = localStorage.getItem('mauna-dark-mode')
     return saved !== null ? JSON.parse(saved) : true
   })
@@ -73,6 +74,7 @@ function App() {
         </div>
       </nav>
 
+      <main>
       {/* Hero Section */}
       <section
         className="hero"
@@ -87,6 +89,7 @@ function App() {
                 <img src={heroLogo} alt="Mauna Digital" className="logo-image" />
               </div>
               <h1 className="hero-title">
+                <span className="hero-kicker">Web developer in San Diego</span>
                 Small business tech,{' '}
                 <span className="hero-subtitle">handled</span>
               </h1>
@@ -108,7 +111,7 @@ function App() {
                 </div>
               </div>
               <p className="hero-location">
-                📍 Based in San Diego • Local or Remote, Whatever Works Best for You
+                Based in San Diego · In person locally · Remote anywhere · Hawaii clients welcome
               </p>
               <div className="hero-cta">
                 <a href="#contact" className="btn btn-primary">Let&apos;s Talk</a>
@@ -125,9 +128,9 @@ function App() {
         <div className="container">
           <div className="services-header">
             <div className="services-intro">
-              <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
+              <img src={profilePhoto} alt="Ian Sabado, web developer in San Diego" className="services-profile-photo" />
               <div className="intro-content">
-          <p className="services-subtitle">Hey, I&apos;m Ian. I run Mauna Digital here in San Diego, web development and tech support for owners who don&apos;t have time for the tech side. I come from a family of small business owners, so I know how hard it is to find someone you trust. Most people overpay an agency or keep putting it off. I want to be a better option: straight answers, no runaround, without the agency price tag. Weird site, broken forms, scared to click anything? I&apos;ll sort it out.</p>
+          <p className="services-subtitle">Hey, I&apos;m Ian. I run Mauna Digital here in San Diego: web development and tech support for owners who don&apos;t have time for the tech side. I meet people in San Diego, and I work remote with clients across the US, including Hawaii. I come from a family of small business owners, so I know how hard it is to find someone you trust. Most people overpay an agency or keep putting it off. I want to be a better option: straight answers, no runaround, without the agency price tag. Weird site, broken forms, scared to click anything? I&apos;ll sort it out.</p>
               </div>
             </div>
           </div>
@@ -578,9 +581,39 @@ function App() {
               <ul className="solution-list">
                 <li><strong>San Diego clients:</strong> If in-person is easier, great. If remote is easier, also great.</li>
                 <li><strong>Remote clients:</strong> We can hop on a call, share screens, and sort things out together.</li>
+                <li><strong>Hawaii clients:</strong> Same remote setup. You don&apos;t need a developer on the island.</li>
                 <li><strong>Everyone:</strong> You can text me directly. No ticket maze.</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="where-i-work" className="service-areas" aria-labelledby="where-i-work-title">
+        <div className="container">
+          <h2 id="where-i-work-title" className="section-title">Web developer in San Diego, remote, and Hawaii</h2>
+          <p className="service-areas-lead">
+            I&apos;m based in San Diego. If you&apos;re here, we can meet. If you&apos;re somewhere else, including Hawaii, we work remote and you still talk to me, not a ticket queue.
+          </p>
+          <div className="service-areas-grid">
+            <article className="service-area-card">
+              <h3>San Diego</h3>
+              <p>
+                I live here, so in-person is easy when that helps. We can look at the site together at a coffee shop or at your business. Local web development, without the agency layers.
+              </p>
+            </article>
+            <article className="service-area-card">
+              <h3>Remote</h3>
+              <p>
+                Video call, screen share, and a clear next step. That&apos;s the whole setup. You don&apos;t need to be in San Diego, and you don&apos;t need to be technical. I work with clients across the US.
+              </p>
+            </article>
+            <article className="service-area-card">
+              <h3>Hawaii</h3>
+              <p>
+                I don&apos;t have an office in Hawaii. If you&apos;re there, we work the same way as any remote client: I build or fix the site, explain it in plain English, and stay available after it launches.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -763,7 +796,12 @@ function App() {
                 I also build web and mobile apps. If you&apos;ve got an idea for an internal tool or a customer-facing app, I&apos;m happy to talk it through and tell you what&apos;s realistic.
               </p>
               <p>
-                I&apos;m based in San Diego and happy to meet in person when that helps, but I work with people all over. No fluff. No confusing contract language. Just clear, honest help.
+                I post short tech explainers on Instagram at{' '}
+                <a href="https://www.instagram.com/ianexplainstech/" target="_blank" rel="noopener noreferrer">@ianexplainstech</a>
+                . Same idea as the work: plain language, no jargon for the sake of it.
+              </p>
+              <p>
+                I&apos;m based in San Diego and happy to meet in person when that helps. I also work fully remote, including with clients in Hawaii. No fluff. No confusing contract language. Just clear, honest help.
               </p>
               <div className="about-stats">
                 <div className="stat">
@@ -774,10 +812,47 @@ function App() {
                   <h3>💻</h3>
                   <p>Remote available</p>
                 </div>
+                <div className="stat">
+                  <h3>🌺</h3>
+                  <p>Hawaii clients welcome</p>
+                </div>
+                <a
+                  className="stat"
+                  href="https://www.instagram.com/ianexplainstech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3>📸</h3>
+                  <p>@ianexplainstech</p>
+                </a>
               </div>
             </div>
           </div>
       </div>
+      </section>
+
+      <section id="faq" className="faq" aria-labelledby="faq-title">
+        <div className="container">
+          <h2 id="faq-title" className="section-title">Questions people ask first</h2>
+          <div className="faq-list">
+            <article className="faq-item">
+              <h3>Are you a web developer in San Diego?</h3>
+              <p>Yes. I&apos;m Ian, and Mauna Digital is based in San Diego. I build and fix websites for small businesses, and I can meet in person around the city.</p>
+            </article>
+            <article className="faq-item">
+              <h3>Do you take remote web development clients?</h3>
+              <p>Yes. A lot of the work is a video call and a shared screen, so you don&apos;t have to be in San Diego. I work with people across the US.</p>
+            </article>
+            <article className="faq-item">
+              <h3>Do you work with clients in Hawaii?</h3>
+              <p>Yes. I don&apos;t have an office in Hawaii. If you&apos;re there, we work remotely, the same way I work with anyone outside San Diego.</p>
+            </article>
+            <article className="faq-item">
+              <h3>What can you help with?</h3>
+              <p>New websites, fixes on a site you already have, Squarespace, Shopify, Wix, local SEO, and mobile apps when you need one. I explain it in plain English before we start.</p>
+            </article>
+          </div>
+        </div>
       </section>
 
       {/* Contact Section */}
@@ -810,8 +885,8 @@ function App() {
                   <div className="contact-item contact-item-wide">
                     <div className="contact-item-icon">📍</div>
                     <div className="contact-item-content">
-                      <h4>Based in San Diego</h4>
-                      <p>Local to San Diego, happy to meet in person or work fully remote</p>
+                      <h4>San Diego, remote, and Hawaii</h4>
+                      <p>In person around San Diego, or fully remote. I work with clients in Hawaii the same way.</p>
                       <p className="contact-item-note">💻 Also working with clients across the US</p>
                       <p className="contact-item-note">☕ First conversation is free, in person or video, your call</p>
                     </div>
@@ -841,14 +916,25 @@ function App() {
           </div>
         </div>
       </section>
+      </main>
 
-      {/* Footer */}
       <footer className="footer">
         <div className="container">
           <p>&copy; 2026 Mauna Digital LLC. All rights reserved.</p>
-          <p className="footer-nap">
+          <address className="footer-nap">
+            Web developer in San Diego · Remote across the US · Clients in Hawaii
+            <br />
             San Diego, CA ·{' '}
             <a href="mailto:ian@maunadigital.com">ian@maunadigital.com</a>
+          </address>
+          <p className="footer-links">
+            <a href="#where-i-work">Where I work</a>
+            {' · '}
+            <a href="#faq">FAQ</a>
+            {' · '}
+            <a href="#contact">Contact</a>
+            {' · '}
+            <a href="https://www.instagram.com/ianexplainstech/" target="_blank" rel="noopener noreferrer">Instagram</a>
           </p>
         </div>
       </footer>

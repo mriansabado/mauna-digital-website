@@ -2831,6 +2831,17 @@ section {
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
 
+.about-text a {
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about-text a:hover {
+  opacity: 0.85;
+}
+
 .about-why-header {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -2894,6 +2905,17 @@ section {
   font-weight: 500;
   font-size: 0.95rem;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-stats a.stat {
+  color: inherit;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.about-stats a.stat:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
 }
 
 .stat {
@@ -5306,4 +5328,109 @@ html.dark .form-group select:focus,
 html.dark .form-group textarea:focus {
   background: #1e293b;
   border-color: #38b2ac;
+}
+
+.hero-kicker {
+  display: block;
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.45rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+}
+
+.service-areas,
+.faq {
+  background: #f8fafc;
+}
+
+.service-areas-lead {
+  max-width: 720px;
+  margin: -1.5rem auto 2rem;
+  text-align: center;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.service-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.service-area-card,
+.faq-item {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem 1.35rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.service-area-card h3,
+.faq-item h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.25rem;
+  color: #2d3748;
+}
+
+.service-area-card p,
+.faq-item p {
+  margin: 0;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer address {
+  font-style: normal;
+}
+
+.footer-links {
+  margin-top: 0.75rem;
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 800px) {
+  .service-areas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+html.dark .service-areas,
+html.dark .faq {
+  background: #0f172a;
+}
+
+html.dark .service-areas-lead,
+html.dark .service-area-card p,
+html.dark .faq-item p {
+  color: #cbd5e1;
+}
+
+html.dark .service-area-card,
+html.dark .faq-item {
+  background: #1e293b;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+html.dark .service-area-card h3,
+html.dark .faq-item h3 {
+  color: #f8fafc;
 }
