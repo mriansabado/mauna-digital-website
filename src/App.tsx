@@ -227,7 +227,7 @@ function App() {
                   <h3>Essentials</h3>
                   <p className="service-card-tagline">Keep my site working.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$150/mo</div>
+                    <div className="service-price">$200/mo</div>
                   </div>
                   <p className="service-price-detail">If your site breaks, goes down, or gets hacked, I catch it and fix it, usually before you notice. Plus an hour a month for whatever you need.</p>
                   <div className="service-features">
@@ -237,7 +237,7 @@ function App() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>1 hour a month for any tech help: website edits, email setup, domains, Google accounts, Square/Clover, &quot;why won&apos;t this work&quot; calls</span>
+                      <span>1 hour a month for any tech help: website edits, domains, Google accounts, Square/Clover, &quot;why won&apos;t this work&quot; calls</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -318,7 +318,7 @@ function App() {
                   <h3>Social Posting</h3>
                   <p className="service-card-tagline">Stay visible without living on your phone.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$350/mo</div>
+                    <div className="service-price">$200/mo</div>
                   </div>
                   <p className="service-price-detail">You send photos and clips from the shop floor. I write captions, design posts, and publish twice a week on Instagram and Facebook. Pairs well with Essentials if you want your site covered too.</p>
                   <div className="service-features">
@@ -411,11 +411,11 @@ function App() {
               </article>
               <article className="service-area-card">
                 <h3>Monthly care (optional)</h3>
-                <p>Essentials $150/mo or Growth $400/mo when you want upkeep or local search handled every month.</p>
+                <p>Essentials $200/mo or Growth $400/mo when you want upkeep or local search handled every month.</p>
               </article>
               <article className="service-area-card">
                 <h3>Mix and match</h3>
-                <p>Add Social Posting $350/mo on its own or with a care plan. We set up only what you need.</p>
+                <p>Add Social Posting $200/mo on its own or with a care plan. We set up only what you need.</p>
               </article>
             </div>
           </div>

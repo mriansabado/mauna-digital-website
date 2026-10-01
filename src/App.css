@@ -2119,6 +2119,10 @@ section {
   line-height: 1.4;
 }
 
+.service-features + .service-price-detail {
+  margin-top: 1.5rem;
+}
+
 .service-payment-note {
   font-size: 0.8rem;
   font-weight: 500;
