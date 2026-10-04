@@ -1,5 +1,5 @@
 import autoshopScreenshot from '../assets/autoshop-sc.png'
-import soapmakerScreenshot from '../assets/soapmaker-sc.png'
+import soapmakerScreenshot from '../assets/soapmaker-sc2.png'
 import bandwebsiteScreenshot from '../assets/bandwebsite-sc.png'
 import landscapingScreenshot from '../assets/landscaping-sc.png'
 
@@ -15,15 +15,6 @@ export type DemoSite = {
 
 export const demoSites: DemoSite[] = [
   {
-    name: 'Torque & Co.',
-    tagline: 'Auto Repair',
-    url: 'https://autoshop-demo-website.vercel.app/',
-    description: 'A service-business site with booking cues, services, and trust signals for a local auto shop.',
-    tags: ['Service Business', 'Local'],
-    icon: '🔧',
-    screenshot: autoshopScreenshot,
-  },
-  {
     name: 'Salt & Pine',
     tagline: 'Handmade Soap',
     url: 'https://soapmaker-demo-website-silk.vercel.app/',
@@ -31,6 +22,15 @@ export const demoSites: DemoSite[] = [
     tags: ['E-commerce', 'Maker'],
     icon: '🧼',
     screenshot: soapmakerScreenshot,
+  },
+  {
+    name: 'Coastline Landscaping',
+    tagline: 'Lawn Care & Hardscaping',
+    url: 'https://landscaping-demo-website.vercel.app/',
+    description: 'Before-and-after photos, services, and a contact flow for a local landscaping crew.',
+    tags: ['Service Business', 'Portfolio'],
+    icon: '🌿',
+    screenshot: landscapingScreenshot,
   },
   {
     name: 'Heat Signal',
@@ -42,12 +42,12 @@ export const demoSites: DemoSite[] = [
     screenshot: bandwebsiteScreenshot,
   },
   {
-    name: 'Coastline Landscaping',
-    tagline: 'Lawn Care & Hardscaping',
-    url: 'https://landscaping-demo-website.vercel.app/',
-    description: 'Before-and-after photos, services, and a contact flow for a local landscaping crew.',
-    tags: ['Service Business', 'Portfolio'],
-    icon: '🌿',
-    screenshot: landscapingScreenshot,
+    name: 'Torque & Co.',
+    tagline: 'Auto Repair',
+    url: 'https://autoshop-demo-website.vercel.app/',
+    description: 'A service-business site with booking cues, services, and trust signals for a local auto shop.',
+    tags: ['Service Business', 'Local'],
+    icon: '🔧',
+    screenshot: autoshopScreenshot,
   },
 ]

@@ -12,6 +12,7 @@ import pocketsayScreenshot from './assets/pocketsay-screenshot.png'
 import pocketsayLogo from './assets/pocketsay-logo1.png'
 import tasqlyScreenshot from './assets/tasqly-sc.png'
 import tasqlyLogo from './assets/Tasqly-Logo.png'
+import profilePhoto from './assets/profile-photo2.png'
 import sandiegoImage from './assets/sandiego.jpg'
 import sandiegoBay from './assets/sandiego-bay.jpg'
 import sandiegoBeach from './assets/sandiego-beach.jpg'
@@ -115,6 +116,24 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="meet" aria-labelledby="meet-title">
+        <div className="container meet-inner">
+          <img
+            src={profilePhoto}
+            alt="Ian Sabado, founder of Mauna Digital"
+            className="meet-photo"
+            width={320}
+            height={320}
+          />
+          <p className="meet-kicker">A real person, based in San Diego</p>
+          <h2 id="meet-title" className="meet-title">Hey, I&apos;m Ian</h2>
+          <p className="meet-copy">
+            I run Mauna Digital. When you reach out, you talk to me, from the first message through after launch. I come from a family of small business owners, so I know what it feels like to need someone you can actually trust with the tech.
+          </p>
+          <a href="#about" className="btn btn-secondary">A little more about me</a>
         </div>
       </section>
 
@@ -605,6 +624,13 @@ function App() {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
+              <img
+                src={profilePhoto}
+                alt="Ian Sabado"
+                className="about-photo"
+                width={180}
+                height={180}
+              />
               <h2 className="section-title">Hey, I&apos;m Ian 👋</h2>
               <p>
                 I&apos;ve spent years in tech and worked across most major platforms. I come from a family of small business owners, so I get that budgets are real. You shouldn&apos;t need a translator to understand your own site.
