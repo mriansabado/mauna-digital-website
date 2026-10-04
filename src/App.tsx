@@ -143,7 +143,7 @@ function App() {
           <div className="services-bucket">
             <h3 className="services-bucket-header">Websites</h3>
             <p className="rebuild-tiers-intro">
-              <strong>How do you want your site built?</strong> Shopify, Wix, or Squarespace if you want to log in and make simple changes yourself. Or a custom site I build and self host for you when you want more flexibility and no platform subscription. We pick what fits before we start.
+              <strong>How do you want your site built?</strong> Shopify, Wix, or Squarespace if you want to log in and make simple changes yourself. Or a custom site I build and host for you when you want more flexibility. Custom sites I host include the first year free, then $60/yr, or hosting is included with any care plan. We pick what fits before we start.
             </p>
             <div className="services-grid services-grid-two-up services-grid-offer-pair">
               <div className="service-card service-card-purple">
@@ -160,6 +160,7 @@ function App() {
                     <div className="service-price">$600 flat</div>
                   </div>
                   <p className="service-price-detail">I design it, hook up your domain, and get you live on Shopify, Wix, Squarespace, or as a custom page I host for you. You bring photos and words. I make it look clean and clear.</p>
+                  <p className="service-price-detail">Custom pages I host include the first year of hosting free, then $60/yr.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -222,7 +223,7 @@ function App() {
                       <span>Walkthrough after launch</span>
                     </div>
                   </div>
-                  <p className="service-price-detail">Same platform choices as above. Monthly care is optional if you want someone on call after launch. It can include hosting when I self host a custom build for you.</p>
+                  <p className="service-price-detail">Same platform choices as above. Monthly care is optional. Custom sites I host include year one free, then $60/yr, or hosting is included with any care plan.</p>
                   <a href="#contact" className="btn btn-primary service-btn">Let&apos;s plan it out</a>
                 </div>
               </div>
@@ -446,7 +447,7 @@ function App() {
             </div>
             <ul className="platform-costs-list">
               <li><strong>Domain:</strong> about $15 to $20/yr (yours)</li>
-              <li><strong>Platform:</strong> $16 to $45/mo (Shopify from $39); $0 if I host a custom site</li>
+              <li><strong>Platform:</strong> $16 to $45/mo (Shopify from $39). Custom sites I host: first year free, then $60/yr, or included with any care plan.</li>
               <li><strong>Apple Developer:</strong> $99/yr</li>
               <li><strong>Google Play:</strong> $25 one time</li>
             </ul>
@@ -673,7 +674,11 @@ function App() {
             </article>
             <article className="faq-item">
               <h3>Which platform should I use?</h3>
-              <p>Shopify, Wix, or Squarespace if you want to make simple changes yourself. Custom built and self hosted by me if you want no templates and no platform fee. I walk you through the tradeoffs on a call.</p>
+              <p>Shopify, Wix, or Squarespace if you want to make simple changes yourself. Custom built and hosted by me if you want no templates. Custom hosting is first year free, then $60/yr, or included with any care plan. I walk you through the tradeoffs on a call.</p>
+            </article>
+            <article className="faq-item">
+              <h3>What does hosting cost for a custom site?</h3>
+              <p>The first year is free. After that it&apos;s $60/yr for hosting, SSL, uptime monitoring, and form delivery. It&apos;s included if you&apos;re on a care plan.</p>
             </article>
             <article className="faq-item">
               <h3>Can I cancel a monthly plan?</h3>
