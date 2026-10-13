@@ -143,7 +143,7 @@ function App() {
           <div className="services-bucket">
             <h3 className="services-bucket-header">Websites</h3>
             <p className="rebuild-tiers-intro">
-              <strong>How do you want your site built?</strong> Shopify, Wix, or Squarespace if you want to log in and make simple changes yourself. Or a custom site I build and host for you when you want more flexibility. Custom sites I host include the first year free, then $60/yr. We pick what fits before we start.
+              <strong>How do you want your site built?</strong> Shopify, Wix, or Squarespace if you want to log in and make simple changes yourself. Or a custom site I build and host for you when you want more flexibility. Custom sites I host include the first year free, then $60/yr. These prices cover most work. No two websites are the same, and some jobs call for a custom solution with its own quote. We pick what fits before we start.
             </p>
             <div className="services-grid services-grid-two-up services-grid-offer-pair">
               <div className="service-card service-card-purple">
@@ -224,6 +224,7 @@ function App() {
                     </div>
                   </div>
                   <p className="service-price-detail">Same platform choices as above. Monthly care is optional. Custom sites I host include year one free, then $60/yr.</p>
+                  <p className="service-price-detail">Some jobs involve a little more. No two websites are the same. This covers most work, but if you need a custom solution, I&apos;ll quote that separately.</p>
                   <a href="#contact" className="btn btn-primary service-btn">Let&apos;s plan it out</a>
                 </div>
               </div>
@@ -675,6 +676,10 @@ function App() {
             <article className="faq-item">
               <h3>What does hosting cost for a custom site?</h3>
               <p>The first year is free. After that it&apos;s $60/yr for hosting, SSL, uptime monitoring, and form delivery.</p>
+            </article>
+            <article className="faq-item">
+              <h3>What if my project needs something custom?</h3>
+              <p>No two websites are the same. The prices here cover most work, but some jobs call for a custom solution. I&apos;ll walk you through it and quote that separately.</p>
             </article>
             <article className="faq-item">
               <h3>Can I cancel a monthly plan?</h3>
