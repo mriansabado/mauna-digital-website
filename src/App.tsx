@@ -250,7 +250,7 @@ function App() {
                   <div className="service-price-block">
                     <div className="service-price">$200/mo</div>
                   </div>
-                  <p className="service-price-detail">If your site breaks, goes down, or gets hacked, I catch it and fix it, usually before you notice. Plus an hour a month for whatever you need.</p>
+                  <p className="service-price-detail">Monitoring, on call, same-day response, and 1 hour of updates each month. If your site breaks, goes down, or gets hacked, I catch it and fix it, usually before you notice.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -258,7 +258,7 @@ function App() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>1 hour a month for any tech help: website edits, domains, Google accounts, Square/Clover, &quot;why won&apos;t this work&quot; calls</span>
+                      <span>1 hour a month for updates and tech help</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -266,7 +266,11 @@ function App() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Text me directly</span>
+                      <span>On call — text me directly</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Extra time: $60/hour</span>
                     </div>
                   </div>
                   <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
