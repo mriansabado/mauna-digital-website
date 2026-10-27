@@ -5,10 +5,8 @@ export const FOUNDER_NAME = 'Ian Sabado'
 export const EMAIL = 'ian@maunadigital.com'
 export const EMAIL_HREF = `mailto:${EMAIL}`
 
-/** TODO: replace with your real phone number, e.g. (619) 555-0123 */
-export const PHONE_DISPLAY = '{{PHONE}}'
-/** TODO: replace with tel:+16195550123 (digits only after +) */
-export const PHONE_TEL = 'tel:{{PHONE}}'
+export const PHONE_DISPLAY = '415-971-6114'
+export const PHONE_TEL = 'tel:+14159716114'
 
 export const INSTAGRAM_URL = 'https://www.instagram.com/ianexplainstech/'
 /** TODO: replace with your Google Business Profile URL */
