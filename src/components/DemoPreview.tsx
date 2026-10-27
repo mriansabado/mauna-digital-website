@@ -22,7 +22,7 @@ export function DemoPreview({ url, title, screenshot }: DemoPreviewProps) {
       <div className="demo-preview-image-wrap">
         <img
           src={screenshot}
-          alt={`${title} screenshot`}
+          alt={`${title} website demo for a San Diego small business`}
           className="demo-preview-image"
           loading="lazy"
           decoding="async"

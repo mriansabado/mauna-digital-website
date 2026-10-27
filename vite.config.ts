@@ -25,6 +25,11 @@ export default defineConfig({
     vitePrerenderPlugin({
       renderTarget: '#root',
       prerenderScript: new URL('./src/prerender.tsx', import.meta.url).pathname,
+      additionalPrerenderRoutes: [
+        '/pricing',
+        '/website-fixes',
+        '/platform-help',
+      ],
     }),
     exitAfterPrerender(),
   ],

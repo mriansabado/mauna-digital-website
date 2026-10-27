@@ -1,80 +1,33 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import heroLogo from './assets/new-mauna-logo.png'
-import navLogo from './assets/mauna-only-transparent.png'
-import logoTextLight from './assets/mauna-digital-black.png'
-import logoTextDark from './assets/mauna-digital-white.png'
-import profilePhoto from './assets/profile-photo2.png'
-import postachioImage from './assets/postachio-project.png'
-import postachioLogo from './assets/postachio-logo1.png'
-import pocketsayScreenshot from './assets/pocketsay-screenshot.png'
-import pocketsayLogo from './assets/pocketsay-logo1.png'
-import tasqlyScreenshot from './assets/tasqly-sc.png'
-import tasqlyLogo from './assets/Tasqly-Logo.png'
-import sandiegoImage from './assets/sandiego.jpg'
-import sandiegoBay from './assets/sandiego-bay.jpg'
-import sandiegoBeach from './assets/sandiego-beach.jpg'
-import sandiegoNorthpark from './assets/sandiego-northpark.jpg'
+import { Link } from 'react-router-dom'
+import heroLogo from '../assets/new-mauna-logo.png'
+import devportfolioScreenshot from '../assets/devportfolio-sc.png'
+import barblendGuruScreenshot from '../assets/barblend-guru-sc.png'
+import postachioImage from '../assets/postachio-project.png'
+import postachioLogo from '../assets/postachio-logo1.png'
+import pocketsayScreenshot from '../assets/pocketsay-screenshot.png'
+import pocketsayLogo from '../assets/pocketsay-logo1.png'
+import tasqlyScreenshot from '../assets/tasqly-sc.png'
+import tasqlyLogo from '../assets/Tasqly-Logo.png'
+import profilePhoto from '../assets/profile-photo2.png'
+import sandiegoImage from '../assets/sandiego.jpg'
+import sandiegoBay from '../assets/sandiego-bay.jpg'
+import sandiegoBeach from '../assets/sandiego-beach.jpg'
 import { demoSites } from '../data/demoSites'
 import { DemoPreview } from '../components/DemoPreview'
+import { ContactCta } from '../components/ContactCta'
+import { FaqSection } from '../components/FaqSection'
+import { PageMeta } from '../seo/PageMeta'
+import { homeFaqs } from '../seo/faqs'
 
-function App() {
-  const [isDark, setIsDark] = useState(() => {
-    const saved = localStorage.getItem('mauna-dark-mode')
-    return saved !== null ? JSON.parse(saved) : true
-  })
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  useEffect(() => {
-    localStorage.setItem('mauna-dark-mode', JSON.stringify(isDark))
-    document.documentElement.classList.toggle('dark', isDark)
-  }, [isDark])
-
+export function HomePage() {
   return (
-    <div className={`app ${isDark ? 'dark' : ''}`}>
-      {/* Navigation */}
-      <nav className="nav">
-        <div className="nav-container">
-          <div className="nav-logo">
-            <img src={navLogo} alt="Mauna Digital" className="nav-logo-image" />
-            <img src={isDark ? logoTextDark : logoTextLight} alt="Mauna Digital" className="nav-logo-text" />
-          </div>
-          <div className="nav-right">
-            <div className={`nav-links ${isMenuOpen ? 'nav-links-open' : ''}`}>
-              <a href="#services" onClick={() => setIsMenuOpen(false)}>Services</a>
-              <a href="#demos" onClick={() => setIsMenuOpen(false)}>Demos</a>
-              <a href="#tools" onClick={() => setIsMenuOpen(false)}>Apps</a>
-              <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
-              <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
-            </div>
-            <div className="nav-actions">
-              <button
-                type="button"
-                className="theme-toggle"
-                onClick={() => setIsDark((prev: boolean) => !prev)}
-                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-                title={isDark ? 'Light mode' : 'Dark mode'}
-              >
-                {isDark ? '☀️' : '🌙'}
-              </button>
-              <button
-                type="button"
-                className="nav-menu-toggle"
-                onClick={() => setIsMenuOpen((prev) => !prev)}
-                aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-                aria-expanded={isMenuOpen}
-              >
-                <span className="nav-menu-icon">{isMenuOpen ? '✕' : '☰'}</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+    <>
+      <PageMeta path="/" faqs={homeFaqs} />
+      <main>
       {/* Hero Section */}
       <section
         className="hero"
-        aria-label="San Diego skyline — Mauna Digital web development"
+        aria-label="San Diego skyline, Mauna Digital web development"
         style={{ backgroundImage: `url(${sandiegoImage})` }}
       >
         <div className="hero-overlay"></div>
@@ -85,68 +38,68 @@ function App() {
                 <img src={heroLogo} alt="Mauna Digital" className="logo-image" />
               </div>
               <h1 className="hero-title">
+                <span className="hero-kicker">
+                  Web designer &amp; software developer in San Diego
+                </span>
                 Small business tech,{' '}
                 <span className="hero-subtitle">handled</span>
               </h1>
               <div className="hero-copy">
                 <p className="hero-subtext">
-                  For makers, shop owners, and small businesses who don&apos;t have time to mess with their website.
+                  Affordable websites, website fixes, mobile apps, and everyday tech help for San Diego small businesses. New site, broken site, or something in between — I handle the tech so you can run your business.
                 </p>
-                <p className="hero-tagline">Need one built, or need yours fixed?</p>
                 <div className="hero-pills">
-                  <a href="#services-websites" className="service-pill">Websites</a>
+                  <span className="service-pill">Websites</span>
                   <span className="hero-pill-sep" aria-hidden="true">·</span>
-                  <a href="#services-keep-it-running" className="service-pill">Keep It Running</a>
+                  <span className="service-pill">Monthly Care</span>
                   <span className="hero-pill-sep" aria-hidden="true">·</span>
-                  <a href="#services-get-found-social" className="service-pill">Get Found &amp; Social</a>
+                  <span className="service-pill">Local SEO</span>
                   <span className="hero-pill-sep" aria-hidden="true">·</span>
-                  <a href="#services-mobile-apps" className="service-pill">Mobile Apps</a>
+                  <span className="service-pill">Social</span>
+                  <span className="hero-pill-sep" aria-hidden="true">·</span>
+                  <span className="service-pill">Apps</span>
                 </div>
               </div>
               <p className="hero-location">
-                📍 Based in San Diego • Local or Remote, Whatever Works Best for You
+                Based in San Diego · In person locally · Remote anywhere · Hawaii clients welcome
               </p>
               <div className="hero-cta">
-                <a href="#contact" className="btn btn-primary">Let&apos;s Talk</a>
+                <a href="#contact" className="btn btn-primary">Get a Free Site Check</a>
+                <Link to="/pricing" className="btn btn-secondary">See Pricing</Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      
+      <section className="meet" aria-labelledby="meet-title">
+        <div className="container meet-inner">
+          <img
+            src={profilePhoto}
+            alt="Ian Sabado, founder of Mauna Digital"
+            className="meet-photo"
+            width={320}
+            height={320}
+          />
+          <p className="meet-kicker">A real person, based in San Diego</p>
+          <h2 id="meet-title" className="meet-title">Hey, I&apos;m Ian</h2>
+          <p className="meet-copy">
+            I run Mauna Digital. When you reach out, you talk to me, from the first message through after launch. I come from a family of small business owners, so I know what it feels like to need someone you can actually trust with the tech.
+          </p>
+          <a href="#about" className="btn btn-secondary">A little more about me</a>
+        </div>
+      </section>
 
       {/* Services Section */}
       <section id="services" className="services">
         <div className="container">
-          <div className="services-header">
-            <div className="services-intro">
-              <img src={profilePhoto} alt="Ian Sabado" className="services-profile-photo" />
-              <div className="intro-content">
-          <p className="services-subtitle">Hey, I&apos;m Ian. I run Mauna Digital here in San Diego, web development and tech support for owners who don&apos;t have time for the tech side. I come from a family of small business owners, so I know how hard it is to find someone you trust. Most people overpay an agency or keep putting it off. I want to be a better option: straight answers, no runaround, without the agency price tag. Weird site, broken forms, scared to click anything? I&apos;ll sort it out.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="free-audit-callout">
-            <h3>Not sure where to start?</h3>
-            <p>
-              Not sure what your site needs? I&apos;ll take a look for free and tell you exactly what I find. No charge, no pressure. Just send me your URL.
-            </p>
-            <a href="#contact" className="btn btn-primary">Get Your Free Site Audit</a>
-          </div>
-          
-          {/* Websites */}
-          <div id="services-websites" className="services-bucket services-category-section">
+          <div className="services-bucket">
+            <h3 className="services-bucket-header">Websites</h3>
             <p className="rebuild-tiers-intro">
-              Seems like everyone&apos;s starting something these days, whether it&apos;s a side hustle, a craft, or a small business they actually care about. And for some reason that means you&apos;re also supposed to know how to build a website? That&apos;s where I come in.
+              <strong>How do you want your site built?</strong> Shopify, Wix, or Squarespace if you want to log in and make simple changes yourself. Or a custom site I build and host for you when you want more flexibility. Custom sites I host include the first year free, then $60/yr. These prices cover most work. No two websites are the same, and some jobs call for a custom solution with its own quote. We pick what fits before we start.
             </p>
-            <div className="services-category-header">
-              <h3 className="services-bucket-header">Websites</h3>
-              <p className="rebuild-tiers-intro services-category-tagline">New site, single page, or a full rebuild — I&apos;ll build it right.</p>
-            </div>
             <div className="services-grid services-grid-two-up services-grid-offer-pair">
-              <div id="service-single-page-site" className="service-card service-card-purple">
+              <div className="service-card service-card-purple">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
                     <div className="service-icon">📄</div>
@@ -155,464 +108,322 @@ function App() {
                 </div>
                 <div className="service-content">
                   <h3>Single Page Site</h3>
-                  <p className="service-card-tagline">One page, done right. When you don&apos;t need a full website, just a great one.</p>
-                  <p className="service-price-detail">Not every project needs a full website. Sometimes one clean, well-designed page is exactly right. I&apos;ll design it, build it, connect your domain, and get it live. One page, one focused purpose, no bloat.</p>
+                  <p className="service-card-tagline">One page, done right. For when you don&apos;t need a full site, just one strong page.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$450 flat</div>
+                    <div className="service-price">$600 flat</div>
                   </div>
+                  <p className="service-price-detail">I design it, hook up your domain, and get you live on Shopify, Wix, Squarespace, or as a custom page I host for you. You bring photos and words. I make it look clean and clear.</p>
+                  <p className="service-price-detail">Custom pages I host include the first year of hosting free, then $60/yr.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>One custom-designed page</span>
+                      <span>One custom designed page</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Domain setup and connection</span>
+                      <span>Domain setup</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Mobile-friendly out of the box</span>
+                      <span>Mobile friendly</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Contact form or RSVP if you need one</span>
+                      <span>Contact or RSVP form</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Photos, text, and links laid out cleanly</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>One round of revisions included</span>
+                      <span>One round of revisions</span>
                     </div>
                   </div>
-                  <p className="service-price-detail"><strong>Perfect for:</strong></p>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Weddings, showers, and milestone celebrations</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Bands, DJs, and performers who need a booking page</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Pop-ups, fundraisers, tournaments, and one-time events</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>&quot;Coming soon&quot; pages for new businesses or launches</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Solo pros with one clear offer (trainers, tutors, coaches, notaries)</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Food trucks, home bakers, and other local micro-businesses</span>
-                    </div>
-                  </div>
-                  <p className="service-payment-note">Not sure if a single page is enough? Send me your idea and I&apos;ll tell you honestly.</p>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
+                  <p className="service-price-detail"><strong>Great for:</strong> events, performers, pop ups, &quot;coming soon&quot; pages, solo pros, food trucks.</p>
+                  <Link to="/pricing" className="btn btn-primary service-btn">See pricing details</Link>
                 </div>
               </div>
-              <div id="service-just-getting-started" className="service-card service-card-neon-green">
+              <div className="service-card service-card-neon-green">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
                     <div className="service-icon">🌱</div>
                   </div>
-                  <div className="service-badge">Just Getting Started</div>
+                  <div className="service-badge">Full Website</div>
                 </div>
                 <div className="service-content">
-                  <h3>Just Getting Started</h3>
-                  <p className="service-card-tagline">New business, no site yet? I&apos;ll build the whole thing.</p>
-                  <p className="service-price-detail">You&apos;ve got the idea, the products, the plan. You just don&apos;t have the website and you don&apos;t want to spend three weekends trying to figure one out. I&apos;ll build you a real multi-page site, connect your domain, get the basics of SEO in place, and set you up so you can update the simple stuff yourself. You bring the photos and the words. I handle everything else.</p>
+                  <h3>Full Website</h3>
+                  <p className="service-card-tagline">New business or ready for a real upgrade? Let&apos;s build the whole thing together.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$1200 flat</div>
-                    <p className="service-payment-note">An investment in doing it right. I&apos;ll be here after launch, not gone the second you pay.</p>
+                    <div className="service-price">$1,200 flat</div>
                   </div>
+                  <p className="service-price-detail">A multi page site that feels like <em>you</em>, not a generic template you fought with for three weekends. I walk you through it after launch so you&apos;re not lost.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Multi-page site (home, about, shop or services, contact)</span>
+                      <span>Multi page site (home, about, services or shop, contact)</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Domain setup and connection</span>
+                      <span>Online shop if you need it</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Mobile-friendly out of the box</span>
+                      <span>Domain setup, mobile friendly, basic SEO</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Basic SEO so Google knows you exist</span>
+                      <span>Contact form that reaches you</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Contact form that actually reaches you</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>A quick walkthrough so you&apos;re not lost after launch</span>
+                      <span>Walkthrough after launch</span>
                     </div>
                   </div>
-                  <p className="service-payment-note">Built on Squarespace, Shopify, or Wix, whichever fits your business best. I can also self-host if that&apos;s a better fit.</p>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
+                  <p className="service-price-detail">Same platform choices as above. Monthly care is optional. Custom sites I host include year one free, then $60/yr.</p>
+                  <p className="service-price-detail">Some jobs involve a little more. No two websites are the same. This covers most work, but if you need a custom solution, I&apos;ll quote that separately.</p>
+                  <Link to="/pricing" className="btn btn-primary service-btn">See pricing details</Link>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Keep it running */}
-          <div id="services-keep-it-running" className="services-bucket services-category-section">
-            <div className="services-category-header">
-              <h3 className="services-bucket-header">Keep It Running</h3>
-              <p className="rebuild-tiers-intro services-category-tagline">Something broken, or ongoing tech support so it doesn&apos;t become your job.</p>
-            </div>
+          <div className="services-bucket">
+            <h3 className="services-bucket-header">Monthly care</h3>
+            <p className="rebuild-tiers-intro">
+              Your tech person, on call, if you want one. Essentials keeps things running. Growth helps you get found. Month to month, cancel anytime. No plan required for a one time site or Quick Fix. Many clients pay for the project and reach out again when they need me.
+            </p>
             <div className="services-grid services-grid-two-up services-grid-offer-pair">
-              <div id="service-site-fixes" className="service-card service-card-hot-pink service-card-business-app">
+              <div className="service-card service-card-electric-blue">
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+                    <div className="service-icon">🛠️</div>
+                  </div>
+                  <div className="service-badge">Essentials</div>
+                </div>
+                <div className="service-content">
+                  <h3>Essentials</h3>
+                  <p className="service-card-tagline">Keep my site working.</p>
+                  <div className="service-price-block">
+                    <div className="service-price">$200/mo</div>
+                  </div>
+                  <p className="service-price-detail">Monitoring, on call, same-day response, and 1 hour of updates each month. If your site breaks, goes down, or gets hacked, I catch it and fix it, usually before you notice.</p>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Site monitored, backed up, and kept up to date</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>1 hour a month for updates and tech help</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Same-day response</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>On call — text me directly</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Extra time: $60/hour</span>
+                    </div>
+                  </div>
+                  <Link to="/pricing" className="btn btn-primary service-btn">See care plans</Link>
+                </div>
+              </div>
+              <div className="service-card service-card-hot-pink">
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+                    <div className="service-icon">📈</div>
+                  </div>
+                  <div className="service-badge">Recommended</div>
+                </div>
+                <div className="service-content">
+                  <h3>Growth</h3>
+                  <p className="service-card-tagline">Help me get found.</p>
+                  <div className="service-price-block">
+                    <div className="service-price">$400/mo</div>
+                  </div>
+                  <p className="service-price-detail">Everything in Essentials, plus the local search work that takes time every month: Google Business Profile, listings, on site SEO, and a second hour of edits. I send a short monthly report so you know what changed.</p>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Everything in Essentials</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>2 hours a month for any tech help</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Google Business Profile management (updates, posts, photos)</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Consistent listings across Yelp, Apple Maps, and Bing</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Ongoing on site SEO improvements</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Monthly summary report</span>
+                    </div>
+                  </div>
+                  <p className="service-price-detail">Local SEO builds over time. Most businesses see movement in Google Maps within 2 to 4 months.</p>
+                  <Link to="/pricing" className="btn btn-primary service-btn">See care plans</Link>
+                </div>
+              </div>
+            </div>
+            <p className="service-payment-note rebuild-tiers-intro">Plan hours are for that month only. They don&apos;t roll over.</p>
+          </div>
+
+          <div className="services-bucket">
+            <h3 className="services-bucket-header">Social posting</h3>
+            <p className="rebuild-tiers-intro">Not the same as Growth: this is feed help only. Add it to Essentials or Growth if you want site care and social covered.</p>
+            <div className="services-grid services-grid-single">
+              <div className="service-card service-card-electric-yellow">
+                <div className="service-card-header">
+                  <div className="service-icon-wrapper">
+                    <div className="service-icon">📱</div>
+                  </div>
+                  <div className="service-badge">Social Posting</div>
+                </div>
+                <div className="service-content">
+                  <h3>Social Posting</h3>
+                  <p className="service-card-tagline">Stay visible without living on your phone.</p>
+                  <div className="service-price-block">
+                    <div className="service-price">$200/mo</div>
+                  </div>
+                  <p className="service-price-detail">You send photos and clips from the shop floor. I write captions, design posts, and publish twice a week on Instagram and Facebook. Pairs well with Essentials if you want your site covered too.</p>
+                  <div className="service-features">
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>2 posts or reels per week on Instagram and Facebook</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>You send photos and clips; I handle design, captions, and scheduling</span>
+                    </div>
+                    <div className="feature-item">
+                      <div className="feature-dot"></div>
+                      <span>Month to month</span>
+                    </div>
+                  </div>
+                  <p className="service-payment-note">Light, consistent posting for busy owners. Need full ad strategy? A dedicated social agency may be a better fit.</p>
+                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s talk social</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="services-bucket">
+            <h3 className="services-bucket-header">Other</h3>
+            <div className="services-grid services-grid-two-up services-grid-offer-pair">
+              <div className="service-card service-card-hot-pink service-card-business-app">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
                     <div className="service-icon">🔧</div>
                   </div>
-                  <div className="service-badge">Something&apos;s Not Right</div>
+                  <div className="service-badge">Quick Fix</div>
                 </div>
                 <div className="service-content">
-                  <h3>Something&apos;s Not Right</h3>
-                  <p className="service-card-tagline">Broken, outdated, or just not working the way it should?</p>
-                  <p className="service-price-detail">Something&apos;s off? I&apos;ll figure out what&apos;s wrong and fix it. Billed at $85/hr with a one-hour minimum — and if I finish early, I keep going. Updates, cleanups, broken links, whatever else is on your list. You&apos;d be surprised how much can get done in an hour.</p>
-                  <p className="service-price-detail">Quoted same-day. You&apos;ll know the plan before I start anything.</p>
-                  <p className="service-price-detail">Works on Squarespace, Shopify, Wix, WordPress, and most other platforms.</p>
+                  <h3>Quick Fix</h3>
+                  <p className="service-card-tagline">Something&apos;s broken, weird, or overdue for a cleanup?</p>
                   <div className="service-price-block">
-                    <div className="service-price">$85/hr · 1 hour minimum</div>
+                    <div className="service-price">$85/hr</div>
+                    <p className="service-payment-note">1 hour minimum</p>
                   </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Tell Me What&apos;s Going On</a>
+                  <p className="service-price-detail">Tell me what&apos;s going on. I quote you same day and fix it on Squarespace, Shopify, Wix, WordPress, or most anything else. If I finish early, I&apos;ll use the rest of the hour on your to-do list.</p>
+                  <Link to="/website-fixes" className="btn btn-primary service-btn">Website fixes explained</Link>
                 </div>
               </div>
-              <div id="service-no-time-for-tech" className="service-card service-card-electric-blue">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-                    <div className="service-icon">🤝</div>
-                  </div>
-                  <div className="service-badge">No Time for the Tech Stuff</div>
-                </div>
-                <div className="service-content">
-                  <h3>No Time for the Tech Stuff</h3>
-                  <p className="service-card-tagline">Your business is running. The tech side shouldn&apos;t slow you down.</p>
-                  <p className="service-price-detail">You&apos;ve got a site that works but no time to deal with updates, changes, or the random stuff that breaks. I&apos;ll be your go-to person. No rigid contracts, just reach out when you need something done.</p>
-                  <div className="service-price-block">
-                    <div className="service-price">Flexible · Let&apos;s figure out what fits</div>
-                  </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Get found and stay visible */}
-          <div id="services-get-found-social" className="services-bucket services-category-section">
-            <div className="services-category-header">
-              <h3 className="services-bucket-header">Get Found &amp; Stay Visible</h3>
-              <p className="rebuild-tiers-intro services-category-tagline">Show up in search, and stay active on social without doing it yourself.</p>
-            </div>
-            <div className="services-grid services-grid-two-up services-grid-offer-pair">
-              <div id="service-local-seo-listings" className="service-card service-card-electric-blue">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-                    <div className="service-icon">📍</div>
-                  </div>
-                  <div className="service-badge">Local SEO &amp; Listings</div>
-                </div>
-                <div className="service-content">
-                  <h3>Local SEO &amp; Listings</h3>
-                  <p className="service-card-tagline">SEO means showing up in Google when people search for what you offer, especially on Maps and in local results.</p>
-                  <p className="service-price-detail">SEO stands for search engine optimization. If that still sounds abstract, here&apos;s the practical version: I clean up your Google Business Profile, align your name, address, and phone across Yelp, Apple Maps, and Bing, tighten up the basics on your site (titles, photos, contact info, social links), and fix the inconsistencies that confuse search engines. Most small businesses are invisible online and don&apos;t even know it. Done in about a week.</p>
-                  <div className="service-price-block">
-                    <div className="service-price">$650 flat</div>
-                    <p className="service-payment-note">One-time · No ongoing commitment</p>
-                  </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
-                </div>
-              </div>
-              <div id="service-social-media-management" className="service-card service-card-electric-yellow">
+              <div className="service-card service-card-purple">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
                     <div className="service-icon">📱</div>
                   </div>
-                  <div className="service-badge">Social Media Management</div>
+                  <div className="service-badge">Small App</div>
                 </div>
                 <div className="service-content">
-                  <h3>Social Media Management</h3>
-                  <p className="service-card-tagline">2 posts per week · Instagram + Facebook</p>
-                  <p className="service-price-detail">Posting consistently is one of the best things you can do for your business, but it&apos;s also one of the first things that falls off when you&apos;re busy. You send me your photos, I handle the rest: captions, design, scheduling, posting. Done. Twice a week, every week, on both platforms.</p>
+                  <h3>Small App</h3>
+                  <p className="service-card-tagline">One focused feature, built clean. iPhone and Android from one codebase.</p>
                   <div className="service-price-block">
-                    <div className="service-price">$300/month</div>
+                    <div className="service-price">from $3,500</div>
                   </div>
+                  <p className="service-price-detail">Menus, schedules, simple booking, internal tools. If it helps your business and the scope stays tight, let&apos;s talk. We agree on price before work starts.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>2 posts per week on Instagram and Facebook</span>
+                      <span>One core feature</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>You provide the photos, I write and design everything</span>
+                      <span>iPhone + Android from one codebase</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Consistent, on-brand content every week</span>
+                      <span>App Store and Google Play setup</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Local? I&apos;m in San Diego, happy to meet in person</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Month to month, no contracts</span>
+                      <span>Custom design, launch support</span>
                     </div>
                   </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
+                  <p className="service-price-detail"><strong>Great for:</strong> event schedules, digital menus, simple booking, internal tools.</p>
+                  <a href="#contact" className="btn btn-primary service-btn">Talk through an app idea</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div id="services-mobile-apps" className="services-bucket services-category-section">
-            <div className="services-category-header">
-              <h3 className="services-bucket-header">Mobile Apps</h3>
-              <p className="rebuild-tiers-intro services-category-tagline">A real iPhone and Android app for your business — not a website pretending to be one.</p>
-            </div>
-            <div className="services-grid services-grid-two-up services-grid-offer-pair services-grid-mobile-app-below">
-              <div id="service-simple-app" className="service-card service-card-purple">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-                    <div className="service-icon">📱</div>
-                  </div>
-                  <div className="service-badge">Simple App</div>
-                </div>
-                <div className="service-content">
-                  <h3>Simple App</h3>
-                  <p className="service-card-tagline">One focused feature, done clean.</p>
-                  <div className="service-price-block">
-                    <div className="service-price">Starting at $3,500</div>
-                    <p className="service-payment-note">Project-based · We&apos;ll agree on payment terms before anything starts</p>
-                  </div>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>One core feature built right</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>iPhone and Android from one codebase</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>App Store and Google Play setup included</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Custom design tailored to your brand</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Launch support until it&apos;s live</span>
-                    </div>
-                  </div>
-                  <p className="service-price-detail"><strong>Perfect for:</strong></p>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Event or festival schedules with maps and updates</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Digital menus or lookbooks that update without reprinting</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Simple booking or reservation apps</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Internal tools for one specific workflow</span>
-                    </div>
-                  </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
-                </div>
-              </div>
-              <div id="service-business-app" className="service-card service-card-hot-pink">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-                    <div className="service-icon">🚀</div>
-                  </div>
-                  <div className="service-badge">Business App</div>
-                </div>
-                <div className="service-content">
-                  <h3>Business App</h3>
-                  <p className="service-card-tagline">A focused business app with a few connected features, built to grow with you.</p>
-                  <div className="service-price-block">
-                    <div className="service-price">Starting at $8,000</div>
-                    <p className="service-agency-anchor">Most projects land between $8K and $20K depending on scope, confirmed before anything starts.</p>
-                    <p className="service-payment-note">Best for focused business tools, not giant startup-style platforms.</p>
-                  </div>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>A few connected features working together: accounts, ordering, scheduling, notifications</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>iPhone and Android from one codebase</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Backend and database setup when the app actually needs it</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>App Store and Google Play setup included</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Custom design tailored to your brand</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Post-launch support window included</span>
-                    </div>
-                  </div>
-                  <p className="service-price-detail"><strong>Perfect for:</strong></p>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Boutique gym or studio with class booking and member accounts</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Restaurant or shop with online ordering and order tracking</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Membership or loyalty app</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Internal tools connecting several parts of the business</span>
-                    </div>
-                  </div>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s Talk</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="platform-costs-callout">
-              <div className="platform-costs-callout-header">
-                <span className="platform-costs-callout-badge">Recent app work</span>
-                <h3>A couple apps I&apos;ve built</h3>
-              </div>
-              <p className="platform-costs-callout-intro">
-                If you want a feel for the kind of app work I do, take a look at these:
-              </p>
-              <ul className="platform-costs-list">
-                <li><a href="#tool-tasqly"><strong>Tasqly</strong></a> — a React Native / Expo iOS app I built for client management, calendar scheduling, and recurring sessions.</li>
-                <li><a href="#tool-pocketsay"><strong>PocketSay</strong></a> — live on the App Store right now, rated 4.8★.</li>
-              </ul>
-              <p className="platform-costs-callout-footer">
-                Both are in the <a href="#tools">Apps I&apos;ve Built</a> section below.
-              </p>
-            </div>
-
-            <div className="platform-costs-callout">
-              <div className="platform-costs-callout-header">
-                <span className="platform-costs-callout-badge">How It Works</span>
-                <h3>From idea to launch, four steps</h3>
-              </div>
-              <div className="how-it-works-steps">
-                <div className="how-it-works-step">
-                  <div className="how-it-works-step-number">1</div>
-                  <h4>Idea Call</h4>
-                  <p>Free call. You tell me what you need, and I tell you if it makes sense.</p>
-                </div>
-                <div className="how-it-works-step">
-                  <div className="how-it-works-step-number">2</div>
-                  <h4>Scope &amp; Quote</h4>
-                  <p>I map out what we&apos;re building and give you a real price before I start.</p>
-                </div>
-                <div className="how-it-works-step">
-                  <div className="how-it-works-step-number">3</div>
-                  <h4>Build</h4>
-                  <p>I design and build it, keeping you in the loop as it comes together.</p>
-                </div>
-                <div className="how-it-works-step">
-                  <div className="how-it-works-step-number">4</div>
-                  <h4>Launch &amp; Support</h4>
-                  <p>I get it live, then stick around to make sure launch week goes smoothly.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="platform-costs-callout">
-              <div className="platform-costs-callout-header">
-                <span className="platform-costs-callout-badge">Good to know upfront</span>
-                <h3>A heads up on platform costs</h3>
-              </div>
-              <p className="platform-costs-callout-intro">
-                My fee covers the design, build, and launch. But there are a few ongoing costs you&apos;ll pay directly to the platforms, not to me. Totally normal — just want you to know upfront:
-              </p>
-              <ul className="platform-costs-list">
-                <li><strong>Domain name:</strong> around $15 to $20/year. You own it, not me.</li>
-                <li><strong>Hosting or platform subscription</strong> depends on what we build on. Squarespace and Wix often run $16 to $45/month. Shopify starts at $39/month.</li>
-                <li><strong>Shopify POS:</strong> if you&apos;re selling in person, Shopify charges extra for point-of-sale features depending on your plan.</li>
-                <li><strong>Third-party apps or plugins:</strong> sometimes the right tool for your business costs a few bucks a month. I&apos;ll always tell you upfront if I&apos;m recommending something paid.</li>
-                <li><strong>Apple Developer account:</strong> $99/year, required to publish on iPhone. You own the account, not me.</li>
-                <li><strong>Google Play Developer account:</strong> $25 one-time to publish on Android.</li>
-                <li><strong>Push notifications, backend hosting, or other services</strong> only if the app actually needs them, and I&apos;ll flag it before we start.</li>
-              </ul>
-              <p className="platform-costs-callout-footer">
-                I don&apos;t mark these up. What the platforms charge is what you pay. I&apos;ll walk you through all of this before we start so nothing catches you off guard.
-              </p>
+          <div className="services-bucket">
+            <h3 className="services-bucket-header">Work with me your way</h3>
+            <div className="service-areas-grid">
+              <article className="service-area-card">
+                <h3>One time project</h3>
+                <p>Single Page, Full Website, Quick Fix, or an app. Pay the flat fee or hourly rate. Call me again whenever something comes up.</p>
+              </article>
+              <article className="service-area-card">
+                <h3>Monthly care (optional)</h3>
+                <p>Essentials $200/mo or Growth $400/mo when you want upkeep or local search handled every month.</p>
+              </article>
+              <article className="service-area-card">
+                <h3>Mix and match</h3>
+                <p>Add Social Posting $200/mo on its own or with a care plan. We set up only what you need.</p>
+              </article>
             </div>
           </div>
+
+          <div className="platform-costs-callout">
+            <div className="platform-costs-callout-header">
+              <span className="platform-costs-callout-badge">Good to know</span>
+              <h3>Platform costs you pay directly</h3>
+            </div>
+            <ul className="platform-costs-list">
+              <li><strong>Domain:</strong> about $15 to $20/yr (yours)</li>
+              <li><strong>Platform:</strong> $16 to $45/mo (Shopify from $39). Custom sites I host: first year free, then $60/yr.</li>
+              <li><strong>Apple Developer:</strong> $99/yr</li>
+              <li><strong>Google Play:</strong> $25 one time</li>
+            </ul>
+            <p className="platform-costs-callout-footer">
+              I never mark these up, and I&apos;ll flag any paid tools before we start.{' '}
+              <Link to="/platform-help">Need Wix, Squarespace, Shopify, or WordPress help?</Link>
+            </p>
+          </div>
+
+          <p className="rebuild-tiers-intro">
+            Your domain, your site, your accounts. Always yours. Leave anytime.
+          </p>
         </div>
       </section>
 
-      {/* Why Choose Mauna Digital Section */}
-      <section className="why-choose" style={{ backgroundImage: `url(${sandiegoNorthpark})` }}>
-        <div className="section-overlay section-overlay-light"></div>
-        <div className="container">
-          <h2 className="section-title">Why People Work With Me</h2>
-          <div className="why-choose-content">
-            <div className="why-choose-problem">
-              <h3>I Keep It Human</h3>
-              <p>You shouldn&apos;t need a translator to understand your own website. I explain what&apos;s wrong, what I&apos;m doing, and what to expect next.</p>
-              <p>You&apos;re working directly with me, not getting passed around. That also means you&apos;re not paying for agency overhead and layers of account managers.</p>
-              <ul className="frustration-list">
-                <li>I explain what was wrong and how I fixed it</li>
-                <li>I answer every question without judgment</li>
-                <li>I stick around after the project is done</li>
-                <li>I only recommend what you need</li>
-              </ul>
-            </div>
-            <div className="why-choose-solution">
-              <h3>What It&apos;s Like Working Together</h3>
-              <ul className="solution-list">
-                <li><strong>San Diego clients:</strong> If in-person is easier, great. If remote is easier, also great.</li>
-                <li><strong>Remote clients:</strong> We can hop on a call, share screens, and sort things out together.</li>
-                <li><strong>Everyone:</strong> You can text me directly. No ticket maze.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <div id="work">
       {/* Demo Websites Section */}
       <section id="demos" className="demos">
         <div className="container">
           <h2 className="section-title">Demo Websites</h2>
           <p className="demos-subtitle">
-            Sample sites I built to show what&apos;s possible — click through and poke around.
+            A few sample sites I built. Click through and imagine yours here.
           </p>
           <div className="demos-grid">
             {demoSites.map((site) => (
@@ -653,9 +464,31 @@ function App() {
         <div className="container">
           <h2 className="section-title">Apps I&apos;ve Built</h2>
           <div className="tools-grid">
+            <div className="tool-card" id="tool-pocketsay">
+              <div className="tool-media">
+                <img src={pocketsayScreenshot} alt="PocketSay iOS app showing large on-screen text" className="tool-image tool-image-pocketsay" loading="lazy" />
+              </div>
+              <div className="tool-content">
+                <div className="tool-badge">iOS App</div>
+                <h3 className="tool-title">
+                  <img src={pocketsayLogo} alt="PocketSay logo" className="tool-title-logo" />
+                  PocketSay
+                </h3>
+                <p className="tool-subtitle">Say it BIG when you can&apos;t say it loud</p>
+                <p className="tool-description">Show large, customizable text when you need to be seen instead of heard. Private, works offline.</p>
+                <div className="tool-tags">
+                  <span className="tool-tag">iOS</span>
+                  <span className="tool-tag">Communication</span>
+                  <span className="tool-tag">Privacy</span>
+                </div>
+                <div className="tool-cta">
+                  <a href="https://apps.apple.com/us/app/pocketsay/id6756633082" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download PocketSay</a>
+                </div>
+              </div>
+            </div>
             <div className="tool-card" id="tool-tasqly">
               <div className="tool-media">
-                <img src={tasqlyScreenshot} alt="Tasqly app screenshot" className="tool-image tool-image-tasqly" />
+                <img src={tasqlyScreenshot} alt="Tasqly planner app for freelancers and service pros" className="tool-image tool-image-tasqly" loading="lazy" />
               </div>
               <div className="tool-content">
                 <div className="tool-badge">iOS App</div>
@@ -663,10 +496,8 @@ function App() {
                   <img src={tasqlyLogo} alt="Tasqly logo" className="tool-title-logo" />
                   Tasqly
                 </h3>
-                <p className="tool-subtitle">Planner-first workflow for freelancers &amp; service pros</p>
-                <p className="tool-description">
-                  I built Tasqly, a React Native / Expo iOS app that helps independent professionals manage clients, schedule sessions, and stay on top of weekly work. It combines calendar-based planning, client context, quick notes, recurring sessions, and business-oriented tracking, with responsive layouts for iPhone and iPad, light/dark mode, and a fast, low-friction mobile UX.
-                </p>
+                <p className="tool-subtitle">Planner first workflow for freelancers &amp; service pros</p>
+                <p className="tool-description">A React Native app for independent pros to manage clients, schedule sessions, and stay on top of the week.</p>
                 <div className="tool-tags">
                   <span className="tool-tag">Expo</span>
                   <span className="tool-tag">React Native</span>
@@ -678,31 +509,28 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="tool-card" id="tool-pocketsay">
+            <div className="tool-card" id="tool-barblend-guru">
               <div className="tool-media">
-                <img src={pocketsayScreenshot} alt="PocketSay App screenshot" className="tool-image tool-image-pocketsay" />
+                <img src={barblendGuruScreenshot} alt="BarBlend Guru cocktail recipe web app" className="tool-image" loading="lazy" />
               </div>
               <div className="tool-content">
-                <div className="tool-badge">iOS App</div>
-                <h3 className="tool-title">
-                  <img src={pocketsayLogo} alt="PocketSay logo" className="tool-title-logo" />
-                  PocketSay
-                </h3>
-                <p className="tool-subtitle">Say it BIG when you can't say it loud</p>
-                <p className="tool-description">PocketSay lets you show large, customizable text when you need to be seen instead of heard. Great for noisy places, distance, or quick non-verbal communication. Private and works offline.</p>
+                <div className="tool-badge">Free Web App</div>
+                <h3 className="tool-title">BarBlend Guru</h3>
+                <p className="tool-subtitle">Find your next favorite pour from what&apos;s already in the cabinet</p>
+                <p className="tool-description">Search a cocktail library by name, by what you have on hand, or hit the randomizer.</p>
                 <div className="tool-tags">
-                  <span className="tool-tag">iOS</span>
-                  <span className="tool-tag">Communication</span>
-                  <span className="tool-tag">Privacy</span>
+                  <span className="tool-tag">Web App</span>
+                  <span className="tool-tag">Recipes</span>
+                  <span className="tool-tag">Randomizer</span>
                 </div>
                 <div className="tool-cta">
-                  <a href="https://apps.apple.com/us/app/pocketsay/id6756633082" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download PocketSay</a>
+                  <a href="https://barblend-guru-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Open BarBlend Guru</a>
                 </div>
               </div>
             </div>
-            <div className="tool-card">
+            <div className="tool-card" id="tool-postachio">
               <div className="tool-media">
-                <img src={postachioImage} alt="Postachio App preview" className="tool-image" />
+                <img src={postachioImage} alt="Postachio AI social content app preview" className="tool-image" loading="lazy" />
               </div>
               <div className="tool-content">
                 <div className="tool-badge">Web App</div>
@@ -710,8 +538,8 @@ function App() {
                   <img src={postachioLogo} alt="Postachio logo" className="tool-title-logo" />
                   Postachio
                 </h3>
-                <p className="tool-subtitle">AI-powered social posts with SEO in mind</p>
-                <p className="tool-description">Postachio helps you write social content faster while keeping search visibility in mind. It&apos;s built for consistency, clear structure, and less time staring at a blank caption box.</p>
+                <p className="tool-subtitle">AI powered social posts with SEO in mind</p>
+                <p className="tool-description">Write social content faster, with structure and search in mind, instead of staring at a blank caption box.</p>
                 <div className="tool-tags">
                   <span className="tool-tag">AI</span>
                   <span className="tool-tag">SEO</span>
@@ -722,9 +550,29 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className="tool-card" id="tool-dev-portfolio">
+              <div className="tool-media">
+                <img src={devportfolioScreenshot} alt="Ian Sabado interactive developer portfolio" className="tool-image" loading="lazy" />
+              </div>
+              <div className="tool-content">
+                <div className="tool-badge">Interactive Website</div>
+                <h3 className="tool-title">Ian Sabado Dev Portfolio</h3>
+                <p className="tool-subtitle">A gamified portfolio you explore like a tiny space adventure</p>
+                <p className="tool-description">My own portfolio, built as a playful interactive site instead of a standard scroll and skim page.</p>
+                <div className="tool-tags">
+                  <span className="tool-tag">Portfolio</span>
+                  <span className="tool-tag">Interactive</span>
+                  <span className="tool-tag">Front End</span>
+                </div>
+                <div className="tool-cta">
+                  <a href="https://www.iansabado.dev/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Explore Portfolio</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      </div>
       
       {/* About Section */}
       <section id="about" className="about" style={{ backgroundImage: `url(${sandiegoBeach})` }}>
@@ -732,109 +580,50 @@ function App() {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2 className="section-title">Hey, I'm Ian 👋</h2>
+              <img
+                src={profilePhoto}
+                alt="Ian Sabado, web designer and developer in San Diego"
+                className="about-photo"
+                width={180}
+                height={180}
+                loading="lazy"
+              />
+              <h2 className="section-title">Hey, I&apos;m Ian 👋</h2>
               <p>
-                I&apos;m a developer who helps small businesses with websites, SEO, and the random tech messes that pop up during a normal week. I keep my prices fair. I&apos;m building my client base and I know budgets are real out there.
+                I&apos;ve spent years in tech and worked across most major platforms. I come from a family of small business owners, so I get that budgets are real. You shouldn&apos;t need a translator to understand your own site.
               </p>
               <p>
-                I spent years managing websites in the Bay Area, and I&apos;ve worked across most major platforms. I care way more about being useful than sounding impressive.
+                I&apos;m still here after launch when you need a hand. Questions are welcome. I only recommend what you need, and I&apos;d rather do great work at a fair rate than oversell you.
               </p>
               <p>
-                I also build web and mobile apps. If you&apos;ve got an idea for an internal tool or a customer-facing app, I&apos;m happy to talk it through and tell you what&apos;s realistic.
-              </p>
-              <p>
-                I&apos;m based in San Diego and happy to meet in person when that helps, but I work with people all over. No fluff. No confusing contract language. Just clear, honest help.
+                I post short tech explainers on Instagram at{' '}
+                <a href="https://www.instagram.com/ianexplainstech/" target="_blank" rel="noopener noreferrer">@ianexplainstech</a>
+                . I also build web and mobile apps when a project calls for it.
               </p>
               <div className="about-stats">
                 <div className="stat">
-                  <h3>📍</h3>
-                  <p>San Diego based</p>
+                  <h3>🤝</h3>
+                  <p>You talk to me</p>
                 </div>
-                <div className="stat">
-                  <h3>💻</h3>
-                  <p>Remote available</p>
-                </div>
+                <a
+                  className="stat"
+                  href="https://www.instagram.com/ianexplainstech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3>📸</h3>
+                  <p>@ianexplainstech</p>
+                </a>
               </div>
             </div>
           </div>
       </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="contact">
-        <div className="container">
-          <div className="contact-header">
-            <div className="contact-badge">Need a Hand?</div>
-            <h2 className="section-title">Let&apos;s Talk</h2>
-          </div>
-          
-          <div className="contact-content">
-            <div className="contact-card contact-card-gradient">
-              <div className="contact-card-header">
-                <div className="contact-icon-wrapper">
-                  <div className="contact-icon">💬</div>
-                </div>
-                <div className="contact-badge">Free Website Check</div>
-              </div>
-              <div className="contact-content-main">
-                <h3>Start Here</h3>
-                <p className="contact-subtitle">Send me your site or just tell me what&apos;s going on. I&apos;ll give you honest feedback on what I&apos;d fix first, what can wait, and what it might cost. No pressure.</p>
-                <div className="contact-details">
-                  <div className="contact-item">
-                    <div className="contact-item-icon">📧</div>
-                    <div className="contact-item-content">
-                      <h4>Email</h4>
-                      <p><a href="mailto:ian@maunadigital.com">ian@maunadigital.com</a></p>
-                    </div>
-                  </div>
-                  <div className="contact-item contact-item-wide">
-                    <div className="contact-item-icon">📍</div>
-                    <div className="contact-item-content">
-                      <h4>Based in San Diego</h4>
-                      <p>Local to San Diego, happy to meet in person or work fully remote</p>
-                      <p className="contact-item-note">💻 Also working with clients across the US</p>
-                      <p className="contact-item-note">☕ First conversation is free, in person or video, your call</p>
-                    </div>
-                  </div>
-                  <div className="contact-item">
-                    <div className="contact-item-icon">⚡</div>
-                    <div className="contact-item-content">
-                      <h4>Response Time</h4>
-                      <p>Within 24 hours</p>
-                    </div>
-                  </div>
-                  <div className="contact-item">
-                    <div className="contact-item-icon">💰</div>
-                    <div className="contact-item-content">
-                      <h4>Payment</h4>
-                      <p>Upfront for quick fixes and projects · Ongoing help can be arranged as needed</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="contact-cta">
-                  <a href="mailto:ian@maunadigital.com" className="btn btn-primary contact-btn">
-                    Send Me a Quick Email
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FaqSection faqs={homeFaqs} />
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <p>&copy; 2026 Mauna Digital LLC. All rights reserved.</p>
-          <p className="footer-nap">
-            San Diego, CA ·{' '}
-            <a href="mailto:ian@maunadigital.com">ian@maunadigital.com</a>
-          </p>
-        </div>
-      </footer>
-    </div>
+      <ContactCta />
+      </main>
+    </>
   )
 }
-
-export default App
-
