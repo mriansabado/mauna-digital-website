@@ -1,7 +1,7 @@
-import autoshopScreenshot from '../assets/autoshop-sc.png'
-import soapmakerScreenshot from '../assets/soapmaker-sc2.png'
-import bandwebsiteScreenshot from '../assets/bandwebsite-sc.png'
-import landscapingScreenshot from '../assets/landscaping-sc.png'
+import autoshopScreenshot from '../assets/autoshop-sc.jpg'
+import soapmakerScreenshot from '../assets/soapmaker-sc2.jpg'
+import bandwebsiteScreenshot from '../assets/bandwebsite-sc.jpg'
+import landscapingScreenshot from '../assets/landscaping-sc.jpg'
 
 export type DemoSite = {
   name: string

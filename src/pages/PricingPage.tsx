@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Breadcrumbs } from '../components/Breadcrumbs'
 import { ContactCta } from '../components/ContactCta'
 import { FaqSection } from '../components/FaqSection'
 import { RelatedLinks } from '../components/RelatedLinks'
@@ -12,27 +13,28 @@ export function PricingPage() {
       <main className="seo-page">
         <section className="seo-hero">
           <div className="container">
+            <Breadcrumbs items={[{ name: 'Pricing', path: '/pricing' }]} />
             <p className="seo-kicker">San Diego · Affordable website design</p>
             <h1>Affordable small business websites in San Diego</h1>
             <p className="seo-lead">
-              Looking for an affordable website without agency fluff? Here&apos;s exactly what a small business website costs with me — flat prices, plain English, and you own everything.
+              Looking for an affordable website or a website designer in San Diego? Here&apos;s what a small business website costs with me: flat prices, plain English, and you own everything.
             </p>
           </div>
         </section>
 
         <article className="seo-content container">
           <p>
-            I&apos;m a website designer and web developer in San Diego. Most owners who email me aren&apos;t shopping for a 20-page corporate build. They need a clean site that looks trustworthy on a phone, tells people what they do, and makes it easy to get in touch. That shouldn&apos;t cost five figures.
+            I&apos;m a website designer and web developer in San Diego. Most owners who email me aren&apos;t shopping for a 20-page corporate build. They need help making a website that looks trustworthy on a phone, tells people what they do, and makes it easy to get in touch. That shouldn&apos;t cost five figures.
           </p>
 
-          <h2>Flat website prices (no surprise retainers)</h2>
+          <h2>How much does a website cost?</h2>
           <p>
-            Two clear options cover most small businesses. Pick based on how much you need to say online — not on how fancy the proposal sounds.
+            Flat prices. No surprise retainers. Two clear options cover most small businesses. Pick based on how much you need to say online, not on how fancy the proposal sounds.
           </p>
 
           <div className="seo-price-grid">
             <div className="seo-price-card">
-              <h3>Single Page Site — $600 flat</h3>
+              <h3>Single Page Site: $600 flat</h3>
               <p>
                 One page, done right. I design it, hook up your domain, and get you live on Shopify, Wix, Squarespace, or as a custom page I host for you. You bring photos and words. I make it look clean and clear.
               </p>
@@ -48,9 +50,9 @@ export function PricingPage() {
               </p>
             </div>
             <div className="seo-price-card">
-              <h3>Full Website — $1,200 flat</h3>
+              <h3>Full Website: $1,200 flat</h3>
               <p>
-                A multi page site that feels like you — not a generic template you fought with for three weekends. I walk you through it after launch so you&apos;re not lost.
+                A multi page site that feels like you, not a generic template you fought with for three weekends. I walk you through it after launch so you&apos;re not lost.
               </p>
               <ul>
                 <li>Multi page site (home, about, services or shop, contact)</li>
@@ -70,7 +72,7 @@ export function PricingPage() {
             My flat fee covers design, build, domain setup help, and getting you live. Custom sites I host include the first year of hosting free, then $60/yr for hosting, SSL, uptime monitoring, and form delivery.
           </p>
           <p>
-            Platform costs you pay directly — I never mark them up:
+            Platform costs you pay directly. I never mark them up:
           </p>
           <ul>
             <li>
@@ -90,17 +92,17 @@ export function PricingPage() {
           </p>
           <ul>
             <li>
-              <strong>Essentials — $200/mo:</strong> monitoring, backups, updates, same-day response, 1 hour of help each month. Extra time $60/hour.
+              <strong>Essentials ($200/mo):</strong> monitoring, backups, updates, same-day response, 1 hour of help each month. Extra time $60/hour.
             </li>
             <li>
-              <strong>Growth — $400/mo:</strong> everything in Essentials, plus Google Business Profile work, listings, on-site SEO, 2 hours a month, and a short monthly report.
+              <strong>Growth ($400/mo):</strong> everything in Essentials, plus Google Business Profile work, listings, on-site SEO, 2 hours a month, and a short monthly report.
             </li>
             <li>
-              <strong>Social Posting — $200/mo:</strong> feed help only. Add it alone or with a care plan.
+              <strong>Social Posting ($200/mo):</strong> feed help only. Add it alone or with a care plan.
             </li>
           </ul>
           <p>
-            Month to month. Cancel anytime. No contracts. Plan hours are for that month only — they don&apos;t roll over.
+            Month to month. Cancel anytime. No contracts. Plan hours are for that month only. They don&apos;t roll over.
           </p>
 
           <h2>How to choose</h2>
@@ -143,7 +145,7 @@ export function PricingPage() {
         <FaqSection title="Pricing questions" faqs={pricingFaqs} />
         <ContactCta
           heading="Ready for a clear quote?"
-          subtext="Tell me what kind of site you need — or send your current URL. I'll say which package fits, what platform makes sense, and what you'd pay. First chat is free."
+          subtext="Tell me what kind of site you need, or send your current URL. I'll say which package fits, what platform makes sense, and what you'd pay. First chat is free."
         />
       </main>
     </>

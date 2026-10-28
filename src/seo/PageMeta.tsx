@@ -11,6 +11,7 @@ import {
   canonicalUrl,
   faqJsonLd,
   getPageSeo,
+  websiteJsonLd,
   type FaqItem,
 } from './pages'
 
@@ -44,6 +45,8 @@ export function PageMeta({ path, faqs }: PageMetaProps) {
             name="robots"
             content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
           />
+          <meta name="geo.region" content="US-CA" />
+          <meta name="geo.placename" content="San Diego" />
           <link rel="canonical" href={url} />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content={SITE_NAME} />
@@ -60,6 +63,7 @@ export function PageMeta({ path, faqs }: PageMetaProps) {
           <meta name="twitter:image:alt" content={OG_IMAGE_ALT} />
         </Helmet>
       ) : null}
+      <JsonLd data={websiteJsonLd()} />
       <JsonLd data={businessJsonLd()} />
       {faqs && faqs.length > 0 ? <JsonLd data={faqJsonLd(faqs)} /> : null}
     </>

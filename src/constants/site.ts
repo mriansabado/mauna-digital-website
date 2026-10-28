@@ -7,6 +7,8 @@ export const EMAIL_HREF = `mailto:${EMAIL}`
 
 export const PHONE_DISPLAY = '415-971-6114'
 export const PHONE_TEL = 'tel:+14159716114'
+/** E.164 for schema / structured data */
+export const PHONE_E164 = '+14159716114'
 
 export const INSTAGRAM_URL = 'https://www.instagram.com/ianexplainstech/'
 /** TODO: replace with your Google Business Profile URL */

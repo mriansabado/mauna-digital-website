@@ -2,8 +2,19 @@ import type { FaqItem } from './pages'
 
 export const homeFaqs: FaqItem[] = [
   {
-    question: 'Are you based in San Diego?',
-    answer: 'Yes. In person locally, remote anywhere, including Hawaii.',
+    question: 'Are you a website designer in San Diego?',
+    answer:
+      'Yes. I am a website designer and web developer based in San Diego. In person locally, remote anywhere, including Hawaii.',
+  },
+  {
+    question: 'How much does a small business website cost?',
+    answer:
+      'A Single Page Site is $600 flat. A Full Website is $1,200 flat. Platform fees (Shopify, Wix, Squarespace, domain) you pay directly. I never mark those up.',
+  },
+  {
+    question: 'Can you help if I already have a website that needs fixing?',
+    answer:
+      'Yes. Quick Fix is $85/hr with a one-hour minimum and a same-day quote. Broken forms, mobile layout, outdated pages, login issues, and more.',
   },
   {
     question: 'Which platform should I use?',
@@ -25,10 +36,6 @@ export const homeFaqs: FaqItem[] = [
     answer: 'Yes, anytime. Month to month, no contracts.',
   },
   {
-    question: 'What if I just need one thing fixed?',
-    answer: '$85/hr, no plan needed. One hour minimum, quoted same day.',
-  },
-  {
     question: 'Will I work with you directly?',
     answer: "Yes. It's always me. Text or email, and you can reach me after launch too.",
   },
@@ -45,14 +52,19 @@ export const homeFaqs: FaqItem[] = [
 
 export const pricingFaqs: FaqItem[] = [
   {
-    question: 'Is $600 really enough for a small business website?',
+    question: 'How much does website design cost in San Diego?',
     answer:
-      'For a Single Page Site, yes — one strong page with your domain, mobile layout, and a contact form. If you need multiple pages, a shop, or a fuller brand site, the Full Website at $1,200 is the better fit. I tell you which one matches before we start.',
+      'With me, a Single Page Site is $600 flat and a Full Website is $1,200 flat. That covers most small business needs. If the job is custom, I quote that separately before we start.',
+  },
+  {
+    question: 'Is $600 enough for a small business website?',
+    answer:
+      'For a Single Page Site, yes: one strong page with your domain, mobile layout, and a contact form. If you need multiple pages, a shop, or a fuller brand site, the Full Website at $1,200 is the better fit. I tell you which one matches before we start.',
   },
   {
     question: 'Do you lock me into a contract?',
     answer:
-      'No contracts. Projects are one-time. Monthly care is month to month — cancel anytime. Your domain, site, and accounts stay yours.',
+      'No contracts. Projects are one-time. Monthly care is month to month. Cancel anytime. Your domain, site, and accounts stay yours.',
   },
   {
     question: 'Are platform fees included in your price?',
@@ -67,6 +79,11 @@ export const pricingFaqs: FaqItem[] = [
 ]
 
 export const websiteFixesFaqs: FaqItem[] = [
+  {
+    question: 'Can you help me fix my website in San Diego?',
+    answer:
+      'Yes. Send me your URL and what is going wrong. Quick Fix is $85/hr with a one-hour minimum. I quote same day and work on Wix, Squarespace, Shopify, WordPress, and most other setups.',
+  },
   {
     question: 'How fast can you start a Quick Fix?',
     answer:
@@ -85,7 +102,7 @@ export const websiteFixesFaqs: FaqItem[] = [
   {
     question: 'What if the fix takes less than an hour?',
     answer:
-      'One hour minimum. If I finish early, I use the rest of the hour on your to-do list — updates, cleanups, broken links, whatever else is waiting.',
+      'One hour minimum. If I finish early, I use the rest of the hour on your to-do list: updates, cleanups, broken links, whatever else is waiting.',
   },
 ]
 
@@ -93,7 +110,7 @@ export const platformHelpFaqs: FaqItem[] = [
   {
     question: 'Can you log into my Wix or Squarespace and just fix it?',
     answer:
-      'Yes — once you invite me or share access. I make the changes, explain what I did in plain language, and leave you in control of the account.',
+      'Yes. Once you invite me or share access. I make the changes, explain what I did in plain language, and leave you in control of the account.',
   },
   {
     question: 'Do you mark up platform subscription fees?',

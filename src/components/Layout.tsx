@@ -142,18 +142,18 @@ export function Layout() {
           <address className="footer-nap">
             {SITE_NAME}
             <br />
-            {LOCALITY}
-            {' · '}
+            Website designer &amp; web developer in {LOCALITY}
+            <br />
             <a href={PHONE_TEL}>{PHONE_DISPLAY}</a>
             {' · '}
             <a href={EMAIL_HREF}>{EMAIL}</a>
           </address>
           <p className="footer-links">
-            <Link to="/pricing">Pricing</Link>
+            <Link to="/pricing">Affordable websites</Link>
             {' · '}
-            <Link to="/website-fixes">Website Fixes</Link>
+            <Link to="/website-fixes">Fix my website</Link>
             {' · '}
-            <Link to="/platform-help">Platform Help</Link>
+            <Link to="/platform-help">Wix &amp; WordPress help</Link>
             {' · '}
             <Link to="/#work">Work</Link>
             {' · '}

@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
 import heroLogo from '../assets/new-mauna-logo.png'
-import devportfolioScreenshot from '../assets/devportfolio-sc.png'
-import barblendGuruScreenshot from '../assets/barblend-guru-sc.png'
-import postachioImage from '../assets/postachio-project.png'
+import devportfolioScreenshot from '../assets/devportfolio-sc.jpg'
+import barblendGuruScreenshot from '../assets/barblend-guru-sc.jpg'
+import postachioImage from '../assets/postachio-project.jpg'
 import postachioLogo from '../assets/postachio-logo1.png'
-import pocketsayScreenshot from '../assets/pocketsay-screenshot.png'
+import pocketsayScreenshot from '../assets/pocketsay-screenshot.jpg'
 import pocketsayLogo from '../assets/pocketsay-logo1.png'
-import tasqlyScreenshot from '../assets/tasqly-sc.png'
+import tasqlyScreenshot from '../assets/tasqly-sc.jpg'
 import tasqlyLogo from '../assets/Tasqly-Logo.png'
-import profilePhoto from '../assets/profile-photo2.png'
+import profilePhoto from '../assets/profile-photo2.jpg'
 import sandiegoImage from '../assets/sandiego.jpg'
 import sandiegoBay from '../assets/sandiego-bay.jpg'
 import sandiegoBeach from '../assets/sandiego-beach.jpg'
@@ -46,7 +46,7 @@ export function HomePage() {
               </h1>
               <div className="hero-copy">
                 <p className="hero-subtext">
-                  Affordable websites, website fixes, mobile apps, and everyday tech help for San Diego small businesses. New site, broken site, or something in between — I handle the tech so you can run your business.
+                  Affordable websites, website fixes, mobile apps, and everyday tech help for San Diego small businesses. New site, broken site, or something in between. I handle the tech so you can run your business.
                 </p>
                 <div className="hero-pills">
                   <span className="service-pill">Websites</span>
@@ -84,9 +84,46 @@ export function HomePage() {
           <p className="meet-kicker">A real person, based in San Diego</p>
           <h2 id="meet-title" className="meet-title">Hey, I&apos;m Ian</h2>
           <p className="meet-copy">
-            I run Mauna Digital. When you reach out, you talk to me, from the first message through after launch. I come from a family of small business owners, so I know what it feels like to need someone you can actually trust with the tech.
+            I run Mauna Digital, a San Diego website design and web development shop for small businesses. When you reach out, you talk to me, from the first message through after launch. I come from a family of small business owners, so I know what it feels like to need someone you can trust with the tech.
           </p>
           <a href="#about" className="btn btn-secondary">A little more about me</a>
+        </div>
+      </section>
+
+      <section className="seo-intent" aria-labelledby="seo-intent-title">
+        <div className="container">
+          <h2 id="seo-intent-title" className="section-title">
+            Looking for website help in San Diego?
+          </h2>
+          <p className="seo-intent-intro">
+            Most people who reach out are trying to do one of these. Pick what fits and I&apos;ll tell you the clear next step.
+          </p>
+          <ul className="seo-intent-list">
+            <li>
+              <Link to="/pricing" className="seo-intent-card">
+                <span className="seo-intent-label">I need a new website</span>
+                <span className="seo-intent-desc">
+                  Affordable website design for small businesses. Single Page from $600, Full Website $1,200 flat.
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/website-fixes" className="seo-intent-card">
+                <span className="seo-intent-label">I need to fix my website</span>
+                <span className="seo-intent-desc">
+                  Website help and repairs at $85/hr. Broken forms, mobile issues, outdated pages, logins, and more.
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/platform-help" className="seo-intent-card">
+                <span className="seo-intent-label">I&apos;m stuck on Wix, Squarespace, Shopify, or WordPress</span>
+                <span className="seo-intent-desc">
+                  Platform help from a local website designer who works in these tools every week.
+                </span>
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -96,7 +133,7 @@ export function HomePage() {
           <div className="services-bucket">
             <h3 className="services-bucket-header">Websites</h3>
             <p className="rebuild-tiers-intro">
-              <strong>How do you want your site built?</strong> Shopify, Wix, or Squarespace if you want to log in and make simple changes yourself. Or a custom site I build and host for you when you want more flexibility. Custom sites I host include the first year free, then $60/yr. These prices cover most work. No two websites are the same, and some jobs call for a custom solution with its own quote. We pick what fits before we start.
+              <strong>Need a website built in San Diego?</strong> Shopify, Wix, or Squarespace if you want to log in and make simple changes yourself. Or a custom site I build and host for you when you want more flexibility. Custom sites I host include the first year free, then $60/yr. These prices cover most work. No two websites are the same, and some jobs call for a custom solution with its own quote. We pick what fits before we start.
             </p>
             <div className="services-grid services-grid-two-up services-grid-offer-pair">
               <div className="service-card service-card-purple">
@@ -219,7 +256,7 @@ export function HomePage() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>On call — text me directly</span>
+                      <span>On call. Text me directly</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -590,10 +627,10 @@ export function HomePage() {
               />
               <h2 className="section-title">Hey, I&apos;m Ian 👋</h2>
               <p>
-                I&apos;ve spent years in tech and worked across most major platforms. I come from a family of small business owners, so I get that budgets are real. You shouldn&apos;t need a translator to understand your own site.
+                I&apos;m a website designer and software developer in San Diego. I&apos;ve spent years in tech and worked across most major platforms. I come from a family of small business owners, so I get that budgets are real. You shouldn&apos;t need a translator to understand your own site.
               </p>
               <p>
-                I&apos;m still here after launch when you need a hand. Questions are welcome. I only recommend what you need, and I&apos;d rather do great work at a fair rate than oversell you.
+                Whether you need help making a website, fixing the one you have, or sorting out apps and everyday tech, I&apos;m still here after launch when you need a hand. Questions are welcome. I only recommend what you need, and I&apos;d rather do great work at a fair rate than oversell you.
               </p>
               <p>
                 I post short tech explainers on Instagram at{' '}

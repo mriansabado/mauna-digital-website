@@ -5,7 +5,7 @@ import {
   INSTAGRAM_URL,
   OG_IMAGE,
   OG_IMAGE_ALT,
-  PHONE_DISPLAY,
+  PHONE_E164,
   PRICE_RANGE,
   SITE_NAME,
   SITE_URL,
@@ -21,30 +21,35 @@ export type PageSeo = {
   ogDescription?: string
 }
 
+/**
+ * Titles ~50-60 chars. Descriptions ~140-155 chars (before Google truncation).
+ * Aimed at popular San Diego intent: website designer, affordable website,
+ * fix my website / website help, platform help.
+ */
 export const pageSeo: Record<string, PageSeo> = {
   '/': {
     path: '/',
-    title: 'Affordable Web Design, Website Fixes & Apps in San Diego | Mauna Digital',
+    title: 'Web Designer & Website Help in San Diego | Mauna Digital',
     description:
-      'San Diego web designer and software developer. Affordable websites from $600, website fixes at $85/hr, mobile apps, and small-business tech help. Clear talk, no contracts.',
+      'San Diego website designer for small businesses. Affordable sites from $600, website fixes $85/hr, apps, and tech help. You work with me directly.',
   },
   '/pricing': {
     path: '/pricing',
-    title: 'Affordable Small Business Website Pricing in San Diego | Mauna Digital',
+    title: 'Affordable Website Design Cost in San Diego | From $600',
     description:
-      'Affordable website pricing in San Diego: Single Page Site $600 flat, Full Website $1,200 flat. Clear scope, no contracts, you own your site. Platform costs never marked up.',
+      'Small business website cost in San Diego: Single Page $600, Full Website $1,200. Clear web design pricing, no contracts, you own your site.',
   },
   '/website-fixes': {
     path: '/website-fixes',
-    title: 'Website Fixes & Updates in San Diego | $85/hr | Mauna Digital',
+    title: 'Fix My Website in San Diego | Website Help $85/hr',
     description:
-      'Need to fix my website? Website repair and updates in San Diego at $85/hr (1 hour minimum, same-day quote). Down sites, broken forms, mobile issues, hacks, logins, and more.',
+      'Need to fix your website in San Diego? Forms, mobile layout, outages, updates, and more. Local website help at $85/hr with a same-day quote.',
   },
   '/platform-help': {
     path: '/platform-help',
-    title: 'Wix, Squarespace, Shopify & WordPress Help in San Diego | Mauna Digital',
+    title: 'Wix, Squarespace, Shopify & WordPress Help in San Diego',
     description:
-      'Wix help, Squarespace help, Shopify fixes, and WordPress repair in San Diego. Updates, troubleshooting, and honest advice on when to rebuild — $85/hr Quick Fix.',
+      'Wix, Squarespace, Shopify, and WordPress help in San Diego. Fixes, updates, and rebuild advice from a local website designer. Quick Fix $85/hr.',
   },
 }
 
@@ -69,40 +74,122 @@ export function businessJsonLd() {
   const sameAs = [INSTAGRAM_URL]
   if (GBP_URL && !GBP_URL.includes('{{')) {
     sameAs.push(GBP_URL)
-  } else {
-    // Keep placeholder visible in source for the TODO checklist
-    sameAs.push(GBP_URL)
   }
 
   return {
     '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
+    '@type': ['ProfessionalService', 'LocalBusiness'],
     '@id': `${SITE_URL}/#business`,
     name: SITE_NAME,
     url: `${SITE_URL}/`,
     image: OG_IMAGE,
     logo: OG_IMAGE,
     description:
-      'Affordable web design and website fixes in San Diego. Websites from $600, Quick Fix at $85/hr. Clear talk, no contracts.',
+      'San Diego website designer and web developer. Affordable web design from $600, website fixes at $85/hr, mobile apps, and small-business tech help.',
     email: EMAIL,
-    telephone: PHONE_DISPLAY,
+    telephone: PHONE_E164,
     priceRange: PRICE_RANGE,
+    currenciesAccepted: 'USD',
+    paymentAccepted: 'Cash, Credit Card, Invoice',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'San Diego',
       addressRegion: 'CA',
       addressCountry: 'US',
     },
-    areaServed: {
-      '@type': 'AdministrativeArea',
-      name: 'San Diego County',
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 32.7157,
+      longitude: -117.1611,
     },
+    areaServed: [
+      { '@type': 'City', name: 'San Diego' },
+      { '@type': 'AdministrativeArea', name: 'San Diego County' },
+    ],
     founder: {
       '@type': 'Person',
+      '@id': `${SITE_URL}/#ian`,
       name: FOUNDER_NAME,
       email: EMAIL,
+      jobTitle: 'Web Designer and Software Developer',
+      url: `${SITE_URL}/`,
+      homeLocation: {
+        '@type': 'Place',
+        name: 'San Diego, California',
+      },
+      sameAs: [INSTAGRAM_URL, 'https://www.iansabado.dev/'],
     },
+    knowsAbout: [
+      'Website design',
+      'Web design',
+      'Web development',
+      'Affordable websites',
+      'Small business websites',
+      'Website repair',
+      'Website fixes',
+      'Website help',
+      'Wix',
+      'Squarespace',
+      'Shopify',
+      'WordPress',
+      'Mobile app development',
+      'Local SEO',
+      'Small business tech help',
+    ],
+    makesOffer: [
+      {
+        '@type': 'Offer',
+        name: 'Single Page Site',
+        price: '600',
+        priceCurrency: 'USD',
+        url: `${SITE_URL}/pricing`,
+        description: 'Affordable one-page website design in San Diego',
+      },
+      {
+        '@type': 'Offer',
+        name: 'Full Website',
+        price: '1200',
+        priceCurrency: 'USD',
+        url: `${SITE_URL}/pricing`,
+        description: 'Multi-page small business website design in San Diego',
+      },
+      {
+        '@type': 'Offer',
+        name: 'Quick Fix website help',
+        price: '85',
+        priceCurrency: 'USD',
+        url: `${SITE_URL}/website-fixes`,
+        description: 'Website repair and updates in San Diego',
+        priceSpecification: {
+          '@type': 'UnitPriceSpecification',
+          price: '85',
+          priceCurrency: 'USD',
+          unitText: 'HOUR',
+        },
+      },
+    ],
     sameAs,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: PHONE_E164,
+      contactType: 'customer service',
+      areaServed: ['San Diego', 'US'],
+      availableLanguage: ['English'],
+    },
+  }
+}
+
+export function websiteJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    url: `${SITE_URL}/`,
+    name: SITE_NAME,
+    description:
+      'San Diego website designer and web developer for small businesses. Affordable websites, website fixes, and tech help.',
+    inLanguage: 'en-US',
+    publisher: { '@id': `${SITE_URL}/#business` },
   }
 }
 
@@ -143,6 +230,8 @@ export function buildHeadElements(pathname: string) {
         content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
       },
     },
+    { type: 'meta', props: { name: 'geo.region', content: 'US-CA' } },
+    { type: 'meta', props: { name: 'geo.placename', content: 'San Diego' } },
     { type: 'link', props: { rel: 'canonical', href: url } },
     { type: 'meta', props: { property: 'og:type', content: 'website' } },
     { type: 'meta', props: { property: 'og:site_name', content: SITE_NAME } },
