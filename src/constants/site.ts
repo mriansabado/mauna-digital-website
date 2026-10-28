@@ -11,8 +11,7 @@ export const PHONE_TEL = 'tel:+14159716114'
 export const PHONE_E164 = '+14159716114'
 
 export const INSTAGRAM_URL = 'https://www.instagram.com/ianexplainstech/'
-/** TODO: replace with your Google Business Profile URL */
-export const GBP_URL = '{{GBP_URL}}'
+export const GBP_URL = 'https://share.google/CQq4TOjkP2He78lAy'
 
 export const OG_IMAGE = `${SITE_URL}/mauna-digital-logo-blue1.png`
 export const OG_IMAGE_ALT = 'Mauna Digital logo'
