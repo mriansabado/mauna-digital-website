@@ -89,12 +89,6 @@ export function Layout() {
                   <Link to="/#services" role="menuitem" onClick={closeMenu}>
                     All services
                   </Link>
-                  <Link to="/pricing" role="menuitem" onClick={closeMenu}>
-                    Website pricing
-                  </Link>
-                  <Link to="/website-fixes" role="menuitem" onClick={closeMenu}>
-                    Quick Fix
-                  </Link>
                 </div>
               </div>
               <Link to="/#work" onClick={closeMenu}>
