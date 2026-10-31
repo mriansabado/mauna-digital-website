@@ -29,27 +29,27 @@ export type PageSeo = {
 export const pageSeo: Record<string, PageSeo> = {
   '/': {
     path: '/',
-    title: 'Web Designer & Website Help in San Diego | Mauna Digital',
+    title: 'San Diego Web Designer & Developer | Mauna Digital',
     description:
-      'San Diego website designer for small businesses. Affordable sites from $600, website fixes $85/hr, apps, and tech help. You work with me directly.',
+      `${FOUNDER_NAME} is a San Diego website designer and web developer for small businesses. Affordable sites from $600, website fixes $85/hr, apps, and tech help.`,
   },
   '/pricing': {
     path: '/pricing',
-    title: 'Affordable Website Design Cost in San Diego | From $600',
+    title: 'Affordable Website Design in San Diego | From $600',
     description:
-      'Small business website cost in San Diego: Single Page $600, Full Website $1,200. Clear web design pricing, no contracts, you own your site.',
+      'San Diego website designer with clear pricing: Single Page $600, Full Website $1,200. Affordable web design for small businesses, no contracts.',
   },
   '/website-fixes': {
     path: '/website-fixes',
     title: 'Fix My Website in San Diego | Website Help $85/hr',
     description:
-      'Need to fix your website in San Diego? Forms, mobile layout, outages, updates, and more. Local website help at $85/hr with a same-day quote.',
+      'Need a San Diego web developer to fix your website? Forms, mobile layout, outages, updates, and more. Local website help at $85/hr, same-day quote.',
   },
   '/platform-help': {
     path: '/platform-help',
     title: 'Wix, Squarespace, Shopify & WordPress Help in San Diego',
     description:
-      'Wix, Squarespace, Shopify, and WordPress help in San Diego. Fixes, updates, and rebuild advice from a local website designer. Quick Fix $85/hr.',
+      'Wix, Squarespace, Shopify, and WordPress help from a San Diego website designer and web developer. Fixes, updates, rebuild advice. Quick Fix $85/hr.',
   },
 }
 
@@ -85,7 +85,7 @@ export function businessJsonLd() {
     image: OG_IMAGE,
     logo: OG_IMAGE,
     description:
-      'San Diego website designer and web developer. Affordable web design from $600, website fixes at $85/hr, mobile apps, and small-business tech help.',
+      `${FOUNDER_NAME} — San Diego website designer and web developer. Affordable web design from $600, website fixes at $85/hr, mobile apps, and small-business tech help.`,
     email: EMAIL,
     telephone: PHONE_E164,
     priceRange: PRICE_RANGE,
@@ -120,6 +120,9 @@ export function businessJsonLd() {
       sameAs: [INSTAGRAM_URL, 'https://www.iansabado.dev/'],
     },
     knowsAbout: [
+      'San Diego website designer',
+      'San Diego web designer',
+      'San Diego web developer',
       'Website design',
       'Web design',
       'Web development',

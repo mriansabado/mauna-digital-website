@@ -6,6 +6,7 @@ import logoTextDark from '../assets/mauna-digital-white.png'
 import {
   EMAIL,
   EMAIL_HREF,
+  FOUNDER_NAME,
   INSTAGRAM_URL,
   LOCALITY,
   PHONE_DISPLAY,
@@ -136,7 +137,7 @@ export function Layout() {
           <address className="footer-nap">
             {SITE_NAME}
             <br />
-            Website designer &amp; web developer in {LOCALITY}
+            {FOUNDER_NAME}, website designer &amp; web developer in {LOCALITY}
             <br />
             <a href={PHONE_TEL}>{PHONE_DISPLAY}</a>
             {' · '}

@@ -15,9 +15,9 @@ export function PricingPage() {
           <div className="container">
             <Breadcrumbs items={[{ name: 'Pricing', path: '/pricing' }]} />
             <p className="seo-kicker">San Diego · Affordable website design</p>
-            <h1>Affordable small business websites in San Diego</h1>
+            <h1>Affordable website design in San Diego</h1>
             <p className="seo-lead">
-              Looking for an affordable website or a website designer in San Diego? Here&apos;s what a small business website costs with me: flat prices, plain English, and you own everything.
+              Looking for a San Diego website designer with clear pricing? Here&apos;s what a small business website costs with me: flat prices, plain English, and you own everything.
             </p>
           </div>
         </section>
@@ -36,33 +36,29 @@ export function PricingPage() {
             <div className="seo-price-card">
               <h3>Single Page Site: $600 flat</h3>
               <p>
-                One page, done right. I design it, hook up your domain, and get you live on Shopify, Wix, Squarespace, or as a custom page I host for you. You bring photos and words. I make it look clean and clear.
+                One strong page for events, pop-ups, solo pros, and food trucks. I design it, hook up your domain, and get you live on Shopify, Wix, Squarespace, or as a custom page I host for you. You bring photos and words.
               </p>
               <ul>
                 <li>One custom designed page</li>
                 <li>Domain setup</li>
                 <li>Mobile friendly</li>
                 <li>Contact or RSVP form</li>
-                <li>One round of revisions</li>
+                <li>One polish pass after you send photos &amp; words</li>
               </ul>
-              <p>
-                <strong>Great for:</strong> events, performers, pop ups, &quot;coming soon&quot; pages, solo pros, food trucks.
-              </p>
             </div>
             <div className="seo-price-card">
               <h3>Full Website: $1,200 flat</h3>
               <p>
-                A multi page site that feels like you, not a generic template you fought with for three weekends. I walk you through it after launch so you&apos;re not lost.
+                Multi-page site for a real small business. Feels like you, not a generic template. I walk you through it after launch so you&apos;re not lost.
               </p>
               <ul>
-                <li>Multi page site (home, about, services or shop, contact)</li>
-                <li>Online shop if you need it</li>
+                <li>Home, about, services, contact</li>
                 <li>Domain setup, mobile friendly, basic SEO</li>
                 <li>Contact form that reaches you</li>
                 <li>Walkthrough after launch</li>
               </ul>
               <p>
-                Same platform choices as above. Monthly care is optional.
+                Same platforms as above. Full online store? I&apos;ll quote that separately.
               </p>
             </div>
           </div>
@@ -88,17 +84,17 @@ export function PricingPage() {
 
           <h2>Optional monthly care (no plan required)</h2>
           <p>
-            Plenty of clients pay for the project and reach out again when they need me. If you want a tech person on call, monthly care is there:
+            Optional. Essentials = keep it running. Growth = help you get found. Month to month — not required for a one-time site or Quick Fix.
           </p>
           <ul>
             <li>
-              <strong>Essentials ($200/mo):</strong> monitoring, backups, updates, same-day response, 1 hour of help each month. Extra time $60/hour.
+              <strong>Essentials ($200/mo):</strong> peace of mind — I watch the site so you don&apos;t have to. Same-day response, plus 1 hour a month for updates. Extra time $60/hour.
             </li>
             <li>
-              <strong>Growth ($400/mo):</strong> everything in Essentials, plus Google Business Profile work, listings, on-site SEO, 2 hours a month, and a short monthly report.
+              <strong>Growth ($400/mo):</strong> everything in Essentials, plus Google Business Profile, listing cleanup, on-site SEO tweaks, 2 hours a month, and a short note on what changed.
             </li>
             <li>
-              <strong>Social Posting ($200/mo):</strong> feed help only. Add it alone or with a care plan.
+              <strong>Social Posting ($200/mo):</strong> feed help only — not the same as Growth. Add it alone or with a care plan.
             </li>
           </ul>
           <p>
@@ -110,7 +106,7 @@ export function PricingPage() {
             <strong>Need one strong page?</strong> Start with the Single Page Site at $600.
           </p>
           <p>
-            <strong>Need a real small business website</strong> with a few pages, services, or a shop? Full Website at $1,200.
+            <strong>Need a real small business website</strong> with a few pages and services? Full Website at $1,200. Full online store? I&apos;ll quote that separately.
           </p>
           <p>
             <strong>Already have a site that&apos;s broken or outdated?</strong> You might not need a rebuild. My{' '}

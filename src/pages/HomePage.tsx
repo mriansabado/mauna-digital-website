@@ -16,6 +16,7 @@ import { demoSites } from '../data/demoSites'
 import { DemoPreview } from '../components/DemoPreview'
 import { ContactCta } from '../components/ContactCta'
 import { FaqSection } from '../components/FaqSection'
+import { FOUNDER_NAME } from '../constants/site'
 import { PageMeta } from '../seo/PageMeta'
 import { homeFaqs } from '../seo/faqs'
 
@@ -39,14 +40,14 @@ export function HomePage() {
               </div>
               <h1 className="hero-title">
                 <span className="hero-kicker">
-                  Web designer &amp; software developer in San Diego
+                  San Diego website designer &amp; web developer
                 </span>
                 Small business tech,{' '}
                 <span className="hero-subtitle">handled</span>
               </h1>
               <div className="hero-copy">
                 <p className="hero-subtext">
-                  Affordable websites, website fixes, mobile apps, and everyday tech help for San Diego small businesses. New site, broken site, or something in between. I handle the tech so you can run your business.
+                  Affordable website design, website fixes, mobile apps, and everyday tech help for San Diego small businesses. New site, broken site, or something in between. I handle the tech so you can run your business.
                 </p>
                 <div className="hero-pills">
                   <span className="service-pill">Websites</span>
@@ -82,9 +83,9 @@ export function HomePage() {
             height={320}
           />
           <p className="meet-kicker">A real person, based in San Diego</p>
-          <h2 id="meet-title" className="meet-title">Hey, I&apos;m Ian</h2>
+          <h2 id="meet-title" className="meet-title">Hey, I&apos;m {FOUNDER_NAME}</h2>
           <p className="meet-copy">
-            I run Mauna Digital, a San Diego website design and web development shop for small businesses. When you reach out, you talk to me, from the first message through after launch. I come from a family of small business owners, so I know what it feels like to need someone you can trust with the tech.
+            I run Mauna Digital as a San Diego website designer and web developer for small businesses. When you reach out, you talk to me from the first message through after launch. I come from a family of small business owners, so I know what it feels like to need someone you can trust with the tech.
           </p>
           <a href="#about" className="btn btn-secondary">A little more about me</a>
         </div>
@@ -93,10 +94,10 @@ export function HomePage() {
       <section className="seo-intent" aria-labelledby="seo-intent-title">
         <div className="container">
           <h2 id="seo-intent-title" className="section-title">
-            Looking for website help in San Diego?
+            Looking for a San Diego website designer?
           </h2>
           <p className="seo-intent-intro">
-            Most people who reach out are trying to do one of these. Pick what fits and I&apos;ll tell you the clear next step.
+            Most people who reach out need a local web designer, web developer, or someone to fix what they already have. Pick what fits and I&apos;ll tell you the clear next step.
           </p>
           <ul className="seo-intent-list">
             <li>
@@ -133,7 +134,7 @@ export function HomePage() {
           <div className="services-bucket">
             <h3 className="services-bucket-header">Websites</h3>
             <p className="rebuild-tiers-intro">
-              <strong>Need a website built in San Diego?</strong> Shopify, Wix, or Squarespace if you want to log in and make simple changes yourself. Or a custom site I build and host for you when you want more flexibility. Custom sites I host include the first year free, then $60/yr. These prices cover most work. No two websites are the same, and some jobs call for a custom solution with its own quote. We pick what fits before we start.
+              <strong>Need a website built in San Diego?</strong> Wix, Squarespace, or Shopify if you want to edit it yourself — or a custom site I host (year one free, then $60/yr). Flat prices below. Bigger or unusual jobs get a custom quote.
             </p>
             <div className="services-grid services-grid-two-up services-grid-offer-pair">
               <div className="service-card service-card-purple">
@@ -145,12 +146,11 @@ export function HomePage() {
                 </div>
                 <div className="service-content">
                   <h3>Single Page Site</h3>
-                  <p className="service-card-tagline">One page, done right. For when you don&apos;t need a full site, just one strong page.</p>
+                  <p className="service-card-tagline">One strong page. Events, pop-ups, solo pros, food trucks.</p>
                   <div className="service-price-block">
                     <div className="service-price">$600 flat</div>
                   </div>
                   <p className="service-price-detail">I design it, hook up your domain, and get you live on Shopify, Wix, Squarespace, or as a custom page I host for you. You bring photos and words. I make it look clean and clear.</p>
-                  <p className="service-price-detail">Custom pages I host include the first year of hosting free, then $60/yr.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -170,10 +170,9 @@ export function HomePage() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>One round of revisions</span>
+                      <span>One polish pass after you send photos &amp; words</span>
                     </div>
                   </div>
-                  <p className="service-price-detail"><strong>Great for:</strong> events, performers, pop ups, &quot;coming soon&quot; pages, solo pros, food trucks.</p>
                   <Link to="/pricing" className="btn btn-primary service-btn">See pricing details</Link>
                 </div>
               </div>
@@ -186,7 +185,7 @@ export function HomePage() {
                 </div>
                 <div className="service-content">
                   <h3>Full Website</h3>
-                  <p className="service-card-tagline">New business or ready for a real upgrade? Let&apos;s build the whole thing together.</p>
+                  <p className="service-card-tagline">Multi-page site for a real small business.</p>
                   <div className="service-price-block">
                     <div className="service-price">$1,200 flat</div>
                   </div>
@@ -194,11 +193,7 @@ export function HomePage() {
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Multi page site (home, about, services or shop, contact)</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Online shop if you need it</span>
+                      <span>Home, about, services, contact</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -213,8 +208,7 @@ export function HomePage() {
                       <span>Walkthrough after launch</span>
                     </div>
                   </div>
-                  <p className="service-price-detail">Same platform choices as above. Monthly care is optional. Custom sites I host include year one free, then $60/yr.</p>
-                  <p className="service-price-detail">Some jobs involve a little more. No two websites are the same. This covers most work, but if you need a custom solution, I&apos;ll quote that separately.</p>
+                  <p className="service-price-detail">Same platforms as above. Full online store? I&apos;ll quote that separately.</p>
                   <Link to="/pricing" className="btn btn-primary service-btn">See pricing details</Link>
                 </div>
               </div>
@@ -224,7 +218,7 @@ export function HomePage() {
           <div className="services-bucket">
             <h3 className="services-bucket-header">Monthly care</h3>
             <p className="rebuild-tiers-intro">
-              Your tech person, on call, if you want one. Essentials keeps things running. Growth helps you get found. Month to month, cancel anytime. No plan required for a one time site or Quick Fix. Many clients pay for the project and reach out again when they need me.
+              Optional. Essentials = keep it running. Growth = help you get found. Month to month — not required for a one-time site or Quick Fix.
             </p>
             <div className="services-grid services-grid-two-up services-grid-offer-pair">
               <div className="service-card service-card-electric-blue">
@@ -236,11 +230,11 @@ export function HomePage() {
                 </div>
                 <div className="service-content">
                   <h3>Essentials</h3>
-                  <p className="service-card-tagline">Keep my site working.</p>
+                  <p className="service-card-tagline">Peace of mind. I watch the site so you don&apos;t have to.</p>
                   <div className="service-price-block">
                     <div className="service-price">$200/mo</div>
                   </div>
-                  <p className="service-price-detail">Monitoring, on call, same-day response, and 1 hour of updates each month. If your site breaks, goes down, or gets hacked, I catch it and fix it, usually before you notice.</p>
+                  <p className="service-price-detail">If it breaks or goes down, I catch it. Same-day response, plus 1 hour a month for updates.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -252,11 +246,7 @@ export function HomePage() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Same-day response</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>On call. Text me directly</span>
+                      <span>Same-day response. Text me directly</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -271,7 +261,7 @@ export function HomePage() {
                   <div className="service-icon-wrapper">
                     <div className="service-icon">📈</div>
                   </div>
-                  <div className="service-badge">Recommended</div>
+                  <div className="service-badge">Local SEO</div>
                 </div>
                 <div className="service-content">
                   <h3>Growth</h3>
@@ -279,7 +269,7 @@ export function HomePage() {
                   <div className="service-price-block">
                     <div className="service-price">$400/mo</div>
                   </div>
-                  <p className="service-price-detail">Everything in Essentials, plus the local search work that takes time every month: Google Business Profile, listings, on site SEO, and a second hour of edits. I send a short monthly report so you know what changed.</p>
+                  <p className="service-price-detail">Everything in Essentials, plus Google Business Profile, listing cleanup, and a short note each month on what changed.</p>
                   <div className="service-features">
                     <div className="feature-item">
                       <div className="feature-dot"></div>
@@ -291,19 +281,15 @@ export function HomePage() {
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Google Business Profile management (updates, posts, photos)</span>
+                      <span>GBP posts &amp; listing cleanup</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Consistent listings across Yelp, Apple Maps, and Bing</span>
+                      <span>On-site SEO tweaks</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-dot"></div>
-                      <span>Ongoing on site SEO improvements</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Monthly summary report</span>
+                      <span>Monthly summary</span>
                     </div>
                   </div>
                   <p className="service-price-detail">Local SEO builds over time. Most businesses see movement in Google Maps within 2 to 4 months.</p>
@@ -316,7 +302,7 @@ export function HomePage() {
 
           <div className="services-bucket">
             <h3 className="services-bucket-header">Social posting</h3>
-            <p className="rebuild-tiers-intro">Not the same as Growth: this is feed help only. Add it to Essentials or Growth if you want site care and social covered.</p>
+            <p className="rebuild-tiers-intro">Feed help only — not the same as Growth. Add it alone or with a care plan.</p>
             <div className="services-grid services-grid-single">
               <div className="service-card service-card-electric-yellow">
                 <div className="service-card-header">
@@ -625,9 +611,9 @@ export function HomePage() {
                 height={180}
                 loading="lazy"
               />
-              <h2 className="section-title">Hey, I&apos;m Ian 👋</h2>
+              <h2 className="section-title">Hey, I&apos;m {FOUNDER_NAME} 👋</h2>
               <p>
-                I&apos;m a website designer and software developer in San Diego. I&apos;ve spent years in tech and worked across most major platforms. I come from a family of small business owners, so I get that budgets are real. You shouldn&apos;t need a translator to understand your own site.
+                I&apos;m {FOUNDER_NAME}, a San Diego website designer and web developer. I&apos;ve spent years in tech and worked across most major platforms. I come from a family of small business owners, so I get that budgets are real. You shouldn&apos;t need a translator to understand your own site.
               </p>
               <p>
                 Whether you need help making a website, fixing the one you have, or sorting out apps and everyday tech, I&apos;m still here after launch when you need a hand. Questions are welcome. I only recommend what you need, and I&apos;d rather do great work at a fair rate than oversell you.

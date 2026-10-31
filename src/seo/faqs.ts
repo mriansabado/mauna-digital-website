@@ -1,10 +1,16 @@
+import { FOUNDER_NAME } from '../constants/site'
 import type { FaqItem } from './pages'
 
 export const homeFaqs: FaqItem[] = [
   {
-    question: 'Are you a website designer in San Diego?',
+    question: 'Are you a San Diego website designer or web developer?',
     answer:
-      'Yes. I am a website designer and web developer based in San Diego. In person locally, remote anywhere, including Hawaii.',
+      `Yes. I'm ${FOUNDER_NAME}, a San Diego website designer and web developer. I build and fix sites for small businesses, in person locally and remote anywhere, including Hawaii.`,
+  },
+  {
+    question: 'Do you do web design and web development?',
+    answer:
+      'Yes. Website design, web development, platform work (Wix, Squarespace, Shopify, WordPress), website fixes, and small apps when a project needs one.',
   },
   {
     question: 'How much does a small business website cost?',
@@ -37,7 +43,7 @@ export const homeFaqs: FaqItem[] = [
   },
   {
     question: 'Will I work with you directly?',
-    answer: "Yes. It's always me. Text or email, and you can reach me after launch too.",
+    answer: `Yes. It's always me, ${FOUNDER_NAME}. Text or email, and you can reach me after launch too.`,
   },
   {
     question: 'If you host my site and I leave, what happens?',

@@ -25,7 +25,7 @@ export function WebsiteFixesPage() {
         <article className="seo-content container">
           <h2>Quick Fix: $85/hr website help</h2>
           <p>
-            If you searched &quot;fix my website,&quot; &quot;website repair,&quot; or &quot;help with my website,&quot; you&apos;re in the right place. I&apos;m a website designer and web developer in San Diego who spends a lot of time repairing what already exists, not upselling a brand-new build you don&apos;t need.
+            If you need website repair, a quick update, or a San Diego web developer to dig into something broken, you&apos;re in the right place. I spend a lot of time fixing what already exists, not upselling a brand-new build you don&apos;t need.
           </p>
           <p>
             <strong>Quick Fix is $85/hr</strong> with a <strong>1 hour minimum</strong>. Tell me what&apos;s going on. I quote you same day and fix it on Squarespace, Shopify, Wix, WordPress, or most anything else. If I finish early, I&apos;ll use the rest of the hour on your to-do list.
