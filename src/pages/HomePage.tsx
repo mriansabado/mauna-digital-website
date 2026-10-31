@@ -12,7 +12,7 @@ import profilePhoto from '../assets/profile-photo2.jpg'
 import sandiegoImage from '../assets/sandiego.jpg'
 import sandiegoBay from '../assets/sandiego-bay.jpg'
 import sandiegoBeach from '../assets/sandiego-beach.jpg'
-import { demoSites } from '../data/demoSites'
+import { clientSites, sampleDemoSites } from '../data/demoSites'
 import { DemoPreview } from '../components/DemoPreview'
 import { ContactCta } from '../components/ContactCta'
 import { FaqSection } from '../components/FaqSection'
@@ -441,42 +441,69 @@ export function HomePage() {
       </section>
 
       <div id="work">
-      {/* Demo Websites Section */}
+      {/* Sites Section */}
       <section id="demos" className="demos">
         <div className="container">
-          <h2 className="section-title">Demo Websites</h2>
+          <h2 className="section-title">Sites I&apos;ve Built</h2>
           <p className="demos-subtitle">
-            A few sample sites I built. Click through and imagine yours here.
+            Live client work first. Sample demos below if you want to poke around.
           </p>
-          <div className="demos-grid">
-            {demoSites.map((site) => (
-              <article key={site.url} className="demo-card">
-                <DemoPreview url={site.url} title={site.name} screenshot={site.screenshot} />
-                <div className="demo-card-body">
-                  <div className="demo-card-header">
-                    <span className="demo-card-icon" aria-hidden="true">{site.icon}</span>
-                    <div>
-                      <h3 className="demo-card-title">{site.name}</h3>
-                      <p className="demo-card-tagline">{site.tagline}</p>
-                    </div>
-                  </div>
-                  <p className="demo-card-description">{site.description}</p>
-                  <div className="demo-tags">
-                    {site.tags.map((tag) => (
-                      <span key={tag} className="demo-tag">{tag}</span>
-                    ))}
-                  </div>
+
+          <div className="client-sites">
+            {clientSites.map((site) => (
+              <article key={site.url} className="client-site-row">
+                <DemoPreview
+                  url={site.url}
+                  title={site.name}
+                  screenshot={site.screenshot}
+                  featured
+                />
+                <div className="client-site-copy">
+                  <p className="client-site-tagline">{site.tagline}</p>
+                  <h3 className="client-site-title">{site.name}</h3>
+                  <p className="client-site-description">{site.description}</p>
                   <a
                     href={site.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary demo-card-btn"
+                    className="client-site-link"
                   >
-                    Open Live Site
+                    Visit site →
                   </a>
                 </div>
               </article>
             ))}
+          </div>
+
+          <div className="sample-demos">
+            <h3 className="sample-demos-title">Sample demos</h3>
+            <p className="sample-demos-subtitle">
+              Quick examples for different business types. Click through and imagine yours here.
+            </p>
+            <div className="demos-grid">
+              {sampleDemoSites.map((site) => (
+                <article key={site.url} className="demo-card">
+                  <DemoPreview url={site.url} title={site.name} screenshot={site.screenshot} />
+                  <div className="demo-card-body">
+                    <div className="demo-card-header">
+                      <div>
+                        <h3 className="demo-card-title">{site.name}</h3>
+                        <p className="demo-card-tagline">{site.tagline}</p>
+                      </div>
+                    </div>
+                    <p className="demo-card-description">{site.description}</p>
+                    <a
+                      href={site.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="demo-card-link"
+                    >
+                      Open live site →
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
