@@ -1,10 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <script>
+      // Default is dark. Only leave light if the visitor explicitly chose it.
       var saved = localStorage.getItem('mauna-dark-mode');
-      if (saved === null || saved === 'true') {
+      if (saved === 'false') {
+        document.documentElement.classList.remove('dark');
+      } else {
         document.documentElement.classList.add('dark');
       }
     </script>

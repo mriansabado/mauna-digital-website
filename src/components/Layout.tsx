@@ -16,10 +16,10 @@ import {
 
 export function Layout() {
   const location = useLocation()
+  // Default dark; only light if the visitor previously chose it.
   const [isDark, setIsDark] = useState(() => {
     if (typeof localStorage === 'undefined') return true
-    const saved = localStorage.getItem('mauna-dark-mode')
-    return saved !== null ? JSON.parse(saved) : true
+    return localStorage.getItem('mauna-dark-mode') !== 'false'
   })
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
@@ -51,6 +51,12 @@ export function Layout() {
   return (
     <div className={`app ${isDark ? 'dark' : ''}`}>
       <nav className="nav">
+        <div className="nav-atmosphere" aria-hidden="true">
+          <span className="nav-floater nav-floater-1" />
+          <span className="nav-floater nav-floater-2" />
+          <span className="nav-floater nav-floater-3" />
+          <span className="nav-floater nav-floater-4" />
+        </div>
         <div className="nav-container">
           <Link to="/" className="nav-logo" onClick={closeMenu}>
             <img src={navLogo} alt={SITE_NAME} className="nav-logo-image" />

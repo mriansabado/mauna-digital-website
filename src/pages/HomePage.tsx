@@ -39,15 +39,12 @@ export function HomePage() {
                 <img src={heroLogo} alt="Mauna Digital" className="logo-image" />
               </div>
               <h1 className="hero-title">
-                <span className="hero-kicker">
-                  San Diego website designer &amp; web developer
-                </span>
                 Small business tech,{' '}
                 <span className="hero-subtitle">handled</span>
               </h1>
               <div className="hero-copy">
                 <p className="hero-subtext">
-                  Affordable website design, website fixes, mobile apps, and everyday tech help for San Diego small businesses. New site, broken site, or something in between. I handle the tech so you can run your business.
+                  Affordable websites, fixes, apps, and everyday tech help for San Diego small businesses. New site, broken site, or something in between. I handle the tech so you can run your business.
                 </p>
                 <div className="hero-pills">
                   <span className="service-pill">Websites</span>
@@ -640,7 +637,7 @@ export function HomePage() {
               />
               <h2 className="section-title">Hey, I&apos;m {FOUNDER_NAME} 👋</h2>
               <p>
-                I&apos;m {FOUNDER_NAME}, a San Diego website designer and web developer. I&apos;ve spent years in tech and worked across most major platforms. I come from a family of small business owners, so I get that budgets are real. You shouldn&apos;t need a translator to understand your own site.
+                I&apos;m {FOUNDER_NAME}. I design and build websites for local businesses, and I handle the web development when something needs more than a template tweak. I&apos;ve spent years in tech and worked across most major platforms. I come from a family of small business owners, so I get that budgets are real. You shouldn&apos;t need a translator to understand your own site.
               </p>
               <p>
                 Whether you need help making a website, fixing the one you have, or sorting out apps and everyday tech, I&apos;m still here after launch when you need a hand. Questions are welcome. I only recommend what you need, and I&apos;d rather do great work at a fair rate than oversell you.
