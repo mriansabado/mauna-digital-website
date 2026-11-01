@@ -3405,6 +3405,86 @@ section {
   font-weight: 600;
 }
 
+.contact-form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-card-gradient .contact-form {
+  margin-top: 0.5rem;
+}
+
+.contact-card-gradient .contact-form .contact-btn {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+.contact-card-gradient .form-group label {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.contact-card-gradient .form-group input,
+.contact-card-gradient .form-group textarea {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: transparent;
+  color: #1a202c;
+}
+
+.contact-card-gradient .form-group input::placeholder,
+.contact-card-gradient .form-group textarea::placeholder {
+  color: #718096;
+}
+
+.contact-card-gradient .form-group input:focus,
+.contact-card-gradient .form-group textarea:focus {
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
+}
+
+.contact-card-gradient .form-group input:disabled,
+.contact-card-gradient .form-group textarea:disabled,
+.contact-card-gradient .contact-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.contact-card-gradient .form-message.success {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
+
+.contact-card-gradient .form-message.error {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.contact-alt {
+  margin: 1.5rem 0 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contact-alt a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.contact-alt a:hover {
+  opacity: 0.85;
+}
+
 .contact-guarantee {
   background: linear-gradient(135deg, #f0fff4, #e6fffa);
   padding: 2rem;
@@ -5757,6 +5837,27 @@ html.dark .form-group select:focus,
 html.dark .form-group textarea:focus {
   background: #1e293b;
   border-color: #38b2ac;
+}
+
+html.dark .contact-card-gradient .form-group input,
+html.dark .contact-card-gradient .form-group textarea {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1a202c;
+  border-color: transparent;
+}
+
+html.dark .contact-card-gradient .form-group input:focus,
+html.dark .contact-card-gradient .form-group textarea:focus {
+  background: #fff;
+  border-color: #fff;
+}
+
+html.dark .contact-alt {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html.dark .contact-alt a {
+  color: #fff;
 }
 
 .service-areas,

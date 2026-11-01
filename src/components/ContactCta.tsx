@@ -1,4 +1,5 @@
 import { EMAIL, EMAIL_HREF, PHONE_DISPLAY, PHONE_TEL } from '../constants/site'
+import { ContactForm } from './ContactForm'
 
 type ContactCtaProps = {
   heading?: string
@@ -28,48 +29,15 @@ export function ContactCta({
             <div className="contact-content-main">
               <h3>Start Here</h3>
               <p className="contact-subtitle">{subtext}</p>
-              <div className="contact-details">
-                <div className="contact-item">
-                  <div className="contact-item-icon">📧</div>
-                  <div className="contact-item-content">
-                    <h4>Email</h4>
-                    <p>
-                      <a href={EMAIL_HREF}>{EMAIL}</a>
-                    </p>
-                  </div>
-                </div>
-                <div className="contact-item">
-                  <div className="contact-item-icon">📞</div>
-                  <div className="contact-item-content">
-                    <h4>Phone</h4>
-                    <p>
-                      <a href={PHONE_TEL}>{PHONE_DISPLAY}</a>
-                    </p>
-                  </div>
-                </div>
-                <div className="contact-item">
-                  <div className="contact-item-icon">☕</div>
-                  <div className="contact-item-content">
-                    <h4>First conversation</h4>
-                    <p>Free, in person or video, your call</p>
-                  </div>
-                </div>
-                <div className="contact-item">
-                  <div className="contact-item-icon">⚡</div>
-                  <div className="contact-item-content">
-                    <h4>Response Time</h4>
-                    <p>Within 24 hours</p>
-                  </div>
-                </div>
-              </div>
-              <div className="contact-cta">
-                <a href={EMAIL_HREF} className="btn btn-primary contact-btn">
-                  Send Me a Quick Email
-                </a>
-                <a href={PHONE_TEL} className="btn btn-secondary contact-btn">
-                  Call or text me
-                </a>
-              </div>
+
+              <ContactForm />
+
+              <p className="contact-alt">
+                Prefer to reach out directly?{' '}
+                <a href={EMAIL_HREF}>{EMAIL}</a>
+                {' · '}
+                <a href={PHONE_TEL}>{PHONE_DISPLAY}</a>
+              </p>
             </div>
           </div>
         </div>
