@@ -23,4 +23,6 @@ export const PRERENDER_ROUTES = [
   '/pricing',
   '/website-fixes',
   '/platform-help',
+  '/work',
+  '/faq',
 ] as const

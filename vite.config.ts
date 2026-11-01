@@ -29,6 +29,8 @@ export default defineConfig({
         '/pricing',
         '/website-fixes',
         '/platform-help',
+        '/work',
+        '/faq',
       ],
     }),
     exitAfterPrerender(),

@@ -51,6 +51,18 @@ export const pageSeo: Record<string, PageSeo> = {
     description:
       'Wix, Squarespace, Shopify, and WordPress help from a San Diego website designer and web developer. Fixes, updates, rebuild advice. Quick Fix $85/hr.',
   },
+  '/work': {
+    path: '/work',
+    title: 'Web Design Portfolio & Apps | Mauna Digital San Diego',
+    description:
+      `Client websites, concept sites, and apps by ${FOUNDER_NAME}, a San Diego website designer and web developer. See real work for local businesses.`,
+  },
+  '/faq': {
+    path: '/faq',
+    title: 'Website Design FAQ | Mauna Digital San Diego',
+    description:
+      `FAQ from ${FOUNDER_NAME}, San Diego website designer and web developer: pricing, fixes, platforms, hosting, and how working together works.`,
+  },
 }
 
 export function normalizePath(pathname: string): string {

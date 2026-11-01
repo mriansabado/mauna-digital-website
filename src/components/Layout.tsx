@@ -68,12 +68,6 @@ export function Layout() {
           </Link>
           <div className="nav-right">
             <div className={`nav-links ${isMenuOpen ? 'nav-links-open' : ''}`}>
-              <NavLink to="/pricing" onClick={closeMenu}>
-                Pricing
-              </NavLink>
-              <NavLink to="/website-fixes" onClick={closeMenu}>
-                Website Fixes
-              </NavLink>
               <div
                 className={`nav-dropdown ${servicesOpen ? 'nav-dropdown-open' : ''}`}
               >
@@ -90,6 +84,12 @@ export function Layout() {
                   </span>
                 </button>
                 <div className="nav-dropdown-menu" role="menu">
+                  <Link to="/pricing" role="menuitem" onClick={closeMenu}>
+                    Pricing
+                  </Link>
+                  <Link to="/website-fixes" role="menuitem" onClick={closeMenu}>
+                    Website Fixes
+                  </Link>
                   <Link to="/platform-help" role="menuitem" onClick={closeMenu}>
                     Platform help
                   </Link>
@@ -98,9 +98,12 @@ export function Layout() {
                   </Link>
                 </div>
               </div>
-              <Link to="/#work" onClick={closeMenu}>
+              <NavLink to="/work" onClick={closeMenu}>
                 Work
-              </Link>
+              </NavLink>
+              <NavLink to="/faq" onClick={closeMenu}>
+                FAQ
+              </NavLink>
               <Link to="/#about" onClick={closeMenu}>
                 About
               </Link>
@@ -156,7 +159,9 @@ export function Layout() {
             {' · '}
             <Link to="/platform-help">Wix &amp; WordPress help</Link>
             {' · '}
-            <Link to="/#work">Work</Link>
+            <Link to="/work">Work</Link>
+            {' · '}
+            <Link to="/faq">FAQ</Link>
             {' · '}
             <Link to="/#about">About</Link>
             {' · '}

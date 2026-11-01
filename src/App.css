@@ -6421,3 +6421,152 @@ html.dark .related-link-desc {
     color: #cbd5e1;
   }
 }
+
+/* Pricing page uses homepage services styling after SEO hero */
+.pricing-page .pricing-services {
+  padding-top: 3rem;
+}
+
+.pricing-page .service-area-card a {
+  color: #0f766e;
+  font-weight: 700;
+}
+
+html.dark .pricing-page .service-area-card a {
+  color: #81e6d9;
+}
+
+/* Home work teaser + Work page */
+.work-teaser {
+  padding: 3.5rem 0;
+  background:
+    linear-gradient(160deg, rgba(15, 23, 42, 0.03), rgba(56, 178, 172, 0.1)),
+    #f8fafc;
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.work-teaser-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+.work-teaser-copy {
+  flex: 1 1 18rem;
+  max-width: 36rem;
+}
+
+.work-teaser-title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.work-teaser-text {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.work-page .work-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.work-page .client-sites {
+  margin-bottom: 0;
+}
+
+.work-page .work-section-alt {
+  background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #111827 100%);
+}
+
+.work-page .work-apps-subtitle {
+  position: relative;
+  z-index: 1;
+  color: #e2e8f0;
+  margin-bottom: 2.5rem;
+}
+
+html.dark .work-teaser {
+  background:
+    linear-gradient(160deg, rgba(15, 23, 42, 0.55), rgba(56, 178, 172, 0.12)),
+    #0f172a;
+  border-top-color: rgba(148, 163, 184, 0.12);
+  border-bottom-color: rgba(148, 163, 184, 0.12);
+}
+
+html.dark .work-teaser-title {
+  color: #f8fafc;
+}
+
+html.dark .work-teaser-text {
+  color: #cbd5e1;
+}
+
+.faq-teaser {
+  padding: 3.5rem 0;
+  background:
+    linear-gradient(160deg, rgba(15, 23, 42, 0.03), rgba(56, 178, 172, 0.1)),
+    #f8fafc;
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.faq-teaser-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+.faq-teaser-copy {
+  flex: 1 1 18rem;
+  max-width: 36rem;
+}
+
+.faq-teaser-title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.faq-teaser-text {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+html.dark .faq-teaser {
+  background:
+    linear-gradient(160deg, rgba(15, 23, 42, 0.55), rgba(56, 178, 172, 0.12)),
+    #0f172a;
+  border-top-color: rgba(148, 163, 184, 0.12);
+  border-bottom-color: rgba(148, 163, 184, 0.12);
+}
+
+html.dark .faq-teaser-title {
+  color: #f8fafc;
+}
+
+html.dark .faq-teaser-text {
+  color: #cbd5e1;
+}
+
+@media (max-width: 640px) {
+  .work-teaser-inner,
+  .faq-teaser-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

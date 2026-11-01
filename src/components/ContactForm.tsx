@@ -60,7 +60,7 @@ export function ContactForm() {
 
       {status === 'success' && (
         <p className="form-message success" role="status">
-          Got it — I&apos;ll get back to you within 24 hours.
+          Thank you — I&apos;ll get back to you within 24hrs.
         </p>
       )}
       {status === 'error' && (

@@ -5,6 +5,8 @@ import { HomePage } from './pages/HomePage'
 import { PricingPage } from './pages/PricingPage'
 import { WebsiteFixesPage } from './pages/WebsiteFixesPage'
 import { PlatformHelpPage } from './pages/PlatformHelpPage'
+import { WorkPage } from './pages/WorkPage'
+import { FaqPage } from './pages/FaqPage'
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/website-fixes" element={<WebsiteFixesPage />} />
         <Route path="/platform-help" element={<PlatformHelpPage />} />
+        <Route path="/work" element={<WorkPage />} />
+        <Route path="/faq" element={<FaqPage />} />
       </Route>
     </Routes>
   )

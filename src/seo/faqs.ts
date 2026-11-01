@@ -137,7 +137,7 @@ export const platformHelpFaqs: FaqItem[] = [
 
 export function faqsForPath(pathname: string): FaqItem[] | undefined {
   switch (pathname) {
-    case '/':
+    case '/faq':
       return homeFaqs
     case '/pricing':
       return pricingFaqs

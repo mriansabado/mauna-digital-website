@@ -16,7 +16,7 @@ export type DemoSite = {
   tags: string[]
   icon: string
   screenshot: string
-  kind: 'client' | 'demo'
+  kind: 'client' | 'concept'
 }
 
 export const demoSites: DemoSite[] = [
@@ -83,7 +83,7 @@ export const demoSites: DemoSite[] = [
     tags: ['E-commerce', 'Maker'],
     icon: '🧼',
     screenshot: soapmakerScreenshot,
-    kind: 'demo',
+    kind: 'concept',
   },
   {
     name: 'Coastline Landscaping',
@@ -93,7 +93,7 @@ export const demoSites: DemoSite[] = [
     tags: ['Service Business', 'Portfolio'],
     icon: '🌿',
     screenshot: landscapingScreenshot,
-    kind: 'demo',
+    kind: 'concept',
   },
   {
     name: 'Heat Signal',
@@ -103,7 +103,7 @@ export const demoSites: DemoSite[] = [
     tags: ['Single Page', 'Events'],
     icon: '🎸',
     screenshot: bandwebsiteScreenshot,
-    kind: 'demo',
+    kind: 'concept',
   },
   {
     name: 'Torque & Co.',
@@ -113,9 +113,9 @@ export const demoSites: DemoSite[] = [
     tags: ['Service Business', 'Local'],
     icon: '🔧',
     screenshot: autoshopScreenshot,
-    kind: 'demo',
+    kind: 'concept',
   },
 ]
 
 export const clientSites = demoSites.filter((site) => site.kind === 'client')
-export const sampleDemoSites = demoSites.filter((site) => site.kind === 'demo')
+export const conceptSites = demoSites.filter((site) => site.kind === 'concept')

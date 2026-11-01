@@ -99,9 +99,9 @@ export function PlatformHelpPage() {
               description: 'Single Page $600 · Full Website $1,200 flat.',
             },
             {
-              to: '/#work',
-              label: 'Demo work',
-              description: 'Sample sites for local small businesses.',
+              to: '/work',
+              label: 'Work',
+              description: 'Client websites, concept sites, and apps I\'ve built.',
             },
           ]}
         />

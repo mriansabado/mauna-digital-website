@@ -14,7 +14,7 @@ export function ContactCta({
     <section id="contact" className="contact">
       <div className="container">
         <div className="contact-header">
-          <div className="contact-badge">Need a Hand?</div>
+          <div className="contact-badge">Ready to get started?</div>
           <h2 className="section-title">{heading}</h2>
         </div>
 
