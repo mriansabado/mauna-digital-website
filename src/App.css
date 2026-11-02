@@ -4015,6 +4015,11 @@ section {
   object-position: top center;
 }
 
+/* Website screenshots share the same media frame as apps; pin to top so nav/hero stay visible */
+.tool-image-site {
+  object-position: top center;
+}
+
 .tool-content {
   padding: 1.75rem;
   display: flex;
@@ -6474,24 +6479,158 @@ html.dark .pricing-page .service-area-card a {
   color: #475569;
 }
 
-.work-page .work-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+/* Work hero uses a San Diego landscape instead of a flat SEO panel */
+.work-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-.work-page .client-sites {
+.work-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    165deg,
+    rgba(15, 23, 42, 0.72) 0%,
+    rgba(15, 52, 96, 0.58) 45%,
+    rgba(15, 23, 42, 0.78) 100%
+  );
+  pointer-events: none;
+}
+
+.work-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.work-hero .seo-kicker {
+  color: #5eead4;
+}
+
+.work-hero h1,
+.work-hero .seo-lead {
+  color: #f8fafc;
+}
+
+.work-hero .seo-lead {
+  color: rgba(226, 232, 240, 0.92);
+}
+
+/* Beat .seo-hero / dark shorthand so the inline landscape image can show */
+.work-page .work-hero.seo-hero,
+html.dark .work-page .work-hero.seo-hero {
+  background: none;
+  background-color: #0f172a;
+  background-image: var(--work-hero-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.work-hero .breadcrumbs-list a {
+  color: #5eead4;
+}
+
+.work-hero .breadcrumbs-list [aria-current='page'],
+.work-hero .breadcrumbs-sep {
+  color: rgba(226, 232, 240, 0.75);
+}
+
+/* Each portfolio bucket gets its own landscape so cover doesn't over-zoom */
+.work-portfolio {
+  padding: 4rem 0 5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.work-portfolio .section-overlay {
+  background: linear-gradient(
+    165deg,
+    rgba(15, 23, 42, 0.58) 0%,
+    rgba(15, 52, 96, 0.5) 40%,
+    rgba(15, 23, 42, 0.66) 100%
+  );
+}
+
+.work-portfolio-bucket {
+  position: relative;
+  z-index: 1;
   margin-bottom: 0;
 }
 
-.work-page .work-section-alt {
-  background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #111827 100%);
+.work-portfolio-title {
+  margin: 0 auto 0.75rem;
+  max-width: 40rem;
+  text-align: center;
+  font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+  font-weight: 850;
+  line-height: 1.15;
+  color: #f8fafc;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
 }
 
-.work-page .work-apps-subtitle {
-  position: relative;
-  z-index: 1;
-  color: #e2e8f0;
-  margin-bottom: 2.5rem;
+.work-portfolio-subtitle {
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(226, 232, 240, 0.92);
+}
+
+.tools-grid-balanced.tools-grid .tool-card:last-child {
+  grid-column: auto;
+  grid-template-columns: 1fr;
+}
+
+.tools-grid-balanced.tools-grid .tool-card:last-child .tool-media {
+  aspect-ratio: 16 / 10;
+  min-height: 200px;
+}
+
+@media (min-width: 900px) {
+  .tools-grid-balanced.tools-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .work-portfolio {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .work-portfolio-bucket {
+    margin-bottom: 3rem;
+  }
+
+  .work-portfolio-subtitle {
+    margin-bottom: 1.5rem;
+    font-size: 0.98rem;
+    padding: 0 0.25rem;
+  }
+
+  .work-portfolio .tool-card:hover {
+    transform: translateY(-6px) scale(1.01);
+  }
+
+  .work-portfolio .tool-badge {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-portfolio .tool-card,
+  .work-portfolio .tool-badge {
+    animation: none;
+  }
+
+  .work-portfolio .tool-card:hover {
+    transform: none;
+  }
 }
 
 html.dark .work-teaser {

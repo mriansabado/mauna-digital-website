@@ -1,11 +1,13 @@
 import { Breadcrumbs } from '../components/Breadcrumbs'
 import { ContactCta } from '../components/ContactCta'
-import { DemoPreview } from '../components/DemoPreview'
 import { RelatedLinks } from '../components/RelatedLinks'
 import { clientSites, conceptSites } from '../data/demoSites'
 import { PageMeta } from '../seo/PageMeta'
 import { FOUNDER_NAME } from '../constants/site'
-import sandiegoBay from '../assets/sandiego-bay.jpg'
+import sdLandscape1 from '../assets/sd-landscape1.jpg'
+import sdLandscape2 from '../assets/sd-landscape2.jpg'
+import sdLandscape3 from '../assets/sd-landscape3.jpg'
+import sdLandscape4 from '../assets/sd-landscape4.jpg'
 import devportfolioScreenshot from '../assets/devportfolio-sc.jpg'
 import barblendGuruScreenshot from '../assets/barblend-guru-sc.jpg'
 import postachioImage from '../assets/postachio-project.jpg'
@@ -15,12 +17,69 @@ import pocketsayLogo from '../assets/pocketsay-logo1.png'
 import tasqlyScreenshot from '../assets/tasqly-sc.jpg'
 import tasqlyLogo from '../assets/Tasqly-Logo.png'
 
+type SiteCardProps = {
+  name: string
+  tagline: string
+  url: string
+  description: string
+  tags: string[]
+  screenshot: string
+  badge: string
+  ctaLabel: string
+}
+
+function SiteCard({
+  name,
+  tagline,
+  url,
+  description,
+  tags,
+  screenshot,
+  badge,
+  ctaLabel,
+}: SiteCardProps) {
+  return (
+    <article className="tool-card">
+      <div className="tool-media">
+        <img
+          src={screenshot}
+          alt={`${name} website screenshot`}
+          className="tool-image tool-image-site"
+          loading="lazy"
+        />
+      </div>
+      <div className="tool-content">
+        <div className="tool-badge">{badge}</div>
+        <h3 className="tool-title">{name}</h3>
+        <p className="tool-subtitle">{tagline}</p>
+        <p className="tool-description">{description}</p>
+        <div className="tool-tags">
+          {tags.map((tag) => (
+            <span key={tag} className="tool-tag">
+              {tag}
+            </span>
+          ))}
+        </div>
+        <div className="tool-cta">
+          <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            {ctaLabel}
+          </a>
+        </div>
+      </div>
+    </article>
+  )
+}
+
 export function WorkPage() {
   return (
     <>
       <PageMeta path="/work" />
       <main className="seo-page work-page">
-        <section className="seo-hero">
+        <section
+          className="seo-hero work-hero"
+          style={{ ['--work-hero-image' as string]: `url(${sdLandscape1})` }}
+        >
+          <div className="work-hero-overlay" aria-hidden="true" />
           <div className="container">
             <Breadcrumbs items={[{ name: 'Work', path: '/work' }]} />
             <p className="seo-kicker">Portfolio · Client sites, apps &amp; concepts</p>
@@ -31,69 +90,65 @@ export function WorkPage() {
           </div>
         </section>
 
-        <section id="client-sites" className="demos work-section">
-          <div className="container">
-            <h2 className="section-title">Client websites</h2>
-            <p className="demos-subtitle">
+        <section
+          id="client-sites"
+          className="tools work-portfolio"
+          style={{ backgroundImage: `url(${sdLandscape2})` }}
+          aria-labelledby="client-sites-title"
+        >
+          <div className="section-overlay"></div>
+          <div className="container work-portfolio-bucket">
+            <h2 id="client-sites-title" className="work-portfolio-title">
+              Client websites
+            </h2>
+            <p className="work-portfolio-subtitle">
               Live sites for nonprofits, galleries, and service businesses. Click through to see them in the wild.
             </p>
-
-            <div className="client-sites">
+            <div className="tools-grid tools-grid-balanced">
               {clientSites.map((site) => (
-                <article key={site.url} className="client-site-row">
-                  <DemoPreview
-                    url={site.url}
-                    title={site.name}
-                    screenshot={site.screenshot}
-                    featured
-                  />
-                  <div className="client-site-copy">
-                    <p className="client-site-tagline">{site.tagline}</p>
-                    <h3 className="client-site-title">{site.name}</h3>
-                    <p className="client-site-description">{site.description}</p>
-                    <a
-                      href={site.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="client-site-link"
-                    >
-                      Visit site →
-                    </a>
-                  </div>
-                </article>
+                <SiteCard
+                  key={site.url}
+                  name={site.name}
+                  tagline={site.tagline}
+                  url={site.url}
+                  description={site.description}
+                  tags={site.tags}
+                  screenshot={site.screenshot}
+                  badge="Client Website"
+                  ctaLabel="Visit site"
+                />
               ))}
             </div>
           </div>
         </section>
 
-        <section id="concept-sites" className="demos work-section work-section-alt">
-          <div className="container">
-            <h2 className="section-title">Concept sites</h2>
-            <p className="demos-subtitle">
+        <section
+          id="concept-sites"
+          className="tools work-portfolio"
+          style={{ backgroundImage: `url(${sdLandscape3})` }}
+          aria-labelledby="concept-sites-title"
+        >
+          <div className="section-overlay"></div>
+          <div className="container work-portfolio-bucket">
+            <h2 id="concept-sites-title" className="work-portfolio-title">
+              Concept sites
+            </h2>
+            <p className="work-portfolio-subtitle">
               Speculative builds for fictional businesses. Useful if you want to poke around a layout before we talk about yours.
             </p>
-            <div className="demos-grid">
+            <div className="tools-grid tools-grid-balanced">
               {conceptSites.map((site) => (
-                <article key={site.url} className="demo-card">
-                  <DemoPreview url={site.url} title={site.name} screenshot={site.screenshot} />
-                  <div className="demo-card-body">
-                    <div className="demo-card-header">
-                      <div>
-                        <h3 className="demo-card-title">{site.name}</h3>
-                        <p className="demo-card-tagline">{site.tagline}</p>
-                      </div>
-                    </div>
-                    <p className="demo-card-description">{site.description}</p>
-                    <a
-                      href={site.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="demo-card-link"
-                    >
-                      Open live site →
-                    </a>
-                  </div>
-                </article>
+                <SiteCard
+                  key={site.url}
+                  name={site.name}
+                  tagline={site.tagline}
+                  url={site.url}
+                  description={site.description}
+                  tags={site.tags}
+                  screenshot={site.screenshot}
+                  badge="Concept Site"
+                  ctaLabel="Open live site"
+                />
               ))}
             </div>
           </div>
@@ -101,17 +156,20 @@ export function WorkPage() {
 
         <section
           id="apps"
-          className="tools work-section"
-          style={{ backgroundImage: `url(${sandiegoBay})` }}
+          className="tools work-portfolio"
+          style={{ backgroundImage: `url(${sdLandscape4})` }}
+          aria-labelledby="apps-title"
         >
           <div className="section-overlay"></div>
-          <div className="container">
-            <h2 className="section-title">Apps</h2>
-            <p className="demos-subtitle work-apps-subtitle">
+          <div className="container work-portfolio-bucket">
+            <h2 id="apps-title" className="work-portfolio-title">
+              Apps
+            </h2>
+            <p className="work-portfolio-subtitle">
               Side projects and shipped products — iOS and web — when a website isn&apos;t the whole story.
             </p>
-            <div className="tools-grid">
-              <div className="tool-card" id="tool-pocketsay">
+            <div className="tools-grid tools-grid-balanced">
+              <article className="tool-card" id="tool-pocketsay">
                 <div className="tool-media">
                   <img
                     src={pocketsayScreenshot}
@@ -123,7 +181,7 @@ export function WorkPage() {
                 <div className="tool-content">
                   <div className="tool-badge">iOS App</div>
                   <h3 className="tool-title">
-                    <img src={pocketsayLogo} alt="PocketSay logo" className="tool-title-logo" />
+                    <img src={pocketsayLogo} alt="" className="tool-title-logo" />
                     PocketSay
                   </h3>
                   <p className="tool-subtitle">Say it BIG when you can&apos;t say it loud</p>
@@ -146,8 +204,9 @@ export function WorkPage() {
                     </a>
                   </div>
                 </div>
-              </div>
-              <div className="tool-card" id="tool-tasqly">
+              </article>
+
+              <article className="tool-card" id="tool-tasqly">
                 <div className="tool-media">
                   <img
                     src={tasqlyScreenshot}
@@ -159,7 +218,7 @@ export function WorkPage() {
                 <div className="tool-content">
                   <div className="tool-badge">iOS App</div>
                   <h3 className="tool-title">
-                    <img src={tasqlyLogo} alt="Tasqly logo" className="tool-title-logo" />
+                    <img src={tasqlyLogo} alt="" className="tool-title-logo" />
                     Tasqly
                   </h3>
                   <p className="tool-subtitle">Planner first workflow for freelancers &amp; service pros</p>
@@ -183,8 +242,9 @@ export function WorkPage() {
                     </a>
                   </div>
                 </div>
-              </div>
-              <div className="tool-card" id="tool-barblend-guru">
+              </article>
+
+              <article className="tool-card" id="tool-barblend-guru">
                 <div className="tool-media">
                   <img
                     src={barblendGuruScreenshot}
@@ -196,7 +256,9 @@ export function WorkPage() {
                 <div className="tool-content">
                   <div className="tool-badge">Free Web App</div>
                   <h3 className="tool-title">BarBlend Guru</h3>
-                  <p className="tool-subtitle">Find your next favorite pour from what&apos;s already in the cabinet</p>
+                  <p className="tool-subtitle">
+                    Find your next favorite pour from what&apos;s already in the cabinet
+                  </p>
                   <p className="tool-description">
                     Search a cocktail library by name, by what you have on hand, or hit the randomizer.
                   </p>
@@ -216,8 +278,9 @@ export function WorkPage() {
                     </a>
                   </div>
                 </div>
-              </div>
-              <div className="tool-card" id="tool-postachio">
+              </article>
+
+              <article className="tool-card" id="tool-postachio">
                 <div className="tool-media">
                   <img
                     src={postachioImage}
@@ -229,7 +292,7 @@ export function WorkPage() {
                 <div className="tool-content">
                   <div className="tool-badge">Web App</div>
                   <h3 className="tool-title">
-                    <img src={postachioLogo} alt="Postachio logo" className="tool-title-logo" />
+                    <img src={postachioLogo} alt="" className="tool-title-logo" />
                     Postachio
                   </h3>
                   <p className="tool-subtitle">AI powered social posts with SEO in mind</p>
@@ -252,8 +315,9 @@ export function WorkPage() {
                     </a>
                   </div>
                 </div>
-              </div>
-              <div className="tool-card" id="tool-dev-portfolio">
+              </article>
+
+              <article className="tool-card" id="tool-dev-portfolio">
                 <div className="tool-media">
                   <img
                     src={devportfolioScreenshot}
@@ -285,7 +349,7 @@ export function WorkPage() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </section>
