@@ -5,10 +5,10 @@ export const FOUNDER_NAME = 'Ian Sabado'
 export const EMAIL = 'ian@maunadigital.com'
 export const EMAIL_HREF = `mailto:${EMAIL}`
 
-export const PHONE_DISPLAY = '415-971-6114'
-export const PHONE_TEL = 'tel:+14159716114'
+export const PHONE_DISPLAY = '(619) 738-1203'
+export const PHONE_TEL = 'tel:+16197381203'
 /** E.164 for schema / structured data */
-export const PHONE_E164 = '+14159716114'
+export const PHONE_E164 = '+16197381203'
 
 export const INSTAGRAM_URL = 'https://www.instagram.com/ianexplainstech/'
 export const GBP_URL = 'https://share.google/CQq4TOjkP2He78lAy'
