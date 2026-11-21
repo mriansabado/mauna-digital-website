@@ -31,7 +31,7 @@ export const pageSeo: Record<string, PageSeo> = {
     path: '/',
     title: 'San Diego Web Designer & Developer | Mauna Digital',
     description:
-      `${FOUNDER_NAME} is a San Diego website designer and web developer for small businesses. Affordable sites from $600, website fixes $85/hr, apps, and tech help.`,
+      `${FOUNDER_NAME} is a San Diego website designer and web developer for small businesses. Affordable sites from $600, website fixes $60/hr, apps, and tech help.`,
   },
   '/pricing': {
     path: '/pricing',
@@ -41,21 +41,21 @@ export const pageSeo: Record<string, PageSeo> = {
   },
   '/website-fixes': {
     path: '/website-fixes',
-    title: 'Fix My Website in San Diego | Website Help $85/hr',
+    title: 'Fix My Website in San Diego | Website Help $60/hr',
     description:
-      'Need a San Diego web developer to fix your website? Forms, mobile layout, outages, updates, and more. Local website help at $85/hr, same-day quote.',
+      'Need a San Diego web developer to fix your website? Forms, mobile layout, outages, updates, and more. Local website help at $60/hr, same-day quote.',
   },
   '/platform-help': {
     path: '/platform-help',
     title: 'Wix, Squarespace, Shopify & WordPress Help in San Diego',
     description:
-      'Wix, Squarespace, Shopify, and WordPress help from a San Diego website designer and web developer. Fixes, updates, rebuild advice. Quick Fix $85/hr.',
+      'Wix, Squarespace, Shopify, and WordPress help from a San Diego website designer and web developer. Fixes, updates, rebuild advice. Quick Fix $60/hr.',
   },
   '/work': {
     path: '/work',
     title: 'Web Design Portfolio & Apps | Mauna Digital San Diego',
     description:
-      `Client websites, concept sites, and apps by ${FOUNDER_NAME}, a San Diego website designer and web developer. See real work for local businesses.`,
+      `Client websites, hand-designed social posts, concept sites, and apps by ${FOUNDER_NAME}. Real work for San Diego small businesses — no AI fluff.`,
   },
   '/faq': {
     path: '/faq',
@@ -97,7 +97,7 @@ export function businessJsonLd() {
     image: OG_IMAGE,
     logo: OG_IMAGE,
     description:
-      `${FOUNDER_NAME} — San Diego website designer and web developer. Affordable web design from $600, website fixes at $85/hr, mobile apps, and small-business tech help.`,
+      `${FOUNDER_NAME} — San Diego website designer and web developer. Affordable web design from $600, website fixes at $60/hr, mobile apps, and small-business tech help.`,
     email: EMAIL,
     telephone: PHONE_E164,
     priceRange: PRICE_RANGE,
@@ -148,7 +148,7 @@ export function businessJsonLd() {
       'Shopify',
       'WordPress',
       'Mobile app development',
-      'Local SEO',
+      'Social media posting',
       'Small business tech help',
     ],
     makesOffer: [
@@ -171,13 +171,13 @@ export function businessJsonLd() {
       {
         '@type': 'Offer',
         name: 'Quick Fix website help',
-        price: '85',
+        price: '60',
         priceCurrency: 'USD',
         url: `${SITE_URL}/website-fixes`,
         description: 'Website repair and updates in San Diego',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '85',
+          price: '60',
           priceCurrency: 'USD',
           unitText: 'HOUR',
         },

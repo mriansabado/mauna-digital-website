@@ -33,7 +33,7 @@ export function FaqPage() {
             {
               to: '/website-fixes',
               label: 'Website fixes',
-              description: 'Broken form, mobile mess, or site down? $85/hr Quick Fix.',
+              description: 'Broken form, mobile mess, or site down? $60/hr Quick Fix.',
             },
             {
               to: '/work',

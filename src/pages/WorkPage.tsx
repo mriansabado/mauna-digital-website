@@ -1,13 +1,16 @@
+import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '../components/Breadcrumbs'
 import { ContactCta } from '../components/ContactCta'
 import { RelatedLinks } from '../components/RelatedLinks'
 import { clientSites, conceptSites } from '../data/demoSites'
+import { socialPosts } from '../data/socialPosts'
 import { PageMeta } from '../seo/PageMeta'
 import { FOUNDER_NAME } from '../constants/site'
 import sdLandscape1 from '../assets/sd-landscape1.jpg'
 import sdLandscape2 from '../assets/sd-landscape2.jpg'
 import sdLandscape3 from '../assets/sd-landscape3.jpg'
 import sdLandscape4 from '../assets/sd-landscape4.jpg'
+import sandiegoBeach from '../assets/sandiego-beach.jpg'
 import devportfolioScreenshot from '../assets/devportfolio-sc.jpg'
 import barblendGuruScreenshot from '../assets/barblend-guru-sc.jpg'
 import postachioImage from '../assets/postachio-project.jpg'
@@ -82,10 +85,10 @@ export function WorkPage() {
           <div className="work-hero-overlay" aria-hidden="true" />
           <div className="container">
             <Breadcrumbs items={[{ name: 'Work', path: '/work' }]} />
-            <p className="seo-kicker">Portfolio · Client sites, apps &amp; concepts</p>
+            <p className="seo-kicker">Portfolio · Client sites, social posts, apps &amp; concepts</p>
             <h1>Work</h1>
             <p className="seo-lead">
-              Real client websites, apps I&apos;ve shipped, and a few concept sites that show the kind of look and feel I build for local businesses.
+              Real client websites, hand-designed social posts, apps I&apos;ve shipped, and a few concept sites that show the kind of look and feel I build for local businesses.
             </p>
           </div>
         </section>
@@ -150,6 +153,59 @@ export function WorkPage() {
                   ctaLabel="Open live site"
                 />
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="social-posts"
+          className="tools work-portfolio social-posts-section"
+          style={{ backgroundImage: `url(${sandiegoBeach})` }}
+          aria-labelledby="social-posts-title"
+        >
+          <div className="section-overlay"></div>
+          <div className="container work-portfolio-bucket">
+            <p className="social-posts-kicker">Social posting · $200/mo</p>
+            <h2 id="social-posts-title" className="work-portfolio-title">
+              Real posts. No AI.
+            </h2>
+            <p className="work-portfolio-subtitle social-posts-lead">
+              Keeping a feed going every week takes more time than it looks. I make posts that look like your
+              brand and vibe — real design, no AI fluff — so people keep hearing about your business. Here&apos;s the
+              kind of work included in social posting for $200 a month.
+            </p>
+
+            {socialPosts.length > 0 ? (
+              <ul className="social-posts-grid">
+                {socialPosts.map((post) => (
+                  <li key={post.src} className="social-post-item">
+                    <img
+                      src={post.src}
+                      alt={post.alt}
+                      className="social-post-image"
+                      loading="lazy"
+                    />
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <div className="social-posts-empty" role="status">
+                <p className="social-posts-empty-title">Gallery loading soon</p>
+                <p className="social-posts-empty-copy">
+                  Drop your past post images into{' '}
+                  <code>src/assets/social-posts/</code> — jpg, png, or webp — and they&apos;ll show up here
+                  automatically.
+                </p>
+              </div>
+            )}
+
+            <div className="social-posts-cta">
+              <Link to="/pricing" className="btn btn-primary">
+                See social posting · $200/mo
+              </Link>
+              <a href="#contact" className="btn btn-secondary">
+                Let&apos;s talk social
+              </a>
             </div>
           </div>
         </section>
@@ -358,13 +414,13 @@ export function WorkPage() {
           links={[
             {
               to: '/pricing',
-              label: 'Website pricing',
-              description: 'Single Page $600 · Full Website $1,200 flat.',
+              label: 'Website & social pricing',
+              description: 'Sites from $600 · Social posting $200/mo · hand-designed, no AI.',
             },
             {
               to: '/website-fixes',
               label: 'Website fixes',
-              description: 'Broken form, mobile mess, or site down? $85/hr Quick Fix.',
+              description: 'Broken form, mobile mess, or site down? $60/hr Quick Fix.',
             },
             {
               to: '/#contact',

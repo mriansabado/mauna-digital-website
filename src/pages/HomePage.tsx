@@ -5,6 +5,8 @@ import sandiegoImage from '../assets/sandiego.jpg'
 import sandiegoBeach from '../assets/sandiego-beach.jpg'
 import { ContactCta } from '../components/ContactCta'
 import { FOUNDER_NAME } from '../constants/site'
+import { featuredApps } from '../data/featuredApps'
+import { socialPosts } from '../data/socialPosts'
 import { PageMeta } from '../seo/PageMeta'
 
 export function HomePage() {
@@ -37,8 +39,6 @@ export function HomePage() {
                   <span className="service-pill">Websites</span>
                   <span className="hero-pill-sep" aria-hidden="true">·</span>
                   <span className="service-pill">Monthly Care</span>
-                  <span className="hero-pill-sep" aria-hidden="true">·</span>
-                  <span className="service-pill">Local SEO</span>
                   <span className="hero-pill-sep" aria-hidden="true">·</span>
                   <span className="service-pill">Social</span>
                   <span className="hero-pill-sep" aria-hidden="true">·</span>
@@ -96,7 +96,7 @@ export function HomePage() {
               <Link to="/website-fixes" className="seo-intent-card">
                 <span className="seo-intent-label">I need to fix my website</span>
                 <span className="seo-intent-desc">
-                  Website help and repairs at $85/hr. Broken forms, mobile issues, outdated pages, logins, and more.
+                  Website help and repairs at $60/hr. Broken forms, mobile issues, outdated pages, logins, and more.
                 </span>
               </Link>
             </li>
@@ -200,9 +200,9 @@ export function HomePage() {
           </div>
 
           <div className="services-bucket">
-            <h3 className="services-bucket-header">Monthly care</h3>
+            <h3 className="services-bucket-header">Care &amp; fixes</h3>
             <p className="rebuild-tiers-intro">
-              Optional. Essentials = keep it running. Growth = help you get found. Month to month — not required for a one-time site or Quick Fix.
+              Monthly care when you want the site watched, or a Quick Fix when something&apos;s broken. Either way, you talk to me.
             </p>
             <div className="services-grid services-grid-two-up services-grid-offer-pair">
               <div className="service-card service-card-electric-blue">
@@ -237,95 +237,9 @@ export function HomePage() {
                       <span>Extra time: $60/hour</span>
                     </div>
                   </div>
-                  <Link to="/pricing" className="btn btn-primary service-btn">See care plans</Link>
+                  <Link to="/pricing" className="btn btn-primary service-btn">See care plan</Link>
                 </div>
               </div>
-              <div className="service-card service-card-hot-pink">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-                    <div className="service-icon">📈</div>
-                  </div>
-                  <div className="service-badge">Local SEO</div>
-                </div>
-                <div className="service-content">
-                  <h3>Growth</h3>
-                  <p className="service-card-tagline">Help me get found.</p>
-                  <div className="service-price-block">
-                    <div className="service-price">$400/mo</div>
-                  </div>
-                  <p className="service-price-detail">Everything in Essentials, plus Google Business Profile, listing cleanup, and a short note each month on what changed.</p>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Everything in Essentials</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>2 hours a month for any tech help</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>GBP posts &amp; listing cleanup</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>On-site SEO tweaks</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Monthly summary</span>
-                    </div>
-                  </div>
-                  <p className="service-price-detail">Local SEO builds over time. Most businesses see movement in Google Maps within 2 to 4 months.</p>
-                  <Link to="/pricing" className="btn btn-primary service-btn">See care plans</Link>
-                </div>
-              </div>
-            </div>
-            <p className="service-payment-note rebuild-tiers-intro">Plan hours are for that month only. They don&apos;t roll over.</p>
-          </div>
-
-          <div className="services-bucket">
-            <h3 className="services-bucket-header">Social posting</h3>
-            <p className="rebuild-tiers-intro">Feed help only — not the same as Growth. Add it alone or with a care plan.</p>
-            <div className="services-grid services-grid-single">
-              <div className="service-card service-card-electric-yellow">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-                    <div className="service-icon">📱</div>
-                  </div>
-                  <div className="service-badge">Social Posting</div>
-                </div>
-                <div className="service-content">
-                  <h3>Social Posting</h3>
-                  <p className="service-card-tagline">Stay visible without living on your phone.</p>
-                  <div className="service-price-block">
-                    <div className="service-price">$200/mo</div>
-                  </div>
-                  <p className="service-price-detail">You send photos and clips from the shop floor. I write captions, design posts, and publish twice a week on Instagram and Facebook. Pairs well with Essentials if you want your site covered too.</p>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>2 posts or reels per week on Instagram and Facebook</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>You send photos and clips; I handle design, captions, and scheduling</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Month to month</span>
-                    </div>
-                  </div>
-                  <p className="service-payment-note">Light, consistent posting for busy owners. Need full ad strategy? A dedicated social agency may be a better fit.</p>
-                  <a href="#contact" className="btn btn-primary service-btn">Let&apos;s talk social</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="services-bucket">
-            <h3 className="services-bucket-header">Other</h3>
-            <div className="services-grid services-grid-two-up services-grid-offer-pair">
               <div className="service-card service-card-hot-pink service-card-business-app">
                 <div className="service-card-header">
                   <div className="service-icon-wrapper">
@@ -337,47 +251,164 @@ export function HomePage() {
                   <h3>Quick Fix</h3>
                   <p className="service-card-tagline">Something&apos;s broken, weird, or overdue for a cleanup?</p>
                   <div className="service-price-block">
-                    <div className="service-price">$85/hr</div>
+                    <div className="service-price">$60/hr</div>
                     <p className="service-payment-note">1 hour minimum</p>
                   </div>
                   <p className="service-price-detail">Tell me what&apos;s going on. I quote you same day and fix it on Squarespace, Shopify, Wix, WordPress, or most anything else. If I finish early, I&apos;ll use the rest of the hour on your to-do list.</p>
                   <Link to="/website-fixes" className="btn btn-primary service-btn">Website fixes explained</Link>
                 </div>
               </div>
-              <div className="service-card service-card-purple">
-                <div className="service-card-header">
-                  <div className="service-icon-wrapper">
-                    <div className="service-icon">📱</div>
+            </div>
+            <p className="service-payment-note rebuild-tiers-intro">Essentials plan hours are for that month only. They don&apos;t roll over.</p>
+          </div>
+
+          <div className="services-bucket social-posting-bucket">
+            <h3 className="services-bucket-header">Social posting</h3>
+            <p className="rebuild-tiers-intro">Feed help only — separate from site care. Add it alone or with Essentials.</p>
+            <div className="service-showcase-split">
+              <div className="service-showcase-card-col">
+                <div className="service-card service-card-electric-yellow">
+                  <div className="service-card-header">
+                    <div className="service-icon-wrapper">
+                      <div className="service-icon">📱</div>
+                    </div>
+                    <div className="service-badge">No AI</div>
                   </div>
-                  <div className="service-badge">Small App</div>
+                  <div className="service-content">
+                    <h3>No-AI Social Posting</h3>
+                    <p className="service-card-tagline">Get the word out without living on your phone.</p>
+                    <div className="service-price-block">
+                      <div className="service-price">$200/mo</div>
+                    </div>
+                    <p className="service-price-detail">Keeping Instagram and Facebook going every week takes more time than it looks — and you&apos;ve got a business to run. Send me a few photos or clips from the shop, and I&apos;ll turn them into posts that look like your brand and vibe (no AI fluff), write the captions, and post twice a week so people keep hearing about your business. Goes great with Essentials.</p>
+                    <div className="service-features">
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>2 posts or reels per week on Instagram and Facebook</span>
+                      </div>
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>Hand-designed graphics — no AI-generated ads</span>
+                      </div>
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>Matched to your brand&apos;s style and vibe</span>
+                      </div>
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>You send photos and clips; I handle design, captions, and scheduling</span>
+                      </div>
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>Month to month</span>
+                      </div>
+                    </div>
+                    <p className="service-payment-note">For busy owners who want to stay visible without another job on their plate. <Link to="/work#social-posts">See sample posts →</Link></p>
+                    <a href="#contact" className="btn btn-primary service-btn">Let&apos;s talk social</a>
+                  </div>
                 </div>
-                <div className="service-content">
-                  <h3>Small App</h3>
-                  <p className="service-card-tagline">One focused feature, built clean. iPhone and Android from one codebase.</p>
-                  <div className="service-price-block">
-                    <div className="service-price">from $3,500</div>
+              </div>
+
+              {socialPosts.length > 0 && (
+                <div className="service-showcase-masonry-col" aria-label="Sample social media posts">
+                  <div className="service-showcase-masonry">
+                    {socialPosts.map((post) => (
+                      <figure key={post.src} className="service-showcase-masonry-item">
+                        <img
+                          src={post.src}
+                          alt={post.alt}
+                          loading="lazy"
+                        />
+                      </figure>
+                    ))}
                   </div>
-                  <p className="service-price-detail">Menus, schedules, simple booking, internal tools. If it helps your business and the scope stays tight, let&apos;s talk. We agree on price before work starts.</p>
-                  <div className="service-features">
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>One core feature</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="services-bucket small-app-bucket">
+            <h3 className="services-bucket-header">Small apps</h3>
+            <p className="rebuild-tiers-intro">
+              One focused tool for your business — here are a few I&apos;ve already built.
+            </p>
+            <div className="service-showcase-split">
+              <div className="service-showcase-card-col">
+                <div className="service-card service-card-purple">
+                  <div className="service-card-header">
+                    <div className="service-icon-wrapper">
+                      <div className="service-icon">📱</div>
                     </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>iPhone + Android from one codebase</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>App Store and Google Play setup</span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-dot"></div>
-                      <span>Custom design, launch support</span>
-                    </div>
+                    <div className="service-badge">Small App</div>
                   </div>
-                  <p className="service-price-detail"><strong>Great for:</strong> event schedules, digital menus, simple booking, internal tools.</p>
-                  <a href="#contact" className="btn btn-primary service-btn">Talk through an app idea</a>
+                  <div className="service-content">
+                    <h3>Small App</h3>
+                    <p className="service-card-tagline">One focused feature, built clean. iPhone and Android from one codebase.</p>
+                    <div className="service-price-block">
+                      <div className="service-price">from $3,500</div>
+                    </div>
+                    <p className="service-price-detail">Menus, schedules, simple booking, internal tools. If it helps your business and the scope stays tight, let&apos;s talk. We agree on price before work starts.</p>
+                    <div className="service-features">
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>One core feature</span>
+                      </div>
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>iPhone + Android from one codebase</span>
+                      </div>
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>App Store and Google Play setup</span>
+                      </div>
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>Custom design, launch support</span>
+                      </div>
+                    </div>
+                    <p className="service-price-detail"><strong>Great for:</strong> event schedules, digital menus, simple booking, internal tools.</p>
+                    <p className="service-payment-note">
+                      <Link to="/work#apps">See apps I&apos;ve built →</Link>
+                    </p>
+                    <a href="#contact" className="btn btn-primary service-btn">Talk through an app idea</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="service-showcase-apps-col" aria-label="Apps I've built">
+                <div className="app-showcase-grid">
+                  {featuredApps.map((app) => (
+                    <a
+                      key={app.href}
+                      href={app.href}
+                      className="app-showcase-tile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="app-showcase-tile-media">
+                        <img src={app.src} alt={app.alt} loading="lazy" />
+                      </div>
+                      <div className="app-showcase-tile-body">
+                        <span className="app-showcase-tile-badge">{app.badge}</span>
+                        <h4 className="app-showcase-tile-title">
+                          {app.logo ? (
+                            <img src={app.logo} alt="" className="app-showcase-tile-logo" />
+                          ) : null}
+                          {app.name}
+                        </h4>
+                        <p className="app-showcase-tile-subtitle">{app.subtitle}</p>
+                        <p className="app-showcase-tile-description">{app.description}</p>
+                        <div className="app-showcase-tile-tags">
+                          {app.tags.map((tag) => (
+                            <span key={tag} className="app-showcase-tile-tag">
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                        <span className="app-showcase-tile-cta">{app.ctaLabel} →</span>
+                      </div>
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
@@ -392,7 +423,7 @@ export function HomePage() {
               </article>
               <article className="service-area-card">
                 <h3>Monthly care (optional)</h3>
-                <p>Essentials $200/mo or Growth $400/mo when you want upkeep or local search handled every month.</p>
+                <p>Essentials $200/mo when you want the site watched, backed up, and updated every month.</p>
               </article>
               <article className="service-area-card">
                 <h3>Mix and match</h3>
@@ -431,7 +462,7 @@ export function HomePage() {
               See the work
             </h2>
             <p className="work-teaser-text">
-              Client websites, apps I&apos;ve shipped, and concept sites that show the kind of look I build for local businesses.
+              Client websites, hand-designed social posts, apps I&apos;ve shipped, and concept sites that show the kind of look I build for local businesses.
             </p>
           </div>
           <Link to="/work" className="btn btn-primary">

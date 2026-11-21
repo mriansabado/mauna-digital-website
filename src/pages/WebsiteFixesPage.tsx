@@ -23,12 +23,12 @@ export function WebsiteFixesPage() {
         </section>
 
         <article className="seo-content container">
-          <h2>Quick Fix: $85/hr website help</h2>
+          <h2>Quick Fix: $60/hr website help</h2>
           <p>
             If you need website repair, a quick update, or a San Diego web developer to dig into something broken, you&apos;re in the right place. I spend a lot of time fixing what already exists, not upselling a brand-new build you don&apos;t need.
           </p>
           <p>
-            <strong>Quick Fix is $85/hr</strong> with a <strong>1 hour minimum</strong>. Tell me what&apos;s going on. I quote you same day and fix it on Squarespace, Shopify, Wix, WordPress, or most anything else. If I finish early, I&apos;ll use the rest of the hour on your to-do list.
+            <strong>Quick Fix is $60/hr</strong> with a <strong>1 hour minimum</strong>. Tell me what&apos;s going on. I quote you same day and fix it on Squarespace, Shopify, Wix, WordPress, or most anything else. If I finish early, I&apos;ll use the rest of the hour on your to-do list.
           </p>
           <p>
             No monthly plan required. Text or email me, send the URL, and we go from there.
@@ -89,7 +89,7 @@ export function WebsiteFixesPage() {
             <Link to="/platform-help">Wix, Squarespace, Shopify, and WordPress help</Link>.
           </p>
           <p>
-            Bottom line: if your site is down, broken, hacked, outdated, or just confusing, start with a Quick Fix. One hour minimum, $85/hr, quoted same day. I&apos;m a real person in San Diego. When you reach out, you talk to me.
+            Bottom line: if your site is down, broken, hacked, outdated, or just confusing, start with a Quick Fix. One hour minimum, $60/hr, quoted same day. I&apos;m a real person in San Diego. When you reach out, you talk to me.
           </p>
         </article>
 
@@ -116,7 +116,7 @@ export function WebsiteFixesPage() {
         <FaqSection title="Website fix questions" faqs={websiteFixesFaqs} />
         <ContactCta
           heading="What's going on with your site?"
-          subtext="Send the URL and a short description. I'll quote a Quick Fix same day: $85/hr, 1 hour minimum. First chat is free."
+          subtext="Send the URL and a short description. I'll quote a Quick Fix same day: $60/hr, 1 hour minimum. First chat is free."
         />
       </main>
     </>

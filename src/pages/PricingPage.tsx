@@ -145,9 +145,9 @@ export function PricingPage() {
             <div className="services-bucket">
               <h2 className="services-bucket-header">Monthly care</h2>
               <p className="rebuild-tiers-intro">
-                Optional. Essentials = keep it running. Growth = help you get found. Month to month — not required for a one-time site or Quick Fix.
+                Optional. Essentials keeps the site running. Month to month — not required for a one-time site or Quick Fix.
               </p>
-              <div className="services-grid services-grid-two-up services-grid-offer-pair">
+              <div className="services-grid services-grid-single">
                 <div className="service-card service-card-electric-blue">
                   <div className="service-card-header">
                     <div className="service-icon-wrapper">
@@ -189,50 +189,6 @@ export function PricingPage() {
                     </a>
                   </div>
                 </div>
-
-                <div className="service-card service-card-hot-pink">
-                  <div className="service-card-header">
-                    <div className="service-icon-wrapper">
-                      <div className="service-icon">📈</div>
-                    </div>
-                    <div className="service-badge">Growth</div>
-                  </div>
-                  <div className="service-content">
-                    <h3>Growth</h3>
-                    <p className="service-card-tagline">Help me get found.</p>
-                    <div className="service-price-block">
-                      <div className="service-price">$400/mo</div>
-                    </div>
-                    <p className="service-price-detail">
-                      Everything in Essentials, plus Google Business Profile, listing cleanup, on-site SEO tweaks, 2 hours a month, and a short note on what changed.
-                    </p>
-                    <div className="service-features">
-                      <div className="feature-item">
-                        <div className="feature-dot"></div>
-                        <span>Everything in Essentials</span>
-                      </div>
-                      <div className="feature-item">
-                        <div className="feature-dot"></div>
-                        <span>2 hours a month for any tech help</span>
-                      </div>
-                      <div className="feature-item">
-                        <div className="feature-dot"></div>
-                        <span>GBP posts &amp; listing cleanup</span>
-                      </div>
-                      <div className="feature-item">
-                        <div className="feature-dot"></div>
-                        <span>On-site SEO tweaks</span>
-                      </div>
-                      <div className="feature-item">
-                        <div className="feature-dot"></div>
-                        <span>Monthly summary</span>
-                      </div>
-                    </div>
-                    <a href="#contact" className="btn btn-primary service-btn">
-                      Ask about Growth
-                    </a>
-                  </div>
-                </div>
               </div>
               <p className="service-payment-note rebuild-tiers-intro">
                 Month to month. Cancel anytime. No contracts. Plan hours are for that month only. They don&apos;t roll over.
@@ -242,7 +198,7 @@ export function PricingPage() {
             <div className="services-bucket">
               <h2 className="services-bucket-header">Social posting</h2>
               <p className="rebuild-tiers-intro">
-                Feed help only — not the same as Growth. Add it alone or with a care plan.
+                Feed help only — separate from site care. Add it alone or with Essentials.
               </p>
               <div className="services-grid services-grid-single">
                 <div className="service-card service-card-electric-yellow">
@@ -250,21 +206,29 @@ export function PricingPage() {
                     <div className="service-icon-wrapper">
                       <div className="service-icon">📱</div>
                     </div>
-                    <div className="service-badge">Social Posting</div>
+                    <div className="service-badge">No AI</div>
                   </div>
                   <div className="service-content">
-                    <h3>Social Posting</h3>
-                    <p className="service-card-tagline">Stay visible without living on your phone.</p>
+                    <h3>No-AI Social Posting</h3>
+                    <p className="service-card-tagline">Get the word out without living on your phone.</p>
                     <div className="service-price-block">
                       <div className="service-price">$200/mo</div>
                     </div>
                     <p className="service-price-detail">
-                      You send photos and clips. I write captions, design posts, and publish twice a week on Instagram and Facebook.
+                      Keeping Instagram and Facebook going every week takes more time than it looks — and you&apos;ve got a business to run. Send me a few photos or clips from the shop, and I&apos;ll turn them into posts that look like your brand and vibe (no AI fluff), write the captions, and post twice a week so people keep hearing about your business.
                     </p>
                     <div className="service-features">
                       <div className="feature-item">
                         <div className="feature-dot"></div>
                         <span>2 posts or reels per week on Instagram and Facebook</span>
+                      </div>
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>Hand-designed graphics — no AI-generated ads</span>
+                      </div>
+                      <div className="feature-item">
+                        <div className="feature-dot"></div>
+                        <span>Matched to your brand&apos;s style and vibe</span>
                       </div>
                       <div className="feature-item">
                         <div className="feature-dot"></div>
@@ -275,6 +239,9 @@ export function PricingPage() {
                         <span>Month to month</span>
                       </div>
                     </div>
+                    <p className="service-payment-note">
+                      <Link to="/work#social-posts">See sample posts →</Link>
+                    </p>
                     <a href="#contact" className="btn btn-primary service-btn">
                       Let&apos;s talk social
                     </a>
@@ -300,7 +267,7 @@ export function PricingPage() {
                   <h3>Already have a site that&apos;s broken?</h3>
                   <p>
                     You might not need a rebuild. My{' '}
-                    <Link to="/website-fixes">website fixes</Link> start at $85/hr. Stuck on a builder? See{' '}
+                    <Link to="/website-fixes">website fixes</Link> start at $60/hr. Stuck on a builder? See{' '}
                     <Link to="/platform-help">platform help</Link>.
                   </p>
                 </article>
@@ -317,7 +284,7 @@ export function PricingPage() {
             {
               to: '/website-fixes',
               label: 'Website fixes',
-              description: 'Broken form, mobile mess, or site down? $85/hr Quick Fix.',
+              description: 'Broken form, mobile mess, or site down? $60/hr Quick Fix.',
             },
             {
               to: '/platform-help',

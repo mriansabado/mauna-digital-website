@@ -20,7 +20,7 @@ export const homeFaqs: FaqItem[] = [
   {
     question: 'Can you help if I already have a website that needs fixing?',
     answer:
-      'Yes. Quick Fix is $85/hr with a one-hour minimum and a same-day quote. Broken forms, mobile layout, outdated pages, login issues, and more.',
+      'Yes. Quick Fix is $60/hr with a one-hour minimum and a same-day quote. Broken forms, mobile layout, outdated pages, login issues, and more.',
   },
   {
     question: 'Which platform should I use?',
@@ -80,7 +80,7 @@ export const pricingFaqs: FaqItem[] = [
   {
     question: 'What if I only need something fixed, not a new site?',
     answer:
-      "That's the Quick Fix at $85/hr with a one-hour minimum. Same-day quote. See the website fixes page for common problems I handle.",
+      "That's the Quick Fix at $60/hr with a one-hour minimum. Same-day quote. See the website fixes page for common problems I handle.",
   },
 ]
 
@@ -88,7 +88,7 @@ export const websiteFixesFaqs: FaqItem[] = [
   {
     question: 'Can you help me fix my website in San Diego?',
     answer:
-      'Yes. Send me your URL and what is going wrong. Quick Fix is $85/hr with a one-hour minimum. I quote same day and work on Wix, Squarespace, Shopify, WordPress, and most other setups.',
+      'Yes. Send me your URL and what is going wrong. Quick Fix is $60/hr with a one-hour minimum. I quote same day and work on Wix, Squarespace, Shopify, WordPress, and most other setups.',
   },
   {
     question: 'How fast can you start a Quick Fix?',
@@ -98,7 +98,7 @@ export const websiteFixesFaqs: FaqItem[] = [
   {
     question: 'Do I need a monthly plan to get something fixed?',
     answer:
-      'No. Quick Fix is $85/hr with a one-hour minimum. No plan required. Monthly care is optional if you want ongoing help later.',
+      'No. Quick Fix is $60/hr with a one-hour minimum. No plan required. Monthly care is optional if you want ongoing help later.',
   },
   {
     question: 'Can you fix Wix, Squarespace, Shopify, and WordPress?',
@@ -131,7 +131,7 @@ export const platformHelpFaqs: FaqItem[] = [
   {
     question: 'What does platform help cost?',
     answer:
-      'Most platform work is Quick Fix pricing: $85/hr, 1 hour minimum, same-day quote. Bigger rebuilds use the flat website prices.',
+      'Most platform work is Quick Fix pricing: $60/hr, 1 hour minimum, same-day quote. Bigger rebuilds use the flat website prices.',
   },
 ]
 

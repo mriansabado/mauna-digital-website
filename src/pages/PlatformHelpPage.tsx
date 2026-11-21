@@ -27,7 +27,7 @@ export function PlatformHelpPage() {
             Most local businesses don&apos;t need a custom-coded empire. They need a site that works on the platform they already pay for. I&apos;m a website designer and web developer in San Diego who lives in these tools: for new builds and for the &quot;why did this break?&quot; days.
           </p>
           <p>
-            Platform help is usually a <Link to="/website-fixes">Quick Fix at $85/hr</Link> (1 hour minimum, same-day quote). If we decide a rebuild is smarter, I use the same{' '}
+            Platform help is usually a <Link to="/website-fixes">Quick Fix at $60/hr</Link> (1 hour minimum, same-day quote). If we decide a rebuild is smarter, I use the same{' '}
             <Link to="/pricing">affordable flat prices</Link>: Single Page $600, Full Website $1,200.
           </p>
 
@@ -91,7 +91,7 @@ export function PlatformHelpPage() {
             {
               to: '/website-fixes',
               label: 'Website fixes',
-              description: 'Down sites, broken forms, hacks, mobile issues: $85/hr.',
+              description: 'Down sites, broken forms, hacks, mobile issues: $60/hr.',
             },
             {
               to: '/pricing',
