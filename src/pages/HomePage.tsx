@@ -311,9 +311,12 @@ export function HomePage() {
 
               {socialPosts.length > 0 && (
                 <div className="service-showcase-masonry-col" aria-label="Sample social media posts">
-                  <div className="service-showcase-masonry">
-                    {socialPosts.map((post) => (
-                      <figure key={post.src} className="service-showcase-masonry-item">
+                  <div className="service-showcase-masonry social-masonry-bento">
+                    {socialPosts.map((post, index) => (
+                      <figure
+                        key={post.src}
+                        className={`service-showcase-masonry-item social-masonry-item social-masonry-item--${(index % 10) + 1}`}
+                      >
                         <img
                           src={post.src}
                           alt={post.alt}
