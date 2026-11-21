@@ -81,7 +81,7 @@ export function HomePage() {
             Looking for a San Diego website designer?
           </h2>
           <p className="seo-intent-intro">
-            Most people who reach out need a local web designer, web developer, or someone to fix what they already have. Pick what fits and I&apos;ll tell you the clear next step.
+            Most people who reach out need a local web designer, web developer, someone to fix what they already have, or help staying active on social. Pick what fits and I&apos;ll tell you the clear next step.
           </p>
           <ul className="seo-intent-list">
             <li>
@@ -94,19 +94,19 @@ export function HomePage() {
             </li>
             <li>
               <Link to="/website-fixes" className="seo-intent-card">
-                <span className="seo-intent-label">I need to fix my website</span>
+                <span className="seo-intent-label">I need to fix or update my site</span>
                 <span className="seo-intent-desc">
-                  Website help and repairs at $60/hr. Broken forms, mobile issues, outdated pages, logins, and more.
+                  Website help at $60/hr — broken forms, mobile issues, logins, or stuck on Wix, Squarespace, Shopify, or WordPress.
                 </span>
               </Link>
             </li>
             <li>
-              <Link to="/platform-help" className="seo-intent-card">
-                <span className="seo-intent-label">I&apos;m stuck on Wix, Squarespace, Shopify, or WordPress</span>
+              <a href="#social-posting" className="seo-intent-card">
+                <span className="seo-intent-label">I need social media posting</span>
                 <span className="seo-intent-desc">
-                  Platform help from a local website designer who works in these tools every week.
+                  Social media posting at $200/mo. Hand-designed Instagram and Facebook posts twice a week — no AI fluff.
                 </span>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -262,7 +262,7 @@ export function HomePage() {
             <p className="service-payment-note rebuild-tiers-intro">Essentials plan hours are for that month only. They don&apos;t roll over.</p>
           </div>
 
-          <div className="services-bucket social-posting-bucket">
+          <div id="social-posting" className="services-bucket social-posting-bucket">
             <h3 className="services-bucket-header">Social posting</h3>
             <p className="rebuild-tiers-intro">Feed help only — separate from site care. Add it alone or with Essentials.</p>
             <div className="service-showcase-split">
